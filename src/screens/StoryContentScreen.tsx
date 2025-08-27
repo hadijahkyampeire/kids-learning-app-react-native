@@ -55,15 +55,13 @@ const StoryContentScreen: React.FC = () => {
   const submitAnswers = async () => {
     if (!story) return;
 
-    // ensure everything is answered
     const total = story.questions.length;
     const allAnswered = story.questions.every(
       (_, idx) => !!answers[idx]?.trim()
     );
     if (!allAnswered) {
-      // light inline nudge — keep it visual for kids:
       setResult({ correct: 0, total });
-      setShowResult(true); // still show modal; you can change this to a toast if you prefer
+      setShowResult(true);
       return;
     }
 
@@ -92,7 +90,7 @@ const StoryContentScreen: React.FC = () => {
     } catch {}
     setShowResult(false);
     setAnswers({});
-    // jump to top for a fresh read
+
     scrollRef.current?.scrollTo({ y: 0, animated: true });
   };
 
