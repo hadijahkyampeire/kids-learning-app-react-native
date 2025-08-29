@@ -4,7 +4,7 @@
     "slug": "kids-learning-app-react-native",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./src/assets/icon.png",
+    "icon": "./src/assets/app-icon-1024.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -24,7 +24,7 @@
       "edgeToEdgeEnabled": true,
       "package": "com.yourco.kidslearning",
       "adaptiveIcon": {
-        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "foregroundImage": "./src/assets/adaptive-icon-foreground.png",
         "backgroundColor": "#ffffff"
       }
     },
@@ -35,6 +35,12 @@
       "expo-router",
       "expo-splash-screen",
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "c24a3289-89a4-4598-917b-d741b075b68e"
+      }
+    }
   }
 }
