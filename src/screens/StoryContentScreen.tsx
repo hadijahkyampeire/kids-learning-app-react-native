@@ -1,4 +1,5 @@
-import React, { useMemo, useRef, useState } from 'react';
+// src/screens/StoryContentScreen.tsx
+import React, { useMemo, useRef, useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -17,8 +18,10 @@ import { Audio } from 'expo-av';
 
 import { storiesData } from '../data/storiesData';
 
-const BG_URL = 'https://kids-app-images.s3.us-east-1.amazonaws.com/stories-bg.jpg';
-const DEFAULT_IMG = 'https://kids-app-images.s3.us-east-1.amazonaws.com/general-image.webp';
+const BG_URL =
+  'https://kids-app-images.s3.us-east-1.amazonaws.com/stories-bg.jpg';
+const DEFAULT_IMG =
+  'https://kids-app-images.s3.us-east-1.amazonaws.com/general-image.webp';
 const CLICK_SND = require('../assets/sounds/click.mp3');
 const CORRECT_SND = require('../assets/sounds/correct-sound.wav');
 
@@ -30,10 +33,8 @@ type StoryLike = {
   title: string;
   class?: string;
   topic?: string;
-  coverImage?: string;
-  summary?: string;
   pages?: Page[];
-  questions: {
+  questions?: {
     q: string;
     options: string[];
     correct: string;
@@ -44,16 +45,22 @@ type StoryLike = {
 const StoryContentScreen: React.FC = () => {
   const navigation = useNavigation<any>();
   const route = useRoute<any>();
-
   const level = route.params?.level as LevelKey | undefined;
   const storyId = route.params?.storyId as string | undefined;
 
+  const scrollRef = useRef<ScrollView>(null);
+
   const { width, height } = useWindowDimensions();
   const isLandscape = width > height;
-  const BASE = isLandscape ? 22 : 24;
+  const BASE = isLandscape ? 22 : 24; // readable page text
   const LINE = Math.round(BASE * 1.4);
 
-  const styles = makeStyles({ BASE, LINE, isLandscape, maxW: Math.min(900, width - 24) });
+  const styles = makeStyles({
+    BASE,
+    LINE,
+    isLandscape,
+    maxW: Math.min(900, width - 24),
+  });
 
   const bucket = level ? (storiesData[level] as unknown as StoryLike[]) : [];
   const story: StoryLike | undefined = useMemo(
@@ -63,9 +70,9 @@ const StoryContentScreen: React.FC = () => {
 
   const pages = story?.pages ?? [];
 
-  // page turning state
+  // page turning state (start at first page)
   const [page, setPage] = useState(0);
-  const slide = useRef(new Animated.Value(0)).current; // -1 (left off) -> 0 (center) -> 1 (right off)
+  const slide = useRef(new Animated.Value(0)).current;
 
   // quiz state
   const [answers, setAnswers] = useState<Record<number, string>>({});
@@ -74,6 +81,13 @@ const StoryContentScreen: React.FC = () => {
 
   const canPrev = page > 0;
   const canNext = page < Math.max(pages.length - 1, 0);
+
+  // scroll to very top whenever page changes (so each page begins at the top)
+  useEffect(() => {
+    requestAnimationFrame(() => {
+      scrollRef.current?.scrollTo({ y: 0, animated: true });
+    });
+  }, [page]);
 
   const playClick = async () => {
     try {
@@ -87,16 +101,14 @@ const StoryContentScreen: React.FC = () => {
   const turn = async (dir: 1 | -1) => {
     if ((dir === -1 && !canPrev) || (dir === 1 && !canNext)) return;
     await playClick();
-    // animate current page out
     Animated.timing(slide, {
-      toValue: dir * -1, // slide opposite direction first (out)
+      toValue: dir * -1,
       duration: 220,
       easing: Easing.out(Easing.quad),
       useNativeDriver: true,
     }).start(() => {
-      // update page, jump to other side, then slide in
       setPage((p) => p + dir);
-      slide.setValue(dir); // start from the other side
+      slide.setValue(dir);
       Animated.timing(slide, {
         toValue: 0,
         duration: 220,
@@ -112,9 +124,11 @@ const StoryContentScreen: React.FC = () => {
   };
 
   const submitAnswers = async () => {
-    if (!story) return;
+    if (!story?.questions || story.questions.length === 0) return;
     const total = story.questions.length;
-    const allAnswered = story.questions.every((_, idx) => !!answers[idx]?.trim());
+    const allAnswered = story.questions.every(
+      (_, idx) => !!answers[idx]?.trim()
+    );
     if (!allAnswered) {
       setResult({ correct: 0, total });
       setShowResult(true);
@@ -136,7 +150,11 @@ const StoryContentScreen: React.FC = () => {
 
   if (!story) {
     return (
-      <ImageBackground source={{ uri: BG_URL }} style={styles.container} resizeMode="cover">
+      <ImageBackground
+        source={{ uri: BG_URL }}
+        style={styles.container}
+        resizeMode="cover"
+      >
         <View style={styles.overlay} />
         <View style={styles.contentCenter}>
           <Text style={styles.p}>No story with this ID!</Text>
@@ -146,26 +164,47 @@ const StoryContentScreen: React.FC = () => {
   }
 
   const pageObj = pages[page];
-
-  // result strings
-  const ratio = result.total ? result.correct / result.total : 0;
-  const emoji = result.total === 0 ? '📝' : ratio === 1 ? '🏆✨' : ratio >= 0.7 ? '🎉😄' : '🙂💪';
-  const headline = result.total === 0 ? 'Almost there!' : ratio === 1 ? 'Perfect!' : ratio >= 0.7 ? 'Great job!' : 'Nice try!';
-  const scoreText = result.total === 0 ? 'Please answer all questions.' : `You got ${result.correct}/${result.total}`;
-
-  // translate value for the slide animation
   const translateX = slide.interpolate({
     inputRange: [-1, 0, 1],
     outputRange: [-width, 0, width],
   });
 
+  // result strings
+  const ratio = result.total ? result.correct / result.total : 0;
+  const emoji =
+    result.total === 0
+      ? '📝'
+      : ratio === 1
+      ? '🏆✨'
+      : ratio >= 0.7
+      ? '🎉😄'
+      : '🙂💪';
+  const headline =
+    result.total === 0
+      ? 'Almost there!'
+      : ratio === 1
+      ? 'Perfect!'
+      : ratio >= 0.7
+      ? 'Great job!'
+      : 'Nice try!';
+  const scoreText =
+    result.total === 0
+      ? 'Please answer all questions.'
+      : `You got ${result.correct}/${result.total}`;
+  const hasQuestions =
+    Array.isArray(story.questions) && story.questions.length > 0;
+
   return (
-    <ImageBackground source={{ uri: BG_URL }} style={styles.container} resizeMode="cover">
+    <ImageBackground
+      source={{ uri: BG_URL }}
+      style={styles.container}
+      resizeMode="cover"
+    >
       <View style={styles.overlay} />
 
       <ScrollView
+        ref={scrollRef}
         contentContainerStyle={styles.scrollContent}
-        nestedScrollEnabled
         showsVerticalScrollIndicator={false}
       >
         <View style={styles.sheet}>
@@ -173,6 +212,7 @@ const StoryContentScreen: React.FC = () => {
             <FontAwesome name="star" size={22} color="#FFD700" /> {story.title}
           </Text>
 
+          {/* One visible page at a time (no cover/summary) */}
           {!!pageObj && (
             <>
               <View style={styles.pageTopRow}>
@@ -205,20 +245,20 @@ const StoryContentScreen: React.FC = () => {
                 </TouchableOpacity>
               </View>
 
-              <Animated.View style={[styles.pageCard, { transform: [{ translateX }] }]}>
+              <Animated.View
+                style={[styles.pageCard, { transform: [{ translateX }] }]}
+              >
                 {pageObj.image ? (
-                  <Image source={{ uri: pageObj.image }} style={styles.pageImage} resizeMode="cover" />
+                  <Image
+                    source={{ uri: pageObj.image || DEFAULT_IMG }}
+                    style={styles.pageImage}
+                    resizeMode="cover"
+                  />
                 ) : null}
 
-                <ScrollView
-                  nestedScrollEnabled
-                  contentContainerStyle={{ paddingBottom: 4 }}
-                  showsVerticalScrollIndicator={false}
-                >
-                  <Text style={styles.pageText} allowFontScaling>
-                    {pageObj.text}
-                  </Text>
-                </ScrollView>
+                <Text style={styles.pageText} allowFontScaling>
+                  {pageObj.text}
+                </Text>
               </Animated.View>
 
               <View style={styles.pageBottomRow}>
@@ -242,14 +282,19 @@ const StoryContentScreen: React.FC = () => {
           )}
 
           {/* Questions */}
-          {!!story.questions?.length && (
+          {hasQuestions ? (
             <View style={{ marginTop: 16 }}>
               <Text style={styles.h2}>Story Questions</Text>
 
-              {story.questions.map((q, idx) => {
+              {story.questions!.map((q, idx) => {
                 const selected = answers[idx];
                 const isCorrect = selected ? selected === q.correct : null;
-                const color = isCorrect == null ? '#3b82f6' : isCorrect ? '#16a34a' : '#dc2626';
+                const color =
+                  isCorrect == null
+                    ? '#3b82f6'
+                    : isCorrect
+                    ? '#16a34a'
+                    : '#dc2626';
 
                 return (
                   <View key={idx} style={styles.qBlock}>
@@ -286,9 +331,33 @@ const StoryContentScreen: React.FC = () => {
                 );
               })}
 
-              <TouchableOpacity style={styles.submitBtn} onPress={submitAnswers}>
+              <TouchableOpacity
+                style={styles.submitBtn}
+                onPress={submitAnswers}
+              >
                 <Text style={styles.submitText}>Submit</Text>
               </TouchableOpacity>
+
+              {showResult && (
+                <View style={{ marginTop: 10, alignItems: 'center' }}>
+                  <Text style={{ fontSize: 28 }}>{emoji}</Text>
+                  <Text style={styles.h2}>{headline}</Text>
+                  <Text
+                    style={{ fontFamily: 'Baloo2_600SemiBold', fontSize: 16 }}
+                  >
+                    {scoreText}
+                  </Text>
+                </View>
+              )}
+            </View>
+          ) : (
+            <View style={{ marginTop: 12 }}>
+              <Text style={styles.h2}>Story Questions</Text>
+              <Text
+                style={{ fontFamily: 'Baloo2_600SemiBold', color: '#64748b' }}
+              >
+                No questions added for this story yet.
+              </Text>
             </View>
           )}
         </View>
@@ -299,7 +368,7 @@ const StoryContentScreen: React.FC = () => {
 
 export default StoryContentScreen;
 
-// ---------- styles (generated inside so we can use BASE/LINE/orientation) ----------
+// ---------- dynamic styles ----------
 function makeStyles({
   BASE,
   LINE,
@@ -347,22 +416,7 @@ function makeStyles({
       marginBottom: 6,
     },
 
-    image: {
-      width: '100%',
-      height: isLandscape ? 180 : 220,
-      borderRadius: 14,
-      marginBottom: 12,
-    },
-
-    summary: {
-      fontFamily: 'Baloo2_600SemiBold',
-      fontSize: BASE - 2,
-      lineHeight: Math.round((BASE - 2) * 1.35),
-      color: '#334155',
-      marginBottom: 12,
-    },
-
-    // page UI
+    // Page UI
     pageTopRow: {
       flexDirection: 'row',
       alignItems: 'center',
@@ -387,6 +441,7 @@ function makeStyles({
       shadowRadius: 8,
       shadowOffset: { width: 0, height: 4 },
       minHeight: isLandscape ? 200 : 260,
+      marginBottom: 8,
     },
     pageImage: {
       width: '100%',
@@ -396,11 +451,12 @@ function makeStyles({
     },
     pageText: {
       fontFamily: 'Baloo2_400Regular',
-      fontSize: BASE,
+      fontSize: BASE, // bigger for readability
       lineHeight: LINE,
       letterSpacing: 0.15,
       color: '#111827',
     },
+
     pageBottomRow: {
       marginTop: 10,
       flexDirection: 'row',
@@ -430,7 +486,7 @@ function makeStyles({
       fontSize: 16,
     },
 
-    // quiz styles
+    // Quiz
     qBlock: {
       marginTop: 10,
       paddingVertical: 8,
@@ -450,16 +506,8 @@ function makeStyles({
       paddingHorizontal: 12,
       alignItems: 'center',
     },
-    optText: {
-      fontFamily: 'Baloo2_800ExtraBold',
-      color: '#fff',
-      fontSize: 16,
-    },
-    feedback: {
-      marginTop: 6,
-      fontFamily: 'Baloo2_600SemiBold',
-      fontSize: 16,
-    },
+    optText: { fontFamily: 'Baloo2_800ExtraBold', color: '#fff', fontSize: 16 },
+    feedback: { marginTop: 6, fontFamily: 'Baloo2_600SemiBold', fontSize: 16 },
 
     submitBtn: {
       marginTop: 14,
@@ -478,10 +526,6 @@ function makeStyles({
       fontSize: 18,
     },
 
-    p: {
-      fontFamily: 'Baloo2_600SemiBold',
-      fontSize: 18,
-      color: '#f87171',
-    },
+    p: { fontFamily: 'Baloo2_600SemiBold', fontSize: 18, color: '#f87171' },
   });
 }

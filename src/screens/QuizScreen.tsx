@@ -4,6 +4,7 @@ import { useRoute, useNavigation } from '@react-navigation/native';
 import { Audio } from 'expo-av';
 import { questionsData } from '../data/questions'; 
 import type { Question } from '../types';
+import { useSounds } from '../hooks/useSounds';
 
 const clickSnd = require('../assets/sounds/click.mp3');
 const correctSnd = require('../assets/sounds/correct-sound.wav');
@@ -18,6 +19,8 @@ interface Answer {
 const QuizScreen: React.FC = () => {
   const navigation = useNavigation<any>();
   const route = useRoute<any>();
+
+  const { playClick, playCorrect, playWrong } = useSounds();
 
   const level: string = route.params?.level;
   const klass: string = route.params?.class;
@@ -44,28 +47,36 @@ const QuizScreen: React.FC = () => {
     } catch {}
   };
 
+  const sleep = (ms: number) => new Promise(res => setTimeout(res, ms));
+
   const goLevels = async () => {
-    await play(clickSnd);
+    await playClick();
+    await sleep(120);
     navigation.navigate('LevelSelection');
   };
 
   const handleAnswer = async (answer: string) => {
     const currentQuestion = questions[currentQuestionIndex];
     const isCorrect = answer === currentQuestion.correct;
-    await play(isCorrect ? correctSnd : wrongSnd);
+
+    // play without unloading
+    if (isCorrect) { await playCorrect(); } else { await playWrong(); }
+
     setSelectedAnswer(answer);
     setFeedback(isCorrect ? currentQuestion.feedback.correct : currentQuestion.feedback.incorrect);
     setAnswers(prev => [...prev, { questionId: currentQuestion._id, selected: answer, isCorrect }]);
   };
 
   const handleNext = async () => {
-    await play(clickSnd);
+    await playClick();
     setFeedback(null);
     setSelectedAnswer(null);
 
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(i => i + 1);
     } else {
+      // small delay so the click isn’t chopped by navigation
+      await sleep(120);
       navigation.navigate('Results', { level, class: klass, subject, topic, answers });
     }
   };

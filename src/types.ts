@@ -11,6 +11,7 @@ export type Subject =
   | 'math'
   | 'english'
   | 'science'
+  | 'art'
   | 'socialStudies'
   | 'generalKnowledge'
   | 'religion';

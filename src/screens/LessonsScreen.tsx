@@ -1,10 +1,17 @@
-// screens/LessonSelectionScreen.tsx
-import React, { useMemo } from 'react';
+// LessonSelectionScreen.tsx
+import React, { useMemo, useEffect, useRef } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, FlatList } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
+import { Audio } from 'expo-av';
 import { questionsData } from '../data/questions';
 import { storiesData } from '../data/storiesData';
 import { CLASS_STYLES, buttonShape } from '../constants/styles';
+
+const clickSnd = require('../assets/sounds/click.mp3');
+
+type LessonItem = 
+  | { topic: string; countLabel: string; kind: "stories" }
+  | { topic: string; countLabel: string; kind: "quiz" };
 
 const LessonSelectionScreen: React.FC = () => {
   const navigation = useNavigation<any>();
@@ -12,6 +19,42 @@ const LessonSelectionScreen: React.FC = () => {
   const level: string = route.params?.level;
   const klass: string = route.params?.class;
   const subject: string = route.params?.subject;
+
+  const clickRef = useRef<Audio.Sound | null>(null);
+
+  useEffect(() => {
+    let mounted = true;
+
+    Audio.setAudioModeAsync({
+      playsInSilentModeIOS: true,
+      staysActiveInBackground: false,
+    }).catch(() => {});
+
+    const load = async () => {
+      try {
+        const s = new Audio.Sound();
+        await s.loadAsync(clickSnd);
+        if (mounted) clickRef.current = s;
+      } catch {}
+    };
+    load();
+
+    return () => {
+      mounted = false;
+      if (clickRef.current) {
+        clickRef.current.unloadAsync().catch(() => {});
+        clickRef.current = null;
+      }
+    };
+  }, []);
+
+  const playClick = async () => {
+    try {
+      if (!clickRef.current) return;
+      // replay from start even if tapped quickly
+      await clickRef.current.replayAsync();
+    } catch {}
+  };
 
   const lessons = useMemo(() => {
     if (subject === 'stories') {
@@ -27,7 +70,7 @@ const LessonSelectionScreen: React.FC = () => {
       return Array.from(byTopic.entries()).map(([topic, items]) => ({
         topic,
         countLabel: `${items.length} stor${items.length === 1 ? 'y' : 'ies'}`,
-        kind: 'stories',
+        kind: 'stories' as const,
       }));
     } else {
       const arr = (questionsData[level as keyof typeof questionsData] ?? []).filter(
@@ -41,16 +84,23 @@ const LessonSelectionScreen: React.FC = () => {
       return Array.from(byTopic.entries()).map(([topic, qs]) => ({
         topic,
         countLabel: `${qs.length} question${qs.length === 1 ? '' : 's'}`,
-        kind: 'quiz',
+        kind: 'quiz' as const,
       }));
     }
   }, [level, klass, subject]);
 
-  const clsStyle = CLASS_STYLES[klass] ?? { bg: '#fff', borderVariant: 'rounded' };
+  // Get the style for the current class, or use a default
+  const clsStyle = useMemo(() => {
+    if (klass && CLASS_STYLES[klass]) {
+      return CLASS_STYLES[klass];
+    }
+    // fallback to a default style if klass is not set or not found
+    return Object.values(CLASS_STYLES)[0];
+  }, [klass]);
 
   return (
     <View style={styles.root}>
-      <FlatList
+      <FlatList<LessonItem>
         data={lessons}
         keyExtractor={(it, i) => it.topic + i}
         contentContainerStyle={{ padding: 16, gap: 12 }}
@@ -63,12 +113,16 @@ const LessonSelectionScreen: React.FC = () => {
             ]}
             activeOpacity={0.9}
             onPress={() => {
-              if (subject === 'stories') {
-                // take user to Stories screen filtered by topic
-                navigation.navigate('Stories', { level, class: klass, topic: item.topic });
-              } else {
-                navigation.navigate('Quiz', { level, class: klass, subject, topic: item.topic });
-              }
+              // play sound then navigate (small delay so it isn't cut off)
+              void playClick().then(() => {
+                setTimeout(() => {
+                  if (subject === 'stories') {
+                    navigation.navigate('Stories', { level, class: klass, topic: item.topic });
+                  } else {
+                    navigation.navigate('Quiz', { level, class: klass, subject, topic: item.topic });
+                  }
+                }, 120);
+              });
             }}
           >
             <Text style={styles.lessonTitle}>

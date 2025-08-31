@@ -13,7 +13,7 @@ export const STORY_TOPICS_PRESCHOOL = [
   "Helping"
 ] as const;
 
-// generic inner-page image (optional)
+
 const GEN = "https://kids-app-images.s3.us-east-1.amazonaws.com/general-image.webp";
 
 type StoryPage = { image?: string; text: string };
@@ -26,55 +26,7 @@ export type StoryBook = Story & {
 };
 
 const base: Omit<StoryBook, "_id">[] = [
-  {
-    level: "preSchool",
-    class: "middle",
-    topic: "Helping",
-    title: "The Little Red Hen",
-    coverImage: "https://kids-app-images.s3.us-east-1.amazonaws.com/little-red-hen.jpg",
-    summary:
-      "A hen finds wheat grains and asks friends to help. No one helps, so she plants, harvests, and bakes alone—then keeps the bread as a lesson about helping.",
-    pages: [
-      {
-        image: "https://kids-app-images.s3.us-east-1.amazonaws.com/little-red-hen.jpg",
-        text: "Once upon a time, a little red hen found grains of wheat. “Who will help me plant them?” she asked.",
-      },
-      {
-        image: GEN,
-        text: "No one helped. She planted the grains, watered them, and watched them grow tall in the sun.",
-      },
-      {
-        image: GEN,
-        text: "She cut the wheat, ground the flour, and baked warm bread. When everyone wanted to eat, she kept it, teaching them to help next time.",
-      },
-    ],
-    questions: [
-      {
-        q: "What color was the hen?",
-        options: ["Red", "Blue", "Green", "Yellow"],
-        correct: "Red",
-        feedback: { correct: "Great! She’s the Little RED Hen.", incorrect: "Look again—her feathers are red." }
-      },
-      {
-        q: "Who refused to help plant the wheat?",
-        options: ["The dog, the cat, and the duck", "Only the dog", "Only the cat", "Everyone helped"],
-        correct: "The dog, the cat, and the duck",
-        feedback: { correct: "Yes—none of the friends helped at first.", incorrect: "Not quite—no one helped the hen at first." }
-      },
-      {
-        q: "What did the hen make from the wheat?",
-        options: ["Bread", "Cake", "Cookies", "Soup"],
-        correct: "Bread",
-        feedback: { correct: "Yum—she baked a loaf of bread!", incorrect: "Try again—the wheat became bread." }
-      },
-      {
-        q: "Did the hen share the bread?",
-        options: ["No", "Yes"],
-        correct: "No",
-        feedback: { correct: "Right—she ate it herself.", incorrect: "She didn’t share this time." }
-      }
-    ]
-  },
+
 
   {
     level: "preSchool",

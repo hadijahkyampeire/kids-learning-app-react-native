@@ -1,8 +1,8 @@
 import { type Question } from "../types";
-import { juniorSchoolQuestionsData } from "./questions/juniorschool";
-import { lowerPrimaryQuestionsData } from "./questions/lowerprimary";
-import { preSchoolQuestionsData } from "./questions/preschool";
-import { upperPrimaryQuestionsData } from "./questions/upperprimary";
+import { juniorSchoolQuestions } from "./questions/juniroschool";
+import { preschoolQuestions } from "./questions/preschool";
+import { lowerPrimaryQuestions } from "./questions/lowerPrimary";
+import { upperPrimaryQuestions } from "./questions/upperPrimary";
 
 export const questionsData: {
   preSchool: Question[];
@@ -10,9 +10,9 @@ export const questionsData: {
   lowerPrimary: Question[];
   upperPrimary: Question[];
 } = {
-  preSchool: preSchoolQuestionsData,
-  juniorSchool: juniorSchoolQuestionsData,
-  lowerPrimary: lowerPrimaryQuestionsData,
-  upperPrimary: upperPrimaryQuestionsData
+  preSchool: preschoolQuestions,
+  juniorSchool: juniorSchoolQuestions,
+  lowerPrimary: lowerPrimaryQuestions,
+  upperPrimary: upperPrimaryQuestions
 };
 

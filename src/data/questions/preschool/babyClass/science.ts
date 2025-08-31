@@ -1,0 +1,273 @@
+import { type Question } from "../../../../types";
+
+export const babyClassScienceQuestions: Question[] = [
+  // Body Parts
+  {
+    _id: "bb-sci-1",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Body Parts",
+    text: "What do we use to see? 👀",
+    options: ["Eyes", "Ears", "Nose"],
+    correct: "Eyes",
+    feedback: { correct: "Yes! We use our eyes to see.", incorrect: "Think about what helps you look at things." }
+  },
+  {
+    _id: "bb-sci-2",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Body Parts",
+    text: "What do we use to hear? 👂",
+    options: ["Ears", "Nose", "Mouth"],
+    correct: "Ears",
+    feedback: { correct: "Yes! We use our ears to hear sounds.", incorrect: "Think about what helps you listen." }
+  },
+  {
+    _id: "bb-sci-3",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Body Parts",
+    text: "What do we use to smell? 👃",
+    options: ["Nose", "Eyes", "Hands"],
+    correct: "Nose",
+    feedback: { correct: "Yes! We use our nose to smell.", incorrect: "Think about what helps you sniff." }
+  },
+  {
+    _id: "bb-sci-4",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Body Parts",
+    text: "What do we use to taste food? 👅",
+    options: ["Tongue", "Teeth", "Lips"],
+    correct: "Tongue",
+    feedback: { correct: "Yes! We use our tongue to taste.", incorrect: "Think about what helps you taste flavors." }
+  },
+  {
+    _id: "bb-sci-5",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Body Parts",
+    text: "What do we use to hold things? ✋",
+    options: ["Hands", "Feet", "Head"],
+    correct: "Hands",
+    feedback: { correct: "Yes! We use our hands to hold things.", incorrect: "Think about what you use to pick up toys." }
+  },
+  {
+    _id: "bb-sci-6",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Body Parts",
+    text: "What do we use to walk? 🦶",
+    options: ["Feet", "Hands", "Arms"],
+    correct: "Feet",
+    feedback: { correct: "Yes! We use our feet to walk.", incorrect: "Think about what helps you move around." }
+  },
+  {
+    _id: "bb-sci-7",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Body Parts",
+    text: "Where is your hair? 💇‍♂️",
+    options: ["Head", "Hand", "Foot"],
+    correct: "Head",
+    feedback: { correct: "Yes! Hair grows on our head.", incorrect: "Think about where you brush your hair." }
+  },
+  {
+    _id: "bb-sci-8",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Body Parts",
+    text: "What helps us chew food? 😁",
+    options: ["Teeth", "Lips", "Nose"],
+    correct: "Teeth",
+    feedback: { correct: "Yes! We use our teeth to chew.", incorrect: "Think about what helps you bite and chew." }
+  },
+
+  // Colors & Nature
+  {
+    _id: "bb-sci-9",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Colors & Nature",
+    text: "What color is grass? 🌱",
+    options: ["Green", "Blue", "Red"],
+    correct: "Green",
+    feedback: { correct: "Yes! Grass is green.", incorrect: "Look at the plants outside." }
+  },
+  {
+    _id: "bb-sci-10",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Colors & Nature",
+    text: "What color is a banana? 🍌",
+    options: ["Yellow", "Green", "Red"],
+    correct: "Yellow",
+    feedback: { correct: "Yes! Ripe bananas are yellow.", incorrect: "Think about the color of bananas you eat." }
+  },
+  {
+    _id: "bb-sci-11",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Colors & Nature",
+    text: "What color is the sun? ☀️",
+    options: ["Yellow", "Blue", "Green"],
+    correct: "Yellow",
+    feedback: { correct: "Yes! The sun appears yellow.", incorrect: "Look at the sun in pictures (never directly!)." }
+  },
+  {
+    _id: "bb-sci-12",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Colors & Nature",
+    text: "What color is an apple? 🍎",
+    options: ["Red", "Purple", "Orange"],
+    correct: "Red",
+    feedback: { correct: "Yes! Apples can be red.", incorrect: "Think about the most common apple color." }
+  },
+  {
+    _id: "bb-sci-13",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Colors & Nature",
+    text: "What color is the sky? ☁️",
+    options: ["Blue", "Green", "Yellow"],
+    correct: "Blue",
+    feedback: { correct: "Yes! The sky is blue on clear days.", incorrect: "Look up at the daytime sky." }
+  },
+  {
+    _id: "bb-sci-14",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Colors & Nature",
+    text: "What color is a carrot? 🥕",
+    options: ["Orange", "Purple", "Blue"],
+    correct: "Orange",
+    feedback: { correct: "Yes! Carrots are orange.", incorrect: "Think about the color of carrots you eat." }
+  },
+  {
+    _id: "bb-sci-15",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Colors & Nature",
+    text: "What color is snow? ❄️",
+    options: ["White", "Blue", "Yellow"],
+    correct: "White",
+    feedback: { correct: "Yes! Snow is white.", incorrect: "Think about the color of snowflakes." }
+  },
+  {
+    _id: "bb-sci-16",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Colors & Nature",
+    text: "What color is night? 🌙",
+    options: ["Black", "Green", "Red"],
+    correct: "Black",
+    feedback: { correct: "Yes! The night is dark/black.", incorrect: "Think about the color when it's dark." }
+  },
+
+  // Animals & Their Sounds
+  {
+    _id: "bb-sci-17",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Animals & Their Sounds",
+    text: "What does a cat say? 🐱",
+    options: ["Meow", "Woof", "Moo"],
+    correct: "Meow",
+    feedback: { correct: "Yes! Cats say 'meow'.", incorrect: "Listen to a cat's sound." }
+  },
+  {
+    _id: "bb-sci-18",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Animals & Their Sounds",
+    text: "What does a dog say? 🐕",
+    options: ["Woof", "Meow", "Quack"],
+    correct: "Woof",
+    feedback: { correct: "Yes! Dogs say 'woof'.", incorrect: "Think about a dog's bark." }
+  },
+  {
+    _id: "bb-sci-19",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Animals & Their Sounds",
+    text: "What does a duck say? 🦆",
+    options: ["Quack", "Moo", "Baa"],
+    correct: "Quack",
+    feedback: { correct: "Yes! Ducks say 'quack'.", incorrect: "Listen to a duck's sound." }
+  },
+  {
+    _id: "bb-sci-20",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Animals & Their Sounds",
+    text: "What does a cow say? 🐄",
+    options: ["Moo", "Baa", "Oink"],
+    correct: "Moo",
+    feedback: { correct: "Yes! Cows say 'moo'.", incorrect: "Think about the sound cows make." }
+  },
+  {
+    _id: "bb-sci-21",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Animals & Their Sounds",
+    text: "What does a sheep say? 🐑",
+    options: ["Baa", "Moo", "Meow"],
+    correct: "Baa",
+    feedback: { correct: "Yes! Sheep say 'baa'.", incorrect: "Listen to a sheep's sound." }
+  },
+  {
+    _id: "bb-sci-22",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Animals & Their Sounds",
+    text: "What does a pig say? 🐷",
+    options: ["Oink", "Woof", "Moo"],
+    correct: "Oink",
+    feedback: { correct: "Yes! Pigs say 'oink'.", incorrect: "Think about a pig's sound." }
+  },
+  {
+    _id: "bb-sci-23",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Animals & Their Sounds",
+    text: "What does a bird say? 🐦",
+    options: ["Tweet", "Roar", "Hiss"],
+    correct: "Tweet",
+    feedback: { correct: "Yes! Birds tweet or chirp.", incorrect: "Listen to birds singing." }
+  },
+  {
+    _id: "bb-sci-24",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Animals & Their Sounds",
+    text: "What does a chicken say? 🐔",
+    options: ["Cluck", "Meow", "Moo"],
+    correct: "Cluck",
+    feedback: { correct: "Yes! Chickens say 'cluck'.", incorrect: "Think about a chicken's sound." }
+  }
+];

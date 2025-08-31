@@ -1,7 +1,6 @@
 import { type Question } from "../../types";
 
 export const preSchoolQuestionsData: Question[] = [
-  // ---------------- ENGLISH ----------------
   {
     _id: "1",
     level: "preSchool",
@@ -161,7 +160,7 @@ export const preSchoolQuestionsData: Question[] = [
   {
     _id: "15",
     level: "preSchool",
-    subject: "math",
+    subject: "generalKnowledge",
     class: "baby",
     topic: "Colors",
     text: "What color is the sky?",
