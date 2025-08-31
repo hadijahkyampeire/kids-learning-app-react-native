@@ -1,5 +1,5 @@
 // App.tsx
-import React, { useCallback, useEffect } from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import {
   View,
   Text,
@@ -11,6 +11,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as SplashScreen from 'expo-splash-screen';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Audio } from 'expo-av';
 
 import WelcomeScreen from './src/screens/WelcomeScreen';
 import LevelSelectionScreen from './src/screens/LevelSelectionScreen';
@@ -37,6 +38,8 @@ import {
 const Stack = createNativeStackNavigator<RootStackParamList>();
 SplashScreen.preventAutoHideAsync();
 
+const clickSnd = require('./src/assets/sounds/click.mp3');
+
 async function logoutAndReset(navigation: any) {
   try {
     const keys = await AsyncStorage.getAllKeys();
@@ -56,6 +59,35 @@ export default function App() {
     Baloo2_800ExtraBold,
   });
 
+  const clickRef = useRef<Audio.Sound | null>(null);
+  useEffect(() => {
+    let mounted = true;
+    (async () => {
+      try {
+        await Audio.setAudioModeAsync({
+          playsInSilentModeIOS: true,
+          staysActiveInBackground: false,
+        });
+        const s = new Audio.Sound();
+        await s.loadAsync(clickSnd);
+        if (mounted) clickRef.current = s;
+      } catch {}
+    })();
+    return () => {
+      mounted = false;
+      if (clickRef.current) {
+        clickRef.current.unloadAsync().catch(() => {});
+        clickRef.current = null;
+      }
+    };
+  }, []);
+
+  const playClick = async () => {
+    try {
+      if (clickRef.current) await clickRef.current.replayAsync();
+    } catch {}
+  };
+
   const onLayout = useCallback(async () => {
     if (fontsLoaded) await SplashScreen.hideAsync();
   }, [fontsLoaded]);
@@ -69,7 +101,7 @@ export default function App() {
       <View style={{ flex: 1 }} onLayout={onLayout}>
         <NavigationContainer>
           <Stack.Navigator
-            screenOptions={({ navigation }) => ({
+             screenOptions={({ navigation }) => ({
               headerShown: true,
               headerTitleAlign: 'center',
               headerTitle: () => <HeaderTitle />,
@@ -86,14 +118,36 @@ export default function App() {
                 fontSize: 14,
                 color: '#065f46',
               },
+              // custom back with click sound
+              headerLeft: ({ canGoBack }) =>
+                canGoBack ? (
+                  <TouchableOpacity
+                    onPress={() => {
+                      void playClick().then(() => setTimeout(() => navigation.goBack(), 120));
+                    }}
+                    hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                    style={{ paddingHorizontal: 8, paddingVertical: 4 }}
+                  >
+                    <Text style={{ color: '#065f46', fontFamily: 'Baloo2_600SemiBold', fontSize: 16 }}>
+                      Back
+                    </Text>
+                  </TouchableOpacity>
+                ) : null,
+              // home button with sound
               headerRight: () => (
                 <HeaderHomeButton
-                  onPress={() =>
-                    navigation.reset({
-                      index: 0,
-                      routes: [{ name: 'LevelSelection' }],
-                    })
-                  }
+                  onPress={() => {
+                    void playClick().then(() =>
+                      setTimeout(
+                        () =>
+                          navigation.reset({
+                            index: 0,
+                            routes: [{ name: 'LevelSelection' }],
+                          }),
+                        120
+                      )
+                    );
+                  }}
                 />
               ),
             })}

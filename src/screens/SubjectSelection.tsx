@@ -1,12 +1,15 @@
-import React, { useMemo, useEffect, useState } from 'react';
+import React, { useMemo, useEffect, useState, useRef } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, FlatList } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { FontAwesome } from '@expo/vector-icons';
+import { Audio } from 'expo-av';
 import { SUBJECTS_BY_LEVEL } from '../constants/subjects';
 import { CLASS_STYLES, SUBJECT_STYLES, buttonShape } from '../constants/styles';
 import { questionsData } from '../data/questions';
 import { storiesData } from '../data/storiesData';
 import { loadSubjectProgress, type SubjectProgress } from '../storage/progress';
+
+const clickSnd = require('../assets/sounds/click.mp3');
 
 type LevelKey = keyof typeof SUBJECTS_BY_LEVEL;
 
@@ -22,9 +25,37 @@ const SubjectSelectionScreen: React.FC = () => {
   const level: string = route.params?.level;
   const klass: string = route.params?.class;
 
+  const clickRef = useRef<Audio.Sound | null>(null);
+  useEffect(() => {
+    let mounted = true;
+    (async () => {
+      try {
+        await Audio.setAudioModeAsync({
+          playsInSilentModeIOS: true,
+          staysActiveInBackground: false,
+        });
+        const s = new Audio.Sound();
+        await s.loadAsync(clickSnd);
+        if (mounted) clickRef.current = s;
+      } catch {}
+    })();
+    return () => {
+      mounted = false;
+      if (clickRef.current) {
+        clickRef.current.unloadAsync().catch(() => {});
+        clickRef.current = null;
+      }
+    };
+  }, []);
+
+  const playClick = async () => {
+    try {
+      if (clickRef.current) await clickRef.current.replayAsync();
+    } catch {}
+  };
+
   const subjects = SUBJECTS_BY_LEVEL[level as LevelKey] ?? [];
 
-  // pre-compute topic + item counts for the UI rows
   const subjectRows = useMemo(() => {
     return subjects.map((subject) => {
       if (subject === 'stories') {
@@ -41,7 +72,6 @@ const SubjectSelectionScreen: React.FC = () => {
     });
   }, [level, klass, subjects]);
 
-  // load saved completion per subject to show the bar
   const [progressMap, setProgressMap] = useState<Record<string, { completed: number; total: number }>>({});
 
   useEffect(() => {
@@ -49,7 +79,6 @@ const SubjectSelectionScreen: React.FC = () => {
     (async () => {
       const next: Record<string, { completed: number; total: number }> = {};
       for (const row of subjectRows) {
-        // read persisted subject progress
         const sp: SubjectProgress = await loadSubjectProgress(level, klass, row.subject);
         const completed = row.topics.reduce((sum: number, topic: string) => {
           const t = sp.topics?.[topic];
@@ -82,9 +111,13 @@ const SubjectSelectionScreen: React.FC = () => {
             <TouchableOpacity
               activeOpacity={0.9}
               disabled={disabled}
-              onPress={() =>
-                navigation.navigate('Lessons', { level, class: klass, subject: item.subject })
-              }
+              onPress={() => {
+                void playClick().then(() => {
+                  setTimeout(() => {
+                    navigation.navigate('Lessons', { level, class: klass, subject: item.subject });
+                  }, 120);
+                });
+              }}
               style={[
                 styles.subjectBtn,
                 buttonShape(clsStyle.borderVariant as any),
@@ -133,7 +166,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   small: { fontFamily: 'Baloo2_600SemiBold', fontSize: 12, opacity: 0.9 },
-
   // progress
   track: {
     height: 8,
@@ -143,7 +175,7 @@ const styles = StyleSheet.create({
   },
   fill: {
     height: 8,
-    backgroundColor: 'rgba(6,95,70,0.9)', // emerald-900-ish
+    backgroundColor: 'rgba(6,95,70,0.9)',
     borderRadius: 999,
   },
 });
