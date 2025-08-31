@@ -2,11 +2,18 @@
   "expo": {
     "name": "kids-learning-app-react-native",
     "slug": "kids-learning-app-react-native",
+    "scheme": "kidslearning",
     "version": "1.0.0",
-    "orientation": "portrait",
+
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+
+    "orientation": "default",
     "icon": "./src/assets/app-icon-1024.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+
     "splash": {
       "image": "./src/assets/splash-icon.png",
       "resizeMode": "contain",
@@ -16,26 +23,41 @@
         "backgroundColor": "#0f172a"
       }
     },
+
+    "updates": {
+      "url": "https://u.expo.dev/c24a3289-89a4-4598-917b-d741b075b68e",
+      "enabled": true
+    },
+
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.yourco.kidslearning"
+      "bundleIdentifier": "com.yourco.kidslearning",
+      "buildNumber": "2"
     },
+
     "android": {
       "edgeToEdgeEnabled": true,
       "package": "com.yourco.kidslearning",
+      "versionCode": 2,
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/adaptive-icon-foreground.png",
         "backgroundColor": "#ffffff"
       }
     },
+
     "web": {
       "favicon": "./src/assets/favicon.png"
     },
+
     "plugins": [
+      "expo-updates",
       "expo-router",
       "expo-splash-screen",
       "expo-font"
     ],
+
+    "assetBundlePatterns": ["**/*"],
+
     "extra": {
       "router": {},
       "eas": {
