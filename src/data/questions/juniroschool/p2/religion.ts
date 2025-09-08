@@ -7,16 +7,19 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Beliefs & Worship",
-    "text": "First pillar of Islam",
+    "text": "Select all 3 pillars of Islam in order 🕌",
     "options": [
       "Shahada",
       "Salah",
-      "Zakat"
+      "Zakat",
+      "Hajj",
+      "Sawm"
     ],
-    "correct": "Shahada",
+    "correct": ["Shahada", "Salah", "Zakat"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Well remembered!",
-      "incorrect": "Basic practices."
+      "correct": "Excellent knowledge of pillars! 🌟",
+      "incorrect": "Remember the order: Shahada, Salah, Zakat, Sawm, Hajj"
     }
   },
   {
@@ -25,16 +28,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Beliefs & Worship",
-    "text": "Prayers per day",
+    "text": "How many prayers do we pray each day? 🕌",
     "options": [
       "5",
       "3",
       "7"
     ],
     "correct": "5",
+    "type": "choice",
     "feedback": {
-      "correct": "Well remembered!",
-      "incorrect": "Basic practices."
+      "correct": "Perfect! Five daily prayers! 🌟",
+      "incorrect": "We pray 5 times: Fajr, Dhuhr, Asr, Maghrib, Isha"
     }
   },
   {
@@ -43,16 +47,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Beliefs & Worship",
-    "text": "Month of fasting",
+    "text": "Which month do Muslims fast in? 🌙",
     "options": [
       "Ramadan",
       "January",
       "Friday"
     ],
     "correct": "Ramadan",
+    "type": "choice",
     "feedback": {
-      "correct": "Well remembered!",
-      "incorrect": "Basic practices."
+      "correct": "Yes! Ramadan is our blessed month of fasting! 🌟",
+      "incorrect": "Ramadan is the special month when Muslims fast"
     }
   },
   {
@@ -61,16 +66,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Beliefs & Worship",
-    "text": "Facing which direction in prayer?",
+    "text": "Which direction do Muslims face when praying? 🕋",
     "options": [
       "Kaaba",
       "Sun",
       "River"
     ],
     "correct": "Kaaba",
+    "type": "choice",
     "feedback": {
-      "correct": "Well remembered!",
-      "incorrect": "Basic practices."
+      "correct": "Correct! We face the Kaaba in Makkah! 🌟",
+      "incorrect": "Muslims face the Kaaba in Makkah for prayer"
     }
   },
   {
@@ -79,16 +85,18 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Beliefs & Worship",
-    "text": "We begin with…",
+    "text": "Select all 2 phrases we say to begin good deeds 🤲",
     "options": [
       "Bismillah",
+      "Alhamdulillah",
       "Goodbye",
       "Hello"
     ],
-    "correct": "Bismillah",
+    "correct": ["Bismillah", "Alhamdulillah"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Well remembered!",
-      "incorrect": "Basic practices."
+      "correct": "Beautiful Islamic phrases! 🌟",
+      "incorrect": "Remember to start with Bismillah and thank Allah"
     }
   },
   {
@@ -97,16 +105,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Beliefs & Worship",
-    "text": "We thank Allah by…",
+    "text": "How do we thank Allah? 🤲",
     "options": [
       "Alhamdulillah",
       "Oops",
       "Why"
     ],
     "correct": "Alhamdulillah",
+    "type": "choice",
     "feedback": {
-      "correct": "Well remembered!",
-      "incorrect": "Basic practices."
+      "correct": "Yes! Alhamdulillah means 'praise be to Allah'! 🌟",
+      "incorrect": "We say Alhamdulillah to thank Allah"
     }
   },
   {
@@ -115,16 +124,18 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Beliefs & Worship",
-    "text": "We ask by making…",
+    "text": "Select all 2 times we make dua 🤲",
     "options": [
-      "dua 🤲",
-      "noise",
-      "jokes"
+      "Before sleeping",
+      "After eating",
+      "While running",
+      "While shouting"
     ],
-    "correct": "dua 🤲",
+    "correct": ["Before sleeping", "After eating"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Well remembered!",
-      "incorrect": "Basic practices."
+      "correct": "Perfect! These are great times for dua! 🌟",
+      "incorrect": "Make dua at blessed times"
     }
   },
   {
@@ -133,16 +144,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Beliefs & Worship",
-    "text": "Friday prayer is…",
+    "text": "What is the special Friday prayer called? 🕌",
     "options": [
       "Jumu'ah",
       "Eid",
       "Fajr"
     ],
     "correct": "Jumu'ah",
+    "type": "choice",
     "feedback": {
-      "correct": "Well remembered!",
-      "incorrect": "Basic practices."
+      "correct": "Yes! Jumu'ah is our special Friday prayer! 🌟",
+      "incorrect": "Friday's special prayer is called Jumu'ah"
     }
   },
   {
@@ -151,16 +163,18 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Values & Manners",
-    "text": "Speak…",
+    "text": "Select all 2 ways we should speak to others 💬",
     "options": [
-      "kindly 💬",
+      "kindly",
+      "softly",
       "rudely",
       "noisily"
     ],
-    "correct": "kindly 💬",
+    "correct": ["kindly", "softly"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Good manners!",
-      "incorrect": "Character matters."
+      "correct": "Beautiful manners! 🌟",
+      "incorrect": "Always speak with kindness and respect"
     }
   },
   {
@@ -169,16 +183,18 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Values & Manners",
-    "text": "Return lost things shows…",
+    "text": "Select all 2 ways to show honesty 🤲",
     "options": [
-      "honesty",
-      "greed",
-      "anger"
+      "Return lost things",
+      "Tell the truth",
+      "Keep found items",
+      "Tell lies"
     ],
-    "correct": "honesty",
+    "correct": ["Return lost things", "Tell the truth"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Good manners!",
-      "incorrect": "Character matters."
+      "correct": "Honesty is the best policy! 🌟",
+      "incorrect": "Always be truthful and return what isn't yours"
     }
   },
   {
@@ -187,16 +203,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Values & Manners",
-    "text": "Say __ when you err",
+    "text": "What should we say when we make a mistake? 🙇",
     "options": [
-      "sorry 🙇",
+      "sorry",
       "later",
       "what"
     ],
-    "correct": "sorry 🙇",
+    "correct": "sorry",
+    "type": "choice",
     "feedback": {
-      "correct": "Good manners!",
-      "incorrect": "Character matters."
+      "correct": "Yes! Always apologize for mistakes! 🌟",
+      "incorrect": "Say sorry when you make a mistake"
     }
   },
   {
@@ -205,16 +222,19 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Values & Manners",
-    "text": "Sharing food is…",
+    "text": "Select all 3 acts of charity we can do 🤝",
     "options": [
-      "charity 🤝",
-      "waste",
-      "rude"
+      "Share food",
+      "Help others",
+      "Give money",
+      "Keep everything",
+      "Be selfish"
     ],
-    "correct": "charity 🤝",
+    "correct": ["Share food", "Help others", "Give money"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Good manners!",
-      "incorrect": "Character matters."
+      "correct": "Beautiful acts of charity! 🌟",
+      "incorrect": "Charity includes sharing and helping others"
     }
   },
   {
@@ -223,16 +243,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Values & Manners",
-    "text": "Say __ when gifted",
+    "text": "What should we say when receiving a gift? 🎁",
     "options": [
       "thank you 🙏",
       "give me",
       "move"
     ],
     "correct": "thank you 🙏",
+    "type": "choice",
     "feedback": {
-      "correct": "Good manners!",
-      "incorrect": "Character matters."
+      "correct": "Perfect manners! 🌟",
+      "incorrect": "Always say thank you for gifts"
     }
   },
   {
@@ -241,16 +262,18 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Values & Manners",
-    "text": "Help the…",
+    "text": "Select all 2 groups of people we should help 🤝",
     "options": [
-      "needy",
-      "bully",
-      "liar"
+      "needy people",
+      "elderly",
+      "bullies",
+      "troublemakers"
     ],
-    "correct": "needy",
+    "correct": ["needy people", "elderly"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Good manners!",
-      "incorrect": "Character matters."
+      "correct": "Helping others is noble! 🌟",
+      "incorrect": "Help those who need assistance"
     }
   },
   {
@@ -259,16 +282,19 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Values & Manners",
-    "text": "Being clean is…",
+    "text": "Select all 3 ways to stay clean 🧼",
     "options": [
-      "part of faith",
-      "useless",
-      "odd"
+      "Wash hands",
+      "Take bath",
+      "Brush teeth",
+      "Stay dirty",
+      "Skip washing"
     ],
-    "correct": "part of faith",
+    "correct": ["Wash hands", "Take bath", "Brush teeth"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Good manners!",
-      "incorrect": "Character matters."
+      "correct": "Cleanliness is part of faith! 🌟",
+      "incorrect": "Stay clean through good habits"
     }
   },
   {
@@ -277,16 +303,18 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Values & Manners",
-    "text": "We keep promises to be…",
+    "text": "Select all 2 traits of a trustworthy person 🤝",
     "options": [
-      "trustworthy",
-      "lazy",
-      "late"
+      "Keeps promises",
+      "Tells truth",
+      "Breaks promises",
+      "Tells lies"
     ],
-    "correct": "trustworthy",
+    "correct": ["Keeps promises", "Tells truth"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Good manners!",
-      "incorrect": "Character matters."
+      "correct": "Trustworthiness is important! 🌟",
+      "incorrect": "Be someone others can trust"
     }
   },
   {
@@ -295,16 +323,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Holy Book & Practices",
-    "text": "Holy book of Islam",
+    "text": "What is the holy book of Islam? 📖",
     "options": [
       "Qur'an",
       "Bible",
       "Torah"
     ],
     "correct": "Qur'an",
+    "type": "choice",
     "feedback": {
-      "correct": "Practice makes perfect!",
-      "incorrect": "Worship basics."
+      "correct": "Yes! The Qur'an is our holy book! 🌟",
+      "incorrect": "The Qur'an is Allah's word to us"
     }
   },
   {
@@ -313,16 +342,19 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Holy Book & Practices",
-    "text": "Read Qur'an with…",
+    "text": "Select all 3 ways to respect the Qur'an 📖",
     "options": [
-      "respect 🙏",
-      "noise",
-      "dirty hands"
+      "Clean hands",
+      "Sit quietly",
+      "Listen carefully",
+      "Be noisy",
+      "Have dirty hands"
     ],
-    "correct": "respect 🙏",
+    "correct": ["Clean hands", "Sit quietly", "Listen carefully"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Practice makes perfect!",
-      "incorrect": "Worship basics."
+      "correct": "Beautiful respect for Qur'an! 🌟",
+      "incorrect": "Show respect when handling Qur'an"
     }
   },
   {
@@ -331,16 +363,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Holy Book & Practices",
-    "text": "Zakat means…",
+    "text": "What does Zakat mean? 💝",
     "options": [
       "charity",
       "party",
       "holiday"
     ],
     "correct": "charity",
+    "type": "choice",
     "feedback": {
-      "correct": "Practice makes perfect!",
-      "incorrect": "Worship basics."
+      "correct": "Yes! Zakat is giving to those in need! 🌟",
+      "incorrect": "Zakat means giving charity"
     }
   },
   {
@@ -349,16 +382,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Holy Book & Practices",
-    "text": "Fasting is from…",
+    "text": "When do we fast? ☀️",
     "options": [
       "dawn to sunset",
       "night to noon",
       "always"
     ],
     "correct": "dawn to sunset",
+    "type": "choice",
     "feedback": {
-      "correct": "Practice makes perfect!",
-      "incorrect": "Worship basics."
+      "correct": "Perfect! We fast from dawn to sunset! 🌟",
+      "incorrect": "Fasting is from dawn until sunset"
     }
   },
   {
@@ -367,16 +401,18 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Holy Book & Practices",
-    "text": "Place of worship",
+    "text": "Select all 2 names for a Muslim place of worship 🕌",
     "options": [
-      "mosque 🕌",
-      "temple 🛕",
-      "stadium 🏟️"
+      "mosque",
+      "masjid",
+      "temple",
+      "church"
     ],
-    "correct": "mosque 🕌",
+    "correct": ["mosque", "masjid"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Practice makes perfect!",
-      "incorrect": "Worship basics."
+      "correct": "Yes! Mosque and masjid mean the same! 🌟",
+      "incorrect": "Muslims pray in a mosque/masjid"
     }
   },
   {
@@ -385,16 +421,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Holy Book & Practices",
-    "text": "Break fast at…",
+    "text": "When do we break our fast? 🌅",
     "options": [
       "Maghrib",
       "Fajr",
       "Dhuhr"
     ],
     "correct": "Maghrib",
+    "type": "choice",
     "feedback": {
-      "correct": "Practice makes perfect!",
-      "incorrect": "Worship basics."
+      "correct": "Yes! We break fast at Maghrib prayer! 🌟",
+      "incorrect": "Break fast at sunset (Maghrib prayer)"
     }
   },
   {
@@ -403,16 +440,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Holy Book & Practices",
-    "text": "Hajj is in…",
+    "text": "Where do Muslims perform Hajj? 🕋",
     "options": [
       "Makkah",
       "Cairo",
       "Paris"
     ],
     "correct": "Makkah",
+    "type": "choice",
     "feedback": {
-      "correct": "Practice makes perfect!",
-      "incorrect": "Worship basics."
+      "correct": "Yes! Hajj is performed in Makkah! 🌟",
+      "incorrect": "Hajj is performed in Makkah, Saudi Arabia"
     }
   },
   {
@@ -421,16 +459,19 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Holy Book & Practices",
-    "text": "Salah steps include…",
+    "text": "Select all 3 positions in Salah 🕌",
     "options": [
-      "standing, bowing, prostrating",
+      "standing",
+      "bowing",
+      "prostrating",
       "jumping",
-      "sleeping"
+      "sitting only"
     ],
-    "correct": "standing, bowing, prostrating",
+    "correct": ["standing", "bowing", "prostrating"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Practice makes perfect!",
-      "incorrect": "Worship basics."
+      "correct": "Perfect prayer positions! 🌟",
+      "incorrect": "Prayer includes standing, bowing, and prostrating"
     }
   },
   {
@@ -439,16 +480,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Prophets & Stories",
-    "text": "First Prophet",
+    "text": "Who was the first Prophet? 👨",
     "options": [
       "Adam (A.S)",
       "Musa (A.S)",
       "Isa (A.S)"
     ],
     "correct": "Adam (A.S)",
+    "type": "choice",
     "feedback": {
-      "correct": "Stories of wisdom!",
-      "incorrect": "Know the prophets."
+      "correct": "Yes! Adam (A.S) was the first Prophet! 🌟",
+      "incorrect": "Adam (A.S) was Allah's first Prophet"
     }
   },
   {
@@ -457,16 +499,18 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Prophets & Stories",
-    "text": "Given the Torah",
+    "text": "Select all 2 books given to Prophets 📚",
     "options": [
-      "Musa (A.S)",
-      "Dawud (A.S)",
-      "Yunus (A.S)"
+      "Torah to Musa (A.S)",
+      "Injil to Isa (A.S)",
+      "Stories",
+      "Letters"
     ],
-    "correct": "Musa (A.S)",
+    "correct": ["Torah to Musa (A.S)", "Injil to Isa (A.S)"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Stories of wisdom!",
-      "incorrect": "Know the prophets."
+      "correct": "Great knowledge of holy books! 🌟",
+      "incorrect": "Allah gave different books to His Prophets"
     }
   },
   {
@@ -475,16 +519,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Prophets & Stories",
-    "text": "Built the Kaaba",
+    "text": "Who built the Kaaba? 🕋",
     "options": [
       "Ibrahim & Ismail (A.S)",
       "Nuh (A.S)",
       "Yusuf (A.S)"
     ],
     "correct": "Ibrahim & Ismail (A.S)",
+    "type": "choice",
     "feedback": {
-      "correct": "Stories of wisdom!",
-      "incorrect": "Know the prophets."
+      "correct": "Yes! Father and son built the Kaaba! 🌟",
+      "incorrect": "Ibrahim and his son Ismail built the Kaaba"
     }
   },
   {
@@ -493,16 +538,18 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Prophets & Stories",
-    "text": "Built an ark",
+    "text": "Select all 2 facts about Prophet Nuh (A.S) 🚢",
     "options": [
-      "Nuh (A.S)",
-      "Ibrahim (A.S)",
-      "Isa (A.S)"
+      "Built an ark",
+      "Saved believers",
+      "Built Kaaba",
+      "Received Torah"
     ],
-    "correct": "Nuh (A.S)",
+    "correct": ["Built an ark", "Saved believers"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Stories of wisdom!",
-      "incorrect": "Know the prophets."
+      "correct": "Great knowledge of Nuh's story! 🌟",
+      "incorrect": "Nuh (A.S) built an ark to save believers"
     }
   },
   {
@@ -511,16 +558,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Prophets & Stories",
-    "text": "Our Prophet",
+    "text": "Who is our Prophet? 🕌",
     "options": [
       "Muhammad ﷺ",
       "Isa (A.S)",
       "Musa (A.S)"
     ],
     "correct": "Muhammad ﷺ",
+    "type": "choice",
     "feedback": {
-      "correct": "Stories of wisdom!",
-      "incorrect": "Know the prophets."
+      "correct": "Yes! Muhammad ﷺ is our beloved Prophet! 🌟",
+      "incorrect": "Prophet Muhammad ﷺ is our final Prophet"
     }
   },
   {
@@ -529,16 +577,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Prophets & Stories",
-    "text": "Yusuf (A.S) could…",
+    "text": "What special gift did Yusuf (A.S) have? 💭",
     "options": [
       "interpret dreams",
       "fly",
       "be invisible"
     ],
     "correct": "interpret dreams",
+    "type": "choice",
     "feedback": {
-      "correct": "Stories of wisdom!",
-      "incorrect": "Know the prophets."
+      "correct": "Yes! He could understand dreams! 🌟",
+      "incorrect": "Yusuf (A.S) could interpret dreams"
     }
   },
   {
@@ -547,16 +596,18 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Prophets & Stories",
-    "text": "Isa (A.S) received the…",
+    "text": "Select all 2 books given to Prophets 📚",
     "options": [
-      "Injil",
-      "Zabur",
-      "Torah"
+      "Injil to Isa (A.S)",
+      "Zabur to Dawud (A.S)",
+      "Stories to Yusuf",
+      "Letters to Nuh"
     ],
-    "correct": "Injil",
+    "correct": ["Injil to Isa (A.S)", "Zabur to Dawud (A.S)"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Stories of wisdom!",
-      "incorrect": "Know the prophets."
+      "correct": "Perfect knowledge of holy books! 🌟",
+      "incorrect": "Each Prophet received specific books"
     }
   },
   {
@@ -565,16 +616,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Prophets & Stories",
-    "text": "Dawud (A.S) received the…",
+    "text": "What book did Dawud (A.S) receive? 📖",
     "options": [
       "Zabur",
       "Injil",
       "Suhuf"
     ],
     "correct": "Zabur",
+    "type": "choice",
     "feedback": {
-      "correct": "Stories of wisdom!",
-      "incorrect": "Know the prophets."
+      "correct": "Yes! Dawud (A.S) received the Zabur! 🌟",
+      "incorrect": "The Zabur was given to Dawud (A.S)"
     }
   },
   {
@@ -583,16 +635,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Festivals & Special Days",
-    "text": "Eid after Ramadan",
+    "text": "Which Eid comes after Ramadan? 🌙",
     "options": [
       "Eid al‑Fitr",
       "Eid al‑Adha",
       "Jumu'ah"
     ],
     "correct": "Eid al‑Fitr",
+    "type": "choice",
     "feedback": {
-      "correct": "Joyful days!",
-      "incorrect": "Family & community."
+      "correct": "Yes! Eid al-Fitr follows Ramadan! 🌟",
+      "incorrect": "We celebrate Eid al-Fitr after Ramadan"
     }
   },
   {
@@ -601,16 +654,18 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Festivals & Special Days",
-    "text": "Eid with sacrifice",
+    "text": "Select all 2 facts about Eid al-Adha 🐑",
     "options": [
-      "Eid al‑Adha",
-      "Eid al‑Fitr",
-      "Jumu'ah"
+      "Includes sacrifice",
+      "Remembers Ibrahim (A.S)",
+      "After Ramadan",
+      "No prayer"
     ],
-    "correct": "Eid al‑Adha",
+    "correct": ["Includes sacrifice", "Remembers Ibrahim (A.S)"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Joyful days!",
-      "incorrect": "Family & community."
+      "correct": "Great knowledge of Eid al-Adha! 🌟",
+      "incorrect": "Eid al-Adha remembers Ibrahim's sacrifice"
     }
   },
   {
@@ -619,16 +674,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Festivals & Special Days",
-    "text": "Ramadan is a…",
+    "text": "What is Ramadan? 🌙",
     "options": [
       "month",
       "place",
       "food"
     ],
     "correct": "month",
+    "type": "choice",
     "feedback": {
-      "correct": "Joyful days!",
-      "incorrect": "Family & community."
+      "correct": "Yes! Ramadan is a blessed month! 🌟",
+      "incorrect": "Ramadan is our fasting month"
     }
   },
   {
@@ -637,16 +693,18 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Festivals & Special Days",
-    "text": "Laylat al‑Qadr is a…",
+    "text": "Select all 2 special nights in Ramadan ✨",
     "options": [
-      "special night",
-      "market",
-      "river"
+      "Laylat al-Qadr",
+      "First night",
+      "Every Friday",
+      "Last day"
     ],
-    "correct": "special night",
+    "correct": ["Laylat al-Qadr", "First night"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Joyful days!",
-      "incorrect": "Family & community."
+      "correct": "These are very special nights! 🌟",
+      "incorrect": "Ramadan has special blessed nights"
     }
   },
   {
@@ -655,16 +713,17 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Festivals & Special Days",
-    "text": "We greet with…",
+    "text": "How do Muslims greet each other? 👋",
     "options": [
       "As‑salāmu ʿalaykum",
       "Hello there",
       "Bye"
     ],
     "correct": "As‑salāmu ʿalaykum",
+    "type": "choice",
     "feedback": {
-      "correct": "Joyful days!",
-      "incorrect": "Family & community."
+      "correct": "Yes! This means 'Peace be upon you'! 🌟",
+      "incorrect": "We say As-salamu alaykum for peace"
     }
   },
   {
@@ -673,16 +732,18 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Festivals & Special Days",
-    "text": "Imam leads…",
+    "text": "Select all 2 roles of an Imam 🕌",
     "options": [
-      "prayer",
-      "cooking",
-      "driving"
+      "Leads prayer",
+      "Teaches Qur'an",
+      "Cooks food",
+      "Drives cars"
     ],
-    "correct": "prayer",
+    "correct": ["Leads prayer", "Teaches Qur'an"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Joyful days!",
-      "incorrect": "Family & community."
+      "correct": "Yes! These are important Imam duties! 🌟",
+      "incorrect": "Imams lead prayer and teach"
     }
   },
   {
@@ -691,16 +752,19 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Festivals & Special Days",
-    "text": "We give gifts on…",
+    "text": "Select all 3 things we do on Eid 🎉",
     "options": [
-      "Eid",
-      "Monday",
-      "any time only"
+      "Give gifts",
+      "Visit family",
+      "Special prayer",
+      "Stay home",
+      "Be sad"
     ],
-    "correct": "Eid",
+    "correct": ["Give gifts", "Visit family", "Special prayer"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Joyful days!",
-      "incorrect": "Family & community."
+      "correct": "Perfect Eid celebrations! 🌟",
+      "incorrect": "Eid is a time of joy and sharing"
     }
   },
   {
@@ -709,16 +773,18 @@ export const p2ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p2",
     "topic": "Festivals & Special Days",
-    "text": "We break fast with…",
+    "text": "Select all 2 foods to break fast with 🌅",
     "options": [
-      "dates & water",
-      "pizza only",
-      "candy only"
+      "dates",
+      "water",
+      "candy",
+      "pizza"
     ],
-    "correct": "dates & water",
+    "correct": ["dates", "water"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Joyful days!",
-      "incorrect": "Family & community."
+      "correct": "Perfect! Following the Sunnah! 🌟",
+      "incorrect": "Break fast with dates and water"
     }
   }
-]
+];

@@ -7,15 +7,16 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Numbers to 100 & Place Value",
-    "text": "Which is bigger?",
+    "text": "Which number is bigger? 🔢",
     "options": [
       "53",
       "35",
       "equal"
     ],
     "correct": "53",
+    "type": "choice",
     "feedback": {
-      "correct": "Place value pro!",
+      "correct": "Place value pro! 🌟",
       "incorrect": "Compare tens then ones."
     }
   },
@@ -25,16 +26,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Numbers to 100 & Place Value",
-    "text": "Tens in 42?",
+    "text": "How many tens are in 42? 🔢",
     "options": [
       "4",
       "2",
       "6"
     ],
     "correct": "4",
+    "type": "choice",
     "feedback": {
-      "correct": "Place value pro!",
-      "incorrect": "Compare tens then ones."
+      "correct": "Place value pro! 🌟",
+      "incorrect": "The first number shows tens."
     }
   },
   {
@@ -43,16 +45,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Numbers to 100 & Place Value",
-    "text": "Ones in 59?",
+    "text": "What's the value in the ones place of 59? 🔢",
     "options": [
       "9",
       "5",
       "0"
     ],
     "correct": "9",
+    "type": "choice",
     "feedback": {
-      "correct": "Place value pro!",
-      "incorrect": "Compare tens then ones."
+      "correct": "Place value pro! 🌟",
+      "incorrect": "The last number shows ones."
     }
   },
   {
@@ -61,16 +64,18 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Numbers to 100 & Place Value",
-    "text": "Which is an even number?",
+    "text": "Select all 2 even numbers 🔢",
     "options": [
       "42",
       "37",
-      "55"
+      "55",
+      "24"
     ],
-    "correct": "42",
+    "correct": ["42", "24"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Place value pro!",
-      "incorrect": "Compare tens then ones."
+      "correct": "Place value pro! 🌟",
+      "incorrect": "Even numbers end in 0,2,4,6,8"
     }
   },
   {
@@ -79,16 +84,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Numbers to 100 & Place Value",
-    "text": "What comes after 79?",
+    "text": "What comes after 79? 🔢",
     "options": [
       "80",
       "78",
       "90"
     ],
     "correct": "80",
+    "type": "choice",
     "feedback": {
-      "correct": "Place value pro!",
-      "incorrect": "Compare tens then ones."
+      "correct": "Number sequence master! 🌟",
+      "incorrect": "After 79 comes 80."
     }
   },
   {
@@ -97,16 +103,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Numbers to 100 & Place Value",
-    "text": "Smallest number",
+    "text": "Which is the smallest number? 🔢",
     "options": [
       "15",
       "9",
       "21"
     ],
     "correct": "9",
+    "type": "choice",
     "feedback": {
-      "correct": "Place value pro!",
-      "incorrect": "Compare tens then ones."
+      "correct": "Number comparison pro! 🌟",
+      "incorrect": "Pick the lowest number."
     }
   },
   {
@@ -115,16 +122,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Numbers to 100 & Place Value",
-    "text": "Which shows 3 tens?",
+    "text": "Which shows exactly 3 tens? 🔢",
     "options": [
       "30",
       "13",
       "300"
     ],
     "correct": "30",
+    "type": "choice",
     "feedback": {
-      "correct": "Place value pro!",
-      "incorrect": "Compare tens then ones."
+      "correct": "Place value pro! 🌟",
+      "incorrect": "3 tens = 30"
     }
   },
   {
@@ -133,16 +141,18 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Numbers to 100 & Place Value",
-    "text": "Which is greatest?",
+    "text": "Select all 2 numbers greater than 5 🔢",
     "options": [
       "7",
       "5",
-      "3"
+      "3",
+      "8"
     ],
-    "correct": "7",
+    "correct": ["7", "8"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Place value pro!",
-      "incorrect": "Compare tens then ones."
+      "correct": "Great comparison! 🌟",
+      "incorrect": "Pick numbers bigger than 5."
     }
   },
   {
@@ -151,16 +161,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Add/Sub to 20",
-    "text": "5 + 4 = ?",
+    "text": "What is 5 + 4? ➕",
     "options": [
       "8",
       "9",
       "10"
     ],
     "correct": "9",
+    "type": "choice",
     "feedback": {
-      "correct": "Nice adding!",
-      "incorrect": "Count on or back."
+      "correct": "Nice adding! 🌟",
+      "incorrect": "Count on from 5: 6,7,8,9"
     }
   },
   {
@@ -169,16 +180,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Add/Sub to 20",
-    "text": "10 - 7 = ?",
+    "text": "What is 10 - 7? ➖",
     "options": [
       "2",
       "3",
       "4"
     ],
     "correct": "3",
+    "type": "choice",
     "feedback": {
-      "correct": "Nice adding!",
-      "incorrect": "Count on or back."
+      "correct": "Great subtraction! 🌟",
+      "incorrect": "Count back from 10: 9,8,7,6,5,4,3"
     }
   },
   {
@@ -187,16 +199,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Add/Sub to 20",
-    "text": "8 + 7 = ?",
+    "text": "What is 8 + 7? ➕",
     "options": [
       "15",
       "14",
       "16"
     ],
     "correct": "15",
+    "type": "choice",
     "feedback": {
-      "correct": "Nice adding!",
-      "incorrect": "Count on or back."
+      "correct": "Nice adding! 🌟",
+      "incorrect": "Count on from 8: 9,10,11,12,13,14,15"
     }
   },
   {
@@ -205,16 +218,18 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Add/Sub to 20",
-    "text": "12 - 5 = ?",
+    "text": "Select all 2 problems that equal 12 ➕",
     "options": [
-      "7",
-      "6",
-      "8"
+      "6 + 6",
+      "8 + 4",
+      "7 + 4",
+      "10 + 2"
     ],
-    "correct": "7",
+    "correct": ["6 + 6", "10 + 2"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Nice adding!",
-      "incorrect": "Count on or back."
+      "correct": "Addition master! 🌟",
+      "incorrect": "Find sums that make 12."
     }
   },
   {
@@ -223,16 +238,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Add/Sub to 20",
-    "text": "9 + 6 = ?",
+    "text": "What is 9 + 6? ➕",
     "options": [
       "14",
       "15",
       "13"
     ],
     "correct": "15",
+    "type": "choice",
     "feedback": {
-      "correct": "Nice adding!",
-      "incorrect": "Count on or back."
+      "correct": "Nice adding! 🌟",
+      "incorrect": "Count on from 9: 10,11,12,13,14,15"
     }
   },
   {
@@ -241,16 +257,18 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Add/Sub to 20",
-    "text": "14 - 9 = ?",
+    "text": "Select all 2 equations that equal 5 ➖",
     "options": [
-      "5",
-      "4",
-      "6"
+      "14 - 9",
+      "10 - 5",
+      "8 - 3",
+      "7 - 3"
     ],
-    "correct": "5",
+    "correct": ["14 - 9", "8 - 3"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Nice adding!",
-      "incorrect": "Count on or back."
+      "correct": "Subtraction whiz! 🌟",
+      "incorrect": "Find differences that make 5."
     }
   },
   {
@@ -259,16 +277,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Add/Sub to 20",
-    "text": "7 + 7 = ?",
+    "text": "What is 7 + 7? ➕",
     "options": [
       "14",
       "13",
       "12"
     ],
     "correct": "14",
+    "type": "choice",
     "feedback": {
-      "correct": "Nice adding!",
-      "incorrect": "Count on or back."
+      "correct": "Doubles master! 🌟",
+      "incorrect": "Double 7 is 14."
     }
   },
   {
@@ -277,16 +296,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Add/Sub to 20",
-    "text": "16 - 8 = ?",
+    "text": "What is 16 - 8? ➖",
     "options": [
       "8",
       "7",
       "9"
     ],
     "correct": "8",
+    "type": "choice",
     "feedback": {
-      "correct": "Nice adding!",
-      "incorrect": "Count on or back."
+      "correct": "Nice subtraction! 🌟",
+      "incorrect": "16 minus half is 8."
     }
   },
   {
@@ -295,16 +315,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Intro Multiplication",
-    "text": "3 × 2 = ?",
+    "text": "What is 3 × 2? ✖️",
     "options": [
       "6",
       "5",
       "8"
     ],
     "correct": "6",
+    "type": "choice",
     "feedback": {
-      "correct": "Times tables!",
-      "incorrect": "Think equal groups."
+      "correct": "Times tables pro! 🌟",
+      "incorrect": "3 groups of 2 = 6"
     }
   },
   {
@@ -313,16 +334,18 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Intro Multiplication",
-    "text": "2 × 5 = ?",
+    "text": "Select all 2 ways to make 10 ✖️",
     "options": [
-      "10",
-      "12",
-      "7"
+      "2 × 5",
+      "5 × 2",
+      "3 × 4",
+      "6 × 2"
     ],
-    "correct": "10",
+    "correct": ["2 × 5", "5 × 2"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Times tables!",
-      "incorrect": "Think equal groups."
+      "correct": "Times tables pro! 🌟",
+      "incorrect": "Find products that equal 10."
     }
   },
   {
@@ -331,16 +354,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Intro Multiplication",
-    "text": "4 × 3 = ?",
+    "text": "What is 4 × 3? ✖️",
     "options": [
       "12",
       "9",
       "10"
     ],
     "correct": "12",
+    "type": "choice",
     "feedback": {
-      "correct": "Times tables!",
-      "incorrect": "Think equal groups."
+      "correct": "Times tables pro! 🌟",
+      "incorrect": "4 groups of 3 = 12"
     }
   },
   {
@@ -349,16 +373,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Intro Multiplication",
-    "text": "5 × 0 = ?",
+    "text": "What is 5 × 0? ✖️",
     "options": [
       "0",
       "5",
       "10"
     ],
     "correct": "0",
+    "type": "choice",
     "feedback": {
-      "correct": "Times tables!",
-      "incorrect": "Think equal groups."
+      "correct": "Times tables pro! 🌟",
+      "incorrect": "Anything times 0 equals 0."
     }
   },
   {
@@ -367,16 +392,18 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Intro Multiplication",
-    "text": "2 × 7 = ?",
+    "text": "Select all 2 equations that equal 14 ✖️",
     "options": [
-      "14",
-      "12",
-      "9"
+      "2 × 7",
+      "7 × 2",
+      "3 × 4",
+      "4 × 4"
     ],
-    "correct": "14",
+    "correct": ["2 × 7", "7 × 2"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Times tables!",
-      "incorrect": "Think equal groups."
+      "correct": "Times tables pro! 🌟",
+      "incorrect": "Find products that equal 14."
     }
   },
   {
@@ -385,16 +412,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Intro Multiplication",
-    "text": "3 groups of 4 = ?",
+    "text": "What is 3 groups of 4? ✖️",
     "options": [
       "12",
       "10",
       "8"
     ],
     "correct": "12",
+    "type": "choice",
     "feedback": {
-      "correct": "Times tables!",
-      "incorrect": "Think equal groups."
+      "correct": "Times tables pro! 🌟",
+      "incorrect": "3 × 4 = 12"
     }
   },
   {
@@ -403,16 +431,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Intro Multiplication",
-    "text": "2 × 9 = ?",
+    "text": "What is 2 × 9? ✖️",
     "options": [
       "18",
       "16",
       "20"
     ],
     "correct": "18",
+    "type": "choice",
     "feedback": {
-      "correct": "Times tables!",
-      "incorrect": "Think equal groups."
+      "correct": "Times tables pro! 🌟",
+      "incorrect": "2 groups of 9 = 18"
     }
   },
   {
@@ -421,16 +450,18 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Intro Multiplication",
-    "text": "Repeated addition: 4+4+4 = ?",
+    "text": "Select all 2 ways that equal 12 ➕✖️",
     "options": [
-      "12",
-      "16",
-      "8"
+      "4+4+4",
+      "3×4",
+      "2×5",
+      "6+6"
     ],
-    "correct": "12",
+    "correct": ["4+4+4", "3×4"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Times tables!",
-      "incorrect": "Think equal groups."
+      "correct": "Math master! 🌟",
+      "incorrect": "Find expressions that equal 12."
     }
   },
   {
@@ -439,16 +470,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Shapes & Symmetry",
-    "text": "Which shape has 3 sides?",
+    "text": "Which shape has 3 sides? 📐",
     "options": [
       "triangle 🔺",
       "circle ⚪",
       "square ⬜"
     ],
     "correct": "triangle 🔺",
+    "type": "choice",
     "feedback": {
-      "correct": "Shape savvy!",
-      "incorrect": "Think sides & equal parts."
+      "correct": "Shape savvy! 🌟",
+      "incorrect": "Count the sides of each shape."
     }
   },
   {
@@ -457,16 +489,18 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Shapes & Symmetry",
-    "text": "Round shape is…",
+    "text": "Select all 2 round shapes ⭕",
     "options": [
       "circle ⚪",
+      "oval 🥚",
       "square ⬜",
       "triangle 🔺"
     ],
-    "correct": "circle ⚪",
+    "correct": ["circle ⚪", "oval 🥚"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Shape savvy!",
-      "incorrect": "Think sides & equal parts."
+      "correct": "Shape savvy! 🌟",
+      "incorrect": "Look for curved edges."
     }
   },
   {
@@ -475,16 +509,18 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Shapes & Symmetry",
-    "text": "Which has 4 equal sides?",
+    "text": "Select all 2 shapes with 4 equal sides ⬜",
     "options": [
       "square ⬜",
       "rectangle ▭",
+      "diamond 💎",
       "triangle 🔺"
     ],
-    "correct": "square ⬜",
+    "correct": ["square ⬜", "diamond 💎"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Shape savvy!",
-      "incorrect": "Think sides & equal parts."
+      "correct": "Shape savvy! 🌟",
+      "incorrect": "Find shapes with 4 equal sides."
     }
   },
   {
@@ -493,16 +529,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Shapes & Symmetry",
-    "text": "Line of symmetry shows…",
+    "text": "A line of symmetry shows... 🪞",
     "options": [
       "mirror halves",
       "corners",
       "angles"
     ],
     "correct": "mirror halves",
+    "type": "choice",
     "feedback": {
-      "correct": "Shape savvy!",
-      "incorrect": "Think sides & equal parts."
+      "correct": "Symmetry expert! 🌟",
+      "incorrect": "Think about folding a shape in half."
     }
   },
   {
@@ -511,16 +548,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Shapes & Symmetry",
-    "text": "Which is a rectangle?",
+    "text": "Which is a rectangle? 📏",
     "options": [
       "▭",
       "◯",
       "△"
     ],
     "correct": "▭",
+    "type": "choice",
     "feedback": {
-      "correct": "Shape savvy!",
-      "incorrect": "Think sides & equal parts."
+      "correct": "Shape savvy! 🌟",
+      "incorrect": "Look for 4 sides, 2 long and 2 short."
     }
   },
   {
@@ -529,16 +567,18 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Shapes & Symmetry",
-    "text": "Shape with no sides?",
+    "text": "Select all 2 shapes with no sides ⭕",
     "options": [
       "circle ⚪",
+      "oval 🥚",
       "triangle 🔺",
       "square ⬜"
     ],
-    "correct": "circle ⚪",
+    "correct": ["circle ⚪", "oval 🥚"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Shape savvy!",
-      "incorrect": "Think sides & equal parts."
+      "correct": "Shape savvy! 🌟",
+      "incorrect": "Look for shapes with curved edges only."
     }
   },
   {
@@ -547,16 +587,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Shapes & Symmetry",
-    "text": "Find the half of a shape",
+    "text": "Half of a shape means...",
     "options": [
       "two equal parts",
       "three parts",
       "one part"
     ],
     "correct": "two equal parts",
+    "type": "choice",
     "feedback": {
-      "correct": "Shape savvy!",
-      "incorrect": "Think sides & equal parts."
+      "correct": "Fraction master! 🌟",
+      "incorrect": "Half means split into 2 equal parts."
     }
   },
   {
@@ -565,16 +606,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Shapes & Symmetry",
-    "text": "A cube has…",
+    "text": "A cube has...",
     "options": [
       "6 faces",
       "4 faces",
       "3 faces"
     ],
     "correct": "6 faces",
+    "type": "choice",
     "feedback": {
-      "correct": "Shape savvy!",
-      "incorrect": "Think sides & equal parts."
+      "correct": "3D shape pro! 🌟",
+      "incorrect": "Count all sides of a cube."
     }
   },
   {
@@ -583,16 +625,18 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Measurement & Money",
-    "text": "Which is heavier?",
+    "text": "Select all 2 heavy objects 🏋️",
     "options": [
       "rock 🪨",
+      "brick 🧱",
       "feather 🪶",
       "leaf 🍃"
     ],
-    "correct": "rock 🪨",
+    "correct": ["rock 🪨", "brick 🧱"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Measured response!",
-      "incorrect": "Match tool to job."
+      "correct": "Weight wizard! 🌟",
+      "incorrect": "Pick the heavier items."
     }
   },
   {
@@ -601,16 +645,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Measurement & Money",
-    "text": "Use a ruler to measure…",
+    "text": "We use a ruler to measure... 📏",
     "options": [
-      "length 📏",
-      "time ⏰",
-      "weight ⚖️"
+      "length",
+      "time",
+      "weight"
     ],
-    "correct": "length 📏",
+    "correct": "length",
+    "type": "choice",
     "feedback": {
-      "correct": "Measured response!",
-      "incorrect": "Match tool to job."
+      "correct": "Measurement pro! 🌟",
+      "incorrect": "Rulers measure how long things are."
     }
   },
   {
@@ -619,16 +664,18 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Measurement & Money",
-    "text": "Which shows more money?",
+    "text": "Select all 2 ways to make $20 💰",
     "options": [
       "10 + 10",
+      "5 + 15",
       "5 + 5",
-      "10 + 0"
+      "10 + 5"
     ],
-    "correct": "10 + 10",
+    "correct": ["10 + 10", "5 + 15"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Measured response!",
-      "incorrect": "Match tool to job."
+      "correct": "Money master! 🌟",
+      "incorrect": "Find sums that equal 20."
     }
   },
   {
@@ -637,16 +684,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Measurement & Money",
-    "text": "We tell time with a…",
+    "text": "We tell time with a... ⏰",
     "options": [
       "clock ⏰",
       "cup ☕",
       "book 📖"
     ],
     "correct": "clock ⏰",
+    "type": "choice",
     "feedback": {
-      "correct": "Measured response!",
-      "incorrect": "Match tool to job."
+      "correct": "Time expert! 🌟",
+      "incorrect": "Clocks help us know the time."
     }
   },
   {
@@ -655,16 +703,18 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Measurement & Money",
-    "text": "Which is longer?",
+    "text": "Select all 2 long objects 📏",
     "options": [
       "rope 🧵",
+      "snake 🐍",
       "eraser",
-      "coin"
+      "coin 🪙"
     ],
-    "correct": "rope 🧵",
+    "correct": ["rope 🧵", "snake 🐍"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Measured response!",
-      "incorrect": "Match tool to job."
+      "correct": "Length pro! 🌟",
+      "incorrect": "Pick the longer items."
     }
   },
   {
@@ -673,16 +723,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Measurement & Money",
-    "text": "Half hour is…",
+    "text": "Half hour equals... ⏰",
     "options": [
       "30 minutes",
       "60 minutes",
       "15 minutes"
     ],
     "correct": "30 minutes",
+    "type": "choice",
     "feedback": {
-      "correct": "Measured response!",
-      "incorrect": "Match tool to job."
+      "correct": "Time master! 🌟",
+      "incorrect": "Half of 60 minutes is 30 minutes."
     }
   },
   {
@@ -691,16 +742,18 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Measurement & Money",
-    "text": "Which container holds more?",
+    "text": "Select all 2 containers that hold the most 🫙",
     "options": [
       "bucket 🪣",
+      "barrel 🛢️",
       "cup ☕",
       "bottle 🧴"
     ],
-    "correct": "bucket 🪣",
+    "correct": ["bucket 🪣", "barrel 🛢️"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Measured response!",
-      "incorrect": "Match tool to job."
+      "correct": "Volume master! 🌟",
+      "incorrect": "Pick the biggest containers."
     }
   },
   {
@@ -709,16 +762,17 @@ export const p2MathQuestions: Question[] = [
     "subject": "math",
     "class": "p2",
     "topic": "Measurement & Money",
-    "text": "Thermometer measures…",
+    "text": "A thermometer measures... 🌡️",
     "options": [
       "temperature 🌡️",
       "length 📏",
       "weight ⚖️"
     ],
     "correct": "temperature 🌡️",
+    "type": "choice",
     "feedback": {
-      "correct": "Measured response!",
-      "incorrect": "Match tool to job."
+      "correct": "Measurement pro! 🌟",
+      "incorrect": "Thermometers show how hot or cold."
     }
   }
-]
+];

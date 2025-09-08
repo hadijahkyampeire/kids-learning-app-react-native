@@ -2,507 +2,342 @@ import type { Question } from "../../../../types";
 
 export const generalKnowledgeP6: Question[] = [
   {
-    "_id": "up-p6-gk-g-001",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Geography",
-    "text": "0° latitude is the ____.",
-    "options": [
-      "Equator",
-      "Prime Meridian",
-      "Tropic of Cancer"
-    ],
-    "correct": "Equator",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-g-001",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Geography",
+    type: "choice",
+    text: "0° latitude is the ____.",
+    options: ["Equator", "Prime Meridian", "Tropic of Cancer"],
+    correct: "Equator",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-g-002",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Geography",
-    "text": "0° longitude is the ____.",
-    "options": [
-      "Prime Meridian",
-      "Equator",
-      "Arctic Circle"
-    ],
-    "correct": "Prime Meridian",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-g-002",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Geography",
+    type: "choice",
+    text: "0° longitude is the ____.",
+    options: ["Prime Meridian", "Equator", "Arctic Circle"],
+    correct: "Prime Meridian",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-g-003",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Geography",
-    "text": "A landlocked country has no ____.",
-    "options": [
-      "coastline",
-      "rivers",
-      "mountains"
-    ],
-    "correct": "coastline",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-g-003",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Geography",
+    type: "choice",
+    text: "A landlocked country has no ____.",
+    options: ["coastline", "rivers", "mountains"],
+    correct: "coastline",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-g-004",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Geography",
-    "text": "A desert is an area with very little ____.",
-    "options": [
-      "rain",
-      "sand only",
-      "grass"
-    ],
-    "correct": "rain",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-g-004",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Geography",
+    type: "choice",
+    text: "A desert is an area with very little ____.",
+    options: ["rain", "sand only", "grass"],
+    correct: "rain",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-g-005",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Geography",
-    "text": "Mountains are formed by movements of the Earth's ____.",
-    "options": [
-      "crust",
-      "clouds",
-      "oceans"
-    ],
-    "correct": "crust",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-g-005",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Geography",
+    type: "choice",
+    text: "Mountains are formed by movements of the Earth's ____.",
+    options: ["crust", "clouds", "oceans"],
+    correct: "crust",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-g-006",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Geography",
-    "text": "Largest ocean is the ____.",
-    "options": [
-      "Pacific",
-      "Atlantic",
-      "Indian"
-    ],
-    "correct": "Pacific",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-g-006",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Geography",
+    type: "choice",
+    text: "Largest ocean is the ____.",
+    options: ["Pacific", "Atlantic", "Indian"],
+    correct: "Pacific",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-g-007",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Geography",
-    "text": "A compass points to magnetic ____.",
-    "options": [
-      "north",
-      "south",
-      "east"
-    ],
-    "correct": "north",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-g-007",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Geography",
+    type: "choice",
+    text: "A compass points to magnetic ____.",
+    options: ["north", "south", "east"],
+    correct: "north",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
+  },
+
+  {
+    _id: "up-p6-gk-p-001",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Politics",
+    type: "choice",
+    text: "Democracy means people ____ leaders.",
+    options: ["vote to choose", "never change", "are chosen by lottery"],
+    correct: "vote to choose",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-p-001",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Politics",
-    "text": "Democracy means people ____ leaders.",
-    "options": [
-      "vote to choose",
-      "never change",
-      "are chosen by lottery"
-    ],
-    "correct": "vote to choose",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-p-002",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Politics",
+    type: "choice",
+    text: "A constitution is a set of ____.",
+    options: ["national laws", "songs", "buildings"],
+    correct: "national laws",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-p-002",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Politics",
-    "text": "A constitution is a set of ____.",
-    "options": [
-      "national laws",
-      "songs",
-      "buildings"
-    ],
-    "correct": "national laws",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-p-003",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Politics",
+    type: "choice",
+    text: "Parliament mainly ____ laws.",
+    options: ["makes", "bakes", "erases"],
+    correct: "makes",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-p-003",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Politics",
-    "text": "Parliament mainly ____ laws.",
-    "options": [
-      "makes",
-      "bakes",
-      "erases"
-    ],
-    "correct": "makes",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-p-004",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Politics",
+    type: "choice",
+    text: "Local leaders manage ____ services.",
+    options: ["community", "planet", "ocean"],
+    correct: "community",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-p-004",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Politics",
-    "text": "Local leaders manage ____ services.",
-    "options": [
-      "community",
-      "planet",
-      "ocean"
-    ],
-    "correct": "community",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-p-005",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Politics",
+    type: "choice",
+    text: "Citizens have rights and ____.",
+    options: ["duties", "storms", "volcanoes"],
+    correct: "duties",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-p-005",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Politics",
-    "text": "Citizens have rights and ____.",
-    "options": [
-      "duties",
-      "storms",
-      "volcanoes"
-    ],
-    "correct": "duties",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-p-006",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Politics",
+    type: "choice",
+    text: "Elections are held to ____ leaders.",
+    options: ["choose", "punish", "hide"],
+    correct: "choose",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-p-006",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Politics",
-    "text": "Elections are held to ____ leaders.",
-    "options": [
-      "choose",
-      "punish",
-      "hide"
-    ],
-    "correct": "choose",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-p-007",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Politics",
+    type: "choice",
+    text: "Rule of law means everyone ____ the law.",
+    options: ["follows", "writes", "ignores"],
+    correct: "follows",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
+  },
+
+  {
+    _id: "up-p6-gk-e-001",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Environment",
+    type: "choice",
+    text: "Planting trees is called ____.",
+    options: ["afforestation", "erosion", "deforestation"],
+    correct: "afforestation",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-p-007",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Politics",
-    "text": "Rule of law means everyone ____ the law.",
-    "options": [
-      "follows",
-      "writes",
-      "ignores"
-    ],
-    "correct": "follows",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-e-002",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Environment",
+    type: "choice",
+    text: "Reusing bottles reduces ____.",
+    options: ["waste", "rain", "wind"],
+    correct: "waste",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-e-001",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Environment",
-    "text": "Planting trees is called ____.",
-    "options": [
-      "afforestation",
-      "erosion",
-      "deforestation"
-    ],
-    "correct": "afforestation",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-e-003",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Environment",
+    type: "choice",
+    text: "Turning off the tap 🚰 saves ____.",
+    options: ["water", "sand", "smoke"],
+    correct: "water",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-e-002",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Environment",
-    "text": "Reusing bottles reduces ____.",
-    "options": [
-      "waste",
-      "rain",
-      "wind"
-    ],
-    "correct": "waste",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-e-004",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Environment",
+    type: "choice",
+    text: "Plastic in rivers harms ____ life.",
+    options: ["aquatic", "desert", "mountain"],
+    correct: "aquatic",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-e-003",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Environment",
-    "text": "Turning off the tap 🚰 saves ____.",
-    "options": [
-      "water",
-      "sand",
-      "smoke"
-    ],
-    "correct": "water",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-e-005",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Environment",
+    type: "choice",
+    text: "Composting turns food scraps into ____.",
+    options: ["fertilizer", "glass", "stone"],
+    correct: "fertilizer",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-e-004",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Environment",
-    "text": "Plastic in rivers harms ____ life.",
-    "options": [
-      "aquatic",
-      "desert",
-      "mountain"
-    ],
-    "correct": "aquatic",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-e-006",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Environment",
+    type: "choice",
+    text: "Using solar panels captures ____ energy.",
+    options: ["solar", "coal", "gas"],
+    correct: "solar",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-e-005",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Environment",
-    "text": "Composting turns food scraps into ____.",
-    "options": [
-      "fertilizer",
-      "glass",
-      "stone"
-    ],
-    "correct": "fertilizer",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-e-007",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "Environment",
+    type: "choice",
+    text: "Keeping cities clean needs proper ____.",
+    options: ["waste disposal", "lightning", "deforestation"],
+    correct: "waste disposal",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
+  },
+
+  {
+    _id: "up-p6-gk-wo-001",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "World Orgs",
+    type: "choice",
+    text: "WHO focuses on ____.",
+    options: ["global health", "space", "football rules"],
+    correct: "global health",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-e-006",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Environment",
-    "text": "Using solar panels captures ____ energy.",
-    "options": [
-      "solar",
-      "coal",
-      "gas"
-    ],
-    "correct": "solar",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-wo-002",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "World Orgs",
+    type: "choice",
+    text: "UNICEF supports ____.",
+    options: ["children", "asteroids", "cars"],
+    correct: "children",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-e-007",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "Environment",
-    "text": "Keeping cities clean needs proper ____.",
-    "options": [
-      "waste disposal",
-      "lightning",
-      "deforestation"
-    ],
-    "correct": "waste disposal",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-wo-003",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "World Orgs",
+    type: "choice",
+    text: "UN HQ city is ____.",
+    options: ["New York", "Geneva", "Nairobi"],
+    correct: "New York",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-wo-001",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "World Orgs",
-    "text": "WHO focuses on ____.",
-    "options": [
-      "global health",
-      "space",
-      "football rules"
-    ],
-    "correct": "global health",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-wo-004",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "World Orgs",
+    type: "choice",
+    text: "FAO works on ____.",
+    options: ["food & agriculture", "rockets", "volcanoes"],
+    correct: "food & agriculture",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-wo-002",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "World Orgs",
-    "text": "UNICEF supports ____.",
-    "options": [
-      "children",
-      "asteroids",
-      "cars"
-    ],
-    "correct": "children",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-wo-005",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "World Orgs",
+    type: "choice",
+    text: "UNESCO supports ____.",
+    options: ["education & culture", "hurricanes", "volcanoes"],
+    correct: "education & culture",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-wo-003",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "World Orgs",
-    "text": "UN HQ city is ____.",
-    "options": [
-      "New York",
-      "Geneva",
-      "Nairobi"
-    ],
-    "correct": "New York",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-wo-006",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "World Orgs",
+    type: "choice",
+    text: "Red Cross helps during ____.",
+    options: ["emergencies", "concerts", "games"],
+    correct: "emergencies",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   },
   {
-    "_id": "up-p6-gk-wo-004",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "World Orgs",
-    "text": "FAO works on ____.",
-    "options": [
-      "food & agriculture",
-      "rockets",
-      "volcanoes"
-    ],
-    "correct": "food & agriculture",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
-  },
-  {
-    "_id": "up-p6-gk-wo-005",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "World Orgs",
-    "text": "UNESCO supports ____.",
-    "options": [
-      "education & culture",
-      "hurricanes",
-      "volcanoes"
-    ],
-    "correct": "education & culture",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
-  },
-  {
-    "_id": "up-p6-gk-wo-006",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "World Orgs",
-    "text": "Red Cross helps during ____.",
-    "options": [
-      "emergencies",
-      "concerts",
-      "games"
-    ],
-    "correct": "emergencies",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
-  },
-  {
-    "_id": "up-p6-gk-wo-007",
-    "level": "upperPrimary",
-    "subject": "generalKnowledge",
-    "class": "p6",
-    "topic": "World Orgs",
-    "text": "WFP mainly provides ____ aid.",
-    "options": [
-      "food",
-      "gold",
-      "coal"
-    ],
-    "correct": "food",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Think about the concept and try again."
-    }
+    _id: "up-p6-gk-wo-007",
+    level: "upperPrimary",
+    subject: "generalKnowledge",
+    class: "p6",
+    topic: "World Orgs",
+    type: "choice",
+    text: "WFP mainly provides ____ aid.",
+    options: ["food", "gold", "coal"],
+    correct: "food",
+    feedback: { correct: "Correct!", incorrect: "Think about the concept and try again." }
   }
-]
+];

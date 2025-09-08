@@ -1,760 +1,537 @@
 import type { Question } from "../../../../types";
 
 export const p7English: Question[] = [
+  // ───────────── Grammar & Structure ─────────────
   {
-    "_id": "up-p7-en-t-001",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Tenses",
-    "text": "Choose the past tense: They ____ to the market yesterday.",
-    "options": [
-      "go",
-      "went",
-      "going"
-    ],
-    "correct": "went",
-    "feedback": {
-      "correct": "Yes—past time marker.",
-      "incorrect": "Use past tense for 'yesterday'."
-    }
+    _id: "up-p7-en-gs-001",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Grammar & Structure",
+    type: "text",
+    text: "Fill in: Katende is neither a swimmer ____ an athlete.",
+    accepted: ["nor"],
+    feedback: { correct: "Correct.", incorrect: "Use 'neither … nor'." }
   },
   {
-    "_id": "up-p7-en-t-002",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Tenses",
-    "text": "Future tense: We ____ the test tomorrow.",
-    "options": [
-      "will write",
-      "wrote",
-      "writes"
-    ],
-    "correct": "will write",
-    "feedback": {
-      "correct": "Correct.",
-      "incorrect": "Use 'will' for future."
-    }
+    _id: "up-p7-en-gs-002",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Grammar & Structure",
+    type: "text",
+    text: "Fill in: Did the ____ mend your shoes?",
+    accepted: ["cobbler", "shoemaker"],
+    feedback: { correct: "Yes.", incorrect: "A cobbler/shoemaker mends shoes." }
   },
   {
-    "_id": "up-p7-en-t-003",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Tenses",
-    "text": "Present perfect: She has ____ her homework.",
-    "options": [
-      "finish",
-      "finished",
-      "finishing"
-    ],
-    "correct": "finished",
-    "feedback": {
-      "correct": "Right.",
-      "incorrect": "Has/have + past participle."
-    }
+    _id: "up-p7-en-gs-003",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Grammar & Structure",
+    type: "text",
+    text: "Fill in: Young wrote letters to her pen ____ who live in India and South Africa.",
+    accepted: ["friends", "pals", "pen friends", "pen pals"],
+    feedback: { correct: "Good.", incorrect: "Use ‘pen friends/pals’." }
   },
   {
-    "_id": "up-p7-en-t-004",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Tenses",
-    "text": "Simple present: The sun ___ in the east.",
-    "options": [
-      "rise",
-      "rises",
-      "rose"
-    ],
-    "correct": "rises",
-    "feedback": {
-      "correct": "Yes.",
-      "incorrect": "General truths → simple present."
-    }
+    _id: "up-p7-en-gs-004",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Grammar & Structure",
+    type: "text",
+    text: "Fill in: Ritah met her cousin ____ the junction.",
+    accepted: ["at"],
+    feedback: { correct: "Correct.", incorrect: "We meet someone at a place." }
   },
   {
-    "_id": "up-p7-en-t-005",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Tenses",
-    "text": "Past continuous: He ____ when I called.",
-    "options": [
-      "was sleeping",
-      "is sleeping",
-      "slept"
-    ],
-    "correct": "was sleeping",
-    "feedback": {
-      "correct": "Correct.",
-      "incorrect": "Past action in progress."
-    }
+    _id: "up-p7-en-gs-005",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Grammar & Structure",
+    type: "text",
+    text: "Use the correct form: After ____ the letter, he gave it to his friend to edit. (draft)",
+    accepted: ["drafting", "having drafted"],
+    feedback: { correct: "Nice.", incorrect: "Use a gerund/participle: drafting / having drafted." }
   },
   {
-    "_id": "up-p7-en-t-006",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Tenses",
-    "text": "Past of 'run' is ____.",
-    "options": [
-      "ran",
-      "runned",
-      "running"
-    ],
-    "correct": "ran",
-    "feedback": {
-      "correct": "Right.",
-      "incorrect": "Irregular verb."
-    }
+    _id: "up-p7-en-gs-006",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Grammar & Structure",
+    type: "text",
+    text: "Use the correct form: A python is a ____ snake. (poison)",
+    accepted: ["poisonous"],
+    feedback: { correct: "Correct.", incorrect: "Adjective form: poisonous." }
   },
   {
-    "_id": "up-p7-en-t-007",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Tenses",
-    "text": "Future with 'going to': I am ____ visit my aunt.",
-    "options": [
-      "going to",
-      "go",
-      "went to"
-    ],
-    "correct": "going to",
-    "feedback": {
-      "correct": "Yes.",
-      "incorrect": "Be + going to + verb."
-    }
+    _id: "up-p7-en-gs-007",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Grammar & Structure",
+    type: "text",
+    text: "Use the correct form: He was ____ by European parents. (bear)",
+    accepted: ["born"],
+    feedback: { correct: "Right.", incorrect: "Past participle of bear (birth) is born." }
   },
   {
-    "_id": "up-p7-en-rs-001",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Reported Speech",
-    "text": "He said, \"I am hungry.\" → He said he ____ hungry.",
-    "options": [
-      "was",
-      "is",
-      "were"
-    ],
-    "correct": "was",
-    "feedback": {
-      "correct": "Correct.",
-      "incorrect": "Backshift present → past."
-    }
+    _id: "up-p7-en-gs-008",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Grammar & Structure",
+    type: "text",
+    text: "Use the correct form: Meddie ____ a fountain pen to a compo pen. (prefer)",
+    accepted: ["preferred", "prefers"],
+    feedback: { correct: "Good.", incorrect: "Use prefer → preferred/prefers." }
   },
   {
-    "_id": "up-p7-en-rs-002",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Reported Speech",
-    "text": "She said, \"I will help.\" → She said she ____ help.",
-    "options": [
-      "would",
-      "will",
-      "can"
-    ],
-    "correct": "would",
-    "feedback": {
-      "correct": "Yes.",
-      "incorrect": "Will → would."
-    }
+    _id: "up-p7-en-gs-009",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Grammar & Structure",
+    type: "text",
+    text: "Use the correct form: We need to do serious ____ during the lockdown. (revise)",
+    accepted: ["revision"],
+    feedback: { correct: "Correct.", incorrect: "Noun form: revision." }
   },
   {
-    "_id": "up-p7-en-rs-003",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Reported Speech",
-    "text": "They said, \"We are coming.\" → They said they ____ coming.",
-    "options": [
-      "were",
-      "are",
-      "will be"
-    ],
-    "correct": "were",
-    "feedback": {
-      "correct": "Right.",
-      "incorrect": "Are → were."
-    }
+    _id: "up-p7-en-gs-010",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Grammar & Structure",
+    type: "text",
+    text: "Use the correct form: The tailor ____ my shorts yesterday. (sew)",
+    accepted: ["sewed", "stitched"],
+    feedback: { correct: "Yes.", incorrect: "Past tense: sewed / stitched." }
   },
   {
-    "_id": "up-p7-en-rs-004",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Reported Speech",
-    "text": "\"I can swim,\" he said. → He said he ____ swim.",
-    "options": [
-      "could",
-      "can",
-      "will"
-    ],
-    "correct": "could",
-    "feedback": {
-      "correct": "Correct.",
-      "incorrect": "Can → could."
-    }
+    _id: "up-p7-en-gs-011",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Grammar & Structure",
+    type: "text",
+    text: "Use the correct form: I look forward to ____ my parents. (see)",
+    accepted: ["seeing"],
+    feedback: { correct: "Correct.", incorrect: "After ‘to’ (prep.) use a gerund: seeing." }
   },
   {
-    "_id": "up-p7-en-rs-005",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Reported Speech",
-    "text": "Direct to reported: \"Close the door,\" she said. → She told me to ____ the door.",
-    "options": [
-      "close",
-      "closing",
-      "closed"
-    ],
-    "correct": "close",
-    "feedback": {
-      "correct": "Yes.",
-      "incorrect": "Use 'to' + verb for commands."
-    }
+    _id: "up-p7-en-gs-012",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Grammar & Structure",
+    type: "text",
+    text: "Use the correct form: Uganda is very proud of ____ beauty. (she)",
+    accepted: ["her"],
+    feedback: { correct: "Right.", incorrect: "Pronoun → possessive: her." }
   },
   {
-    "_id": "up-p7-en-rs-006",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Reported Speech",
-    "text": "\"Do you like tea?\" → He asked if I ____ tea.",
-    "options": [
-      "liked",
-      "like",
-      "likes"
-    ],
-    "correct": "liked",
-    "feedback": {
-      "correct": "Correct.",
-      "incorrect": "Tense shifts back one step."
-    }
+    _id: "up-p7-en-gs-013",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Grammar & Structure",
+    type: "text",
+    text: "Use the correct form: The ____ side won the debate. (oppose)",
+    accepted: ["opposition"],
+    feedback: { correct: "Correct.", incorrect: "Noun: opposition." }
   },
   {
-    "_id": "up-p7-en-rs-007",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Reported Speech",
-    "text": "Choose correct: He said that he ____ finished.",
-    "options": [
-      "had",
-      "has",
-      "have"
+    _id: "up-p7-en-gs-014",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Grammar & Structure",
+    type: "text",
+    text: "Rewrite using the opposite of the underlined word: These waters are *shallow*.",
+    accepted: ["These waters are deep.", "The waters are deep."],
+    feedback: { correct: "Good.", incorrect: "Opposite of shallow is deep." }
+  },
+
+  // ───────────── Alphabetical Order ─────────────
+  {
+    _id: "up-p7-en-ao-001",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Alphabetical Order",
+    type: "text",
+    text: "Arrange in alphabetical order: ear piece, ear drum, ear ring, ear mark",
+    accepted: [
+      "ear drum, ear mark, ear piece, ear ring",
+      "ear drum, ear mark, ear piece, ear ring."
     ],
-    "correct": "had",
-    "feedback": {
-      "correct": "Right.",
-      "incorrect": "Past perfect in reported speech."
-    }
+    feedback: { correct: "Correct.", incorrect: "Compare letters after 'ear '." }
   },
   {
-    "_id": "up-p7-en-v-001",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Vocabulary",
-    "text": "Choose the synonym of 'silent'.",
-    "options": [
-      "quiet",
-      "noisy",
-      "angry"
+    _id: "up-p7-en-ao-002",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Alphabetical Order",
+    type: "text",
+    text: "Arrange in alphabetical order: dairy, daily, days, data",
+    accepted: [
+      "daily, dairy, data, days",
+      "daily, dairy, data, days."
     ],
-    "correct": "quiet",
-    "feedback": {
-      "correct": "Yes!",
-      "incorrect": "A synonym has similar meaning."
-    }
+    feedback: { correct: "Yes.", incorrect: "Order by first differing letter." }
+  },
+
+  // ───────────── Abbreviations ─────────────
+  {
+    _id: "up-p7-en-ab-001",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Abbreviations",
+    type: "text",
+    text: "Write the abbreviation in full: Eng.",
+    accepted: ["English"],
+    feedback: { correct: "Correct.", incorrect: "In this context, Eng. = English." }
   },
   {
-    "_id": "up-p7-en-v-002",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Vocabulary",
-    "text": "Opposite of 'difficult' is ____.",
-    "options": [
-      "hard",
-      "easy",
-      "tough"
-    ],
-    "correct": "easy",
-    "feedback": {
-      "correct": "Correct.",
-      "incorrect": "Antonym = opposite meaning."
-    }
+    _id: "up-p7-en-ab-002",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Abbreviations",
+    type: "text",
+    text: "Write the abbreviation in full: Rev.",
+    accepted: ["Reverend"],
+    feedback: { correct: "Yes.", incorrect: "Rev. = Reverend." }
+  },
+
+  // ───────────── Vocabulary (Homophones & One-word) ─────────────
+  {
+    _id: "up-p7-en-vc-001",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Vocabulary",
+    type: "multiChoice",
+    text: "Choose the correct word: We watched the sun set over the ____.",
+    options: ["sea", "see", "sew"],
+    correct: "sea",
+    feedback: { correct: "Good.", incorrect: "‘Sea’ = large body of salt water." }
   },
   {
-    "_id": "up-p7-en-v-003",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Vocabulary",
-    "text": "Pick the best word: The soup is very ____ (hot/cold) 🍲",
-    "options": [
-      "hot",
-      "cold",
-      "late"
-    ],
-    "correct": "hot",
-    "feedback": {
-      "correct": "Yes.",
-      "incorrect": "Use context clues."
-    }
+    _id: "up-p7-en-vc-002",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Vocabulary",
+    type: "multiChoice",
+    text: "Choose the correct word: I can ____ the mountains from here.",
+    options: ["see", "sea", "sew"],
+    correct: "see",
+    feedback: { correct: "Correct.", incorrect: "‘See’ = look/notice." }
   },
   {
-    "_id": "up-p7-en-v-004",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Vocabulary",
-    "text": "Synonym of 'assist'.",
-    "options": [
-      "help",
-      "hide",
-      "hinder"
-    ],
-    "correct": "help",
-    "feedback": {
-      "correct": "Right.",
-      "incorrect": "Assist means help."
-    }
+    _id: "up-p7-en-vc-003",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Vocabulary",
+    type: "text",
+    text: "Give one word: the place where milk is sold.",
+    accepted: ["dairy"],
+    feedback: { correct: "Yes.", incorrect: "One word is ‘dairy’." }
   },
   {
-    "_id": "up-p7-en-v-005",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Vocabulary",
-    "text": "Opposite of 'arrive'.",
-    "options": [
-      "depart",
-      "come",
-      "appear"
-    ],
-    "correct": "depart",
-    "feedback": {
-      "correct": "Correct.",
-      "incorrect": "Depart = go away."
-    }
+    _id: "up-p7-en-vc-004",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Vocabulary",
+    type: "text",
+    text: "Give one word: the man who judges a football match.",
+    accepted: ["referee"],
+    feedback: { correct: "Correct.", incorrect: "That’s a referee." }
   },
   {
-    "_id": "up-p7-en-v-006",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Vocabulary",
-    "text": "Choose the best word: The movie was ____ (funny/blue).",
-    "options": [
-      "funny",
-      "blue",
-      "triangle"
-    ],
-    "correct": "funny",
-    "feedback": {
-      "correct": "Yes.",
-      "incorrect": "Use logical meaning."
-    }
+    _id: "up-p7-en-vc-005",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Vocabulary",
+    type: "text",
+    text: "Give one word: the person who receives and gives out cash in the bank.",
+    accepted: ["cashier", "teller", "bank teller"],
+    feedback: { correct: "Good.", incorrect: "Cashier (bank teller)." }
+  },
+
+  // ───────────── Plurals ─────────────
+  {
+    _id: "up-p7-en-pl-001",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Plurals",
+    type: "text",
+    text: "Write the plural: furniture",
+    accepted: ["furniture", "pieces of furniture"],
+    feedback: { correct: "Accepted.", incorrect: "Uncountable → ‘furniture’ (or ‘pieces of furniture’)." }
   },
   {
-    "_id": "up-p7-en-v-007",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Vocabulary",
-    "text": "Which word means 'very big'?",
-    "options": [
-      "tiny",
-      "huge",
-      "narrow"
-    ],
-    "correct": "huge",
-    "feedback": {
-      "correct": "Correct.",
-      "incorrect": "Huge = very big."
-    }
+    _id: "up-p7-en-pl-002",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Plurals",
+    type: "text",
+    text: "Write the plural: bakery",
+    accepted: ["bakeries"],
+    feedback: { correct: "Correct.", incorrect: "Change -y → -ies." }
+  },
+
+  // ───────────── Jumbled Sentences ─────────────
+  {
+    _id: "up-p7-en-js-001",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Jumbled Sentences",
+    type: "text",
+    text: "Re-arrange to form a correct sentence: letters wrote I two pen pal my to.",
+    accepted: ["I wrote two letters to my pen pal."],
+    feedback: { correct: "Yes.", incorrect: "Begin with ‘I wrote …’." }
   },
   {
-    "_id": "up-p7-en-c-001",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Comprehension",
-    "text": "Read: \"Amina waters the 🌱 garden every evening.\" What does Amina do?",
-    "options": [
-      "Waters the garden",
-      "Sells vegetables",
-      "Cooks dinner"
+    _id: "up-p7-en-js-002",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Jumbled Sentences",
+    type: "text",
+    text: "Re-arrange to form a correct sentence: Beautiful dress is what a that!",
+    accepted: ["What a beautiful dress that is!", "What a beautiful dress!"],
+    feedback: { correct: "Good.", incorrect: "Use exclamatory ‘What a …!’." }
+  },
+
+  // ───────────── Sentence Transformation ─────────────
+  {
+    _id: "up-p7-en-st-001",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Rewrite using: Neither … nor … : A goat is not a wild animal. A sheep is not a wild animal.",
+    accepted: [
+      "Neither a goat nor a sheep is a wild animal.",
+      "Neither goat nor sheep is a wild animal."
     ],
-    "correct": "Waters the garden",
-    "feedback": {
-      "correct": "Yes!",
-      "incorrect": "Focus on the action in the sentence."
-    }
+    feedback: { correct: "Correct.", incorrect: "Use ‘Neither A nor B is …’." }
   },
   {
-    "_id": "up-p7-en-c-002",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Comprehension",
-    "text": "Read: \"The bus arrived late, but we still reached on time.\" Which came first?",
-    "options": [
-      "Bus arrived late",
-      "They reached on time",
-      "They missed the bus"
+    _id: "up-p7-en-st-002",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Rewrite using: hardly … any … : There is some water in the bucket.",
+    accepted: [
+      "There is hardly any water in the bucket.",
+      "There is hardly any water in the pail."
     ],
-    "correct": "Bus arrived late",
-    "feedback": {
-      "correct": "Correct.",
-      "incorrect": "Look at the order of events."
-    }
+    feedback: { correct: "Yes.", incorrect: "Use ‘hardly any’ for very small amount." }
   },
   {
-    "_id": "up-p7-en-c-003",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Comprehension",
-    "text": "Read: \"Hassan lost his key and looked under the table.\" Where did he look?",
-    "options": [
-      "Under the table",
-      "In the garden",
-      "At school"
-    ],
-    "correct": "Under the table",
-    "feedback": {
-      "correct": "Yes!",
-      "incorrect": "The sentence says 'under the table'."
-    }
+    _id: "up-p7-en-st-003",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Begin: The teacher … : Namutebi borrowed a pen from the teacher.",
+    accepted: ["The teacher lent Namutebi a pen."],
+    feedback: { correct: "Correct.", incorrect: "Borrow ↔ lend (from ↔ to)." }
   },
   {
-    "_id": "up-p7-en-c-004",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Comprehension",
-    "text": "Read: \"It rained all night. In the morning, the sun ☀️ shone.\" When did the sun shine?",
-    "options": [
-      "At night",
-      "In the morning",
-      "In the evening"
+    _id: "up-p7-en-st-004",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Join using: so that … : Nabukeera went to town. She wanted to buy groceries.",
+    accepted: [
+      "Nabukeera went to town so that she could buy groceries.",
+      "Nabukeera went to town so that she could buy food."
     ],
-    "correct": "In the morning",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "Compare 'night' vs 'morning'."
-    }
+    feedback: { correct: "Good.", incorrect: "Purpose → ‘so that … could …’." }
   },
   {
-    "_id": "up-p7-en-c-005",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Comprehension",
-    "text": "Read: \"The shop closes at 8 pm.\" What time does it close?",
-    "options": [
-      "8 am",
-      "8 pm",
-      "9 pm"
+    _id: "up-p7-en-st-005",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Begin with Unless … : If you don’t wash hands, you will spread the virus.",
+    accepted: [
+      "Unless you wash your hands, you will spread the virus.",
+      "Unless you wash hands, you will spread the virus."
     ],
-    "correct": "8 pm",
-    "feedback": {
-      "correct": "Right!",
-      "incorrect": "Pay attention to 'am/pm'."
-    }
+    feedback: { correct: "Correct.", incorrect: "Unless + positive = if not." }
   },
   {
-    "_id": "up-p7-en-c-006",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Comprehension",
-    "text": "Read: \"Zuri packed a sandwich 🥪 and water for the trip.\" What did she pack to drink?",
-    "options": [
-      "Juice",
-      "Water",
-      "Milk"
-    ],
-    "correct": "Water",
-    "feedback": {
-      "correct": "Yes.",
-      "incorrect": "The sentence mentions water."
-    }
+    _id: "up-p7-en-st-006",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Write as one sentence using: too … to … : The shirt is very big. Samson cannot put it on.",
+    accepted: ["The shirt is too big for Samson to put on."],
+    feedback: { correct: "Yes.", incorrect: "Use ‘too + adj + to + verb’." }
   },
   {
-    "_id": "up-p7-en-c-007",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Comprehension",
-    "text": "Read: \"The class planted three trees 🌳🌳🌳.\" How many trees?",
-    "options": [
-      "two",
-      "three",
-      "four"
-    ],
-    "correct": "three",
-    "feedback": {
-      "correct": "Correct.",
-      "incorrect": "Count the number mentioned."
-    }
+    _id: "up-p7-en-st-007",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Rewrite using: since … : I last ate chicken last month.",
+    accepted: ["I have not eaten chicken since last month.", "I haven't eaten chicken since last month."],
+    feedback: { correct: "Correct.", incorrect: "Present perfect with ‘since’." }
   },
   {
-    "_id": "up-p7-en-c-001",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Clauses",
-    "text": "Identify the conjunction: We stayed home because it rained. 🌧️",
-    "options": [
-      "because",
-      "stayed",
-      "home"
-    ],
-    "correct": "because",
-    "feedback": {
-      "correct": "Yes.",
-      "incorrect": "Conjunction joins clauses."
-    }
+    _id: "up-p7-en-st-008",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Join using: enough … to … : The dog is fierce. It can go hunting.",
+    accepted: ["The dog is fierce enough to go hunting."],
+    feedback: { correct: "Yes.", incorrect: "Use ‘enough to’ for sufficiency." }
   },
   {
-    "_id": "up-p7-en-c-002",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Clauses",
-    "text": "Which is a dependent clause?",
-    "options": [
-      "because it was late",
-      "We went home",
-      "The lights were off"
+    _id: "up-p7-en-st-009",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Rewrite using: either … or … : Kiprimo may go to Kenya. Kiprimo may go to South Sudan.",
+    accepted: [
+      "Kiprimo may go either to Kenya or to South Sudan.",
+      "Kiprimo may either go to Kenya or to South Sudan."
     ],
-    "correct": "because it was late",
-    "feedback": {
-      "correct": "Correct.",
-      "incorrect": "Cannot stand alone."
-    }
+    feedback: { correct: "Correct.", incorrect: "Place ‘either’ before the first option." }
   },
   {
-    "_id": "up-p7-en-c-003",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Clauses",
-    "text": "Choose the independent clause.",
-    "options": [
-      "Although it rained",
-      "We played ⚽",
-      "Because we were tired"
-    ],
-    "correct": "We played ⚽",
-    "feedback": {
-      "correct": "Right.",
-      "incorrect": "Can stand alone."
-    }
+    _id: "up-p7-en-st-010",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Join using: so … that … : Grace was very tired. She could not work anymore.",
+    accepted: ["Grace was so tired that she could not work anymore."],
+    feedback: { correct: "Right.", incorrect: "Use ‘so + adj + that …’." }
   },
   {
-    "_id": "up-p7-en-c-004",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Clauses",
-    "text": "Pick the relative pronoun: The boy who won is my cousin.",
-    "options": [
-      "who",
-      "won",
-      "boy"
-    ],
-    "correct": "who",
-    "feedback": {
-      "correct": "Yes.",
-      "incorrect": "Introduces a relative clause."
-    }
+    _id: "up-p7-en-st-011",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Rewrite using: mustn’t … : Drivers should not drive on flat tyres.",
+    accepted: ["Drivers mustn’t drive on flat tyres.", "Drivers must not drive on flat tyres."],
+    feedback: { correct: "Correct.", incorrect: "Use ‘must not’ for prohibition." }
   },
   {
-    "_id": "up-p7-en-c-005",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Clauses",
-    "text": "Find the subordinating conjunction.",
-    "options": [
-      "although",
-      "quickly",
-      "yellow"
+    _id: "up-p7-en-st-012",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Begin: No sooner … than … : We arrived at school and it started raining.",
+    accepted: [
+      "No sooner had we arrived at school than it started raining."
     ],
-    "correct": "although",
-    "feedback": {
-      "correct": "Correct.",
-      "incorrect": "Subordinates one clause to another."
-    }
+    feedback: { correct: "Great.", incorrect: "Past perfect after ‘No sooner had …’ + than …" }
   },
   {
-    "_id": "up-p7-en-c-006",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Clauses",
-    "text": "Combine: It was late. We left. Choose the best connector.",
-    "options": [
-      "so",
-      "but",
-      "and"
-    ],
-    "correct": "so",
-    "feedback": {
-      "correct": "Yes—result.",
-      "incorrect": "Use 'so' to show result."
-    }
+    _id: "up-p7-en-st-013",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Rewrite using because: I scored bad marks due to my carelessness.",
+    accepted: ["I scored bad marks because I was careless."],
+    feedback: { correct: "Correct.", incorrect: "Use ‘because’ to show reason." }
   },
   {
-    "_id": "up-p7-en-c-007",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Clauses",
-    "text": "Which has two clauses?",
-    "options": [
-      "We ran fast.",
-      "We ran and they walked.",
-      "Running quickly."
-    ],
-    "correct": "We ran and they walked.",
-    "feedback": {
-      "correct": "Correct.",
-      "incorrect": "Two independent clauses joined."
-    }
+    _id: "up-p7-en-st-014",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Begin: The best … : The library prefect gave the best speech.",
+    accepted: ["The best speech was given by the library prefect."],
+    feedback: { correct: "Yes.", incorrect: "Make ‘the best speech’ the subject." }
   },
   {
-    "_id": "up-p7-en-p-001",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Punctuation",
-    "text": "Choose the correct punctuation: \"Where are you ___\" asked Mariam.",
-    "options": [
-      "?",
-      "!",
-      "."
-    ],
-    "correct": "?",
-    "feedback": {
-      "correct": "Yes—it's a question.",
-      "incorrect": "Use a question mark for direct questions."
-    }
+    _id: "up-p7-en-st-015",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Join using than: A rabbit is small. A rat is very small.",
+    accepted: ["A rat is smaller than a rabbit."],
+    feedback: { correct: "Correct.", incorrect: "Compare using ‘than’." }
   },
   {
-    "_id": "up-p7-en-p-002",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Punctuation",
-    "text": "Pick the sentence with correct commas.",
-    "options": [
-      "We need pens rulers and erasers.",
-      "We need pens, rulers, and erasers.",
-      "We need, pens, rulers and, erasers."
-    ],
-    "correct": "We need pens, rulers, and erasers.",
-    "feedback": {
-      "correct": "Correct—commas in a list.",
-      "incorrect": "Separate list items with commas."
-    }
+    _id: "up-p7-en-st-016",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Rewrite using going: We shall do exams next week.",
+    accepted: ["We are going to do exams next week."],
+    feedback: { correct: "Good.", incorrect: "Use ‘be going to’ for future plan." }
   },
   {
-    "_id": "up-p7-en-p-003",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Punctuation",
-    "text": "Choose the correct apostrophe use.",
-    "options": [
-      "Its raining today.",
-      "It's raining today.",
-      "Its' raining today."
-    ],
-    "correct": "It's raining today.",
-    "feedback": {
-      "correct": "Right—'It's' = it is.",
-      "incorrect": "Use apostrophe for contractions."
-    }
+    _id: "up-p7-en-st-017",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Rewrite using purchased: We bought twenty cartons of flour from her store.",
+    accepted: ["We purchased twenty cartons of flour from her store."],
+    feedback: { correct: "Correct.", incorrect: "Replace ‘bought’ with ‘purchased’." }
   },
   {
-    "_id": "up-p7-en-p-004",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Punctuation",
-    "text": "End mark: Stop talking, please ___",
-    "options": [
-      "!",
-      ".",
-      "?"
-    ],
-    "correct": "!",
-    "feedback": {
-      "correct": "Yes—shows strong feeling.",
-      "incorrect": "Use '!' for emphasis/commands sometimes."
-    }
-  },
-  {
-    "_id": "up-p7-en-p-005",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Punctuation",
-    "text": "Quotation marks: Musa said, ___I will help.___",
-    "options": [
-      "'I will help.'",
-      "\"I will help.\"",
-      "I will help."
-    ],
-    "correct": "\"I will help.\"",
-    "feedback": {
-      "correct": "Correct—quotes for exact words.",
-      "incorrect": "Use quotation marks for reported exact speech."
-    }
-  },
-  {
-    "_id": "up-p7-en-p-006",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Punctuation",
-    "text": "Capitalization: choose the correct sentence.",
-    "options": [
-      "we live in kampala.",
-      "We live in Kampala.",
-      "We live in kampala."
-    ],
-    "correct": "We live in Kampala.",
-    "feedback": {
-      "correct": "Yes—capitalize first word and proper nouns.",
-      "incorrect": "Start with capitals; proper nouns too."
-    }
-  },
-  {
-    "_id": "up-p7-en-p-007",
-    "level": "upperPrimary",
-    "subject": "english",
-    "class": "p7",
-    "topic": "Punctuation",
-    "text": "Comma usage: After school, we played ___",
-    "options": [
-      "football.",
-      ", football.",
-      "football,"
-    ],
-    "correct": "football.",
-    "feedback": {
-      "correct": "Right—no extra comma needed.",
-      "incorrect": "Don't add unnecessary commas."
-    }
+    _id: "up-p7-en-st-018",
+    level: "upperPrimary",
+    subject: "english",
+    class: "p7",
+    topic: "Sentence Transformation",
+    type: "text",
+    text: "Rewrite using needn’t: Sendi should not call the police.",
+    accepted: ["Sendi needn’t call the police.", "Sendi need not call the police."],
+    feedback: { correct: "Yes.", incorrect: "Use ‘needn’t/need not’ for lack of necessity." }
   }
-]
+];

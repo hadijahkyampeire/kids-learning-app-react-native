@@ -11,6 +11,7 @@ export const topClassEnglishQuestions: Question[] = [
     text: "Sally saw a beautiful butterfly 🦋 in the garden 🌺. The butterfly was orange and black. What color was NOT on the butterfly?",
     options: ["Blue 🔵", "Orange 🟧", "Black ⬛"],
     correct: "Blue 🔵",
+    type: "choice",
     feedback: { correct: "Yes! The story only mentioned orange and black colors 🦋.", incorrect: "Listen carefully to the colors mentioned in the story 🎨." }
   },
   {
@@ -20,8 +21,9 @@ export const topClassEnglishQuestions: Question[] = [
     class: "top",
     topic: "Reading Comprehension",
     text: "Tom has three pets: a dog 🐕, a cat 🐱, and a fish 🐠. Which pet can swim?",
-    options: ["Fish 🐠", "Dog 🐕", "Cat 🐱"],
+    options: ["Dog 🐕", "Cat 🐱", "Fish 🐠"],
     correct: "Fish 🐠",
+    type: "choice",
     feedback: { correct: "Yes! Fish live and swim in water 🌊.", incorrect: "Think about which animal lives in water 💭." }
   },
   {
@@ -31,8 +33,9 @@ export const topClassEnglishQuestions: Question[] = [
     class: "top",
     topic: "Reading Comprehension",
     text: "The sun ☀️ was shining and birds 🐦 were singing. What time of day was it?",
-    options: ["Day ☀️", "Night 🌙", "Evening 🌅"],
+    options: ["Evening 🌅", "Day ☀️", "Night 🌙"],
     correct: "Day ☀️",
+    type: "choice",
     feedback: { correct: "Yes! The sun shines during the day ☀️.", incorrect: "Think about when we see the sun ⭐." }
   },
   {
@@ -87,10 +90,11 @@ export const topClassEnglishQuestions: Question[] = [
     subject: "english",
     class: "top",
     topic: "Vocabulary Building",
-    text: "Which word means the same as 'big'? 📏",
-    options: ["Large 🐘", "Small 🐜", "Tiny 🔍"],
-    correct: "Large 🐘",
-    feedback: { correct: "Yes! Large and big mean the same thing 🐘.", incorrect: "Think about words that describe something huge 💭." }
+    text: "Which words mean the same as 'big'? Select all that apply 📏",
+    options: ["Large 🐘", "Huge 🦕", "Small 🐜", "Enormous 🏔️", "Tiny 🔍"],
+    correct: ["Large 🐘", "Huge 🦕", "Enormous 🏔️"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! All these words mean big! 🐘", incorrect: "Think about words that describe something huge 💭." }
   },
   {
     _id: "tp-eng-vb-3",
@@ -99,8 +103,9 @@ export const topClassEnglishQuestions: Question[] = [
     class: "top",
     topic: "Vocabulary Building",
     text: "What do we call someone who teaches in school? 📚",
-    options: ["Teacher 👩‍🏫", "Doctor 👨‍⚕️", "Chef 👨‍🍳"],
+    options: ["Chef 👨‍🍳", "Teacher 👩‍🏫", "Doctor 👨‍⚕️"],
     correct: "Teacher 👩‍🏫",
+    type: "choice",
     feedback: { correct: "Yes! A teacher helps us learn 👩‍🏫.", incorrect: "Think about who helps you learn at school 💡." }
   },
   {
@@ -110,8 +115,9 @@ export const topClassEnglishQuestions: Question[] = [
     class: "top",
     topic: "Vocabulary Building",
     text: "Which word describes very cold weather? ❄️",
-    options: ["Freezing 🥶", "Hot 🥵", "Warm 😌"],
+    options: ["Hot 🥵", "Warm 😌", "Freezing 🥶"],
     correct: "Freezing 🥶",
+    type: "choice",
     feedback: { correct: "Yes! Freezing means very cold ❄️.", incorrect: "Think about how you feel in very cold weather 🥶." }
   },
   {
@@ -167,8 +173,9 @@ export const topClassEnglishQuestions: Question[] = [
     class: "top",
     topic: "Grammar & Sentences",
     text: "Which is the correct word: 'The birds ___ flying'?",
-    options: ["are ✅", "is ❌", "am 🤔"],
+    options: ["am 🤔", "are ✅", "is ❌"],
     correct: "are ✅",
+    type: "choice",
     feedback: { correct: "Yes! We say 'birds are flying' ✅.", incorrect: "Think about multiple birds 🐦🐦." }
   },
   {
@@ -178,8 +185,9 @@ export const topClassEnglishQuestions: Question[] = [
     class: "top",
     topic: "Grammar & Sentences",
     text: "Which word shows something happening now? 🕐",
-    options: ["Running 🏃", "Ran 👣", "Will run 🔜"],
-    correct: "Running 🏃",
+    options: ["Will run 🔜", "Running �", "Ran 👣"],
+    correct: "Running �",
+    type: "choice",
     feedback: { correct: "Yes! 'Running' shows it's happening now 🏃.", incorrect: "Think about what's happening right now ⌛." }
   },
   {
@@ -224,8 +232,9 @@ export const topClassEnglishQuestions: Question[] = [
     class: "top",
     topic: "Listening Skills",
     text: "Which word rhymes with 'cat'? 🎵",
-    options: ["Hat 🎩", "Dog 🐕", "Fish 🐠"],
+    options: ["Fish 🐠", "Dog 🐕", "Hat 🎩"],
     correct: "Hat 🎩",
+    type: "choice",
     feedback: { correct: "Yes! 'Cat' and 'hat' rhyme 🎵.", incorrect: "Listen to the ending sound of 'cat' 👂." }
   },
   {
@@ -235,8 +244,9 @@ export const topClassEnglishQuestions: Question[] = [
     class: "top",
     topic: "Listening Skills",
     text: "Which word starts with the same sound as 'ball'? ⚽",
-    options: ["Book 📚", "Car 🚗", "Door 🚪"],
+    options: ["Door 🚪", "Book 📚", "Car 🚗"],
     correct: "Book 📚",
+    type: "choice",
     feedback: { correct: "Yes! 'Ball' and 'book' start with 'b' 📚.", incorrect: "Listen to the first sound of 'ball' 🎯." }
   },
   {
@@ -246,8 +256,9 @@ export const topClassEnglishQuestions: Question[] = [
     class: "top",
     topic: "Listening Skills",
     text: "How many syllables are in 'butterfly'? 🦋",
-    options: ["Three 3️⃣", "One 1️⃣", "Two 2️⃣"],
+    options: ["Two 2️⃣", "Three 3️⃣", "One 1️⃣"],
     correct: "Three 3️⃣",
+    type: "choice",
     feedback: { correct: "Yes! But-ter-fly has three beats 🦋.", incorrect: "Clap the parts of 'butterfly' 👏." }
   },
   {
@@ -257,8 +268,9 @@ export const topClassEnglishQuestions: Question[] = [
     class: "top",
     topic: "Listening Skills",
     text: "Which word ends with the same sound as 'red'? 🔴",
-    options: ["Bed 🛏️", "Blue 🔵", "Green 🟢"],
+    options: ["Green 🟢", "Bed 🛏️", "Blue 🔵"],
     correct: "Bed 🛏️",
+    type: "choice",
     feedback: { correct: "Yes! 'Red' and 'bed' end with 'd' 🎯.", incorrect: "Listen to the ending sound of 'red' 👂." }
   },
   {
@@ -268,8 +280,9 @@ export const topClassEnglishQuestions: Question[] = [
     class: "top",
     topic: "Listening Skills",
     text: "Which sound is the loudest? 🔊",
-    options: ["Thunder ⛈️", "Whisper 🤫", "Butterfly wings 🦋"],
+    options: ["Butterfly wings 🦋", "Thunder ⛈️", "Whisper 🤫"],
     correct: "Thunder ⛈️",
+    type: "choice",
     feedback: { correct: "Yes! Thunder makes the loudest sound ⛈️.", incorrect: "Think about which sound you can hear from far away 👂." }
   }
 ];

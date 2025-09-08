@@ -7,13 +7,15 @@ export const p2GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p2",
     "topic": "Community & Services",
-    "text": "Who works at a hospital? 🏥",
+    "text": "Who helps us when we are sick? Select all 2 correct answers 🏥",
     "options": [
       "nurse 👩‍⚕️",
+      "doctor 👨‍⚕️",
       "teacher 👩‍🏫",
       "chef 👨‍🍳"
     ],
-    "correct": "nurse 👩‍⚕️",
+    "correct": ["nurse 👩‍⚕️", "doctor 👨‍⚕️"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Community smart!",
       "incorrect": "Think roles in town."
@@ -25,13 +27,16 @@ export const p2GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p2",
     "topic": "Community & Services",
-    "text": "Who delivers letters? 📬",
+    "text": "Who helps keep us safe? Select all 3 community helpers 👮",
     "options": [
-      "postal worker",
-      "farmer",
-      "pilot"
+      "police 👮‍♂️",
+      "firefighter 🚒",
+      "doctor 👨‍⚕️",
+      "thief 🦹‍♂️",
+      "robber 🦹"
     ],
-    "correct": "postal worker",
+    "correct": ["police 👮‍♂️", "firefighter 🚒", "doctor 👨‍⚕️"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Community smart!",
       "incorrect": "Think roles in town."
@@ -43,103 +48,15 @@ export const p2GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p2",
     "topic": "Community & Services",
-    "text": "Who fights fires? 🔥",
-    "options": [
-      "firefighter",
-      "driver",
-      "artist"
-    ],
-    "correct": "firefighter",
-    "feedback": {
-      "correct": "Community smart!",
-      "incorrect": "Think roles in town."
-    }
-  },
-  {
-    "_id": "js-p2-gk-comm-004",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Community & Services",
-    "text": "We borrow books from…",
-    "options": [
-      "library 📚",
-      "bank 🏦",
-      "shop 🛍️"
-    ],
-    "correct": "library 📚",
-    "feedback": {
-      "correct": "Community smart!",
-      "incorrect": "Think roles in town."
-    }
-  },
-  {
-    "_id": "js-p2-gk-comm-005",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Community & Services",
-    "text": "Police keep us…",
-    "options": [
-      "safe 👮",
-      "hungry",
-      "sleepy"
-    ],
-    "correct": "safe 👮",
-    "feedback": {
-      "correct": "Community smart!",
-      "incorrect": "Think roles in town."
-    }
-  },
-  {
-    "_id": "js-p2-gk-comm-006",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Community & Services",
-    "text": "We learn at…",
+    "text": "Where do we learn? Select all 2 learning places 🎓",
     "options": [
       "school 🏫",
-      "market",
-      "garage"
+      "library 📚",
+      "park 🌳",
+      "shop 🏪"
     ],
-    "correct": "school 🏫",
-    "feedback": {
-      "correct": "Community smart!",
-      "incorrect": "Think roles in town."
-    }
-  },
-  {
-    "_id": "js-p2-gk-comm-007",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Community & Services",
-    "text": "Ambulance carries…",
-    "options": [
-      "patients",
-      "animals",
-      "toys"
-    ],
-    "correct": "patients",
-    "feedback": {
-      "correct": "Community smart!",
-      "incorrect": "Think roles in town."
-    }
-  },
-  {
-    "_id": "js-p2-gk-comm-008",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Community & Services",
-    "text": "Who grows food?",
-    "options": [
-      "farmer 👨‍🌾",
-      "pilot",
-      "sailor"
-    ],
-    "correct": "farmer 👨‍🌾",
+    "correct": ["school 🏫", "library 📚"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Community smart!",
       "incorrect": "Think roles in town."
@@ -151,13 +68,15 @@ export const p2GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p2",
     "topic": "Transport",
-    "text": "Which flies?",
+    "text": "Which vehicles can fly? Select all 2 that fly ✈️",
     "options": [
       "airplane ✈️",
+      "helicopter 🚁",
       "bus 🚌",
       "boat ⛵"
     ],
-    "correct": "airplane ✈️",
+    "correct": ["airplane ✈️", "helicopter 🚁"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Road ready!",
       "incorrect": "Match vehicle to place."
@@ -169,13 +88,15 @@ export const p2GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p2",
     "topic": "Transport",
-    "text": "Which moves on rails?",
+    "text": "Which vehicles go on water? Select all 2 water vehicles 🚢",
     "options": [
-      "train 🚂",
+      "ship 🚢",
+      "boat ⛵",
       "car 🚗",
       "bike 🚲"
     ],
-    "correct": "train 🚂",
+    "correct": ["ship 🚢", "boat ⛵"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Road ready!",
       "incorrect": "Match vehicle to place."
@@ -187,103 +108,14 @@ export const p2GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p2",
     "topic": "Transport",
-    "text": "Helmet is for riding a…",
-    "options": [
-      "bicycle 🚲",
-      "bus 🚌",
-      "subway 🚇"
-    ],
-    "correct": "bicycle 🚲",
-    "feedback": {
-      "correct": "Road ready!",
-      "incorrect": "Match vehicle to place."
-    }
-  },
-  {
-    "_id": "js-p2-gk-trans-004",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Transport",
-    "text": "Traffic light red means…",
+    "text": "Traffic light red means...",
     "options": [
       "stop 🛑",
       "go",
       "turn"
     ],
     "correct": "stop 🛑",
-    "feedback": {
-      "correct": "Road ready!",
-      "incorrect": "Match vehicle to place."
-    }
-  },
-  {
-    "_id": "js-p2-gk-trans-005",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Transport",
-    "text": "Vehicle on water",
-    "options": [
-      "ship 🚢",
-      "car 🚗",
-      "truck 🚚"
-    ],
-    "correct": "ship 🚢",
-    "feedback": {
-      "correct": "Road ready!",
-      "incorrect": "Match vehicle to place."
-    }
-  },
-  {
-    "_id": "js-p2-gk-trans-006",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Transport",
-    "text": "Vehicle with two wheels",
-    "options": [
-      "bicycle 🚲",
-      "bus 🚌",
-      "van 🚐"
-    ],
-    "correct": "bicycle 🚲",
-    "feedback": {
-      "correct": "Road ready!",
-      "incorrect": "Match vehicle to place."
-    }
-  },
-  {
-    "_id": "js-p2-gk-trans-007",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Transport",
-    "text": "We wait at a bus…",
-    "options": [
-      "stop 🛑",
-      "home",
-      "field"
-    ],
-    "correct": "stop 🛑",
-    "feedback": {
-      "correct": "Road ready!",
-      "incorrect": "Match vehicle to place."
-    }
-  },
-  {
-    "_id": "js-p2-gk-trans-008",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Transport",
-    "text": "Air traffic helper",
-    "options": [
-      "pilot 👨‍✈️",
-      "lifeguard",
-      "chef"
-    ],
-    "correct": "pilot 👨‍✈️",
+    "type": "choice",
     "feedback": {
       "correct": "Road ready!",
       "incorrect": "Match vehicle to place."
@@ -295,13 +127,15 @@ export const p2GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p2",
     "topic": "Food & Nutrition",
-    "text": "Healthy drink",
+    "text": "Which are healthy drinks? Select all 2 healthy drinks 💚",
     "options": [
       "milk 🥛",
+      "water 💧",
       "soda 🥤",
       "energy candy 🍬"
     ],
-    "correct": "milk 🥛",
+    "correct": ["milk 🥛", "water 💧"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Healthy habits!",
       "incorrect": "Pick balanced choices."
@@ -313,13 +147,16 @@ export const p2GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p2",
     "topic": "Food & Nutrition",
-    "text": "Fruit",
+    "text": "Which are fruits? Select all 3 fruits 🍎",
     "options": [
       "banana 🍌",
+      "apple 🍎",
+      "orange 🍊",
       "bread 🍞",
       "chips 🍟"
     ],
-    "correct": "banana 🍌",
+    "correct": ["banana 🍌", "apple 🍎", "orange 🍊"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Healthy habits!",
       "incorrect": "Pick balanced choices."
@@ -331,13 +168,15 @@ export const p2GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p2",
     "topic": "Food & Nutrition",
-    "text": "Vegetable",
+    "text": "Which are vegetables? Select all 2 vegetables 🥬",
     "options": [
       "tomato 🍅",
+      "carrot 🥕",
       "cake 🍰",
       "cookie 🍪"
     ],
-    "correct": "tomato 🍅",
+    "correct": ["tomato 🍅", "carrot 🥕"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Healthy habits!",
       "incorrect": "Pick balanced choices."
@@ -349,13 +188,16 @@ export const p2GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p2",
     "topic": "Food & Nutrition",
-    "text": "Protein food",
+    "text": "Which foods have protein? Select all 3 protein foods 🥩",
     "options": [
       "egg 🥚",
+      "fish 🐟",
+      "chicken 🍗",
       "water 💧",
       "sugar"
     ],
-    "correct": "egg 🥚",
+    "correct": ["egg 🥚", "fish 🐟", "chicken 🍗"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Healthy habits!",
       "incorrect": "Pick balanced choices."
@@ -367,13 +209,14 @@ export const p2GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p2",
     "topic": "Food & Nutrition",
-    "text": "Too much sugar is…",
+    "text": "Too much sugar is...",
     "options": [
       "unhealthy ⚠️",
       "great ✅",
       "necessary"
     ],
     "correct": "unhealthy ⚠️",
+    "type": "choice",
     "feedback": {
       "correct": "Healthy habits!",
       "incorrect": "Pick balanced choices."
@@ -385,49 +228,16 @@ export const p2GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p2",
     "topic": "Food & Nutrition",
-    "text": "Breakfast is eaten in…",
+    "text": "What should we wash to stay healthy? Select all 3 correct answers 🧼",
     "options": [
-      "morning ☀️",
-      "night 🌙",
-      "evening 🌆"
+      "hands 🧤",
+      "fruits 🍎",
+      "vegetables 🥬",
+      "books 📚",
+      "toys 🎮"
     ],
-    "correct": "morning ☀️",
-    "feedback": {
-      "correct": "Healthy habits!",
-      "incorrect": "Pick balanced choices."
-    }
-  },
-  {
-    "_id": "js-p2-gk-food-007",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Food & Nutrition",
-    "text": "We drink with a…",
-    "options": [
-      "cup ☕",
-      "shoe 👟",
-      "hat 🎩"
-    ],
-    "correct": "cup ☕",
-    "feedback": {
-      "correct": "Healthy habits!",
-      "incorrect": "Pick balanced choices."
-    }
-  },
-  {
-    "_id": "js-p2-gk-food-008",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Food & Nutrition",
-    "text": "We should wash…",
-    "options": [
-      "fruits & hands",
-      "toys only",
-      "shoes only"
-    ],
-    "correct": "fruits & hands",
+    "correct": ["hands 🧤", "fruits 🍎", "vegetables 🥬"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Healthy habits!",
       "incorrect": "Pick balanced choices."
@@ -439,13 +249,16 @@ export const p2GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p2",
     "topic": "Culture & Heritage",
-    "text": "Wimbledon is for…",
+    "text": "Which are forms of art? Select all 3 art forms 🎨",
     "options": [
-      "tennis 🎾",
-      "cricket 🏏",
-      "football ⚽"
+      "music 🎵",
+      "painting 🎨",
+      "dance 💃",
+      "sleeping 😴",
+      "math ➗"
     ],
-    "correct": "tennis 🎾",
+    "correct": ["music 🎵", "painting 🎨", "dance 💃"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Culture buff!",
       "incorrect": "Think arts & traditions."
@@ -457,121 +270,16 @@ export const p2GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p2",
     "topic": "Culture & Heritage",
-    "text": "The Jungle Book author",
+    "text": "Which are sports? Select all 3 sports 🏅",
     "options": [
-      "Rudyard Kipling",
-      "Mark Twain",
-      "Roald Dahl"
+      "football ⚽",
+      "tennis 🎾",
+      "swimming 🏊‍♂️",
+      "sleeping 😴",
+      "eating 🍽️"
     ],
-    "correct": "Rudyard Kipling",
-    "feedback": {
-      "correct": "Culture buff!",
-      "incorrect": "Think arts & traditions."
-    }
-  },
-  {
-    "_id": "js-p2-gk-cult-003",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Culture & Heritage",
-    "text": "National dress examples show…",
-    "options": [
-      "culture",
-      "weather",
-      "money"
-    ],
-    "correct": "culture",
-    "feedback": {
-      "correct": "Culture buff!",
-      "incorrect": "Think arts & traditions."
-    }
-  },
-  {
-    "_id": "js-p2-gk-cult-004",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Culture & Heritage",
-    "text": "A museum shows…",
-    "options": [
-      "history",
-      "games",
-      "grocery"
-    ],
-    "correct": "history",
-    "feedback": {
-      "correct": "Culture buff!",
-      "incorrect": "Think arts & traditions."
-    }
-  },
-  {
-    "_id": "js-p2-gk-cult-005",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Culture & Heritage",
-    "text": "Music is an example of…",
-    "options": [
-      "art 🎵",
-      "math",
-      "medicine"
-    ],
-    "correct": "art 🎵",
-    "feedback": {
-      "correct": "Culture buff!",
-      "incorrect": "Think arts & traditions."
-    }
-  },
-  {
-    "_id": "js-p2-gk-cult-006",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Culture & Heritage",
-    "text": "We celebrate with…",
-    "options": [
-      "family & friends",
-      "fighting",
-      "littering"
-    ],
-    "correct": "family & friends",
-    "feedback": {
-      "correct": "Culture buff!",
-      "incorrect": "Think arts & traditions."
-    }
-  },
-  {
-    "_id": "js-p2-gk-cult-007",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Culture & Heritage",
-    "text": "Traditional food is part of…",
-    "options": [
-      "heritage",
-      "science",
-      "PE"
-    ],
-    "correct": "heritage",
-    "feedback": {
-      "correct": "Culture buff!",
-      "incorrect": "Think arts & traditions."
-    }
-  },
-  {
-    "_id": "js-p2-gk-cult-008",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Culture & Heritage",
-    "text": "A storyteller shares…",
-    "options": [
-      "folktales",
-      "homework",
-      "money"
-    ],
-    "correct": "folktales",
+    "correct": ["football ⚽", "tennis 🎾", "swimming 🏊‍♂️"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Culture buff!",
       "incorrect": "Think arts & traditions."
@@ -583,13 +291,15 @@ export const p2GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p2",
     "topic": "Geography & Places",
-    "text": "Capital of France",
+    "text": "Which are water bodies? Select all 2 places with water 💧",
     "options": [
-      "Paris",
-      "London",
-      "Berlin"
+      "ocean 🌊",
+      "river 🏞️",
+      "desert 🏜️",
+      "mountain ⛰️"
     ],
-    "correct": "Paris",
+    "correct": ["ocean 🌊", "river 🏞️"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Geo whiz!",
       "incorrect": "Earth facts."
@@ -601,124 +311,17 @@ export const p2GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p2",
     "topic": "Geography & Places",
-    "text": "Largest ocean",
+    "text": "What do we use to find directions? 🧭",
     "options": [
-      "Pacific",
-      "Atlantic",
-      "Indian"
+      "compass 🧭",
+      "spoon 🥄",
+      "chair 🪑"
     ],
-    "correct": "Pacific",
-    "feedback": {
-      "correct": "Geo whiz!",
-      "incorrect": "Earth facts."
-    }
-  },
-  {
-    "_id": "js-p2-gk-geo-003",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Geography & Places",
-    "text": "Land Down Under",
-    "options": [
-      "Australia",
-      "Africa",
-      "Asia"
-    ],
-    "correct": "Australia",
-    "feedback": {
-      "correct": "Geo whiz!",
-      "incorrect": "Earth facts."
-    }
-  },
-  {
-    "_id": "js-p2-gk-geo-004",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Geography & Places",
-    "text": "We use a map to find…",
-    "options": [
-      "places 🗺️",
-      "songs 🎵",
-      "recipes 🍳"
-    ],
-    "correct": "places 🗺️",
-    "feedback": {
-      "correct": "Geo whiz!",
-      "incorrect": "Earth facts."
-    }
-  },
-  {
-    "_id": "js-p2-gk-geo-005",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Geography & Places",
-    "text": "A mountain looks like…",
-    "options": [
-      "⛰️",
-      "🏝️",
-      "🏟️"
-    ],
-    "correct": "⛰️",
-    "feedback": {
-      "correct": "Geo whiz!",
-      "incorrect": "Earth facts."
-    }
-  },
-  {
-    "_id": "js-p2-gk-geo-006",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Geography & Places",
-    "text": "A desert is usually…",
-    "options": [
-      "hot & dry",
-      "icy",
-      "rainy"
-    ],
-    "correct": "hot & dry",
-    "feedback": {
-      "correct": "Geo whiz!",
-      "incorrect": "Earth facts."
-    }
-  },
-  {
-    "_id": "js-p2-gk-geo-007",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Geography & Places",
-    "text": "A river flows to the…",
-    "options": [
-      "sea 🌊",
-      "sky ☁️",
-      "desert 🏜️"
-    ],
-    "correct": "sea 🌊",
-    "feedback": {
-      "correct": "Geo whiz!",
-      "incorrect": "Earth facts."
-    }
-  },
-  {
-    "_id": "js-p2-gk-geo-008",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p2",
-    "topic": "Geography & Places",
-    "text": "A compass shows…",
-    "options": [
-      "direction 🧭",
-      "temperature",
-      "weight"
-    ],
-    "correct": "direction 🧭",
+    "correct": "compass 🧭",
+    "type": "choice",
     "feedback": {
       "correct": "Geo whiz!",
       "incorrect": "Earth facts."
     }
   }
-]
+];

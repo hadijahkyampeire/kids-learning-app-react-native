@@ -7,16 +7,18 @@ export const p3GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p3",
     "topic": "Civics & Community",
-    "text": "A rule keeps people…",
+    "text": "Select all things that help keep our community safe (Choose 2) 🏘️",
+    "type": "multiChoice",
     "options": [
-      "safe",
-      "confused",
-      "angry"
+      "Following rules 📋",
+      "Being respectful 🤝",
+      "Breaking rules ❌",
+      "Being rude 😠"
     ],
-    "correct": "safe",
+    "correct": ["Following rules 📋", "Being respectful 🤝"],
     "feedback": {
-      "correct": "Good citizen!",
-      "incorrect": "Think community rules."
+      "correct": "Great! Rules and respect make our community better! 🌟",
+      "incorrect": "Think about what makes a community safe and happy 🤔"
     }
   },
   {
@@ -25,124 +27,17 @@ export const p3GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p3",
     "topic": "Civics & Community",
-    "text": "We vote to…",
+    "text": "Why do we vote in elections? 🗳️",
+    "type": "choice",
     "options": [
-      "choose leaders",
-      "play games",
-      "buy toys"
+      "To choose our leaders 👥",
+      "To play games 🎮",
+      "To buy toys 🧸"
     ],
-    "correct": "choose leaders",
+    "correct": "To choose our leaders 👥",
     "feedback": {
-      "correct": "Good citizen!",
-      "incorrect": "Think community rules."
-    }
-  },
-  {
-    "_id": "js-p3-gk-civ-003",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Civics & Community",
-    "text": "Cross the road at a…",
-    "options": [
-      "zebra crossing",
-      "river",
-      "roof"
-    ],
-    "correct": "zebra crossing",
-    "feedback": {
-      "correct": "Good citizen!",
-      "incorrect": "Think community rules."
-    }
-  },
-  {
-    "_id": "js-p3-gk-civ-004",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Civics & Community",
-    "text": "Community meeting place",
-    "options": [
-      "hall",
-      "kitchen",
-      "garage"
-    ],
-    "correct": "hall",
-    "feedback": {
-      "correct": "Good citizen!",
-      "incorrect": "Think community rules."
-    }
-  },
-  {
-    "_id": "js-p3-gk-civ-005",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Civics & Community",
-    "text": "We help by…",
-    "options": [
-      "cleaning up",
-      "throwing litter",
-      "shouting"
-    ],
-    "correct": "cleaning up",
-    "feedback": {
-      "correct": "Good citizen!",
-      "incorrect": "Think community rules."
-    }
-  },
-  {
-    "_id": "js-p3-gk-civ-006",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Civics & Community",
-    "text": "Sharing is a value of…",
-    "options": [
-      "kindness",
-      "greed",
-      "noise"
-    ],
-    "correct": "kindness",
-    "feedback": {
-      "correct": "Good citizen!",
-      "incorrect": "Think community rules."
-    }
-  },
-  {
-    "_id": "js-p3-gk-civ-007",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Civics & Community",
-    "text": "Respect means…",
-    "options": [
-      "being polite",
-      "hitting",
-      "taking"
-    ],
-    "correct": "being polite",
-    "feedback": {
-      "correct": "Good citizen!",
-      "incorrect": "Think community rules."
-    }
-  },
-  {
-    "_id": "js-p3-gk-civ-008",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Civics & Community",
-    "text": "Queue means…",
-    "options": [
-      "line",
-      "circle",
-      "triangle"
-    ],
-    "correct": "line",
-    "feedback": {
-      "correct": "Good citizen!",
-      "incorrect": "Think community rules."
+      "correct": "Perfect! Voting helps us pick the best leaders for our community! 🎯",
+      "incorrect": "Voting is how we select people to lead and make decisions 🤔"
     }
   },
   {
@@ -151,16 +46,18 @@ export const p3GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p3",
     "topic": "Transport",
-    "text": "Traffic green means…",
+    "text": "Select all road safety rules (Choose 2) 🚦",
+    "type": "multiChoice",
     "options": [
-      "go",
-      "stop",
-      "wait"
+      "Use zebra crossing ⚫⚪",
+      "Wear seatbelt 🔐",
+      "Run on the road 🏃",
+      "Play near traffic 🚫"
     ],
-    "correct": "go",
+    "correct": ["Use zebra crossing ⚫⚪", "Wear seatbelt 🔐"],
     "feedback": {
-      "correct": "Travel smart!",
-      "incorrect": "Road & transit basics."
+      "correct": "Excellent! These rules keep us safe on the road! 🌟",
+      "incorrect": "Think about what keeps us safe in traffic 🤔"
     }
   },
   {
@@ -169,124 +66,18 @@ export const p3GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p3",
     "topic": "Transport",
-    "text": "Seatbelts keep us…",
+    "text": "Match the traffic light colors with their meanings (Choose 2) 🚦",
+    "type": "multiChoice",
     "options": [
-      "safe",
-      "hungry",
-      "late"
+      "Green means GO ✅",
+      "Red means STOP 🛑",
+      "Green means STOP ❌",
+      "Red means GO ❌"
     ],
-    "correct": "safe",
+    "correct": ["Green means GO ✅", "Red means STOP 🛑"],
     "feedback": {
-      "correct": "Travel smart!",
-      "incorrect": "Road & transit basics."
-    }
-  },
-  {
-    "_id": "js-p3-gk-trans-003",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Transport",
-    "text": "Pedestrians walk on the…",
-    "options": [
-      "sidewalk",
-      "road center",
-      "roof"
-    ],
-    "correct": "sidewalk",
-    "feedback": {
-      "correct": "Travel smart!",
-      "incorrect": "Road & transit basics."
-    }
-  },
-  {
-    "_id": "js-p3-gk-trans-004",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Transport",
-    "text": "A ferry carries people across…",
-    "options": [
-      "water",
-      "air",
-      "desert"
-    ],
-    "correct": "water",
-    "feedback": {
-      "correct": "Travel smart!",
-      "incorrect": "Road & transit basics."
-    }
-  },
-  {
-    "_id": "js-p3-gk-trans-005",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Transport",
-    "text": "A subway runs…",
-    "options": [
-      "underground",
-      "on water",
-      "in the air"
-    ],
-    "correct": "underground",
-    "feedback": {
-      "correct": "Travel smart!",
-      "incorrect": "Road & transit basics."
-    }
-  },
-  {
-    "_id": "js-p3-gk-trans-006",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Transport",
-    "text": "A driver uses a…",
-    "options": [
-      "steering wheel",
-      "frying pan",
-      "pencil"
-    ],
-    "correct": "steering wheel",
-    "feedback": {
-      "correct": "Travel smart!",
-      "incorrect": "Road & transit basics."
-    }
-  },
-  {
-    "_id": "js-p3-gk-trans-007",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Transport",
-    "text": "A ticket is needed for a…",
-    "options": [
-      "train",
-      "pillow",
-      "tree"
-    ],
-    "correct": "train",
-    "feedback": {
-      "correct": "Travel smart!",
-      "incorrect": "Road & transit basics."
-    }
-  },
-  {
-    "_id": "js-p3-gk-trans-008",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Transport",
-    "text": "Parking sign 'P' means…",
-    "options": [
-      "park here",
-      "no entry",
-      "speed up"
-    ],
-    "correct": "park here",
-    "feedback": {
-      "correct": "Travel smart!",
-      "incorrect": "Road & transit basics."
+      "correct": "Perfect! You know your traffic signals! 🎯",
+      "incorrect": "Remember: Green = Go, Red = Stop 🚦"
     }
   },
   {
@@ -295,16 +86,18 @@ export const p3GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p3",
     "topic": "Environment & Conservation",
-    "text": "Planting trees helps…",
+    "text": "Select all ways to help our environment (Choose 2) 🌍",
+    "type": "multiChoice",
     "options": [
-      "clean air",
-      "make noise",
-      "waste water"
+      "Plant trees 🌱",
+      "Save water 💧",
+      "Waste electricity ❌",
+      "Litter everywhere ❌"
     ],
-    "correct": "clean air",
+    "correct": ["Plant trees 🌱", "Save water 💧"],
     "feedback": {
-      "correct": "Eco hero!",
-      "incorrect": "Protect nature."
+      "correct": "Amazing! You're a real eco-hero! 🌟",
+      "incorrect": "Think about actions that protect nature 🌿"
     }
   },
   {
@@ -313,124 +106,17 @@ export const p3GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p3",
     "topic": "Environment & Conservation",
-    "text": "We save energy by…",
+    "text": "What does this symbol mean? ♻️",
+    "type": "choice",
     "options": [
-      "turning lights off",
-      "leaving taps on",
-      "littering"
+      "Recycle materials 🔄",
+      "Play games 🎮",
+      "Stop here 🛑"
     ],
-    "correct": "turning lights off",
+    "correct": "Recycle materials 🔄",
     "feedback": {
-      "correct": "Eco hero!",
-      "incorrect": "Protect nature."
-    }
-  },
-  {
-    "_id": "js-p3-gk-env-003",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Environment & Conservation",
-    "text": "Recycling symbol",
-    "options": [
-      "♻️",
-      "🛑",
-      "🚫"
-    ],
-    "correct": "♻️",
-    "feedback": {
-      "correct": "Eco hero!",
-      "incorrect": "Protect nature."
-    }
-  },
-  {
-    "_id": "js-p3-gk-env-004",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Environment & Conservation",
-    "text": "Do not waste…",
-    "options": [
-      "water 💧",
-      "smiles 🙂",
-      "books 📚"
-    ],
-    "correct": "water 💧",
-    "feedback": {
-      "correct": "Eco hero!",
-      "incorrect": "Protect nature."
-    }
-  },
-  {
-    "_id": "js-p3-gk-env-005",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Environment & Conservation",
-    "text": "A bin is for…",
-    "options": [
-      "trash 🗑️",
-      "food",
-      "sleep"
-    ],
-    "correct": "trash 🗑️",
-    "feedback": {
-      "correct": "Eco hero!",
-      "incorrect": "Protect nature."
-    }
-  },
-  {
-    "_id": "js-p3-gk-env-006",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Environment & Conservation",
-    "text": "Save animals by protecting…",
-    "options": [
-      "habitats",
-      "garbage",
-      "smoke"
-    ],
-    "correct": "habitats",
-    "feedback": {
-      "correct": "Eco hero!",
-      "incorrect": "Protect nature."
-    }
-  },
-  {
-    "_id": "js-p3-gk-env-007",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Environment & Conservation",
-    "text": "Clean rivers mean…",
-    "options": [
-      "healthy fish",
-      "more trash",
-      "bad smells"
-    ],
-    "correct": "healthy fish",
-    "feedback": {
-      "correct": "Eco hero!",
-      "incorrect": "Protect nature."
-    }
-  },
-  {
-    "_id": "js-p3-gk-env-008",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Environment & Conservation",
-    "text": "Compost is made from…",
-    "options": [
-      "food scraps",
-      "glass",
-      "metal"
-    ],
-    "correct": "food scraps",
-    "feedback": {
-      "correct": "Eco hero!",
-      "incorrect": "Protect nature."
+      "correct": "Perfect! This symbol means we can recycle these materials! ♻️",
+      "incorrect": "This symbol tells us we can use materials again ♻️"
     }
   },
   {
@@ -439,16 +125,18 @@ export const p3GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p3",
     "topic": "Culture & Heritage",
-    "text": "A festival is a day to…",
+    "text": "Select all examples of cultural celebrations (Choose 2) 🎉",
+    "type": "multiChoice",
     "options": [
-      "celebrate",
-      "fight",
-      "waste"
+      "Traditional festivals 🎊",
+      "National holidays 🏳️",
+      "Regular Monday ❌",
+      "Normal lunch time ❌"
     ],
-    "correct": "celebrate",
+    "correct": ["Traditional festivals 🎊", "National holidays 🏳️"],
     "feedback": {
-      "correct": "Culture smart!",
-      "incorrect": "Arts & traditions."
+      "correct": "Wonderful! These are special times when we celebrate our culture! 🌟",
+      "incorrect": "Think about special days when people celebrate together 🎉"
     }
   },
   {
@@ -457,124 +145,18 @@ export const p3GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p3",
     "topic": "Culture & Heritage",
-    "text": "Traditional dance is part of…",
+    "text": "Which things help us learn about different cultures? (Choose 2) 🌍",
+    "type": "multiChoice",
     "options": [
-      "culture",
-      "math",
-      "chemistry"
+      "Traditional dance 💃",
+      "Local food 🍲",
+      "Video games 🎮",
+      "Traffic lights 🚦"
     ],
-    "correct": "culture",
+    "correct": ["Traditional dance 💃", "Local food 🍲"],
     "feedback": {
-      "correct": "Culture smart!",
-      "incorrect": "Arts & traditions."
-    }
-  },
-  {
-    "_id": "js-p3-gk-cult-003",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Culture & Heritage",
-    "text": "A monument remembers…",
-    "options": [
-      "history",
-      "sweets",
-      "games"
-    ],
-    "correct": "history",
-    "feedback": {
-      "correct": "Culture smart!",
-      "incorrect": "Arts & traditions."
-    }
-  },
-  {
-    "_id": "js-p3-gk-cult-004",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Culture & Heritage",
-    "text": "We respect other people’s…",
-    "options": [
-      "cultures",
-      "mistakes",
-      "toys"
-    ],
-    "correct": "cultures",
-    "feedback": {
-      "correct": "Culture smart!",
-      "incorrect": "Arts & traditions."
-    }
-  },
-  {
-    "_id": "js-p3-gk-cult-005",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Culture & Heritage",
-    "text": "A flag is a symbol of a…",
-    "options": [
-      "country",
-      "food",
-      "song"
-    ],
-    "correct": "country",
-    "feedback": {
-      "correct": "Culture smart!",
-      "incorrect": "Arts & traditions."
-    }
-  },
-  {
-    "_id": "js-p3-gk-cult-006",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Culture & Heritage",
-    "text": "A story about animals that talk is a…",
-    "options": [
-      "fable",
-      "recipe",
-      "report"
-    ],
-    "correct": "fable",
-    "feedback": {
-      "correct": "Culture smart!",
-      "incorrect": "Arts & traditions."
-    }
-  },
-  {
-    "_id": "js-p3-gk-cult-007",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Culture & Heritage",
-    "text": "The Olympics is about…",
-    "options": [
-      "sports",
-      "music",
-      "cooking"
-    ],
-    "correct": "sports",
-    "feedback": {
-      "correct": "Culture smart!",
-      "incorrect": "Arts & traditions."
-    }
-  },
-  {
-    "_id": "js-p3-gk-cult-008",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Culture & Heritage",
-    "text": "A painter uses…",
-    "options": [
-      "brush 🎨",
-      "bat",
-      "spoon"
-    ],
-    "correct": "brush 🎨",
-    "feedback": {
-      "correct": "Culture smart!",
-      "incorrect": "Arts & traditions."
+      "correct": "Excellent! Dance and food are important parts of culture! 🎯",
+      "incorrect": "Think about things that show a community's traditions 🤔"
     }
   },
   {
@@ -583,16 +165,18 @@ export const p3GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p3",
     "topic": "Geography & Places",
-    "text": "Capital of Kenya",
+    "text": "Select all facts about Africa (Choose 2) 🌍",
+    "type": "multiChoice",
     "options": [
-      "Nairobi",
-      "Cairo",
-      "Lagos"
+      "Home to the Sahara Desert 🏜️",
+      "Nairobi is Kenya's capital 🏙️",
+      "Smallest continent ❌",
+      "Has no rivers ❌"
     ],
-    "correct": "Nairobi",
+    "correct": ["Home to the Sahara Desert 🏜️", "Nairobi is Kenya's capital 🏙️"],
     "feedback": {
-      "correct": "Geo genius!",
-      "incorrect": "World facts."
+      "correct": "Perfect! You know your African geography! 🌟",
+      "incorrect": "Think about the special places and features in Africa 🌍"
     }
   },
   {
@@ -601,124 +185,18 @@ export const p3GeneralKnowledgeQuestions: Question[] = [
     "subject": "generalKnowledge",
     "class": "p3",
     "topic": "Geography & Places",
-    "text": "Continent with Sahara",
+    "text": "What are the main compass directions? (Choose all correct ones) 🧭",
+    "type": "multiChoice",
     "options": [
-      "Africa",
-      "Europe",
-      "Australia"
+      "North ⬆️",
+      "South ⬇️",
+      "East ➡️",
+      "West ⬅️"
     ],
-    "correct": "Africa",
+    "correct": ["North ⬆️", "South ⬇️", "East ➡️", "West ⬅️"],
     "feedback": {
-      "correct": "Geo genius!",
-      "incorrect": "World facts."
-    }
-  },
-  {
-    "_id": "js-p3-gk-geo-003",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Geography & Places",
-    "text": "A glacier is…",
-    "options": [
-      "slow moving ice",
-      "hot water",
-      "lava"
-    ],
-    "correct": "slow moving ice",
-    "feedback": {
-      "correct": "Geo genius!",
-      "incorrect": "World facts."
-    }
-  },
-  {
-    "_id": "js-p3-gk-geo-004",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Geography & Places",
-    "text": "Compass points include…",
-    "options": [
-      "N, S, E, W",
-      "A, B, C",
-      "Up, Down"
-    ],
-    "correct": "N, S, E, W",
-    "feedback": {
-      "correct": "Geo genius!",
-      "incorrect": "World facts."
-    }
-  },
-  {
-    "_id": "js-p3-gk-geo-005",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Geography & Places",
-    "text": "Island is land…",
-    "options": [
-      "surrounded by water",
-      "under the ground",
-      "in space"
-    ],
-    "correct": "surrounded by water",
-    "feedback": {
-      "correct": "Geo genius!",
-      "incorrect": "World facts."
-    }
-  },
-  {
-    "_id": "js-p3-gk-geo-006",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Geography & Places",
-    "text": "Equator is a line around…",
-    "options": [
-      "Earth",
-      "the moon",
-      "a city"
-    ],
-    "correct": "Earth",
-    "feedback": {
-      "correct": "Geo genius!",
-      "incorrect": "World facts."
-    }
-  },
-  {
-    "_id": "js-p3-gk-geo-007",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Geography & Places",
-    "text": "River Nile flows into the…",
-    "options": [
-      "Mediterranean Sea",
-      "Indian Ocean",
-      "Pacific"
-    ],
-    "correct": "Mediterranean Sea",
-    "feedback": {
-      "correct": "Geo genius!",
-      "incorrect": "World facts."
-    }
-  },
-  {
-    "_id": "js-p3-gk-geo-008",
-    "level": "juniorSchool",
-    "subject": "generalKnowledge",
-    "class": "p3",
-    "topic": "Geography & Places",
-    "text": "Mount is another word for…",
-    "options": [
-      "mountain",
-      "river",
-      "forest"
-    ],
-    "correct": "mountain",
-    "feedback": {
-      "correct": "Geo genius!",
-      "incorrect": "World facts."
+      "correct": "Amazing! You know all the main compass directions! 🎯",
+      "incorrect": "Remember: North, South, East, and West are the main directions 🧭"
     }
   }
 ]

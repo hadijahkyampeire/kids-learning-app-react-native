@@ -1,7 +1,7 @@
 import { type Question } from "../../../../types";
 
 export const middleClassMathQuestions: Question[] = [
-  // Number Recognition Topic (6 questions)
+  // Number Recognition Topic
   {
     _id: "md-math-nr-1",
     level: "preSchool",
@@ -11,7 +11,32 @@ export const middleClassMathQuestions: Question[] = [
     text: "What number comes after 5?",
     options: ["6", "4", "3"],
     correct: "6",
+    type: "choice",
     feedback: { correct: "Yes! 6 comes after 5.", incorrect: "Count forward from 5." }
+  },
+  {
+    _id: "md-math-mc-1",
+    level: "preSchool",
+    subject: "math",
+    class: "middle",
+    topic: "Number Recognition",
+    text: "Which numbers are bigger than 5? 🔢",
+    options: ["3", "4", "6", "7", "8", "5"],
+    correct: ["6", "7", "8"],
+    type: "multiChoice",
+    feedback: { correct: "Great! These numbers are all bigger than 5!", incorrect: "Look for numbers that come after 5." }
+  },
+  {
+    _id: "md-math-mc-2",
+    level: "preSchool",
+    subject: "math",
+    class: "middle",
+    topic: "Number Recognition",
+    text: "Which numbers are even? 🎯",
+    options: ["2", "3", "4", "5", "6", "7", "8"],
+    correct: ["2", "4", "6", "8"],
+    type: "multiChoice",
+    feedback: { correct: "Perfect! These are all even numbers!", incorrect: "Even numbers are 2, 4, 6, 8..." }
   },
   {
     _id: "md-math-nr-2",
@@ -22,6 +47,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "Which is the biggest number?",
     options: ["9", "3", "6"],
     correct: "9",
+    type: "choice",
     feedback: { correct: "Yes! 9 is bigger than 3 and 6.", incorrect: "Look for the largest number." }
   },
   {
@@ -33,6 +59,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "What number comes before 4?",
     options: ["3", "5", "2"],
     correct: "3",
+    type: "choice",
     feedback: { correct: "Yes! 3 comes before 4.", incorrect: "Count backward from 4." }
   },
   {
@@ -44,6 +71,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "Which is the smallest number?",
     options: ["1", "7", "4"],
     correct: "1",
+    type: "choice",
     feedback: { correct: "Yes! 1 is smaller than 7 and 4.", incorrect: "Look for the smallest number." }
   },
   {
@@ -55,6 +83,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "What number is between 6 and 8?",
     options: ["7", "5", "9"],
     correct: "7",
+    type: "choice",
     feedback: { correct: "Yes! 7 is between 6 and 8.", incorrect: "Count: 6, _, 8" }
   },
   {
@@ -66,10 +95,11 @@ export const middleClassMathQuestions: Question[] = [
     text: "Which number is zero?",
     options: ["0", "10", "1"],
     correct: "0",
+    type: "choice",
     feedback: { correct: "Yes! That's zero (0).", incorrect: "Zero looks like a circle." }
   },
 
-  // Basic Addition Topic (6 questions)
+  // Basic Addition Topic
   {
     _id: "md-math-ba-1",
     level: "preSchool",
@@ -79,7 +109,32 @@ export const middleClassMathQuestions: Question[] = [
     text: "How many are 2 apples and 1 apple together?",
     options: ["3", "2", "4"],
     correct: "3",
+    type: "choice",
     feedback: { correct: "Yes! 2 + 1 = 3", incorrect: "Count all the apples together." }
+  },
+  {
+    _id: "md-math-mc-3",
+    level: "preSchool",
+    subject: "math",
+    class: "middle",
+    topic: "Basic Addition",
+    text: "Which sums equal 5? ➕",
+    options: ["2+3", "1+4", "3+3", "4+2", "2+2", "3+2"],
+    correct: ["2+3", "1+4", "3+2"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! All these add up to 5!", incorrect: "Count carefully to find what makes 5." }
+  },
+  {
+    _id: "md-math-mc-4",
+    level: "preSchool",
+    subject: "math",
+    class: "middle",
+    topic: "Basic Addition",
+    text: "Which sums equal 4? ➕",
+    options: ["2+2", "1+3", "3+2", "2+1", "1+1", "3+1"],
+    correct: ["2+2", "1+3", "3+1"],
+    type: "multiChoice",
+    feedback: { correct: "Perfect! These all equal 4!", incorrect: "Find all the ways to make 4." }
   },
   {
     _id: "md-math-ba-2",
@@ -90,6 +145,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "What is 1 + 1?",
     options: ["2", "1", "3"],
     correct: "2",
+    type: "choice",
     feedback: { correct: "Yes! 1 + 1 = 2", incorrect: "Count: one plus one more." }
   },
   {
@@ -101,6 +157,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "How many are 3 birds and 2 birds?",
     options: ["5", "4", "6"],
     correct: "5",
+    type: "choice",
     feedback: { correct: "Yes! 3 + 2 = 5", incorrect: "Count all birds together." }
   },
   {
@@ -112,6 +169,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "What is 2 + 2?",
     options: ["4", "3", "5"],
     correct: "4",
+    type: "choice",
     feedback: { correct: "Yes! 2 + 2 = 4", incorrect: "Count: two plus two more." }
   },
   {
@@ -123,6 +181,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "How many are 4 flowers and 1 flower?",
     options: ["5", "4", "6"],
     correct: "5",
+    type: "choice",
     feedback: { correct: "Yes! 4 + 1 = 5", incorrect: "Count all flowers together." }
   },
   {
@@ -134,10 +193,11 @@ export const middleClassMathQuestions: Question[] = [
     text: "What is 3 + 3?",
     options: ["6", "5", "4"],
     correct: "6",
+    type: "choice",
     feedback: { correct: "Yes! 3 + 3 = 6", incorrect: "Count: three plus three more." }
   },
 
-  // Shapes & Patterns Topic (6 questions)
+  // Shapes & Patterns Topic
   {
     _id: "md-math-sp-1",
     level: "preSchool",
@@ -147,7 +207,32 @@ export const middleClassMathQuestions: Question[] = [
     text: "Which shape has 4 equal sides?",
     options: ["Square", "Triangle", "Circle"],
     correct: "Square",
+    type: "choice",
     feedback: { correct: "Yes! A square has 4 equal sides.", incorrect: "Count the sides of a square." }
+  },
+  {
+    _id: "md-math-mc-5",
+    level: "preSchool",
+    subject: "math",
+    class: "middle",
+    topic: "Shapes & Patterns",
+    text: "Which shapes have corners? 📐",
+    options: ["Circle", "Square", "Triangle", "Rectangle", "Star", "Heart"],
+    correct: ["Square", "Triangle", "Rectangle", "Star"],
+    type: "multiChoice",
+    feedback: { correct: "Great! These shapes all have corners!", incorrect: "Look for shapes with pointy edges." }
+  },
+  {
+    _id: "md-math-mc-6",
+    level: "preSchool",
+    subject: "math",
+    class: "middle",
+    topic: "Shapes & Patterns",
+    text: "Which patterns follow the rule: Red, Blue, Red, Blue? 🎨",
+    options: ["Red-Blue-Red", "Blue-Red-Blue", "Red-Green-Red", "Blue-Blue-Red", "Red-Blue-Green"],
+    correct: ["Red-Blue-Red", "Blue-Red-Blue"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! These follow the Red-Blue pattern!", incorrect: "Look for patterns that alternate Red and Blue." }
   },
   {
     _id: "md-math-sp-2",
@@ -158,6 +243,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "What shape is round like a ball?",
     options: ["Circle", "Square", "Triangle"],
     correct: "Circle",
+    type: "choice",
     feedback: { correct: "Yes! A circle is round.", incorrect: "Think of a round shape." }
   },
   {
@@ -169,6 +255,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "How many corners does a triangle have?",
     options: ["3", "4", "5"],
     correct: "3",
+    type: "choice",
     feedback: { correct: "Yes! A triangle has 3 corners.", incorrect: "Count the points of a triangle." }
   },
   {
@@ -180,6 +267,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "What comes next: Square, Circle, Square, Circle, ___?",
     options: ["Square", "Triangle", "Rectangle"],
     correct: "Square",
+    type: "choice",
     feedback: { correct: "Yes! The pattern repeats: Square, Circle.", incorrect: "Look at how the pattern repeats." }
   },
   {
@@ -191,6 +279,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "Which shape has 3 sides?",
     options: ["Triangle", "Square", "Circle"],
     correct: "Triangle",
+    type: "choice",
     feedback: { correct: "Yes! A triangle has 3 sides.", incorrect: "Count the sides of a triangle." }
   },
   {
@@ -202,6 +291,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "What comes next: Red, Blue, Red, Blue, ___?",
     options: ["Red", "Green", "Yellow"],
     correct: "Red",
+    type: "choice",
     feedback: { correct: "Yes! The pattern continues with Red.", incorrect: "Look at how the colors repeat." }
   },
 
@@ -215,6 +305,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "How many fingers do you have on one hand?",
     options: ["5", "4", "6"],
     correct: "5",
+    type: "choice",
     feedback: { correct: "Yes! We have 5 fingers on each hand.", incorrect: "Count your fingers on one hand." }
   },
   {
@@ -226,6 +317,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "Count the stars: ⭐⭐⭐",
     options: ["3", "2", "4"],
     correct: "3",
+    type: "choice",
     feedback: { correct: "Yes! There are 3 stars.", incorrect: "Count each star one by one." }
   },
   {
@@ -237,6 +329,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "How many days are in a week?",
     options: ["7", "5", "6"],
     correct: "7",
+    type: "choice",
     feedback: { correct: "Yes! There are 7 days in a week.", incorrect: "Count all days from Sunday to Saturday." }
   },
   {
@@ -248,6 +341,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "Count the dots: • • • •",
     options: ["4", "3", "5"],
     correct: "4",
+    type: "choice",
     feedback: { correct: "Yes! There are 4 dots.", incorrect: "Count each dot one by one." }
   },
   {
@@ -259,6 +353,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "How many colors are in a rainbow?",
     options: ["7", "5", "6"],
     correct: "7",
+    type: "choice",
     feedback: { correct: "Yes! A rainbow has 7 colors.", incorrect: "Count: red, orange, yellow, green, blue, indigo, violet." }
   },
   {
@@ -270,6 +365,7 @@ export const middleClassMathQuestions: Question[] = [
     text: "Count the squares: ⬛⬛⬛⬛⬛",
     options: ["5", "4", "6"],
     correct: "5",
+    type: "choice",
     feedback: { correct: "Yes! There are 5 squares.", incorrect: "Count each square one by one." }
   }
 ];

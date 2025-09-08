@@ -14,7 +14,9 @@ export const STORY_TOPICS_LOWER_PRIMARY = [
   "Tales (Fables)"
 ] as const;
 
-const GEN = "https://kids-app-images.s3.us-east-1.amazonaws.com/general-image.webp";
+const BG_LOCAL = require("../../assets/images/defaultImage.webp");
+
+const GEN = BG_LOCAL;
 
 export type StoryPage = { image?: string; text: string };
 
@@ -24,9 +26,9 @@ export type StoryBookLower = Story & {
   pages: StoryPage[];
 };
 
-// ---------- LOWER PRIMARY (p4–p5) ----------
+
 export const lowerPrimaryStoriesData: StoryBookLower[] = [
-  // P4
+
   {
     _id: "LP-P4-1",
     level: "lowerPrimary",
@@ -102,7 +104,7 @@ export const lowerPrimaryStoriesData: StoryBookLower[] = [
     ]
   },
 
-  // P5
+
   {
     _id: "LP-P5-1",
     level: "lowerPrimary",

@@ -10,7 +10,32 @@ export const babyClassMathQuestions: Question[] = [
     text: "How many apples? 🍎🍎🍎",
     options: ["2", "3", "4"],
     correct: "3",
+    type: "choice",
     feedback: { correct: "Yes, 3 apples!", incorrect: "Count again slowly." }
+  },
+  {
+    _id: "bb-maths-mc-1",
+    level: "preSchool",
+    subject: "math",
+    class: "baby",
+    topic: "Numbers & Counting (0-5)",
+    text: "Which numbers are less than 5? 🔢",
+    options: ["1", "2", "3", "4", "6", "7"],
+    correct: ["1", "2", "3", "4"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! All these numbers are less than 5!", incorrect: "Try to find all numbers smaller than 5." }
+  },
+  {
+    _id: "bb-maths-mc-2",
+    level: "preSchool",
+    subject: "math",
+    class: "baby",
+    topic: "Shapes",
+    text: "Which shapes are round? 🔵⭕",
+    options: ["Circle", "Square", "Ball", "Box", "Sun", "Rectangle"],
+    correct: ["Circle", "Ball", "Sun"],
+    type: "multiChoice",
+    feedback: { correct: "Great! These are all round shapes!", incorrect: "Look for shapes with no corners." }
   },
   {
     _id: "bb-maths-2",
@@ -21,6 +46,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "Which number is 5?",
     options: ["3", "5", "8"],
     correct: "5",
+    type: "choice",
     feedback: { correct: "Great! That is 5.", incorrect: "Not this one, look carefully." }
   },
   {
@@ -32,6 +58,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "Count the ducks 🦆🦆",
     options: ["1", "2", "3"],
     correct: "2",
+    type: "choice",
     feedback: { correct: "Yes, 2 ducks!", incorrect: "Count again, quack quack!" }
   },
   {
@@ -43,6 +70,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "How many stars? ⭐⭐",
     options: ["1", "2", "4"],
     correct: "2",
+    type: "choice",
     feedback: { correct: "Yes, 2 stars!", incorrect: "Count again slowly." }
   },
   {
@@ -54,6 +82,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "What number comes after 2?",
     options: ["3", "4", "1"],
     correct: "3",
+    type: "choice",
     feedback: { correct: "Yes! After 2 comes 3.", incorrect: "Count: 1, 2, 3..." }
   },
   {
@@ -65,6 +94,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "How many fingers? 👐",
     options: ["5", "4", "3"],
     correct: "5",
+    type: "choice",
     feedback: { correct: "Yes! 5 fingers.", incorrect: "Count each finger." }
   },
   {
@@ -76,6 +106,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "Count the hearts: ❤️❤️❤️",
     options: ["2", "3", "4"],
     correct: "3",
+    type: "choice",
     feedback: { correct: "Perfect! 3 hearts.", incorrect: "Try counting again." }
   },
   {
@@ -99,6 +130,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "Which one is a circle?",
     options: ["⚫", "⬜", "🔺"],
     correct: "⚫",
+    type: "choice",
     feedback: { correct: "Yes! Circle is round.", incorrect: "Circle is the round one." }
   },
   {
@@ -110,6 +142,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "Find the square:",
     options: ["⬜", "⚫", "🔺"],
     correct: "⬜",
+    type: "choice",
     feedback: { correct: "Yes! Square has 4 equal sides.", incorrect: "Square has 4 corners." }
   },
   {
@@ -121,6 +154,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "What comes next? 🔵⭐🔵__",
     options: ["⭐", "🔵", "❤️"],
     correct: "⭐",
+    type: "choice",
     feedback: { correct: "Yes! The pattern repeats.", incorrect: "Look at what comes after blue." }
   },
   {
@@ -132,6 +166,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "Find the triangle:",
     options: ["🔺", "⚫", "⬜"],
     correct: "🔺",
+    type: "choice",
     feedback: { correct: "Yes! Triangle has 3 sides.", incorrect: "Triangle has 3 corners." }
   },
   {
@@ -143,6 +178,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "What shape is a ball? ⚽",
     options: ["Circle", "Square", "Triangle"],
     correct: "Circle",
+    type: "choice",
     feedback: { correct: "Yes! A ball is round like a circle.", incorrect: "Think about how a ball rolls." }
   },
   {
@@ -154,6 +190,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "What comes next? ❤️💚❤️__",
     options: ["💚", "❤️", "💛"],
     correct: "💚",
+    type: "choice",
     feedback: { correct: "Yes! Red, green, red, green.", incorrect: "Look at how the colors repeat." }
   },
   {
@@ -165,6 +202,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "Find another square shape:",
     options: ["📦", "🎈", "🎾"],
     correct: "📦",
+    type: "choice",
     feedback: { correct: "Yes! A box is square shaped.", incorrect: "Look for flat sides and corners." }
   },
   {
@@ -176,6 +214,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "What comes next? 👏👋👏__",
     options: ["👋", "👏", "✌️"],
     correct: "👋",
+    type: "choice",
     feedback: { correct: "Yes! The pattern continues.", incorrect: "Watch how the hands move." }
   },
   // Basic Comparisons
@@ -188,6 +227,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "Which is bigger? 🐘 or 🐁",
     options: ["Elephant", "Mouse", "Same"],
     correct: "Elephant",
+    type: "choice",
     feedback: { correct: "Yes! Elephant is bigger.", incorrect: "Compare their sizes." }
   },
   {
@@ -199,6 +239,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "Which has more? 🍎🍎🍎 or 🍎🍎",
     options: ["First group", "Second group", "Same"],
     correct: "First group",
+    type: "choice",
     feedback: { correct: "Yes! 3 is more than 2.", incorrect: "Count and compare." }
   },
   {
@@ -210,6 +251,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "Which is shorter? 🌲 or 🌱",
     options: ["Small plant", "Tree", "Same"],
     correct: "Small plant",
+    type: "choice",
     feedback: { correct: "Yes! The small plant is shorter.", incorrect: "Compare their heights." }
   },
   {
@@ -221,6 +263,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "Which has fewer dots? ⚂ or ⚀",
     options: ["Second dice", "First dice", "Same"],
     correct: "Second dice",
+    type: "choice",
     feedback: { correct: "Yes! One dot is fewer than three.", incorrect: "Count the dots on each dice." }
   },
   {
@@ -243,6 +286,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "Which is taller? 🌳 or 🌸",
     options: ["Tree", "Flower", "Same"],
     correct: "Tree",
+    type: "choice",
     feedback: { correct: "Yes! The tree is taller.", incorrect: "Compare their heights." }
   },
   {
@@ -254,6 +298,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "Which shows the same number? 👫 = ?",
     options: ["🎈🎈", "🎈", "🎈🎈🎈"],
     correct: "🎈🎈",
+    type: "choice",
     feedback: { correct: "Yes! Both show two.", incorrect: "Count both groups." }
   },
   {
@@ -265,6 +310,7 @@ export const babyClassMathQuestions: Question[] = [
     text: "Small or big? 🐜",
     options: ["Small", "Big", "Same"],
     correct: "Small",
+    type: "choice",
     feedback: { correct: "Yes! An ant is small.", incorrect: "Think about how tiny an ant is." }
   }
 ];

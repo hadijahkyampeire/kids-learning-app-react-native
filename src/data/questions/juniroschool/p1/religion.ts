@@ -7,16 +7,17 @@ export const juniorSchoolP1ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p1",
     "topic": "Beliefs & Worship",
-    "text": "How many times do Muslims pray daily?",
+    "text": "How many times do Muslims pray to Allah each day? 🤲",
     "options": [
-      "3",
-      "5",
-      "7"
+      "5 times daily 🌅",
+      "3 times daily 🕌",
+      "1 time daily 🌙"
     ],
-    "correct": "5",
+    "correct": "5 times daily 🌅",
+    "type": "choice",
     "feedback": {
-      "correct": "Five prayers.",
-      "incorrect": "More than 3, less than 7."
+      "correct": "Wonderful! Muslims pray 5 times every day to worship Allah! 🌟",
+      "incorrect": "Muslims pray 5 times each day: Fajr (morning), Dhuhr (noon), Asr (afternoon), Maghrib (sunset), and Isha (night) 🤲"
     }
   },
   {
@@ -25,16 +26,17 @@ export const juniorSchoolP1ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p1",
     "topic": "Beliefs & Worship",
-    "text": "We say __ before we eat.",
+    "text": "What special words do Muslims say before eating their food? 🍽️",
     "options": [
-      "Bismillah",
-      "Good night",
-      "See you"
+      "Bismillah 🤲",
+      "Thank you 🙏",
+      "Let's eat! �"
     ],
-    "correct": "Bismillah",
+    "correct": "Bismillah 🤲",
+    "type": "choice",
     "feedback": {
-      "correct": "Begin with Bismillah.",
-      "incorrect": "It starts with B."
+      "correct": "Perfect! We say 'Bismillah' to remember Allah before we eat! 🌟",
+      "incorrect": "We say 'Bismillah' (In the name of Allah) before eating to get blessings 🤲"
     }
   },
   {
@@ -205,13 +207,13 @@ export const juniorSchoolP1ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p1",
     "topic": "Values & Manners",
-    "text": "We should share our toys…",
+    "text": "We should share our toys... 🧸",
     "options": [
-      "sometimes",
-      "never",
-      "always"
+      "always 🤝",
+      "never 😤",
+      "sometimes 🤔"
     ],
-    "correct": "sometimes",
+    "correct": "always 🤝",
     "feedback": {
       "correct": "Sharing is caring!",
       "incorrect": "Be generous."

@@ -245,7 +245,7 @@ export const p4English: Question[] = [
     subject: "english",
     class: "p4",
     topic: "Tenses",
-    text: "Which is in past tense? ⏰",
+    text: "Which is in past tense?",
     options: ["walked", "walk", "walking"],
     correct: "walked",
     feedback: { correct: "Yes! 'Walked' is past tense - it already happened", incorrect: "Past tense describes actions that already happened" }
@@ -552,5 +552,229 @@ export const p4English: Question[] = [
     options: ["The bird flew away.", "Bird the away flew.", "Away the bird flew"],
     correct: "The bird flew away.",
     feedback: { correct: "Yes! This follows correct English word order", incorrect: "English sentences follow Subject-Verb-Object order" }
-  }
+  },
+  // --- Add-ons mapped to the 6 topics ---
+
+// Grammar & Parts of Speech
+{
+  _id: "lp-p4-en-pro-1",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Grammar & Parts of Speech",
+  type: "text",
+  text: "Rewrite using a pronoun: John is very fat. (Use: he)",
+  accepted: ["he is very fat","he's very fat"],
+  feedback: { correct: "Yes—‘He is very fat.’", incorrect: "Use ‘He’ to replace John." }
+},
+{
+  _id: "lp-p4-en-pl-1",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Grammar & Parts of Speech",
+  type: "text",
+  text: "Give the plural of: calf.",
+  accepted: ["calves"],
+  feedback: { correct: "Yes—calf → calves.", incorrect: "Plural: calves." }
+},
+{
+  _id: "lp-p4-en-pl-2",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Grammar & Parts of Speech",
+  type: "text",
+  text: "Rewrite with the plural of the underlined word: I bought a blue toy yesterday.",
+  accepted: ["i bought blue toys yesterday","bought blue toys yesterday"],
+  feedback: { correct: "Good—‘blue toys’.", incorrect: "Change ‘a blue toy’ to ‘blue toys’." }
+},
+{
+  _id: "lp-p4-en-comp-1",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Grammar & Parts of Speech",
+  type: "text",
+  text: "Complete: Amina is ___ (tall) than Joan.",
+  accepted: ["taller"],
+  feedback: { correct: "Yes—taller.", incorrect: "Use the comparative: taller." }
+},
+{
+  _id: "lp-p4-en-comp-2",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Grammar & Parts of Speech",
+  type: "text",
+  text: "Complete: Sunday is the ___ (holy) day of the week.",
+  accepted: ["holiest"],
+  feedback: { correct: "Right—holiest.", incorrect: "Use the superlative: holiest." }
+},
+
+// Vocabulary & Word Meanings
+{
+  _id: "lp-p4-en-vocab-opp-expensive",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Vocabulary & Word Meanings",
+  type: "text",
+  text: "Give the opposite of: expensive.",
+  accepted: ["cheap","inexpensive"],
+  feedback: { correct: "Nice—expensive ↔ cheap.", incorrect: "Opposite: cheap." }
+},
+{
+  _id: "lp-p4-en-vocab-library",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Vocabulary & Word Meanings",
+  type: "text",
+  text: "Write one word for: a place where we keep books for reading.",
+  accepted: ["library","the library"],
+  feedback: { correct: "Yes—library.", incorrect: "It is called a library." }
+},
+{
+  _id: "lp-p4-en-abc-1",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Vocabulary & Word Meanings",
+  type: "text",
+  text: "Arrange in ABC order: money, monster, mother.",
+  accepted: ["money, monster, mother","money monster mother"],
+  feedback: { correct: "Correct ABC order.", incorrect: "Order: money, monster, mother." }
+},
+
+// Tenses
+{
+  _id: "lp-p4-en-tense-write-now",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Tenses",
+  type: "text",
+  text: "Fill with the correct form: She ___ (write) her homework now.",
+  accepted: ["is writing","she is writing"],
+  feedback: { correct: "Yes—present continuous ‘is writing’.", incorrect: "Use present continuous: is writing." }
+},
+{
+  _id: "lp-p4-en-tense-went",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Tenses",
+  type: "text",
+  text: "Fill with the correct form: We ___ (go) to church yesterday.",
+  accepted: ["went","we went"],
+  feedback: { correct: "Correct—past tense ‘went’.", incorrect: "Use past tense: went." }
+},
+
+// Punctuation & Capitalization
+{
+  _id: "lp-p4-en-punc-name-q",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Punctuation & Capitalization",
+  type: "text",
+  text: "Rewrite and punctuate correctly: what is your name",
+  accepted: ["What is your name?"],
+  feedback: { correct: "Great punctuation.", incorrect: "Write: What is your name?" }
+},
+
+// Sentence Skills (rewriting/joining/transform)
+{
+  _id: "lp-p4-en-rewrite-bad-disobey",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Sentence Skills",
+  type: "text",
+  text: "Begin: It is bad ___. Complete using ‘to’ + verb: (disobey teachers at school).",
+  accepted: ["to disobey teachers at school is bad","it is bad to disobey teachers at school"],
+  feedback: { correct: "Nice—kept the structure.", incorrect: "Write: It is bad to disobey teachers at school." }
+},
+{
+  _id: "lp-p4-en-rewrite-too-to",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Sentence Skills",
+  type: "text",
+  text: "Join using ‘too … to’: Cathy is very weak. She cannot carry a bag of cement.",
+  accepted: ["cathy is too weak to carry a bag of cement"],
+  feedback: { correct: "Correct use of ‘too … to’.", incorrect: "Write: Cathy is too weak to carry a bag of cement." }
+},
+{
+  _id: "lp-p4-en-rewrite-prefer",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Sentence Skills",
+  type: "text",
+  text: "Rewrite using ‘prefer … to …’: Sarah likes juice more than soda.",
+  accepted: ["sarah prefers juice to soda"],
+  feedback: { correct: "Good—‘prefers … to …’.", incorrect: "Write: Sarah prefers juice to soda." }
+},
+
+// Functional Language & Usage
+{
+  _id: "lp-p4-en-prep-fridge",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Functional Language & Usage",
+  type: "text",
+  text: "We keep the juice ___ the fridge. (in/on/into)",
+  accepted: ["in"],
+  feedback: { correct: "Correct—juice is kept in the fridge.", incorrect: "Use ‘in’: in the fridge." }
+},
+{
+  _id: "lp-p4-en-prep-wall",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Functional Language & Usage",
+  type: "text",
+  text: "Do not lean ___ the wet wall. (on/against/at)",
+  accepted: ["against"],
+  feedback: { correct: "Right—lean against the wall.", incorrect: "Use ‘against’." }
+},
+{
+  _id: "lp-p4-en-request-may-i",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Functional Language & Usage",
+  type: "text",
+  text: "Make a polite request: lend me your pen please (begin with May I…)",
+  accepted: ["may i borrow your pen please","may i borrow your pen, please"],
+  feedback: { correct: "Polite and correct.", incorrect: "Write: May I borrow your pen, please?" }
+},
+{
+  _id: "lp-p4-en-func-shopping-mcq",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Functional Language & Usage",
+  type: "choice",
+  text: "Which document shows items to buy and unit prices?",
+  options: ["Shopping list","Passport","Report card"],
+  correct: "Shopping list",
+  feedback: { correct: "Yes—a shopping list.", incorrect: "Correct answer: Shopping list." }
+},
+{
+  _id: "lp-p4-en-func-shopping-title",
+  level: "lowerPrimary",
+  subject: "english",
+  class: "p4",
+  topic: "Functional Language & Usage",
+  type: "text",
+  text: "Write a suitable title for a list of items to buy for home use.",
+  accepted: ["shopping list","home shopping list","family shopping list"],
+  feedback: { correct: "Good title.", incorrect: "A good title is ‘Shopping List’." }
+}
+
 ];

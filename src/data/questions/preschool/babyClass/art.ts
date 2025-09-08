@@ -11,7 +11,32 @@ export const babyClassArtQuestions: Question[] = [
     text: "Which one is red? 🔴",
     options: ["Red circle", "Blue circle", "Yellow circle"],
     correct: "Red circle",
+    type: "choice",
     feedback: { correct: "Yes! That's red.", incorrect: "Red is like an apple or stop light." }
+  },
+  {
+    _id: "bb-art-mc-1",
+    level: "preSchool",
+    subject: "art",
+    class: "baby",
+    topic: "Basic Colors",
+    text: "Which things are red? 🎨",
+    options: ["Apple", "Strawberry", "Banana", "Fire truck", "Grass", "Cherry"],
+    correct: ["Apple", "Strawberry", "Fire truck", "Cherry"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! All these things are red!", incorrect: "Think about things that are the color of a stop light." }
+  },
+  {
+    _id: "bb-art-mc-2",
+    level: "preSchool",
+    subject: "art",
+    class: "baby",
+    topic: "Color Groups",
+    text: "Which are warm colors? 🌞",
+    options: ["Red", "Blue", "Yellow", "Green", "Orange", "Purple"],
+    correct: ["Red", "Yellow", "Orange"],
+    type: "multiChoice",
+    feedback: { correct: "Great! These are warm colors like the sun!", incorrect: "Warm colors remind us of the sun and fire." }
   },
   {
     _id: "bb-art-2",
@@ -101,7 +126,32 @@ export const babyClassArtQuestions: Question[] = [
     text: "Which one is a circle? ⭕",
     options: ["Circle", "Square", "Triangle"],
     correct: "Circle",
+    type: "choice",
     feedback: { correct: "Yes! That's a circle.", incorrect: "A circle is round like a ball." }
+  },
+  {
+    _id: "bb-art-mc-3",
+    level: "preSchool",
+    subject: "art",
+    class: "baby",
+    topic: "Basic Shapes",
+    text: "Which shapes can roll? 🎳",
+    options: ["Circle", "Square", "Ball", "Cube", "Cylinder", "Triangle"],
+    correct: ["Circle", "Ball", "Cylinder"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! These shapes can all roll!", incorrect: "Think about shapes with no corners that can roll." }
+  },
+  {
+    _id: "bb-art-mc-4",
+    level: "preSchool",
+    subject: "art",
+    class: "baby",
+    topic: "Basic Shapes",
+    text: "What shapes do you see in a house? 🏠",
+    options: ["Square", "Rectangle", "Circle", "Triangle", "Star", "Heart"],
+    correct: ["Square", "Rectangle", "Triangle"],
+    type: "multiChoice",
+    feedback: { correct: "Great! Houses have these shapes!", incorrect: "Look at the walls, windows, and roof of a house." }
   },
   {
     _id: "bb-art-10",
@@ -191,7 +241,32 @@ export const babyClassArtQuestions: Question[] = [
     text: "What do we use to color? 🖍️",
     options: ["Crayons", "Scissors", "Glue"],
     correct: "Crayons",
+    type: "choice",
     feedback: { correct: "Yes! We use crayons to color.", incorrect: "Think about what makes colorful marks." }
+  },
+  {
+    _id: "bb-art-mc-5",
+    level: "preSchool",
+    subject: "art",
+    class: "baby",
+    topic: "Art Tools",
+    text: "Which tools can make colors? 🎨",
+    options: ["Crayons", "Paint", "Markers", "Scissors", "Glue", "Eraser"],
+    correct: ["Crayons", "Paint", "Markers"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! These all make beautiful colors!", incorrect: "Think about what tools leave colorful marks on paper." }
+  },
+  {
+    _id: "bb-art-mc-6",
+    level: "preSchool",
+    subject: "art",
+    class: "baby",
+    topic: "Art Tools",
+    text: "What do we need for painting? 🖌️",
+    options: ["Paint", "Brush", "Water", "Paper", "Scissors", "Glue"],
+    correct: ["Paint", "Brush", "Water", "Paper"],
+    type: "multiChoice",
+    feedback: { correct: "Perfect! We need all these to paint!", incorrect: "Think about everything you use when painting a picture." }
   },
   {
     _id: "bb-art-18",

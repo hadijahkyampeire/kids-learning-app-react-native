@@ -7,16 +7,18 @@ export const p3ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p3",
     "topic": "Body & Health",
-    "text": "Heart pumps…",
+    "text": "Select all organs that help with breathing (Choose 2) 💨",
+    "type": "multiChoice",
     "options": [
-      "blood",
-      "air",
-      "food"
+      "Lungs 🫁",
+      "Nose 👃",
+      "Stomach 🦠",
+      "Ear 👂"
     ],
-    "correct": "blood",
+    "correct": ["Lungs 🫁", "Nose 👃"],
     "feedback": {
-      "correct": "Healthy habits!",
-      "incorrect": "Body system basics."
+      "correct": "Excellent! These organs work together to help us breathe! 🌟",
+      "incorrect": "Think about which organs you use when taking a deep breath 💨"
     }
   },
   {
@@ -25,16 +27,18 @@ export const p3ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p3",
     "topic": "Body & Health",
-    "text": "Lungs help us…",
+    "text": "Match these body parts with their functions (Choose 2) 🧬",
+    "type": "multiChoice",
     "options": [
-      "breathe",
-      "see",
-      "hear"
+      "Heart pumps blood ❤️",
+      "Brain helps us think 🧠",
+      "Heart helps us see 👀",
+      "Brain pumps blood ❌"
     ],
-    "correct": "breathe",
+    "correct": ["Heart pumps blood ❤️", "Brain helps us think 🧠"],
     "feedback": {
-      "correct": "Healthy habits!",
-      "incorrect": "Body system basics."
+      "correct": "Perfect! Each organ has its special job! 🎯",
+      "incorrect": "Remember what each body part does for us 🤔"
     }
   },
   {
@@ -43,106 +47,18 @@ export const p3ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p3",
     "topic": "Body & Health",
-    "text": "Brain helps us…",
+    "text": "Choose all healthy habits (Choose 2) 🌟",
+    "type": "multiChoice",
     "options": [
-      "think",
-      "jump",
-      "smell"
+      "Washing hands for 20 seconds 🧼",
+      "Exercise daily 🏃‍♀️",
+      "Eating only candy 🍬",
+      "Staying up all night 😴"
     ],
-    "correct": "think",
+    "correct": ["Washing hands for 20 seconds 🧼", "Exercise daily 🏃‍♀️"],
     "feedback": {
-      "correct": "Healthy habits!",
-      "incorrect": "Body system basics."
-    }
-  },
-  {
-    "_id": "js-p3-sci-body-004",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Body & Health",
-    "text": "Food with vitamins",
-    "options": [
-      "fruits 🍎",
-      "chips 🍟",
-      "soda 🥤"
-    ],
-    "correct": "fruits 🍎",
-    "feedback": {
-      "correct": "Healthy habits!",
-      "incorrect": "Body system basics."
-    }
-  },
-  {
-    "_id": "js-p3-sci-body-005",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Body & Health",
-    "text": "Bones are part of the…",
-    "options": [
-      "skeleton 🦴",
-      "skin",
-      "leaf"
-    ],
-    "correct": "skeleton 🦴",
-    "feedback": {
-      "correct": "Healthy habits!",
-      "incorrect": "Body system basics."
-    }
-  },
-  {
-    "_id": "js-p3-sci-body-006",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Body & Health",
-    "text": "We should wash hands for…",
-    "options": [
-      "20 sec",
-      "5 sec",
-      "2 sec"
-    ],
-    "correct": "20 sec",
-    "feedback": {
-      "correct": "Healthy habits!",
-      "incorrect": "Body system basics."
-    }
-  },
-  {
-    "_id": "js-p3-sci-body-007",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Body & Health",
-    "text": "We hear with the…",
-    "options": [
-      "ear 👂",
-      "eye 👀",
-      "nose 👃"
-    ],
-    "correct": "ear 👂",
-    "feedback": {
-      "correct": "Healthy habits!",
-      "incorrect": "Body system basics."
-    }
-  },
-  {
-    "_id": "js-p3-sci-body-008",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Body & Health",
-    "text": "Exercise keeps the heart…",
-    "options": [
-      "strong ❤️",
-      "weak",
-      "sleepy"
-    ],
-    "correct": "strong ❤️",
-    "feedback": {
-      "correct": "Healthy habits!",
-      "incorrect": "Body system basics."
+      "correct": "Great! These habits keep us healthy and strong! 💪",
+      "incorrect": "Think about what makes our body healthy and strong 🤔"
     }
   },
   {
@@ -151,16 +67,18 @@ export const p3ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p3",
     "topic": "Plants & Animals",
-    "text": "Plants need sunlight for…",
+    "text": "What do plants need to grow? (Choose 2) 🌱",
+    "type": "multiChoice",
     "options": [
-      "making food",
-      "dancing",
-      "sleeping"
+      "Sunlight ☀️",
+      "Water 💧",
+      "Television 📺",
+      "Books 📚"
     ],
-    "correct": "making food",
+    "correct": ["Sunlight ☀️", "Water 💧"],
     "feedback": {
-      "correct": "Green thumbs!",
-      "incorrect": "Life science basics."
+      "correct": "Perfect! Plants need sunlight and water to grow healthy! 🌿",
+      "incorrect": "Think about what a plant uses to make its food 🌱"
     }
   },
   {
@@ -169,124 +87,18 @@ export const p3ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p3",
     "topic": "Plants & Animals",
-    "text": "Roots help a plant…",
+    "text": "Select all animals that can live in water (Choose 2) 🌊",
+    "type": "multiChoice",
     "options": [
-      "stand & drink",
-      "fly",
-      "sing"
+      "Fish 🐠",
+      "Frog 🐸",
+      "Chicken 🐔",
+      "Cat 🐱"
     ],
-    "correct": "stand & drink",
+    "correct": ["Fish 🐠", "Frog 🐸"],
     "feedback": {
-      "correct": "Green thumbs!",
-      "incorrect": "Life science basics."
-    }
-  },
-  {
-    "_id": "js-p3-sci-pa-003",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Plants & Animals",
-    "text": "Animals that eat plants are…",
-    "options": [
-      "herbivores",
-      "carnivores",
-      "omnivores"
-    ],
-    "correct": "herbivores",
-    "feedback": {
-      "correct": "Green thumbs!",
-      "incorrect": "Life science basics."
-    }
-  },
-  {
-    "_id": "js-p3-sci-pa-004",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Plants & Animals",
-    "text": "Frogs can live in…",
-    "options": [
-      "water & land",
-      "air only",
-      "desert only"
-    ],
-    "correct": "water & land",
-    "feedback": {
-      "correct": "Green thumbs!",
-      "incorrect": "Life science basics."
-    }
-  },
-  {
-    "_id": "js-p3-sci-pa-005",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Plants & Animals",
-    "text": "Seeds grow into…",
-    "options": [
-      "plants",
-      "rocks",
-      "clouds"
-    ],
-    "correct": "plants",
-    "feedback": {
-      "correct": "Green thumbs!",
-      "incorrect": "Life science basics."
-    }
-  },
-  {
-    "_id": "js-p3-sci-pa-006",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Plants & Animals",
-    "text": "Pollinators include…",
-    "options": [
-      "bees 🐝",
-      "turtles 🐢",
-      "wolves 🐺"
-    ],
-    "correct": "bees 🐝",
-    "feedback": {
-      "correct": "Green thumbs!",
-      "incorrect": "Life science basics."
-    }
-  },
-  {
-    "_id": "js-p3-sci-pa-007",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Plants & Animals",
-    "text": "A penguin lives in…",
-    "options": [
-      "cold ❄️",
-      "hot 🔥",
-      "desert 🏜️"
-    ],
-    "correct": "cold ❄️",
-    "feedback": {
-      "correct": "Green thumbs!",
-      "incorrect": "Life science basics."
-    }
-  },
-  {
-    "_id": "js-p3-sci-pa-008",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Plants & Animals",
-    "text": "A baby cow is a…",
-    "options": [
-      "calf",
-      "kitten",
-      "puppy"
-    ],
-    "correct": "calf",
-    "feedback": {
-      "correct": "Green thumbs!",
-      "incorrect": "Life science basics."
+      "correct": "Great job! These animals can live in water! 🌊",
+      "incorrect": "Think about which animals spend time in water 💧"
     }
   },
   {
@@ -295,16 +107,18 @@ export const p3ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p3",
     "topic": "Weather & Climate",
-    "text": "Climate means…",
+    "text": "Select all true statements about clouds (Choose 2) ☁️",
+    "type": "multiChoice",
     "options": [
-      "usual weather",
-      "today's rain",
-      "cloud type"
+      "Clouds are made of tiny water drops 💧",
+      "Rain comes from clouds 🌧️",
+      "Clouds are made of cotton ❌",
+      "Clouds are solid rocks ❌"
     ],
-    "correct": "usual weather",
+    "correct": ["Clouds are made of tiny water drops 💧", "Rain comes from clouds 🌧️"],
     "feedback": {
-      "correct": "Weather wise!",
-      "incorrect": "Everyday science."
+      "correct": "Excellent! You understand clouds very well! ⭐",
+      "incorrect": "Think about what clouds are made of and what they do 🤔"
     }
   },
   {
@@ -313,124 +127,18 @@ export const p3ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p3",
     "topic": "Weather & Climate",
-    "text": "Rain gauge measures…",
+    "text": "What should we do during a storm? (Choose 2) ⛈️",
+    "type": "multiChoice",
     "options": [
-      "rainfall",
-      "temperature",
-      "wind"
+      "Stay indoors 🏠",
+      "Keep away from windows 🪟",
+      "Play outside ❌",
+      "Stand under trees ❌"
     ],
-    "correct": "rainfall",
+    "correct": ["Stay indoors 🏠", "Keep away from windows 🪟"],
     "feedback": {
-      "correct": "Weather wise!",
-      "incorrect": "Everyday science."
-    }
-  },
-  {
-    "_id": "js-p3-sci-wc-003",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Weather & Climate",
-    "text": "Wind is moving…",
-    "options": [
-      "air",
-      "water",
-      "earth"
-    ],
-    "correct": "air",
-    "feedback": {
-      "correct": "Weather wise!",
-      "incorrect": "Everyday science."
-    }
-  },
-  {
-    "_id": "js-p3-sci-wc-004",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Weather & Climate",
-    "text": "Clouds are made of…",
-    "options": [
-      "tiny water drops",
-      "sand",
-      "smoke"
-    ],
-    "correct": "tiny water drops",
-    "feedback": {
-      "correct": "Weather wise!",
-      "incorrect": "Everyday science."
-    }
-  },
-  {
-    "_id": "js-p3-sci-wc-005",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Weather & Climate",
-    "text": "Storm safety: stay…",
-    "options": [
-      "indoors",
-      "under a tree",
-      "in water"
-    ],
-    "correct": "indoors",
-    "feedback": {
-      "correct": "Weather wise!",
-      "incorrect": "Everyday science."
-    }
-  },
-  {
-    "_id": "js-p3-sci-wc-006",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Weather & Climate",
-    "text": "Desert climate is…",
-    "options": [
-      "dry",
-      "snowy",
-      "very wet"
-    ],
-    "correct": "dry",
-    "feedback": {
-      "correct": "Weather wise!",
-      "incorrect": "Everyday science."
-    }
-  },
-  {
-    "_id": "js-p3-sci-wc-007",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Weather & Climate",
-    "text": "Coat is worn in…",
-    "options": [
-      "cold",
-      "hot",
-      "rain only"
-    ],
-    "correct": "cold",
-    "feedback": {
-      "correct": "Weather wise!",
-      "incorrect": "Everyday science."
-    }
-  },
-  {
-    "_id": "js-p3-sci-wc-008",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Weather & Climate",
-    "text": "Umbrella is used in…",
-    "options": [
-      "rain",
-      "fog",
-      "night"
-    ],
-    "correct": "rain",
-    "feedback": {
-      "correct": "Weather wise!",
-      "incorrect": "Everyday science."
+      "correct": "Very good! These choices keep us safe during storms! ⚡",
+      "incorrect": "Think about what keeps us safe in bad weather 🤔"
     }
   },
   {
@@ -439,16 +147,18 @@ export const p3ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p3",
     "topic": "Materials & Energy",
-    "text": "Battery stores…",
+    "text": "Which materials can be recycled? (Choose 2) ♻️",
+    "type": "multiChoice",
     "options": [
-      "energy",
-      "water",
-      "air"
+      "Glass bottles 🫙",
+      "Paper 📄",
+      "Used food 🍎",
+      "Dirty tissues 🤧"
     ],
-    "correct": "energy",
+    "correct": ["Glass bottles 🫙", "Paper 📄"],
     "feedback": {
-      "correct": "Material matters!",
-      "incorrect": "Properties & uses."
+      "correct": "Great! These materials can be recycled to make new things! ♻️",
+      "incorrect": "Think about materials that can be used again 🤔"
     }
   },
   {
@@ -457,124 +167,18 @@ export const p3ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p3",
     "topic": "Materials & Energy",
-    "text": "Metal feels…",
+    "text": "What are sources of energy? (Choose 2) ⚡",
+    "type": "multiChoice",
     "options": [
-      "cold & shiny",
-      "soft",
-      "sticky"
+      "Sunlight ☀️",
+      "Batteries 🔋",
+      "Paper 📄",
+      "Rubber ✏️"
     ],
-    "correct": "cold & shiny",
+    "correct": ["Sunlight ☀️", "Batteries 🔋"],
     "feedback": {
-      "correct": "Material matters!",
-      "incorrect": "Properties & uses."
-    }
-  },
-  {
-    "_id": "js-p3-sci-me-003",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Materials & Energy",
-    "text": "Paper is made from…",
-    "options": [
-      "wood",
-      "stone",
-      "glass"
-    ],
-    "correct": "wood",
-    "feedback": {
-      "correct": "Material matters!",
-      "incorrect": "Properties & uses."
-    }
-  },
-  {
-    "_id": "js-p3-sci-me-004",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Materials & Energy",
-    "text": "Plastic is usually…",
-    "options": [
-      "light",
-      "heavy",
-      "edible"
-    ],
-    "correct": "light",
-    "feedback": {
-      "correct": "Material matters!",
-      "incorrect": "Properties & uses."
-    }
-  },
-  {
-    "_id": "js-p3-sci-me-005",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Materials & Energy",
-    "text": "Solar panels use…",
-    "options": [
-      "sunlight",
-      "wind",
-      "coal"
-    ],
-    "correct": "sunlight",
-    "feedback": {
-      "correct": "Material matters!",
-      "incorrect": "Properties & uses."
-    }
-  },
-  {
-    "_id": "js-p3-sci-me-006",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Materials & Energy",
-    "text": "Wood often…",
-    "options": [
-      "floats",
-      "melts",
-      "evaporates"
-    ],
-    "correct": "floats",
-    "feedback": {
-      "correct": "Material matters!",
-      "incorrect": "Properties & uses."
-    }
-  },
-  {
-    "_id": "js-p3-sci-me-007",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Materials & Energy",
-    "text": "Glass can be…",
-    "options": [
-      "recycled ♻️",
-      "eaten",
-      "planted"
-    ],
-    "correct": "recycled ♻️",
-    "feedback": {
-      "correct": "Material matters!",
-      "incorrect": "Properties & uses."
-    }
-  },
-  {
-    "_id": "js-p3-sci-me-008",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Materials & Energy",
-    "text": "Switch turns electricity…",
-    "options": [
-      "on/off",
-      "big/small",
-      "hot/cold"
-    ],
-    "correct": "on/off",
-    "feedback": {
-      "correct": "Material matters!",
-      "incorrect": "Properties & uses."
+      "correct": "Perfect! These things give us energy! ⚡",
+      "incorrect": "Think about what powers our devices and gives us light 💡"
     }
   },
   {
@@ -583,16 +187,18 @@ export const p3ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p3",
     "topic": "Earth & Space",
-    "text": "Closest planet to the Sun",
+    "text": "Select all facts about Earth (Choose 2) 🌍",
+    "type": "multiChoice",
     "options": [
-      "Mercury",
-      "Venus",
-      "Mars"
+      "Earth orbits around the Sun ☀️",
+      "Earth has one Moon 🌕",
+      "Earth is the closest to the Sun ❌",
+      "Earth has two Moons ❌"
     ],
-    "correct": "Mercury",
+    "correct": ["Earth orbits around the Sun ☀️", "Earth has one Moon 🌕"],
     "feedback": {
-      "correct": "Space curious!",
-      "incorrect": "Basic astronomy & Earth."
+      "correct": "Excellent! You know our planet well! 🌟",
+      "incorrect": "Think about what makes Earth special in our solar system 🌍"
     }
   },
   {
@@ -601,124 +207,18 @@ export const p3ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p3",
     "topic": "Earth & Space",
-    "text": "Earth has one…",
+    "text": "What can we see in the night sky? (Choose 2) 🌃",
+    "type": "multiChoice",
     "options": [
-      "moon",
-      "sun",
-      "ring"
+      "Stars ⭐",
+      "Moon 🌕",
+      "Sun ☀️",
+      "Rainbow 🌈"
     ],
-    "correct": "moon",
+    "correct": ["Stars ⭐", "Moon 🌕"],
     "feedback": {
-      "correct": "Space curious!",
-      "incorrect": "Basic astronomy & Earth."
-    }
-  },
-  {
-    "_id": "js-p3-sci-es-003",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Earth & Space",
-    "text": "The moon changes…",
-    "options": [
-      "phases",
-      "taste",
-      "sound"
-    ],
-    "correct": "phases",
-    "feedback": {
-      "correct": "Space curious!",
-      "incorrect": "Basic astronomy & Earth."
-    }
-  },
-  {
-    "_id": "js-p3-sci-es-004",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Earth & Space",
-    "text": "Earth orbits the…",
-    "options": [
-      "Sun",
-      "Moon",
-      "Mars"
-    ],
-    "correct": "Sun",
-    "feedback": {
-      "correct": "Space curious!",
-      "incorrect": "Basic astronomy & Earth."
-    }
-  },
-  {
-    "_id": "js-p3-sci-es-005",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Earth & Space",
-    "text": "Telescope helps us…",
-    "options": [
-      "see far",
-      "cook",
-      "hear"
-    ],
-    "correct": "see far",
-    "feedback": {
-      "correct": "Space curious!",
-      "incorrect": "Basic astronomy & Earth."
-    }
-  },
-  {
-    "_id": "js-p3-sci-es-006",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Earth & Space",
-    "text": "A day on Earth is…",
-    "options": [
-      "24 hours",
-      "12 hours",
-      "48 hours"
-    ],
-    "correct": "24 hours",
-    "feedback": {
-      "correct": "Space curious!",
-      "incorrect": "Basic astronomy & Earth."
-    }
-  },
-  {
-    "_id": "js-p3-sci-es-007",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Earth & Space",
-    "text": "Ocean covers…",
-    "options": [
-      "most of Earth",
-      "a tiny part",
-      "none"
-    ],
-    "correct": "most of Earth",
-    "feedback": {
-      "correct": "Space curious!",
-      "incorrect": "Basic astronomy & Earth."
-    }
-  },
-  {
-    "_id": "js-p3-sci-es-008",
-    "level": "juniorSchool",
-    "subject": "science",
-    "class": "p3",
-    "topic": "Earth & Space",
-    "text": "Volcano is a…",
-    "options": [
-      "mountain that erupts",
-      "river",
-      "forest"
-    ],
-    "correct": "mountain that erupts",
-    "feedback": {
-      "correct": "Space curious!",
-      "incorrect": "Basic astronomy & Earth."
+      "correct": "Perfect! These light up our night sky! 🌟",
+      "incorrect": "Think about what you can see when it's dark outside 🌃"
     }
   }
 ]

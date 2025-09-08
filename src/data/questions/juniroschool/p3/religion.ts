@@ -7,16 +7,17 @@ export const p3ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p3",
     "topic": "Beliefs & Worship",
-    "text": "Shahada means…",
+    "text": "What is the meaning of Shahada? 🌙",
+    "type": "choice",
     "options": [
-      "belief in Allah & His Messenger",
-      "paying charity",
-      "traveling"
+      "Declaration of belief in Allah & His Messenger ☪️",
+      "Giving charity to the poor",
+      "Traveling to different places"
     ],
-    "correct": "belief in Allah & His Messenger",
+    "correct": "Declaration of belief in Allah & His Messenger ☪️",
     "feedback": {
-      "correct": "Remembered well!",
-      "incorrect": "Core beliefs."
+      "correct": "MashaAllah! The Shahada is our declaration of faith 🌟",
+      "incorrect": "The Shahada is our testimony of faith in Allah and His Messenger ☪️"
     }
   },
   {
@@ -25,124 +26,19 @@ export const p3ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p3",
     "topic": "Beliefs & Worship",
-    "text": "How many daily prayers?",
+    "text": "Select all the correct times for daily prayers (Choose all correct ones) 🕌",
+    "type": "multiChoice",
     "options": [
-      "5",
-      "3",
-      "7"
+      "Fajr (Dawn) 🌅",
+      "Dhuhr (Noon) ☀️",
+      "Asr (Afternoon) 🌤️",
+      "Maghrib (Sunset) 🌅",
+      "Isha (Night) 🌙"
     ],
-    "correct": "5",
+    "correct": ["Fajr (Dawn) 🌅", "Dhuhr (Noon) ☀️", "Asr (Afternoon) 🌤️", "Maghrib (Sunset) 🌅", "Isha (Night) 🌙"],
     "feedback": {
-      "correct": "Remembered well!",
-      "incorrect": "Core beliefs."
-    }
-  },
-  {
-    "_id": "js-p3-re-belief-003",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Beliefs & Worship",
-    "text": "Qibla points to the…",
-    "options": [
-      "Kaaba",
-      "mountain",
-      "sea"
-    ],
-    "correct": "Kaaba",
-    "feedback": {
-      "correct": "Remembered well!",
-      "incorrect": "Core beliefs."
-    }
-  },
-  {
-    "_id": "js-p3-re-belief-004",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Beliefs & Worship",
-    "text": "We begin with…",
-    "options": [
-      "Bismillah",
-      "Good night",
-      "Yo!"
-    ],
-    "correct": "Bismillah",
-    "feedback": {
-      "correct": "Remembered well!",
-      "incorrect": "Core beliefs."
-    }
-  },
-  {
-    "_id": "js-p3-re-belief-005",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Beliefs & Worship",
-    "text": "We say thanks with…",
-    "options": [
-      "Alhamdulillah",
-      "Oops",
-      "Nope"
-    ],
-    "correct": "Alhamdulillah",
-    "feedback": {
-      "correct": "Remembered well!",
-      "incorrect": "Core beliefs."
-    }
-  },
-  {
-    "_id": "js-p3-re-belief-006",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Beliefs & Worship",
-    "text": "We ask help with…",
-    "options": [
-      "dua 🤲",
-      "whistles",
-      "claps"
-    ],
-    "correct": "dua 🤲",
-    "feedback": {
-      "correct": "Remembered well!",
-      "incorrect": "Core beliefs."
-    }
-  },
-  {
-    "_id": "js-p3-re-belief-007",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Beliefs & Worship",
-    "text": "Fasting month is…",
-    "options": [
-      "Ramadan",
-      "Shaʿban",
-      "Shawwal"
-    ],
-    "correct": "Ramadan",
-    "feedback": {
-      "correct": "Remembered well!",
-      "incorrect": "Core beliefs."
-    }
-  },
-  {
-    "_id": "js-p3-re-belief-008",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Beliefs & Worship",
-    "text": "Friday prayer called…",
-    "options": [
-      "Jumu'ah",
-      "Maghrib",
-      "Eid"
-    ],
-    "correct": "Jumu'ah",
-    "feedback": {
-      "correct": "Remembered well!",
-      "incorrect": "Core beliefs."
+      "correct": "Excellent! We pray five times daily 🌟",
+      "incorrect": "Remember: We have five daily prayers from Fajr to Isha 🕌"
     }
   },
   {
@@ -151,142 +47,18 @@ export const p3ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p3",
     "topic": "Prophets & Stories",
-    "text": "Prophet who split the sea",
+    "text": "Match the Prophets with their miracles (Choose 2) 📚",
+    "type": "multiChoice",
     "options": [
-      "Musa (A.S)",
-      "Nuh (A.S)",
-      "Ibrahim (A.S)"
+      "Prophet Musa (A.S) split the sea 🌊",
+      "Prophet Nuh (A.S) built the ark 🚢",
+      "Prophet Ibrahim (A.S) built houses 🏠",
+      "Prophet Yunus (A.S) flew in the sky ✈️"
     ],
-    "correct": "Musa (A.S)",
+    "correct": ["Prophet Musa (A.S) split the sea 🌊", "Prophet Nuh (A.S) built the ark 🚢"],
     "feedback": {
-      "correct": "Beautiful stories!",
-      "incorrect": "Know the messengers."
-    }
-  },
-  {
-    "_id": "js-p3-re-prophets-002",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Prophets & Stories",
-    "text": "Prophet with the ark",
-    "options": [
-      "Nuh (A.S)",
-      "Isa (A.S)",
-      "Yusuf (A.S)"
-    ],
-    "correct": "Nuh (A.S)",
-    "feedback": {
-      "correct": "Beautiful stories!",
-      "incorrect": "Know the messengers."
-    }
-  },
-  {
-    "_id": "js-p3-re-prophets-003",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Prophets & Stories",
-    "text": "Prophet given the Torah",
-    "options": [
-      "Musa (A.S)",
-      "Dawud (A.S)",
-      "Muhammad ﷺ"
-    ],
-    "correct": "Musa (A.S)",
-    "feedback": {
-      "correct": "Beautiful stories!",
-      "incorrect": "Know the messengers."
-    }
-  },
-  {
-    "_id": "js-p3-re-prophets-004",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Prophets & Stories",
-    "text": "Built the Kaaba",
-    "options": [
-      "Ibrahim & Ismail (A.S)",
-      "Yunus (A.S)",
-      "Idris (A.S)"
-    ],
-    "correct": "Ibrahim & Ismail (A.S)",
-    "feedback": {
-      "correct": "Beautiful stories!",
-      "incorrect": "Know the messengers."
-    }
-  },
-  {
-    "_id": "js-p3-re-prophets-005",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Prophets & Stories",
-    "text": "Prophet who interpreted dreams",
-    "options": [
-      "Yusuf (A.S)",
-      "Ilyas (A.S)",
-      "Zakariya (A.S)"
-    ],
-    "correct": "Yusuf (A.S)",
-    "feedback": {
-      "correct": "Beautiful stories!",
-      "incorrect": "Know the messengers."
-    }
-  },
-  {
-    "_id": "js-p3-re-prophets-006",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Prophets & Stories",
-    "text": "Our Prophet",
-    "options": [
-      "Muhammad ﷺ",
-      "Isa (A.S)",
-      "Musa (A.S)"
-    ],
-    "correct": "Muhammad ﷺ",
-    "feedback": {
-      "correct": "Beautiful stories!",
-      "incorrect": "Know the messengers."
-    }
-  },
-  {
-    "_id": "js-p3-re-prophets-007",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Prophets & Stories",
-    "text": "Book given to Isa (A.S)",
-    "options": [
-      "Injil",
-      "Zabur",
-      "Torah"
-    ],
-    "correct": "Injil",
-    "feedback": {
-      "correct": "Beautiful stories!",
-      "incorrect": "Know the messengers."
-    }
-  },
-  {
-    "_id": "js-p3-re-prophets-008",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Prophets & Stories",
-    "text": "Book given to Dawud (A.S)",
-    "options": [
-      "Zabur",
-      "Injil",
-      "Suhuf"
-    ],
-    "correct": "Zabur",
-    "feedback": {
-      "correct": "Beautiful stories!",
-      "incorrect": "Know the messengers."
+      "correct": "MashaAllah! You know the stories of our Prophets well! 🌟",
+      "incorrect": "Think about the famous miracles of these noble Prophets 📚"
     }
   },
   {
@@ -295,16 +67,18 @@ export const p3ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p3",
     "topic": "Holy Book & Practices",
-    "text": "Holy book of Islam",
+    "text": "Select all correct statements about the Holy Qur'an (Choose 2) 📖",
+    "type": "multiChoice",
     "options": [
-      "Qur'an",
-      "Bible",
-      "Torah"
+      "We must handle it with respect and clean hands 🤲",
+      "It is the final revelation from Allah ☪️",
+      "We can place it anywhere ❌",
+      "We don't need to be clean to read it ❌"
     ],
-    "correct": "Qur'an",
+    "correct": ["We must handle it with respect and clean hands 🤲", "It is the final revelation from Allah ☪️"],
     "feedback": {
-      "correct": "Well practiced!",
-      "incorrect": "Key practices."
+      "correct": "Excellent! The Qur'an deserves our utmost respect 📖",
+      "incorrect": "Remember how we should treat our Holy Book with respect 🤲"
     }
   },
   {
@@ -313,124 +87,18 @@ export const p3ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p3",
     "topic": "Holy Book & Practices",
-    "text": "We read Qur'an with…",
+    "text": "Select all pillars of Islam (Choose 2) ☪️",
+    "type": "multiChoice",
     "options": [
-      "respect 🙏",
-      "shouting",
-      "dirty hands"
+      "Salah (Prayer) 🕌",
+      "Zakat (Charity) 🤲",
+      "Swimming 🏊‍♂️",
+      "Playing games 🎮"
     ],
-    "correct": "respect 🙏",
+    "correct": ["Salah (Prayer) 🕌", "Zakat (Charity) 🤲"],
     "feedback": {
-      "correct": "Well practiced!",
-      "incorrect": "Key practices."
-    }
-  },
-  {
-    "_id": "js-p3-re-holy-003",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Holy Book & Practices",
-    "text": "Zakat means…",
-    "options": [
-      "charity",
-      "sleep",
-      "run"
-    ],
-    "correct": "charity",
-    "feedback": {
-      "correct": "Well practiced!",
-      "incorrect": "Key practices."
-    }
-  },
-  {
-    "_id": "js-p3-re-holy-004",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Holy Book & Practices",
-    "text": "Sawm means…",
-    "options": [
-      "fasting",
-      "giving",
-      "travel"
-    ],
-    "correct": "fasting",
-    "feedback": {
-      "correct": "Well practiced!",
-      "incorrect": "Key practices."
-    }
-  },
-  {
-    "_id": "js-p3-re-holy-005",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Holy Book & Practices",
-    "text": "Hajj occurs in…",
-    "options": [
-      "Makkah",
-      "Medina",
-      "Rome"
-    ],
-    "correct": "Makkah",
-    "feedback": {
-      "correct": "Well practiced!",
-      "incorrect": "Key practices."
-    }
-  },
-  {
-    "_id": "js-p3-re-holy-006",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Holy Book & Practices",
-    "text": "Wudu is…",
-    "options": [
-      "ablution",
-      "a dessert",
-      "a city"
-    ],
-    "correct": "ablution",
-    "feedback": {
-      "correct": "Well practiced!",
-      "incorrect": "Key practices."
-    }
-  },
-  {
-    "_id": "js-p3-re-holy-007",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Holy Book & Practices",
-    "text": "Salah includes…",
-    "options": [
-      "standing, bowing, prostrating",
-      "flying",
-      "dancing"
-    ],
-    "correct": "standing, bowing, prostrating",
-    "feedback": {
-      "correct": "Well practiced!",
-      "incorrect": "Key practices."
-    }
-  },
-  {
-    "_id": "js-p3-re-holy-008",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Holy Book & Practices",
-    "text": "Mosque is a place of…",
-    "options": [
-      "worship",
-      "games",
-      "shopping"
-    ],
-    "correct": "worship",
-    "feedback": {
-      "correct": "Well practiced!",
-      "incorrect": "Key practices."
+      "correct": "MashaAllah! These are important pillars of our faith ⭐",
+      "incorrect": "Think about the five main duties in Islam ☪️"
     }
   },
   {
@@ -439,16 +107,18 @@ export const p3ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p3",
     "topic": "Values & Manners",
-    "text": "Tell the truth shows…",
+    "text": "Choose all good Islamic manners (Choose 2) 🤝",
+    "type": "multiChoice",
     "options": [
-      "honesty",
-      "laziness",
-      "anger"
+      "Speaking truthfully 💫",
+      "Being kind to others 🤲",
+      "Being rude ❌",
+      "Not sharing ❌"
     ],
-    "correct": "honesty",
+    "correct": ["Speaking truthfully 💫", "Being kind to others 🤲"],
     "feedback": {
-      "correct": "Good character!",
-      "incorrect": "Manners matter."
+      "correct": "Excellent! These are beautiful Islamic manners 🌟",
+      "incorrect": "Think about what makes a good Muslim character 🤝"
     }
   },
   {
@@ -457,124 +127,18 @@ export const p3ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p3",
     "topic": "Values & Manners",
-    "text": "Help your neighbors to show…",
+    "text": "Select all proper Islamic greetings (Choose 2) 👋",
+    "type": "multiChoice",
     "options": [
-      "kindness",
-      "rudeness",
-      "selfishness"
+      "As-salāmu ʿalaykum (Peace be upon you) 🤲",
+      "Wa ʿalaykumu s-salām (And peace be upon you too) 🤝",
+      "Hi! 👋",
+      "Yo! 🤚"
     ],
-    "correct": "kindness",
+    "correct": ["As-salāmu ʿalaykum (Peace be upon you) 🤲", "Wa ʿalaykumu s-salām (And peace be upon you too) 🤝"],
     "feedback": {
-      "correct": "Good character!",
-      "incorrect": "Manners matter."
-    }
-  },
-  {
-    "_id": "js-p3-re-values-003",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Values & Manners",
-    "text": "Keep promises to be…",
-    "options": [
-      "trustworthy",
-      "late",
-      "moody"
-    ],
-    "correct": "trustworthy",
-    "feedback": {
-      "correct": "Good character!",
-      "incorrect": "Manners matter."
-    }
-  },
-  {
-    "_id": "js-p3-re-values-004",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Values & Manners",
-    "text": "Use words like…",
-    "options": [
-      "please & thank you",
-      "give me!",
-      "move now!"
-    ],
-    "correct": "please & thank you",
-    "feedback": {
-      "correct": "Good character!",
-      "incorrect": "Manners matter."
-    }
-  },
-  {
-    "_id": "js-p3-re-values-005",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Values & Manners",
-    "text": "Cleanliness is…",
-    "options": [
-      "part of faith",
-      "not needed",
-      "only for guests"
-    ],
-    "correct": "part of faith",
-    "feedback": {
-      "correct": "Good character!",
-      "incorrect": "Manners matter."
-    }
-  },
-  {
-    "_id": "js-p3-re-values-006",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Values & Manners",
-    "text": "Share toys because…",
-    "options": [
-      "sharing is caring",
-      "I want more",
-      "never share"
-    ],
-    "correct": "sharing is caring",
-    "feedback": {
-      "correct": "Good character!",
-      "incorrect": "Manners matter."
-    }
-  },
-  {
-    "_id": "js-p3-re-values-007",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Values & Manners",
-    "text": "Say __ if you hurt someone",
-    "options": [
-      "sorry",
-      "why",
-      "move"
-    ],
-    "correct": "sorry",
-    "feedback": {
-      "correct": "Good character!",
-      "incorrect": "Manners matter."
-    }
-  },
-  {
-    "_id": "js-p3-re-values-008",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Values & Manners",
-    "text": "We greet with…",
-    "options": [
-      "As‑salāmu ʿalaykum",
-      "Yo!",
-      "Good night"
-    ],
-    "correct": "As‑salāmu ʿalaykum",
-    "feedback": {
-      "correct": "Good character!",
-      "incorrect": "Manners matter."
+      "correct": "MashaAllah! These are our beautiful Islamic greetings 🌟",
+      "incorrect": "Remember our special greetings of peace 🤲"
     }
   },
   {
@@ -583,16 +147,18 @@ export const p3ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p3",
     "topic": "Community & Service",
-    "text": "We give to the poor as…",
+    "text": "Select all ways we can help our community (Choose 2) 🤝",
+    "type": "multiChoice",
     "options": [
-      "zakat/sadaqah",
-      "tax only",
-      "games"
+      "Giving charity (Sadaqah) 🤲",
+      "Helping the needy 🤝",
+      "Being selfish ❌",
+      "Ignoring others ❌"
     ],
-    "correct": "zakat/sadaqah",
+    "correct": ["Giving charity (Sadaqah) 🤲", "Helping the needy 🤝"],
     "feedback": {
-      "correct": "Serve & smile!",
-      "incorrect": "Helping others."
+      "correct": "MashaAllah! Helping others pleases Allah 🌟",
+      "incorrect": "Think about ways we can serve our community 🤲"
     }
   },
   {
@@ -601,124 +167,17 @@ export const p3ReligionQuestions: Question[] = [
     "subject": "religion",
     "class": "p3",
     "topic": "Community & Service",
-    "text": "Help at home by…",
+    "text": "How should we keep our mosque? 🕌",
+    "type": "choice",
     "options": [
-      "tidying up",
-      "shouting",
-      "spilling"
+      "Clean and quiet 🧹",
+      "Noisy and messy ❌",
+      "Dirty and loud ❌"
     ],
-    "correct": "tidying up",
+    "correct": "Clean and quiet 🧹",
     "feedback": {
-      "correct": "Serve & smile!",
-      "incorrect": "Helping others."
-    }
-  },
-  {
-    "_id": "js-p3-re-comm-003",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Community & Service",
-    "text": "Visit the sick to…",
-    "options": [
-      "show care",
-      "mock them",
-      "ignore"
-    ],
-    "correct": "show care",
-    "feedback": {
-      "correct": "Serve & smile!",
-      "incorrect": "Helping others."
-    }
-  },
-  {
-    "_id": "js-p3-re-comm-004",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Community & Service",
-    "text": "Share food with…",
-    "options": [
-      "neighbors",
-      "only myself",
-      "nobody"
-    ],
-    "correct": "neighbors",
-    "feedback": {
-      "correct": "Serve & smile!",
-      "incorrect": "Helping others."
-    }
-  },
-  {
-    "_id": "js-p3-re-comm-005",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Community & Service",
-    "text": "Donate clothes to…",
-    "options": [
-      "needy",
-      "river",
-      "road"
-    ],
-    "correct": "needy",
-    "feedback": {
-      "correct": "Serve & smile!",
-      "incorrect": "Helping others."
-    }
-  },
-  {
-    "_id": "js-p3-re-comm-006",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Community & Service",
-    "text": "Be fair means…",
-    "options": [
-      "treat equally",
-      "pick favorites",
-      "take sides"
-    ],
-    "correct": "treat equally",
-    "feedback": {
-      "correct": "Serve & smile!",
-      "incorrect": "Helping others."
-    }
-  },
-  {
-    "_id": "js-p3-re-comm-007",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Community & Service",
-    "text": "Listening to elders shows…",
-    "options": [
-      "respect",
-      "anger",
-      "fear"
-    ],
-    "correct": "respect",
-    "feedback": {
-      "correct": "Serve & smile!",
-      "incorrect": "Helping others."
-    }
-  },
-  {
-    "_id": "js-p3-re-comm-008",
-    "level": "juniorSchool",
-    "subject": "religion",
-    "class": "p3",
-    "topic": "Community & Service",
-    "text": "Keep the mosque…",
-    "options": [
-      "clean",
-      "noisy",
-      "dirty"
-    ],
-    "correct": "clean",
-    "feedback": {
-      "correct": "Serve & smile!",
-      "incorrect": "Helping others."
+      "correct": "MashaAllah! The mosque is Allah's house and deserves respect 🕌",
+      "incorrect": "Remember: The mosque is a sacred place that we must keep clean and peaceful 🤲"
     }
   }
 ]

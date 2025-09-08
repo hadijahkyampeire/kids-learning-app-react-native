@@ -1,7 +1,7 @@
 import { type Question } from "../../../../types";
 
 export const middleClassReligionQuestions: Question[] = [
-  // Basic Religious Values Topic (6 questions)
+  // Basic Religious Values Topic
   {
     _id: "md-rel-rv-1",
     level: "preSchool",
@@ -11,7 +11,32 @@ export const middleClassReligionQuestions: Question[] = [
     text: "What should we say when someone helps us? 🤝",
     options: ["Thank you 🙏", "Goodbye 👋", "Hello 🖐️"],
     correct: "Thank you 🙏",
+    type: "choice",
     feedback: { correct: "Yes! We should always say 'thank you' 🙏 when helped.", incorrect: "Think about being grateful 🙏." }
+  },
+  {
+    _id: "md-rel-mc-1",
+    level: "preSchool",
+    subject: "religion",
+    class: "middle",
+    topic: "Religious Values",
+    text: "What are good ways to show kindness? 💖",
+    options: ["Share toys 🎮", "Help friends 🤝", "Say thank you 🙏", "Be mean 😠", "Take toys 😡", "Push others 😤"],
+    correct: ["Share toys 🎮", "Help friends 🤝", "Say thank you 🙏"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! These are all kind actions!", incorrect: "Think about what makes others happy." }
+  },
+  {
+    _id: "md-rel-mc-2",
+    level: "preSchool",
+    subject: "religion",
+    class: "middle",
+    topic: "Religious Values",
+    text: "What should we do to help at home? 🏠",
+    options: ["Clean room 🧹", "Make bed 🛏️", "Put away toys 🧸", "Watch TV 📺", "Make mess 🗑️", "Sleep all day 😴"],
+    correct: ["Clean room 🧹", "Make bed 🛏️", "Put away toys 🧸"],
+    type: "multiChoice",
+    feedback: { correct: "Excellent! These are great ways to help!", incorrect: "Think about what makes home nice and tidy." }
   },
   {
     _id: "md-rel-rv-2",
@@ -20,7 +45,7 @@ export const middleClassReligionQuestions: Question[] = [
     class: "middle",
     topic: "Religious Values",
     text: "How should we treat others? 🫂",
-    options: ["Kindly ❤️", "Rudely 😠", "Badly 😡"],
+    options: ["Rudely 😠", "Kindly ❤️", "Badly 😡"],
     correct: "Kindly ❤️",
     feedback: { correct: "Yes! We should always be kind to others ❤️.", incorrect: "Think about being nice to people 🫂." }
   },
@@ -31,7 +56,7 @@ export const middleClassReligionQuestions: Question[] = [
     class: "middle",
     topic: "Religious Values",
     text: "What should we do when we make a mistake? 😔",
-    options: ["Say sorry 🙏", "Run away 🏃", "Laugh 😄"],
+    options: ["Laugh �", "Run away 🏃", "Say sorry �"],
     correct: "Say sorry 🙏",
     feedback: { correct: "Yes! We should apologize for our mistakes 🙏.", incorrect: "Think about making things right ❤️." }
   },
@@ -42,7 +67,7 @@ export const middleClassReligionQuestions: Question[] = [
     class: "middle",
     topic: "Religious Values",
     text: "What should we share with friends? 🫂",
-    options: ["Toys 🎮", "Bad words 😠", "Anger 😡"],
+    options: ["Bad words 😠", "Toys 🎮", "Anger 😡"],
     correct: "Toys 🎮",
     feedback: { correct: "Yes! Sharing toys 🎮 shows kindness ❤️.", incorrect: "Think about being generous 🤝." }
   },
@@ -53,7 +78,7 @@ export const middleClassReligionQuestions: Question[] = [
     class: "middle",
     topic: "Religious Values",
     text: "How should we speak to others? 🗣️",
-    options: ["Politely 😊", "Loudly 📢", "Angrily 😠"],
+    options: ["Loudly 📢", "Angrily 😠", "Politely 😊"],
     correct: "Politely 😊",
     feedback: { correct: "Yes! We should always speak politely 😊.", incorrect: "Think about using nice words 💭." }
   },
@@ -64,12 +89,12 @@ export const middleClassReligionQuestions: Question[] = [
     class: "middle",
     topic: "Religious Values",
     text: "What should we do to help at home? 🏠",
-    options: ["Clean up 🧹", "Make mess 🗑️", "Nothing 😴"],
+    options: ["Make mess 🗑️", "Clean up 🧹", "Nothing 😴"],
     correct: "Clean up 🧹",
     feedback: { correct: "Yes! Helping to clean 🧹 shows responsibility.", incorrect: "Think about being helpful 🤝." }
   },
 
-  // Prayer & Worship Topic (6 questions)
+  // Prayer & Worship Topic
   {
     _id: "md-rel-pw-1",
     level: "preSchool",
@@ -79,7 +104,32 @@ export const middleClassReligionQuestions: Question[] = [
     text: "When should we pray? 🙏",
     options: ["Daily 📅", "Never ❌", "Yearly 📆"],
     correct: "Daily 📅",
+    type: "choice",
     feedback: { correct: "Yes! We should pray every day 🙏.", incorrect: "Think about how often we should talk to God 🙏." }
+  },
+  {
+    _id: "md-rel-mc-3",
+    level: "preSchool",
+    subject: "religion",
+    class: "middle",
+    topic: "Prayer & Worship",
+    text: "What can we thank God for? ✨",
+    options: ["Family 👨‍👩‍👧‍👦", "Food 🍎", "Friends 🫂", "Health ❤️", "TV 📺", "Toys 🎮"],
+    correct: ["Family 👨‍👩‍👧‍👦", "Food 🍎", "Friends 🫂", "Health ❤️"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! We can thank God for all these blessings!", incorrect: "Think about important things in life." }
+  },
+  {
+    _id: "md-rel-mc-4",
+    level: "preSchool",
+    subject: "religion",
+    class: "middle",
+    topic: "Prayer & Worship",
+    text: "How should we behave in a place of worship? 🙏",
+    options: ["Be quiet 🤫", "Listen carefully 👂", "Show respect 🙇", "Run around 🏃", "Shout 📢", "Play games 🎮"],
+    correct: ["Be quiet 🤫", "Listen carefully 👂", "Show respect 🙇"],
+    type: "multiChoice",
+    feedback: { correct: "Perfect! These are respectful behaviors!", incorrect: "Think about showing reverence." }
   },
   {
     _id: "md-rel-pw-2",
@@ -90,6 +140,7 @@ export const middleClassReligionQuestions: Question[] = [
     text: "What should we do before eating? 🍽️",
     options: ["Pray 🙏", "Play 🎮", "Sleep 😴"],
     correct: "Pray 🙏",
+    type: "choice",
     feedback: { correct: "Yes! We should thank God for our food 🙏.", incorrect: "Think about being grateful for meals 🍽️." }
   },
   {
@@ -99,8 +150,9 @@ export const middleClassReligionQuestions: Question[] = [
     class: "middle",
     topic: "Prayer & Worship",
     text: "Where can we pray? 🙏",
-    options: ["Anywhere ✨", "Only church ⛪", "Only home 🏠"],
+    options: ["Only home 🏠", "Anywhere ✨", "Only church ⛪"],
     correct: "Anywhere ✨",
+    type: "choice",
     feedback: { correct: "Yes! We can pray anywhere ✨.", incorrect: "Think about where God can hear us 🙏." }
   },
   {
@@ -112,6 +164,7 @@ export const middleClassReligionQuestions: Question[] = [
     text: "What can we thank God for? 🙏",
     options: ["Everything ✨", "Nothing ❌", "Only food 🍎"],
     correct: "Everything ✨",
+    type: "choice",
     feedback: { correct: "Yes! We can thank God for all things ✨.", incorrect: "Think about all our blessings 🙏." }
   },
   {
@@ -121,8 +174,9 @@ export const middleClassReligionQuestions: Question[] = [
     class: "middle",
     topic: "Prayer & Worship",
     text: "How should we behave in a place of worship? ⛪",
-    options: ["Quietly 🤫", "Loudly 📢", "Running 🏃"],
+    options: ["Running 🏃", "Quietly 🤫", "Loudly 📢"],
     correct: "Quietly 🤫",
+    type: "choice",
     feedback: { correct: "Yes! We should be quiet and respectful 🤫.", incorrect: "Think about showing respect 🙏." }
   },
   {
@@ -132,12 +186,13 @@ export const middleClassReligionQuestions: Question[] = [
     class: "middle",
     topic: "Prayer & Worship",
     text: "Who should we worship? 🙏",
-    options: ["God ✨", "Toys 🎮", "TV 📺"],
+    options: ["TV 📺", "Toys 🎮", "God ✨"],
     correct: "God ✨",
+    type: "choice",
     feedback: { correct: "Yes! We worship God ✨.", incorrect: "Think about who created everything 🌎." }
   },
 
-  // Religious Stories Topic (6 questions)
+  // Religious Stories Topic
   {
     _id: "md-rel-rs-1",
     level: "preSchool",
@@ -145,9 +200,34 @@ export const middleClassReligionQuestions: Question[] = [
     class: "middle",
     topic: "Religious Stories",
     text: "Who built a big boat? 🚢",
-    options: ["Noah 🛠️", "David 👑", "Moses 🌊"],
+    options: ["David 👑", "Moses 🌊", "Noah 🛠️"],
     correct: "Noah 🛠️",
+    type: "choice",
     feedback: { correct: "Yes! Noah built an ark for the animals 🚢.", incorrect: "Think about who saved the animals 🐘." }
+  },
+  {
+    _id: "md-rel-mc-5",
+    level: "preSchool",
+    subject: "religion",
+    class: "middle",
+    topic: "Religious Stories",
+    text: "Which animals were on Noah's ark? 🚢",
+    options: ["Lions 🦁", "Elephants 🐘", "Birds 🐦", "Cars 🚗", "Books 📚", "Computers 💻"],
+    correct: ["Lions 🦁", "Elephants 🐘", "Birds 🐦"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! These animals were on the ark!", incorrect: "Think about what lives and breathes." }
+  },
+  {
+    _id: "md-rel-mc-6",
+    level: "preSchool",
+    subject: "religion",
+    class: "middle",
+    topic: "Religious Stories",
+    text: "What did Daniel do in the lions' den? 🦁",
+    options: ["Pray 🙏", "Trust God ✨", "Stay calm 😌", "Run away 🏃", "Fight 👊", "Cry 😭"],
+    correct: ["Pray 🙏", "Trust God ✨", "Stay calm 😌"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! Daniel showed great faith!", incorrect: "Think about how Daniel showed his faith." }
   },
   {
     _id: "md-rel-rs-2",
@@ -158,6 +238,7 @@ export const middleClassReligionQuestions: Question[] = [
     text: "Who was the boy who defeated a giant? 💪",
     options: ["David 👑", "Samuel 📜", "Joseph 🌈"],
     correct: "David 👑",
+    type: "choice",
     feedback: { correct: "Yes! David defeated Goliath 💪.", incorrect: "Think about the brave shepherd boy 👑." }
   },
   {
@@ -167,8 +248,9 @@ export const middleClassReligionQuestions: Question[] = [
     class: "middle",
     topic: "Religious Stories",
     text: "Who led people across the Red Sea? 🌊",
-    options: ["Moses 🌊", "Abraham 🐪", "Noah 🚢"],
+    options: ["Noah 🚢", "Moses 🌊", "Abraham 🐪"],
     correct: "Moses 🌊",
+    type: "choice",
     feedback: { correct: "Yes! Moses led the people to freedom 🌊.", incorrect: "Think about who split the sea 🌊." }
   },
   {
@@ -180,6 +262,7 @@ export const middleClassReligionQuestions: Question[] = [
     text: "Who had a coat of many colors? 🌈",
     options: ["Joseph 🌈", "David 👑", "Moses 🌊"],
     correct: "Joseph 🌈",
+    type: "choice",
     feedback: { correct: "Yes! Joseph had a colorful coat 🌈.", incorrect: "Think about the boy with the special coat 👕." }
   },
   {
@@ -189,8 +272,9 @@ export const middleClassReligionQuestions: Question[] = [
     class: "middle",
     topic: "Religious Stories",
     text: "Who was in the lions' den? 🦁",
-    options: ["Daniel 🙏", "David 👑", "Moses 🌊"],
+    options: ["Moses 🌊", "Daniel 🙏", "David 👑"],
     correct: "Daniel 🙏",
+    type: "choice",
     feedback: { correct: "Yes! Daniel was protected from lions 🦁.", incorrect: "Think about who prayed in the lions' den 🙏." }
   },
   {
@@ -202,6 +286,7 @@ export const middleClassReligionQuestions: Question[] = [
     text: "Who was the first man God created? 👨",
     options: ["Adam 🌳", "Noah 🚢", "Moses 🌊"],
     correct: "Adam 🌳",
+    type: "choice",
     feedback: { correct: "Yes! Adam was the first man 👨.", incorrect: "Think about the first person God made 🌳." }
   },
 
@@ -213,8 +298,9 @@ export const middleClassReligionQuestions: Question[] = [
     class: "middle",
     topic: "Religious Festivals",
     text: "When do we celebrate Christmas? 🎄",
-    options: ["December ❄️", "July ☀️", "March 🌱"],
+    options: ["March 🌱", "July ☀️", "December ❄️"],
     correct: "December ❄️",
+    type: "choice",
     feedback: { correct: "Yes! Christmas is in December 🎄.", incorrect: "Think about when we see Christmas trees 🎄." }
   },
   {
@@ -224,8 +310,9 @@ export const middleClassReligionQuestions: Question[] = [
     class: "middle",
     topic: "Religious Festivals",
     text: "What do we celebrate at Easter? 🐣",
-    options: ["Jesus' life ✝️", "Summer ☀️", "Winter ❄️"],
+    options: ["Winter ❄️", "Jesus' life ✝️", "Summer ☀️"],
     correct: "Jesus' life ✝️",
+    type: "choice",
     feedback: { correct: "Yes! Easter celebrates Jesus ✝️.", incorrect: "Think about who Easter is about 🙏." }
   },
   {
@@ -235,8 +322,9 @@ export const middleClassReligionQuestions: Question[] = [
     class: "middle",
     topic: "Religious Festivals",
     text: "What should we do during festivals? 🎉",
-    options: ["Be happy 😊", "Be sad 😢", "Be angry 😠"],
+    options: ["Be angry �", "Be happy �", "Be sad �"],
     correct: "Be happy 😊",
+    type: "choice",
     feedback: { correct: "Yes! Festivals are times of joy 🎉.", incorrect: "Think about how we feel at celebrations 😊." }
   },
   {
@@ -246,8 +334,9 @@ export const middleClassReligionQuestions: Question[] = [
     class: "middle",
     topic: "Religious Festivals",
     text: "What do we share during festivals? 🎁",
-    options: ["Food 🍽️", "Nothing ❌", "Anger 😠"],
+    options: ["Nothing ❌", "Anger 😠", "Food 🍽️"],
     correct: "Food 🍽️",
+    type: "choice",
     feedback: { correct: "Yes! We share food during festivals 🍽️.", incorrect: "Think about what we give to others 🎁." }
   },
   {
@@ -259,6 +348,7 @@ export const middleClassReligionQuestions: Question[] = [
     text: "Who do we spend festivals with? 🎉",
     options: ["Family 👨‍👩‍👧‍👦", "Alone 😔", "Strangers 🤔"],
     correct: "Family 👨‍👩‍👧‍👦",
+    type: "choice",
     feedback: { correct: "Yes! We celebrate with family 👨‍👩‍👧‍👦.", incorrect: "Think about who we celebrate with 🫂." }
   },
   {
@@ -270,6 +360,7 @@ export const middleClassReligionQuestions: Question[] = [
     text: "What do we sing during festivals? 🎵",
     options: ["Happy songs 🎶", "Sad songs 😢", "No songs 🤫"],
     correct: "Happy songs 🎶",
+    type: "choice",
     feedback: { correct: "Yes! We sing joyful songs 🎶.", incorrect: "Think about celebration music 🎵." }
   }
 ];

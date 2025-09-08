@@ -1,7 +1,7 @@
 import { type Question } from "../../../../types";
 
 export const middleClassGeneralKnowledgeQuestions: Question[] = [
-  // Home & Family Life Topic (6 questions)
+  // Home & Family Life Topic
   {
     _id: "md-gk-hf-1",
     level: "preSchool",
@@ -9,9 +9,34 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     class: "middle",
     topic: "Home & Family Life",
     text: "Who cooks food at home?",
-    options: ["Mother/Father", "Car", "Television"],
+    options: ["Car", "Television", "Mother/Father"],
     correct: "Mother/Father",
+    type: "choice",
     feedback: { correct: "Yes! Parents cook food at home.", incorrect: "Think about who prepares meals at home." }
+  },
+  {
+    _id: "md-gk-mc-1",
+    level: "preSchool",
+    subject: "generalKnowledge",
+    class: "middle",
+    topic: "Home & Family Life",
+    text: "Which rooms are in a house? 🏠",
+    options: ["Kitchen 🍳", "Bedroom 🛏️", "Bathroom 🚽", "Car 🚗", "Tree 🌳", "Sky ☁️"],
+    correct: ["Kitchen 🍳", "Bedroom 🛏️", "Bathroom 🚽"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! These are all rooms in a house!", incorrect: "Think about different parts of your home." }
+  },
+  {
+    _id: "md-gk-mc-2",
+    level: "preSchool",
+    subject: "generalKnowledge",
+    class: "middle",
+    topic: "Home & Family Life",
+    text: "What do we use in the kitchen? 🍳",
+    options: ["Pot", "Pan", "Plate", "Bed", "Book", "Shoe"],
+    correct: ["Pot", "Pan", "Plate"],
+    type: "multiChoice",
+    feedback: { correct: "Perfect! These are all kitchen items!", incorrect: "Think about cooking and eating tools." }
   },
   {
     _id: "md-gk-hf-2",
@@ -20,8 +45,9 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     class: "middle",
     topic: "Home & Family Life",
     text: "Where do we sleep?",
-    options: ["Bedroom", "Kitchen", "Garden"],
+    options: ["Garden", "Bedroom", "Kitchen"],
     correct: "Bedroom",
+    type: "choice",
     feedback: { correct: "Yes! We sleep in the bedroom.", incorrect: "Think about which room has a bed." }
   },
   {
@@ -31,8 +57,9 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     class: "middle",
     topic: "Home & Family Life",
     text: "Where do we cook food?",
-    options: ["Kitchen", "Bathroom", "Living Room"],
+    options: ["Living Room", "Kitchen", "Bathroom"],
     correct: "Kitchen",
+    type: "choice",
     feedback: { correct: "Yes! Food is cooked in the kitchen.", incorrect: "Think about where the stove is." }
   },
   {
@@ -44,6 +71,7 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     text: "Who is younger - mother or grandmother?",
     options: ["Mother", "Grandmother", "Same age"],
     correct: "Mother",
+    type: "choice",
     feedback: { correct: "Yes! Mother is younger than grandmother.", incorrect: "Think about family ages." }
   },
   {
@@ -55,6 +83,7 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     text: "Where do we keep clothes?",
     options: ["Wardrobe", "Sink", "Fridge"],
     correct: "Wardrobe",
+    type: "choice",
     feedback: { correct: "Yes! Clothes go in the wardrobe.", incorrect: "Think about where you store clothes." }
   },
   {
@@ -66,10 +95,11 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     text: "What do we use to clean the floor?",
     options: ["Broom", "Fork", "Plate"],
     correct: "Broom",
+    type: "choice",
     feedback: { correct: "Yes! We use a broom to clean floors.", incorrect: "Think about sweeping tools." }
   },
 
-  // Community & Helpers Topic (6 questions)
+  // Community & Helpers Topic
   {
     _id: "md-gk-ch-1",
     level: "preSchool",
@@ -77,9 +107,34 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     class: "middle",
     topic: "Community & Helpers",
     text: "Who helps sick people get better?",
-    options: ["Doctor", "Teacher", "Driver"],
+    options: ["Driver", "Doctor", "Teacher"],
     correct: "Doctor",
+    type: "choice",
     feedback: { correct: "Yes! Doctors help sick people.", incorrect: "Think about who works in hospitals." }
+  },
+  {
+    _id: "md-gk-mc-3",
+    level: "preSchool",
+    subject: "generalKnowledge",
+    class: "middle",
+    topic: "Community & Helpers",
+    text: "Who helps us in our community? 🏘️",
+    options: ["Doctor 👨‍⚕️", "Teacher 👩‍🏫", "Police 👮‍♂️", "Firefighter 👨‍🚒", "Cat 🐱", "Tree 🌳"],
+    correct: ["Doctor 👨‍⚕️", "Teacher 👩‍🏫", "Police 👮‍♂️", "Firefighter 👨‍🚒"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! These people all help our community!", incorrect: "Think about people who serve others." }
+  },
+  {
+    _id: "md-gk-mc-4",
+    level: "preSchool",
+    subject: "generalKnowledge",
+    class: "middle",
+    topic: "Community & Helpers",
+    text: "Where do community helpers work? 🏢",
+    options: ["Hospital 🏥", "School 🏫", "Fire Station 🚒", "Moon 🌙", "Cloud ☁️", "Tree 🌳"],
+    correct: ["Hospital 🏥", "School 🏫", "Fire Station 🚒"],
+    type: "multiChoice",
+    feedback: { correct: "Perfect! These are places where helpers work!", incorrect: "Think about important buildings in town." }
   },
   {
     _id: "md-gk-ch-2",
@@ -88,8 +143,9 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     class: "middle",
     topic: "Community & Helpers",
     text: "Who teaches at school?",
-    options: ["Teacher", "Chef", "Driver"],
+    options: ["Driver", "Chef", "Teacher"],
     correct: "Teacher",
+    type: "choice",
     feedback: { correct: "Yes! Teachers help us learn.", incorrect: "Think about who helps you learn at school." }
   },
   {
@@ -99,8 +155,9 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     class: "middle",
     topic: "Community & Helpers",
     text: "Who puts out fires?",
-    options: ["Firefighter", "Farmer", "Baker"],
+    options: ["Baker", "Firefighter", "Farmer"],
     correct: "Firefighter",
+    type: "choice",
     feedback: { correct: "Yes! Firefighters put out fires.", incorrect: "Think about who comes when there's a fire." }
   },
   {
@@ -112,6 +169,7 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     text: "Who delivers letters?",
     options: ["Postman", "Pilot", "Chef"],
     correct: "Postman",
+    type: "choice",
     feedback: { correct: "Yes! Postmen deliver our mail.", incorrect: "Think about who brings letters to your home." }
   },
   {
@@ -121,8 +179,9 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     class: "middle",
     topic: "Community & Helpers",
     text: "Who grows food on a farm?",
-    options: ["Farmer", "Driver", "Teacher"],
+    options: ["Teacher", "Driver", "Farmer"],
     correct: "Farmer",
+    type: "choice",
     feedback: { correct: "Yes! Farmers grow our food.", incorrect: "Think about who works with crops and animals." }
   },
   {
@@ -134,10 +193,11 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     text: "Who keeps us safe from bad people?",
     options: ["Police", "Baker", "Painter"],
     correct: "Police",
+    type: "choice",
     feedback: { correct: "Yes! Police keep us safe.", incorrect: "Think about who catches criminals." }
   },
 
-  // Safety & Health Topic (6 questions)
+  // Safety & Health Topic
   {
     _id: "md-gk-sh-1",
     level: "preSchool",
@@ -147,7 +207,32 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     text: "What should you do before eating?",
     options: ["Wash hands", "Sleep", "Run"],
     correct: "Wash hands",
+    type: "choice",
     feedback: { correct: "Yes! Always wash hands before eating.", incorrect: "Think about staying clean before meals." }
+  },
+  {
+    _id: "md-gk-mc-5",
+    level: "preSchool",
+    subject: "generalKnowledge",
+    class: "middle",
+    topic: "Safety & Health",
+    text: "What helps us stay healthy? 💪",
+    options: ["Exercise 🏃‍♂️", "Healthy food 🥗", "Sleep well 😴", "Watch TV 📺", "Play games 🎮", "Eat candy 🍬"],
+    correct: ["Exercise 🏃‍♂️", "Healthy food 🥗", "Sleep well 😴"],
+    type: "multiChoice",
+    feedback: { correct: "Great! These all keep us healthy!", incorrect: "Think about good habits for your body." }
+  },
+  {
+    _id: "md-gk-mc-6",
+    level: "preSchool",
+    subject: "generalKnowledge",
+    class: "middle",
+    topic: "Transport & Technology",
+    text: "Which vehicles can we travel in? 🚗",
+    options: ["Car 🚗", "Bus 🚌", "Train 🚂", "Book 📚", "Chair 🪑", "Pencil ✏️"],
+    correct: ["Car 🚗", "Bus 🚌", "Train 🚂"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! These are all vehicles we can ride in!", incorrect: "Think about things that move people." }
   },
   {
     _id: "md-gk-sh-2",
@@ -156,8 +241,9 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     class: "middle",
     topic: "Safety & Health",
     text: "What color means 'Stop'?",
-    options: ["Red", "Green", "Yellow"],
+    options: ["Yellow", "Green", "Red"],
     correct: "Red",
+    type: "choice",
     feedback: { correct: "Yes! Red means stop.", incorrect: "Remember traffic light colors." }
   },
   {
@@ -167,8 +253,9 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     class: "middle",
     topic: "Safety & Health",
     text: "What should you wear when it's cold?",
-    options: ["Warm clothes", "Swimming suit", "Nothing"],
+    options: ["Nothing", "Warm clothes", "Swimming suit"],
     correct: "Warm clothes",
+    type: "choice",
     feedback: { correct: "Yes! Warm clothes keep us cozy.", incorrect: "Think about staying warm." }
   },
   {
@@ -180,6 +267,7 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     text: "What do we use to cross the road safely?",
     options: ["Zebra crossing", "Garden", "Beach"],
     correct: "Zebra crossing",
+    type: "choice",
     feedback: { correct: "Yes! Use zebra crossings to cross roads.", incorrect: "Think about safe road crossing." }
   },
   {
@@ -191,6 +279,7 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     text: "What do we need to stay healthy?",
     options: ["Exercise", "TV", "Video games"],
     correct: "Exercise",
+    type: "choice",
     feedback: { correct: "Yes! Exercise keeps us healthy.", incorrect: "Think about moving your body." }
   },
   {
@@ -202,6 +291,7 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     text: "What should you do when you feel sick?",
     options: ["Tell an adult", "Keep quiet", "Play outside"],
     correct: "Tell an adult",
+    type: "choice",
     feedback: { correct: "Yes! Tell adults when you're sick.", incorrect: "Think about getting help when sick." }
   },
 
@@ -213,8 +303,9 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     class: "middle",
     topic: "Transport & Technology",
     text: "What do we use to call someone far away?",
-    options: ["Phone", "Book", "Shoes"],
+    options: ["Book", "Shoes", "Phone"],
     correct: "Phone",
+    type: "choice",
     feedback: { correct: "Yes! We use phones to call people.", incorrect: "Think about communication devices." }
   },
   {
@@ -224,7 +315,7 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     class: "middle",
     topic: "Transport & Technology",
     text: "What helps us watch cartoons?",
-    options: ["Television", "Chair", "Door"],
+    options: ["Door", "Television", "Chair"],
     correct: "Television",
     feedback: { correct: "Yes! We watch cartoons on TV.", incorrect: "Think about screens that show pictures." }
   },
@@ -235,7 +326,7 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     class: "middle",
     topic: "Transport & Technology",
     text: "Which vehicle flies in the sky?",
-    options: ["Airplane", "Car", "Boat"],
+    options: ["Boat", "Car", "Airplane"],
     correct: "Airplane",
     feedback: { correct: "Yes! Airplanes fly in the sky.", incorrect: "Think about sky transport." }
   },
@@ -248,6 +339,7 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     text: "What do cars need to move?",
     options: ["Fuel", "Water", "Sand"],
     correct: "Fuel",
+    type: "choice",
     feedback: { correct: "Yes! Cars need fuel to move.", incorrect: "Think about what powers cars." }
   },
   {
@@ -257,8 +349,9 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     class: "middle",
     topic: "Transport & Technology",
     text: "Which vehicle runs on water?",
-    options: ["Boat", "Bus", "Train"],
+    options: ["Train", "Boat", "Bus"],
     correct: "Boat",
+    type: "choice",
     feedback: { correct: "Yes! Boats move on water.", incorrect: "Think about water transport." }
   },
   {
@@ -268,7 +361,7 @@ export const middleClassGeneralKnowledgeQuestions: Question[] = [
     class: "middle",
     topic: "Transport & Technology",
     text: "What lights up a dark room?",
-    options: ["Light bulb", "Book", "Pencil"],
+    options: ["Pencil", "Book", "Light bulb"],
     correct: "Light bulb",
     feedback: { correct: "Yes! Light bulbs give us light.", incorrect: "Think about electric lights." }
   }

@@ -8,10 +8,11 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     subject: "generalKnowledge",
     class: "top",
     topic: "World Around Us",
-    text: "Which vehicle flies in the sky? ✈️",
-    options: ["Airplane ✈️", "Car 🚗", "Boat 🚢"],
-    correct: "Airplane ✈️",
-    feedback: { correct: "Yes! Airplanes fly in the sky ✈️", incorrect: "Think about what you see up in the clouds 🤔" }
+    text: "Which vehicles fly in the sky? Select all that apply ✈️",
+    options: ["Airplane ✈️", "Helicopter 🚁", "Rocket 🚀", "Car 🚗", "Boat 🚢"],
+    correct: ["Airplane ✈️", "Helicopter 🚁", "Rocket 🚀"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! These vehicles can all fly in the sky! ✈️", incorrect: "Think about what you see up in the clouds 🤔" }
   },
   {
     _id: "tp-gk-wu-2",
@@ -20,8 +21,9 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     class: "top",
     topic: "World Around Us",
     text: "Who helps sick people get better? 🏥",
-    options: ["Doctor 👨‍⚕️", "Chef 👨‍🍳", "Teacher 👩‍🏫"],
+    options: ["Teacher 👩‍🏫", "Doctor 👨‍⚕️", "Chef 👨‍🍳"],
     correct: "Doctor 👨‍⚕️",
+    type: "choice",
     feedback: { correct: "Yes! Doctors help sick people feel better 🏥", incorrect: "Think about who you see when you're not feeling well 🤒" }
   },
   {
@@ -31,8 +33,9 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     class: "top",
     topic: "World Around Us",
     text: "Where do we mail letters? 📬",
-    options: ["Post Office 📮", "Library 📚", "Park 🌳"],
+    options: ["Park 🌳", "Library 📚", "Post Office 📮"],
     correct: "Post Office 📮",
+    type: "choice",
     feedback: { correct: "Right! We mail letters at the post office 📬", incorrect: "Think about where the mail carrier works 📮" }
   },
   {
@@ -42,8 +45,9 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     class: "top",
     topic: "World Around Us",
     text: "What do firefighters use to put out fires? 🚒",
-    options: ["Water 💧", "Sand 🏖️", "Paper 📄"],
+    options: ["Paper 📔", "Water 💧", "Sand 🏖️"],
     correct: "Water 💧",
+    type: "choice",
     feedback: { correct: "Yes! Firefighters use water to put out fires 🚒", incorrect: "Think about what stops fire from burning 💭" }
   },
   {
@@ -66,6 +70,7 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     text: "Who delivers our mail? 📬",
     options: ["Mail Carrier 📮", "Teacher 👩‍🏫", "Chef 👨‍🍳"],
     correct: "Mail Carrier 📮",
+    type: "choice",
     feedback: { correct: "Yes! Mail carriers deliver our letters and packages 📬", incorrect: "Think about who brings letters to your home 📮" }
   },
 
@@ -90,6 +95,7 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     text: "What helps keep your teeth healthy? 🦷",
     options: ["Brushing 🪥", "Dancing 💃", "Sleeping 😴"],
     correct: "Brushing 🪥",
+    type: "choice",
     feedback: { correct: "Yes! Brushing keeps teeth clean and healthy 🦷", incorrect: "Think about what you do to clean your teeth 🪥" }
   },
   {
@@ -99,8 +105,9 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     class: "top",
     topic: "Health and Safety",
     text: "What should you wear when riding a bike? 🚲",
-    options: ["Helmet ⛑️", "Crown 👑", "Hat 🎩"],
+    options: ["Crown 👑", "Hat 🎩", "Helmet ⛑️"],
     correct: "Helmet ⛑️",
+    type: "choice",
     feedback: { correct: "Yes! Always wear a helmet when riding a bike ⛑️", incorrect: "Think about what protects your head 🤔" }
   },
   {
@@ -110,8 +117,9 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     class: "top",
     topic: "Health and Safety",
     text: "What should you do when crossing the street? 🚦",
-    options: ["Look both ways 👀", "Run fast 🏃", "Close eyes 😌"],
+    options: ["Close eyes 😌", "Look both ways 👀", "Run fast 🏃"],
     correct: "Look both ways 👀",
+    type: "choice",
     feedback: { correct: "Yes! Always look both ways before crossing 🚦", incorrect: "Think about being safe near roads 🛣️" }
   },
   {
@@ -120,10 +128,11 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     subject: "generalKnowledge",
     class: "top",
     topic: "Health and Safety",
-    text: "Which food is healthiest? 🍎",
-    options: ["Apple 🍎", "Candy 🍬", "Cake 🍰"],
-    correct: "Apple 🍎",
-    feedback: { correct: "Yes! Fruits like apples are healthy foods 🍎", incorrect: "Think about what makes your body strong 💪" }
+    text: "Which foods are healthy? Select all that apply 🍎",
+    options: ["Apple 🍎", "Banana 🍌", "Carrot 🥕", "Candy 🍬", "Cake 🍰"],
+    correct: ["Apple 🍎", "Banana 🍌", "Carrot 🥕"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! These are all healthy foods that make you strong! 💪", incorrect: "Think about foods that help your body grow healthy 🤔" }
   },
   {
     _id: "tp-gk-hs-6",
@@ -132,8 +141,9 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     class: "top",
     topic: "Health and Safety",
     text: "What keeps us dry in the rain? ☔",
-    options: ["Umbrella ☔", "Sunglasses 😎", "Scarf 🧣"],
+    options: ["Scarf 🧣", "Umbrella ☔", "Sunglasses 😎"],
     correct: "Umbrella ☔",
+    type: "choice",
     feedback: { correct: "Yes! An umbrella keeps us dry in the rain ☔", incorrect: "Think about what we hold over our heads when it rains 🌧️" }
   },
 
@@ -145,8 +155,9 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     class: "top",
     topic: "Culture and Celebrations",
     text: "What do we light on birthday cakes? 🎂",
-    options: ["Candles 🕯️", "Lamps 💡", "Stars ⭐"],
+    options: ["Stars ⭐", "Candles 🕯️", "Lamps 💡"],
     correct: "Candles 🕯️",
+    type: "choice",
     feedback: { correct: "Yes! We light candles on birthday cakes 🎂", incorrect: "Think about what you blow out on your birthday 🎈" }
   },
   {
@@ -158,6 +169,7 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     text: "What do we say when someone gives us something? 🎁",
     options: ["Thank you 🙏", "Goodbye 👋", "Hello 👋"],
     correct: "Thank you 🙏",
+    type: "choice",
     feedback: { correct: "Yes! We say 'thank you' to be polite 🙏", incorrect: "Think about being grateful 💭" }
   },
   {
@@ -169,6 +181,7 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     text: "What do we decorate during Christmas? 🎄",
     options: ["Christmas Tree 🎄", "Beach Ball ⚽", "Book 📚"],
     correct: "Christmas Tree 🎄",
+    type: "choice",
     feedback: { correct: "Yes! We decorate Christmas trees with lights and ornaments 🎄", incorrect: "Think about holiday decorations 🎅" }
   },
   {
@@ -180,6 +193,7 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     text: "What do we wear to stay warm in winter? ❄️",
     options: ["Coat 🧥", "Swimsuit 🩱", "Sandals 👡"],
     correct: "Coat 🧥",
+    type: "choice",
     feedback: { correct: "Yes! We wear warm coats in winter 🧥", incorrect: "Think about clothes for cold weather ❄️" }
   },
   {
@@ -188,10 +202,11 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     subject: "generalKnowledge",
     class: "top",
     topic: "Culture and Celebrations",
-    text: "What do we use to make music? 🎵",
-    options: ["Instruments 🎸", "Chairs 🪑", "Books 📚"],
-    correct: "Instruments 🎸",
-    feedback: { correct: "Yes! We use instruments to make music 🎵", incorrect: "Think about what makes musical sounds 🎼" }
+    text: "Which things can make music? Select all that apply 🎵",
+    options: ["Guitar 🎸", "Drums 🥁", "Piano �", "Chairs 🪑", "Books 📚"],
+    correct: ["Guitar 🎸", "Drums 🥁", "Piano �"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! These are all musical instruments! 🎵", incorrect: "Think about things that make musical sounds 🎼" }
   },
   {
     _id: "tp-gk-cc-6",
@@ -202,6 +217,7 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     text: "What do we paint with? 🎨",
     options: ["Brush 🖌️", "Fork 🍴", "Shoe 👟"],
     correct: "Brush 🖌️",
+    type: "choice",
     feedback: { correct: "Yes! We use brushes to paint pictures 🎨", incorrect: "Think about art tools 🖌️" }
   },
 
@@ -213,8 +229,9 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     class: "top",
     topic: "Environment and Nature",
     text: "Where do fish live? 🐠",
-    options: ["Water 🌊", "Trees 🌳", "Sky ☁️"],
+    options: ["Trees 🌳", "Sky ☁️", "Water 🌊"],
     correct: "Water 🌊",
+    type: "choice",
     feedback: { correct: "Yes! Fish live in water 🐠", incorrect: "Think about where fish swim 🌊" }
   },
   {
@@ -226,6 +243,7 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     text: "What helps plants grow? 🌱",
     options: ["Water and Sun 💧☀️", "TV 📺", "Books 📚"],
     correct: "Water and Sun 💧☀️",
+    type: "choice",
     feedback: { correct: "Yes! Plants need water and sunlight to grow 🌱", incorrect: "Think about what gardens need 🌺" }
   },
   {
@@ -235,8 +253,9 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     class: "top",
     topic: "Environment and Nature",
     text: "Where do birds make their homes? 🐦",
-    options: ["Nests 🪹", "Cars 🚗", "Books 📚"],
+    options: ["Books 📚", "Nests 🪹", "Cars 🚗"],
     correct: "Nests 🪹",
+    type: "choice",
     feedback: { correct: "Yes! Birds build nests for their homes 🐦", incorrect: "Think about where birds lay eggs 🥚" }
   },
   {
@@ -248,6 +267,7 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     text: "What makes a garden grow? 🌺",
     options: ["Care and Water 🌱💧", "TV 📺", "Toys 🎲"],
     correct: "Care and Water 🌱💧",
+    type: "choice",
     feedback: { correct: "Yes! Gardens need care and water to grow 🌺", incorrect: "Think about what helps flowers bloom 🌸" }
   },
   {
@@ -257,8 +277,9 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     class: "top",
     topic: "Environment and Nature",
     text: "Where do bees collect honey? 🐝",
-    options: ["Flowers 🌸", "Books 📚", "Cars 🚗"],
+    options: ["Cars 🚗", "Books 📚", "Flowers 🌸"],
     correct: "Flowers 🌸",
+    type: "choice",
     feedback: { correct: "Yes! Bees collect honey from flowers 🐝", incorrect: "Think about where bees buzz around 🌺" }
   },
   {
@@ -270,6 +291,7 @@ export const topClassGeneralKnowledgeQuestions: Question[] = [
     text: "What should we do with trash? 🗑️",
     options: ["Recycle ♻️", "Throw on ground 👎", "Hide it 🙈"],
     correct: "Recycle ♻️",
+    type: "choice",
     feedback: { correct: "Yes! We should recycle to help our planet ♻️", incorrect: "Think about keeping Earth clean 🌍" }
   }
 ];

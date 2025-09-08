@@ -7,13 +7,16 @@ export const p2EnglishQuestions: Question[] = [
     "subject": "english",
     "class": "p2",
     "topic": "Phonics (Blends)",
-    "text": "Which blend starts 'black'?",
+    "text": "Find the blends in these words. Select all that apply 📝",
     "options": [
-      "bl",
-      "cl",
-      "br"
+      "black (bl) ⚫",
+      "clock (cl) 🕐",
+      "brush (br) 🖌️",
+      "cat (ca) 🐱",
+      "dog (do) 🐕"
     ],
-    "correct": "bl",
+    "correct": ["black (bl) ⚫", "clock (cl) 🕐", "brush (br) 🖌️"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Nice phonics!",
       "incorrect": "Listen to the first sounds."
@@ -32,6 +35,7 @@ export const p2EnglishQuestions: Question[] = [
       "sea 🌊"
     ],
     "correct": "tree 🌳",
+    "type": "choice",
     "feedback": {
       "correct": "Nice phonics!",
       "incorrect": "Listen to the first sounds."
@@ -50,6 +54,7 @@ export const p2EnglishQuestions: Question[] = [
       "apple 🍎"
     ],
     "correct": "crab 🦀",
+    "type": "choice",
     "feedback": {
       "correct": "Nice phonics!",
       "incorrect": "Listen to the first sounds."
@@ -68,6 +73,7 @@ export const p2EnglishQuestions: Question[] = [
       "jar 🫙"
     ],
     "correct": "star ⭐",
+    "type": "choice",
     "feedback": {
       "correct": "Nice phonics!",
       "incorrect": "Listen to the first sounds."
@@ -86,6 +92,7 @@ export const p2EnglishQuestions: Question[] = [
       "seed 🌱"
     ],
     "correct": "plane ✈️",
+    "type": "choice",
     "feedback": {
       "correct": "Nice phonics!",
       "incorrect": "Listen to the first sounds."
@@ -104,6 +111,7 @@ export const p2EnglishQuestions: Question[] = [
       "moon 🌙"
     ],
     "correct": "broom 🧹",
+    "type": "choice",
     "feedback": {
       "correct": "Nice phonics!",
       "incorrect": "Listen to the first sounds."
@@ -122,6 +130,7 @@ export const p2EnglishQuestions: Question[] = [
       "train 🚆"
     ],
     "correct": "skateboard 🛹",
+    "type": "choice",
     "feedback": {
       "correct": "Nice phonics!",
       "incorrect": "Listen to the first sounds."
@@ -140,6 +149,7 @@ export const p2EnglishQuestions: Question[] = [
       "rf"
     ],
     "correct": "fr",
+    "type": "choice",
     "feedback": {
       "correct": "Nice phonics!",
       "incorrect": "Listen to the first sounds."
@@ -151,13 +161,16 @@ export const p2EnglishQuestions: Question[] = [
     "subject": "english",
     "class": "p2",
     "topic": "Vocabulary & Spelling",
-    "text": "Choose the opposite of 'hot' 🔥",
+    "text": "Select all the opposites of 'hot' 🌡️",
     "options": [
-      "cold ❄️",
-      "warm ♨️",
-      "spicy 🌶️"
+      "Cold ❄️",
+      "Cool 🧊",
+      "Chilly 🥶",
+      "Warm ♨️",
+      "Spicy 🌶️"
     ],
-    "correct": "cold ❄️",
+    "correct": ["Cold ❄️", "Cool 🧊", "Chilly 🥶"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Great word choice!",
       "incorrect": "Look carefully at meanings."
@@ -176,6 +189,7 @@ export const p2EnglishQuestions: Question[] = [
       "childes"
     ],
     "correct": "children",
+    "type": "choice",
     "feedback": {
       "correct": "Great word choice!",
       "incorrect": "Look carefully at meanings."
@@ -194,6 +208,7 @@ export const p2EnglishQuestions: Question[] = [
       "sock 🧦"
     ],
     "correct": "hammer 🔨",
+    "type": "choice",
     "feedback": {
       "correct": "Great word choice!",
       "incorrect": "Look carefully at meanings."
@@ -212,6 +227,7 @@ export const p2EnglishQuestions: Question[] = [
       "run"
     ],
     "correct": "green 🟩",
+    "type": "choice",
     "feedback": {
       "correct": "Great word choice!",
       "incorrect": "Look carefully at meanings."
@@ -223,13 +239,16 @@ export const p2EnglishQuestions: Question[] = [
     "subject": "english",
     "class": "p2",
     "topic": "Vocabulary & Spelling",
-    "text": "Pick the animal word",
+    "text": "Which words are animals? Select all that apply 🐾",
     "options": [
-      "tiger 🐯",
-      "river 🌊",
-      "heavy ⚖️"
+      "Tiger 🐯",
+      "Lion 🦁",
+      "Bird 🐦",
+      "River 🌊",
+      "Heavy ⚖️"
     ],
-    "correct": "tiger 🐯",
+    "correct": ["Tiger 🐯", "Lion 🦁", "Bird 🐦"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Great word choice!",
       "incorrect": "Look carefully at meanings."
@@ -266,6 +285,7 @@ export const p2EnglishQuestions: Question[] = [
       "yellow"
     ],
     "correct": "school 🏫",
+    "type": "choice",
     "feedback": {
       "correct": "Great word choice!",
       "incorrect": "Look carefully at meanings."
@@ -284,6 +304,7 @@ export const p2EnglishQuestions: Question[] = [
       "late"
     ],
     "correct": "quick",
+    "type": "choice",
     "feedback": {
       "correct": "Great word choice!",
       "incorrect": "Look carefully at meanings."
@@ -295,13 +316,16 @@ export const p2EnglishQuestions: Question[] = [
     "subject": "english",
     "class": "p2",
     "topic": "Grammar (Nouns/Pronouns/Verbs)",
-    "text": "Which word is a noun?",
+    "text": "Which words are nouns (naming words)? Select all that apply 📑",
     "options": [
-      "river",
-      "quickly",
-      "jump"
+      "River 🌊",
+      "Book 📖",
+      "Tree 🌳",
+      "Quickly ⏩",
+      "Jump 🏃"
     ],
-    "correct": "river",
+    "correct": ["River 🌊", "Book 📖", "Tree 🌳"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Grammar champ!",
       "incorrect": "Think about the part of speech."
@@ -331,13 +355,16 @@ export const p2EnglishQuestions: Question[] = [
     "subject": "english",
     "class": "p2",
     "topic": "Grammar (Nouns/Pronouns/Verbs)",
-    "text": "Which word is a verb (action)?",
+    "text": "Which words are actions (verbs)? Select all that apply 🏃",
     "options": [
-      "run",
-      "chair",
-      "blue"
+      "Run 🏃",
+      "Jump 🦘",
+      "Sleep 😴",
+      "Chair 🪑",
+      "Blue 🔵"
     ],
-    "correct": "run",
+    "correct": ["Run 🏃", "Jump 🦘", "Sleep 😴"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Grammar champ!",
       "incorrect": "Think about the part of speech."
@@ -392,6 +419,7 @@ export const p2EnglishQuestions: Question[] = [
       "it"
     ],
     "correct": "she",
+    "type": "choice",
     "feedback": {
       "correct": "Grammar champ!",
       "incorrect": "Think about the part of speech."
@@ -410,6 +438,7 @@ export const p2EnglishQuestions: Question[] = [
       "apple"
     ],
     "correct": "happy",
+    "type": "choice",
     "feedback": {
       "correct": "Grammar champ!",
       "incorrect": "Think about the part of speech."
@@ -428,6 +457,7 @@ export const p2EnglishQuestions: Question[] = [
       "bird"
     ],
     "correct": "fly",
+    "type": "choice",
     "feedback": {
       "correct": "Grammar champ!",
       "incorrect": "Think about the part of speech."

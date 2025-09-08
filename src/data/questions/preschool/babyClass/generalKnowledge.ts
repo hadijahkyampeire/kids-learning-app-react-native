@@ -11,7 +11,32 @@ export const babyClassGeneralKnowledgeQuestions: Question[] = [
     text: "What do we use to brush our teeth? 🦷",
     options: ["Toothbrush", "Spoon", "Cup"],
     correct: "Toothbrush",
+    type: "choice",
     feedback: { correct: "Yes! We use a toothbrush to clean our teeth.", incorrect: "We need a toothbrush to clean our teeth." }
+  },
+  {
+    _id: "bb-gk-mc-1",
+    level: "preSchool",
+    subject: "generalKnowledge",
+    class: "baby",
+    topic: "Food Groups",
+    text: "Which foods are fruits? 🍎",
+    options: ["Apple", "Bread", "Banana", "Orange", "Rice", "Grapes"],
+    correct: ["Apple", "Banana", "Orange", "Grapes"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! All of these are delicious fruits!", incorrect: "Look for sweet foods that grow on trees or plants." }
+  },
+  {
+    _id: "bb-gk-mc-2",
+    level: "preSchool",
+    subject: "generalKnowledge",
+    class: "baby",
+    topic: "Weather",
+    text: "What do we see in sunny weather? ☀️",
+    options: ["Sun", "Rainbow", "Clouds", "Rain", "Blue Sky", "Snow"],
+    correct: ["Sun", "Rainbow", "Blue Sky"],
+    type: "multiChoice",
+    feedback: { correct: "Perfect! These are all things we see on a sunny day!", incorrect: "Think about what the sky looks like when it's sunny." }
   },
   {
     _id: "bb-gk-2",

@@ -1,760 +1,723 @@
 import type { Question } from "../../../../types";
 
 export const p5ScienceQuestions: Question[] = [
+  // ====================== Body Systems ======================
   {
-    "_id": "lp-p5-re-beliefs-001",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Beliefs",
-    "text": "Muslims believe in how many Allah?",
-    "options": [
-      "One",
-      "Two",
-      "Many"
-    ],
-    "correct": "One",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "These are basics of Islamic belief."
-    }
+    _id: "lp-p5-sc-bs-1",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Body Systems",
+    type: "choice",
+    text: "Which system carries blood around the body?",
+    options: ["Circulatory", "Digestive", "Respiratory"],
+    correct: "Circulatory",
+    feedback: { correct: "Yes—the circulatory system transports blood.", incorrect: "It is the circulatory system." }
   },
   {
-    "_id": "lp-p5-re-beliefs-002",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Beliefs",
-    "text": "The oneness of Allah is called ____.",
-    "options": [
-      "Tawheed",
-      "Zakat",
-      "Sawm"
-    ],
-    "correct": "Tawheed",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "These are basics of Islamic belief."
-    }
+    _id: "lp-p5-sc-bs-2",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Body Systems",
+    type: "choice",
+    text: "Which organ pumps blood?",
+    options: ["Heart", "Lungs", "Stomach"],
+    correct: "Heart",
+    feedback: { correct: "Correct—the heart pumps blood.", incorrect: "Answer: Heart." }
   },
   {
-    "_id": "lp-p5-re-beliefs-003",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Beliefs",
-    "text": "Allah is the ____ of the worlds.",
-    "options": [
-      "Lord",
-      "servant",
-      "created"
-    ],
-    "correct": "Lord",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "These are basics of Islamic belief."
-    }
+    _id: "lp-p5-sc-bs-3",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Body Systems",
+    type: "choice",
+    text: "We breathe in oxygen using the ____ system.",
+    options: ["Respiratory", "Digestive", "Skeletal"],
+    correct: "Respiratory",
+    feedback: { correct: "Right—the respiratory system.", incorrect: "Think lungs and breathing." }
   },
   {
-    "_id": "lp-p5-re-beliefs-004",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Beliefs",
-    "text": "We should rely on Allah for ____.",
-    "options": [
-      "help",
-      "toys",
-      "games"
-    ],
-    "correct": "help",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "These are basics of Islamic belief."
-    }
+    _id: "lp-p5-sc-bs-4",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Body Systems",
+    type: "choice",
+    text: "Bones belong to the ____ system.",
+    options: ["Skeletal", "Nervous", "Circulatory"],
+    correct: "Skeletal",
+    feedback: { correct: "Yes—skeletal system.", incorrect: "Bones make up the skeleton." }
   },
   {
-    "_id": "lp-p5-re-beliefs-005",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Beliefs",
-    "text": "Saying 'SubhanAllah' means ____ Allah.",
-    "options": [
-      "glorifying",
-      "thanking",
-      "asking"
-    ],
-    "correct": "glorifying",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "These are basics of Islamic belief."
-    }
+    _id: "lp-p5-sc-bs-5",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Body Systems",
+    type: "choice",
+    text: "The brain is part of the ____ system.",
+    options: ["Nervous", "Digestive", "Excretory"],
+    correct: "Nervous",
+    feedback: { correct: "Exactly—the nervous system.", incorrect: "The brain controls the body (nervous system)." }
   },
   {
-    "_id": "lp-p5-re-beliefs-006",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Beliefs",
-    "text": "Belief in angels is part of ____.",
-    "options": [
-      "Iman",
-      "Salah",
-      "Hajj"
-    ],
-    "correct": "Iman",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "These are basics of Islamic belief."
-    }
+    _id: "lp-p5-sc-bs-6",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Body Systems",
+    type: "choice",
+    text: "Food is broken down and absorbed in the ____ system.",
+    options: ["Digestive", "Skeletal", "Respiratory"],
+    correct: "Digestive",
+    feedback: { correct: "Correct—digestive system.", incorrect: "Stomach and intestines digest food." }
   },
   {
-    "_id": "lp-p5-re-beliefs-007",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Beliefs",
-    "text": "Belief in the Last Day is part of ____.",
-    "options": [
-      "faith",
-      "food",
-      "games"
-    ],
-    "correct": "faith",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "These are basics of Islamic belief."
-    }
+    _id: "lp-p5-sc-bs-7",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Body Systems",
+    type: "choice",
+    text: "Urine is removed from the body by the ____ system.",
+    options: ["Excretory", "Circulatory", "Skeletal"],
+    correct: "Excretory",
+    feedback: { correct: "Yes—excretory system.", incorrect: "The kidneys and bladder are in the excretory system." }
   },
   {
-    "_id": "lp-p5-re-holy-001",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Holy Book & Practice",
-    "text": "Muslims read the Qur’an in ____.",
-    "options": [
-      "Arabic",
-      "Latin",
-      "Hebrew"
-    ],
-    "correct": "Arabic",
-    "feedback": {
-      "correct": "Well remembered!",
-      "incorrect": "These are common practices."
-    }
+    _id: "lp-p5-sc-bs-8",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Body Systems",
+    type: "text",
+    text: "Name the organ that helps us breathe by expanding and relaxing under the lungs.",
+    accepted: ["diaphragm", "the diaphragm"],
+    feedback: { correct: "Great—diaphragm.", incorrect: "It’s the diaphragm." }
   },
   {
-    "_id": "lp-p5-re-holy-002",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Holy Book & Practice",
-    "text": "How many surahs are in the Qur’an?",
-    "options": [
-      "114",
-      "100",
-      "120"
-    ],
-    "correct": "114",
-    "feedback": {
-      "correct": "Well remembered!",
-      "incorrect": "These are common practices."
-    }
+    _id: "lp-p5-sc-bs-9",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Body Systems",
+    type: "text",
+    text: "What do we call the red liquid that carries oxygen and nutrients around the body?",
+    accepted: ["blood"],
+    feedback: { correct: "Yes—blood.", incorrect: "Answer: blood." }
   },
   {
-    "_id": "lp-p5-re-holy-003",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Holy Book & Practice",
-    "text": "Before reading Qur’an, we say ____.",
-    "options": [
-      "Bismillah",
-      "Allahu Akbar",
-      "As-salamu alaykum"
-    ],
-    "correct": "Bismillah",
-    "feedback": {
-      "correct": "Well remembered!",
-      "incorrect": "These are common practices."
-    }
+    _id: "lp-p5-sc-bs-10",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Body Systems",
+    type: "multiText",
+    minAnswers: 2,
+    text: "List any two ways to keep the body healthy.",
+    acceptedSet: ["balanced diet","exercise","rest","wash hands","vaccination","avoid smoking","drink clean water","good hygiene"],
+    feedback: { correct: "Nice healthy habits!", incorrect: "Examples: balanced diet, exercise, rest, hygiene." }
+  },
+
+  // ====================== Ecosystems ======================
+  {
+    _id: "lp-p5-sc-eco-1",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Ecosystems",
+    type: "choice",
+    text: "Which living things make their own food?",
+    options: ["Producers", "Consumers", "Decomposers"],
+    correct: "Producers",
+    feedback: { correct: "Right—plants are producers.", incorrect: "Producers make their own food." }
   },
   {
-    "_id": "lp-p5-re-holy-004",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Holy Book & Practice",
-    "text": "The first revelation came in the month of ____.",
-    "options": [
-      "Ramadan",
-      "Shawwal",
-      "Rajab"
-    ],
-    "correct": "Ramadan",
-    "feedback": {
-      "correct": "Well remembered!",
-      "incorrect": "These are common practices."
-    }
+    _id: "lp-p5-sc-eco-2",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Ecosystems",
+    type: "choice",
+    text: "Which is a decomposer?",
+    options: ["Mushroom", "Zebra", "Eagle"],
+    correct: "Mushroom",
+    feedback: { correct: "Correct—fungi decompose remains.", incorrect: "Answer: Mushroom." }
   },
   {
-    "_id": "lp-p5-re-holy-005",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Holy Book & Practice",
-    "text": "We perform wudu to ____ before prayer.",
-    "options": [
-      "clean ourselves",
-      "eat",
-      "sleep"
-    ],
-    "correct": "clean ourselves",
-    "feedback": {
-      "correct": "Well remembered!",
-      "incorrect": "These are common practices."
-    }
+    _id: "lp-p5-sc-eco-3",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Ecosystems",
+    type: "choice",
+    text: "A food chain shows how ____ moves.",
+    options: ["energy", "rain", "air"],
+    correct: "energy",
+    feedback: { correct: "Yes—energy flow.", incorrect: "Food chains show energy transfer." }
   },
   {
-    "_id": "lp-p5-re-holy-006",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Holy Book & Practice",
-    "text": "The daily prayer is called ____.",
-    "options": [
-      "Salah",
-      "Zakat",
-      "Hajj"
-    ],
-    "correct": "Salah",
-    "feedback": {
-      "correct": "Well remembered!",
-      "incorrect": "These are common practices."
-    }
+    _id: "lp-p5-sc-eco-4",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Ecosystems",
+    type: "text",
+    text: "Name the place where an organism lives.",
+    accepted: ["habitat", "its habitat"],
+    feedback: { correct: "Yes—habitat.", incorrect: "It’s called a habitat." }
   },
   {
-    "_id": "lp-p5-re-holy-007",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Holy Book & Practice",
-    "text": "Fasting in Ramadan is called ____.",
-    "options": [
-      "Sawm",
-      "Hajj",
-      "Zakat"
-    ],
-    "correct": "Sawm",
-    "feedback": {
-      "correct": "Well remembered!",
-      "incorrect": "These are common practices."
-    }
+    _id: "lp-p5-sc-eco-5",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Ecosystems",
+    type: "choice",
+    text: "Sun → Grass → ____ → Lion. Which fits best?",
+    options: ["Zebra", "Fungus", "Vulture"],
+    correct: "Zebra",
+    feedback: { correct: "Good chain—herbivore in the middle.", incorrect: "A herbivore like zebra fits." }
   },
   {
-    "_id": "lp-p5-re-prophets-001",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Prophets & Lessons",
-    "text": "Which Prophet split the sea by Allah’s permission?",
-    "options": [
-      "Musa",
-      "Isa",
-      "Yunus"
-    ],
-    "correct": "Musa",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "These are famous prophet stories."
-    }
+    _id: "lp-p5-sc-eco-6",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Ecosystems",
+    type: "text",
+    text: "Plants make food by ________.",
+    accepted: ["photosynthesis"],
+    patterns: ["^photo\\s*synth(es|is)\\w*$"],
+    feedback: { correct: "Exactly—photosynthesis.", incorrect: "It’s called photosynthesis." }
   },
   {
-    "_id": "lp-p5-re-prophets-002",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Prophets & Lessons",
-    "text": "Which Prophet built an ark?",
-    "options": [
-      "Nuh",
-      "Ibrahim",
-      "Yaqub"
-    ],
-    "correct": "Nuh",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "These are famous prophet stories."
-    }
+    _id: "lp-p5-sc-eco-7",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Ecosystems",
+    type: "multiText",
+    minAnswers: 2,
+    text: "State any two ways people destroy habitats.",
+    acceptedSet: ["deforestation","bush burning","pollution","overgrazing","wetland draining","charcoal burning","mining"],
+    feedback: { correct: "True—those harm habitats.", incorrect: "Examples: deforestation, pollution, bush burning." }
   },
   {
-    "_id": "lp-p5-re-prophets-003",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Prophets & Lessons",
-    "text": "The last Prophet is ____ (ﷺ).",
-    "options": [
-      "Muhammad",
-      "Isa",
-      "Musa"
-    ],
-    "correct": "Muhammad",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "These are famous prophet stories."
-    }
+    _id: "lp-p5-sc-eco-8",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Ecosystems",
+    type: "choice",
+    text: "Which term means the variety of living things in an area?",
+    options: ["Biodiversity", "Weather", "Topography"],
+    correct: "Biodiversity",
+    feedback: { correct: "Yes—biodiversity.", incorrect: "Biodiversity is the variety of life." }
   },
   {
-    "_id": "lp-p5-re-prophets-004",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Prophets & Lessons",
-    "text": "Prophet Ibrahim is known as the friend of ____.",
-    "options": [
-      "Allah",
-      "angels",
-      "Pharaoh"
-    ],
-    "correct": "Allah",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "These are famous prophet stories."
-    }
+    _id: "lp-p5-sc-eco-9",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Ecosystems",
+    type: "text",
+    text: "Give one reason wetlands are important.",
+    accepted: ["filter water","home for animals","control floods","tourism","provide papyrus","fish breeding"],
+    feedback: { correct: "Good—wetlands are valuable.", incorrect: "They filter water, control floods, and support wildlife." }
   },
   {
-    "_id": "lp-p5-re-prophets-005",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Prophets & Lessons",
-    "text": "Prophet Yunus was swallowed by a ____.",
-    "options": [
-      "big fish",
-      "lion",
-      "camel"
-    ],
-    "correct": "big fish",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "These are famous prophet stories."
-    }
+    _id: "lp-p5-sc-eco-10",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Ecosystems",
+    type: "choice",
+    text: "Which animals eat both plants and other animals?",
+    options: ["Omnivores", "Herbivores", "Carnivores"],
+    correct: "Omnivores",
+    feedback: { correct: "Correct—omnivores eat both.", incorrect: "Omnivores is the correct answer." }
+  },
+
+  // ====================== Climate & Seasons ======================
+  {
+    _id: "lp-p5-sc-cl-1",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Climate & Seasons",
+    type: "choice",
+    text: "Which tool measures rainfall?",
+    options: ["Rain gauge", "Thermometer", "Wind vane"],
+    correct: "Rain gauge",
+    feedback: { correct: "Right—rain gauge.", incorrect: "Use a rain gauge for rainfall." }
   },
   {
-    "_id": "lp-p5-re-prophets-006",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Prophets & Lessons",
-    "text": "Prophet Yusuf was known for his ____.",
-    "options": [
-      "patience",
-      "speed",
-      "height"
-    ],
-    "correct": "patience",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "These are famous prophet stories."
-    }
+    _id: "lp-p5-sc-cl-2",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Climate & Seasons",
+    type: "choice",
+    text: "A thermometer measures ____.",
+    options: ["temperature", "wind direction", "humidity"],
+    correct: "temperature",
+    feedback: { correct: "Correct—temperature.", incorrect: "Thermometers measure temperature." }
   },
   {
-    "_id": "lp-p5-re-prophets-007",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Prophets & Lessons",
-    "text": "Prophet Dawud was given the book called ____.",
-    "options": [
-      "Zabur",
-      "Torah",
-      "Injil"
-    ],
-    "correct": "Zabur",
-    "feedback": {
-      "correct": "Correct!",
-      "incorrect": "These are famous prophet stories."
-    }
+    _id: "lp-p5-sc-cl-3",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Climate & Seasons",
+    type: "choice",
+    text: "Which instrument shows wind direction?",
+    options: ["Wind vane", "Barometer", "Rain gauge"],
+    correct: "Wind vane",
+    feedback: { correct: "Yes—wind vane.", incorrect: "Wind vane shows direction." }
   },
   {
-    "_id": "lp-p5-re-values-001",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Values & Manners",
-    "text": "Which action shows good manners at the mosque?",
-    "options": [
-      "Remove shoes where required",
-      "Push others",
-      "Shout loudly"
-    ],
-    "correct": "Remove shoes where required",
-    "feedback": {
-      "correct": "Beautiful manners!",
-      "incorrect": "Adab is important."
-    }
+    _id: "lp-p5-sc-cl-4",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Climate & Seasons",
+    type: "text",
+    text: "Clouds are made of tiny ______.",
+    accepted: ["water droplets","ice crystals","water drops"],
+    feedback: { correct: "Correct—tiny droplets/ice.", incorrect: "They’re tiny water droplets or ice crystals." }
   },
   {
-    "_id": "lp-p5-re-values-002",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Values & Manners",
-    "text": "Saying 'Alhamdulillah' shows ____.",
-    "options": [
-      "thanks",
-      "anger",
-      "fear"
-    ],
-    "correct": "thanks",
-    "feedback": {
-      "correct": "Beautiful manners!",
-      "incorrect": "Adab is important."
-    }
+    _id: "lp-p5-sc-cl-5",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Climate & Seasons",
+    type: "choice",
+    text: "Evaporation happens when water ____.",
+    options: ["changes to gas", "freezes", "condenses"],
+    correct: "changes to gas",
+    feedback: { correct: "Yes—liquid to gas.", incorrect: "Evaporation is liquid to gas." }
   },
   {
-    "_id": "lp-p5-re-values-003",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Values & Manners",
-    "text": "We should speak the ____.",
-    "options": [
-      "truth",
-      "lies",
-      "shouts"
-    ],
-    "correct": "truth",
-    "feedback": {
-      "correct": "Beautiful manners!",
-      "incorrect": "Adab is important."
-    }
+    _id: "lp-p5-sc-cl-6",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Climate & Seasons",
+    type: "text",
+    text: "Name one type of cloud that brings rain.",
+    accepted: ["nimbus","cumulonimbus","nimbostratus"],
+    feedback: { correct: "Right—nimbus types bring rain.", incorrect: "Rain clouds are nimbus types." }
   },
   {
-    "_id": "lp-p5-re-values-004",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Values & Manners",
-    "text": "Greeting with 'As-salamu alaykum' means ____.",
-    "options": [
-      "Peace be upon you",
-      "Thank you",
-      "Good night"
-    ],
-    "correct": "Peace be upon you",
-    "feedback": {
-      "correct": "Beautiful manners!",
-      "incorrect": "Adab is important."
-    }
+    _id: "lp-p5-sc-cl-7",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Climate & Seasons",
+    type: "choice",
+    text: "Which season is best for harvesting grains like millet?",
+    options: ["Dry season", "Rainy season", "Any season"],
+    correct: "Dry season",
+    feedback: { correct: "Correct—the dry season.", incorrect: "Harvesting is best in the dry season." }
   },
   {
-    "_id": "lp-p5-re-values-005",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Values & Manners",
-    "text": "Sharing with others shows ____.",
-    "options": [
-      "kindness",
-      "greed",
-      "selfishness"
-    ],
-    "correct": "kindness",
-    "feedback": {
-      "correct": "Beautiful manners!",
-      "incorrect": "Adab is important."
-    }
+    _id: "lp-p5-sc-cl-8",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Climate & Seasons",
+    type: "text",
+    text: "What do we call the average weather of a place over many years?",
+    accepted: ["climate"],
+    feedback: { correct: "Yes—climate.", incorrect: "It’s called climate." }
   },
   {
-    "_id": "lp-p5-re-values-006",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Values & Manners",
-    "text": "Keeping promises is called ____.",
-    "options": [
-      "honesty",
-      "jealousy",
-      "laziness"
-    ],
-    "correct": "honesty",
-    "feedback": {
-      "correct": "Beautiful manners!",
-      "incorrect": "Adab is important."
-    }
+    _id: "lp-p5-sc-cl-9",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Climate & Seasons",
+    type: "multiText",
+    minAnswers: 2,
+    text: "List any two ways people can prepare for heavy rains.",
+    acceptedSet: ["dig drainage","clear trenches","harvest rainwater","fix roofs","move from flood zones","store food","plant trees"],
+    feedback: { correct: "Good preparation ideas.", incorrect: "Examples: clear trenches, harvest rain, fix roofs." }
   },
   {
-    "_id": "lp-p5-re-values-007",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Values & Manners",
-    "text": "We should respect ____.",
-    "options": [
-      "parents and elders",
-      "no one",
-      "only friends"
-    ],
-    "correct": "parents and elders",
-    "feedback": {
-      "correct": "Beautiful manners!",
-      "incorrect": "Adab is important."
-    }
+    _id: "lp-p5-sc-cl-10",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Climate & Seasons",
+    type: "choice",
+    text: "Which gas in the air is most needed by plants for photosynthesis?",
+    options: ["Carbon dioxide", "Oxygen", "Nitrogen"],
+    correct: "Carbon dioxide",
+    feedback: { correct: "Right—carbon dioxide.", incorrect: "Plants use carbon dioxide." }
+  },
+
+  // ====================== Forces & Energy ======================
+  {
+    _id: "lp-p5-sc-fe-1",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Forces & Energy",
+    type: "choice",
+    text: "Which force pulls objects toward Earth?",
+    options: ["Gravity", "Friction", "Magnetism"],
+    correct: "Gravity",
+    feedback: { correct: "Yes—gravity.", incorrect: "Gravity pulls objects downwards." }
   },
   {
-    "_id": "lp-p5-re-charity-001",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Community & Charity",
-    "text": "What is giving to the poor called?",
-    "options": [
-      "Zakat",
-      "Hajj",
-      "Salah"
-    ],
-    "correct": "Zakat",
-    "feedback": {
-      "correct": "Good community spirit!",
-      "incorrect": "Serving others is rewarded."
-    }
+    _id: "lp-p5-sc-fe-2",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Forces & Energy",
+    type: "choice",
+    text: "Which reduces motion between two surfaces?",
+    options: ["Friction", "Thrust", "Lift"],
+    correct: "Friction",
+    feedback: { correct: "Correct—friction opposes motion.", incorrect: "Friction reduces motion." }
   },
   {
-    "_id": "lp-p5-re-charity-002",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Community & Charity",
-    "text": "Helping your neighbor is a ____ deed.",
-    "options": [
-      "good",
-      "bad",
-      "useless"
-    ],
-    "correct": "good",
-    "feedback": {
-      "correct": "Good community spirit!",
-      "incorrect": "Serving others is rewarded."
-    }
+    _id: "lp-p5-sc-fe-3",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Forces & Energy",
+    type: "choice",
+    text: "A moving bicycle has mainly ____ energy.",
+    options: ["Kinetic", "Light", "Sound"],
+    correct: "Kinetic",
+    feedback: { correct: "Yes—kinetic energy of motion.", incorrect: "Kinetic means motion." }
   },
   {
-    "_id": "lp-p5-re-charity-003",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Community & Charity",
-    "text": "Donating clothes is a form of ____.",
-    "options": [
-      "charity",
-      "lying",
-      "wasting"
-    ],
-    "correct": "charity",
-    "feedback": {
-      "correct": "Good community spirit!",
-      "incorrect": "Serving others is rewarded."
-    }
+    _id: "lp-p5-sc-fe-4",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Forces & Energy",
+    type: "choice",
+    text: "Energy from the sun is called ____ energy.",
+    options: ["Solar", "Wind", "Chemical"],
+    correct: "Solar",
+    feedback: { correct: "Right—solar energy.", incorrect: "Answer: Solar." }
   },
   {
-    "_id": "lp-p5-re-charity-004",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Community & Charity",
-    "text": "The charity given at end of Ramadan is ____.",
-    "options": [
-      "Zakat al-Fitr",
-      "Hajj",
-      "Sawm"
-    ],
-    "correct": "Zakat al-Fitr",
-    "feedback": {
-      "correct": "Good community spirit!",
-      "incorrect": "Serving others is rewarded."
-    }
+    _id: "lp-p5-sc-fe-5",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Forces & Energy",
+    type: "text",
+    text: "Name one renewable source of energy.",
+    accepted: ["wind","solar","water","hydro","biogas","geothermal"],
+    feedback: { correct: "Yes—that’s renewable.", incorrect: "Examples: solar, wind, hydro." }
   },
   {
-    "_id": "lp-p5-re-charity-005",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Community & Charity",
-    "text": "Feeding the hungry is encouraged in ____.",
-    "options": [
-      "Islam",
-      "none",
-      "anger"
-    ],
-    "correct": "Islam",
-    "feedback": {
-      "correct": "Good community spirit!",
-      "incorrect": "Serving others is rewarded."
-    }
+    _id: "lp-p5-sc-fe-6",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Forces & Energy",
+    type: "text",
+    text: "What simple machine is a sloping surface used to raise loads?",
+    accepted: ["inclined plane","ramp"],
+    feedback: { correct: "Correct—inclined plane (ramp).", incorrect: "It’s an inclined plane (ramp)." }
   },
   {
-    "_id": "lp-p5-re-charity-006",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Community & Charity",
-    "text": "A community is a group of people who ____.",
-    "options": [
-      "live/work together",
-      "never meet",
-      "only fight"
-    ],
-    "correct": "live/work together",
-    "feedback": {
-      "correct": "Good community spirit!",
-      "incorrect": "Serving others is rewarded."
-    }
+    _id: "lp-p5-sc-fe-7",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Forces & Energy",
+    type: "choice",
+    text: "Magnets attract mainly objects made of ____.",
+    options: ["Iron/steel", "Plastic", "Glass"],
+    correct: "Iron/steel",
+    feedback: { correct: "Yes—iron or steel are magnetic.", incorrect: "Magnets attract iron/steel." }
   },
   {
-    "_id": "lp-p5-re-charity-007",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Community & Charity",
-    "text": "Cleaning public places is a form of ____.",
-    "options": [
-      "service",
-      "harm",
-      "noise"
-    ],
-    "correct": "service",
-    "feedback": {
-      "correct": "Good community spirit!",
-      "incorrect": "Serving others is rewarded."
-    }
+    _id: "lp-p5-sc-fe-8",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Forces & Energy",
+    type: "multiText",
+    minAnswers: 2,
+    text: "Write any two ways to save energy at home.",
+    acceptedSet: ["switch off lights","use led bulbs","turn off appliances","cook with lid","iron once","use solar","unplug chargers"],
+    feedback: { correct: "Great energy-saving ideas!", incorrect: "Examples: switch off lights, use LED bulbs, unplug chargers." }
   },
   {
-    "_id": "lp-p5-re-pilgrimage-001",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Pilgrimage & Festivals",
-    "text": "What is Laylat al-Qadr?",
-    "options": [
-      "Night of Power",
-      "Night of Eid",
-      "Night of Ramadan Start"
-    ],
-    "correct": "Night of Power",
-    "feedback": {
-      "correct": "MashaAllah!",
-      "incorrect": "These are important days in Islam."
-    }
+    _id: "lp-p5-sc-fe-9",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Forces & Energy",
+    type: "choice",
+    text: "Which surface will create the MOST friction on a sliding box?",
+    options: ["Rough concrete", "Smooth ice", "Polished tile"],
+    correct: "Rough concrete",
+    feedback: { correct: "Correct—rough surfaces increase friction.", incorrect: "Rough concrete creates more friction." }
   },
   {
-    "_id": "lp-p5-re-pilgrimage-002",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Pilgrimage & Festivals",
-    "text": "Hajj takes place in which city?",
-    "options": [
-      "Makkah",
-      "Medina",
-      "Jerusalem"
-    ],
-    "correct": "Makkah",
-    "feedback": {
-      "correct": "MashaAllah!",
-      "incorrect": "These are important days in Islam."
-    }
+    _id: "lp-p5-sc-fe-10",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Forces & Energy",
+    type: "text",
+    text: "Name the force that slows a ball rolling on grass.",
+    accepted: ["friction"],
+    feedback: { correct: "Yes—friction resists motion.", incorrect: "It’s friction." }
+  },
+
+  // ====================== Materials & Changes ======================
+  {
+    _id: "lp-p5-sc-mc-1",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Materials & Changes",
+    type: "choice",
+    text: "Ice changing to water is called ____.",
+    options: ["Melting", "Freezing", "Condensation"],
+    correct: "Melting",
+    feedback: { correct: "Good—melting is solid to liquid.", incorrect: "Melting is correct." }
   },
   {
-    "_id": "lp-p5-re-pilgrimage-003",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Pilgrimage & Festivals",
-    "text": "Walking between Safa and Marwah is called ____.",
-    "options": [
-      "Sa'i",
-      "Tawaf",
-      "Takbir"
-    ],
-    "correct": "Sa'i",
-    "feedback": {
-      "correct": "MashaAllah!",
-      "incorrect": "These are important days in Islam."
-    }
+    _id: "lp-p5-sc-mc-2",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Materials & Changes",
+    type: "choice",
+    text: "Water vapour changing to liquid is ____.",
+    options: ["Condensation", "Evaporation", "Melting"],
+    correct: "Condensation",
+    feedback: { correct: "Right—condensation.", incorrect: "Condensation is gas to liquid." }
   },
   {
-    "_id": "lp-p5-re-pilgrimage-004",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Pilgrimage & Festivals",
-    "text": "The big celebration after Ramadan is ____.",
-    "options": [
-      "Eid al-Fitr",
-      "Eid al-Adha",
-      "Mawlid"
-    ],
-    "correct": "Eid al-Fitr",
-    "feedback": {
-      "correct": "MashaAllah!",
-      "incorrect": "These are important days in Islam."
-    }
+    _id: "lp-p5-sc-mc-3",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Materials & Changes",
+    type: "choice",
+    text: "Which material is transparent?",
+    options: ["Glass", "Wood", "Brick"],
+    correct: "Glass",
+    feedback: { correct: "Yes—glass lets light pass.", incorrect: "Glass is transparent." }
   },
   {
-    "_id": "lp-p5-re-pilgrimage-005",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Pilgrimage & Festivals",
-    "text": "The sacrifice festival is called ____.",
-    "options": [
-      "Eid al-Adha",
-      "Eid al-Fitr",
-      "Jumu'ah"
-    ],
-    "correct": "Eid al-Adha",
-    "feedback": {
-      "correct": "MashaAllah!",
-      "incorrect": "These are important days in Islam."
-    }
+    _id: "lp-p5-sc-mc-4",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Materials & Changes",
+    type: "choice",
+    text: "Which property do metals usually have?",
+    options: ["Conduct heat", "Always float", "Are soft only"],
+    correct: "Conduct heat",
+    feedback: { correct: "Correct—metals conduct heat.", incorrect: "Metals conduct heat and electricity." }
   },
   {
-    "_id": "lp-p5-re-pilgrimage-006",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Pilgrimage & Festivals",
-    "text": "Circling the Kaaba is called ____.",
-    "options": [
-      "Tawaf",
-      "Sa'i",
-      "Wudu"
-    ],
-    "correct": "Tawaf",
-    "feedback": {
-      "correct": "MashaAllah!",
-      "incorrect": "These are important days in Islam."
-    }
+    _id: "lp-p5-sc-mc-5",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Materials & Changes",
+    type: "choice",
+    text: "Which change is usually reversible?",
+    options: ["Freezing water", "Burning paper", "Rusting iron"],
+    correct: "Freezing water",
+    feedback: { correct: "Yes—freezing/melting is reversible.", incorrect: "Freezing water is reversible." }
   },
   {
-    "_id": "lp-p5-re-pilgrimage-007",
-    "level": "lowerPrimary",
-    "subject": "religion",
-    "class": "p5",
-    "topic": "Pilgrimage & Festivals",
-    "text": "The month of fasting is ____.",
-    "options": [
-      "Ramadan",
-      "Shawwal",
-      "Muharram"
-    ],
-    "correct": "Ramadan",
-    "feedback": {
-      "correct": "MashaAllah!",
-      "incorrect": "These are important days in Islam."
-    }
+    _id: "lp-p5-sc-mc-6",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Materials & Changes",
+    type: "text",
+    text: "Paper is mainly made from ______.",
+    accepted: ["wood pulp","pulp","trees"],
+    feedback: { correct: "Right—wood pulp.", incorrect: "Answer: wood pulp (from trees)." }
+  },
+  {
+    _id: "lp-p5-sc-mc-7",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Materials & Changes",
+    type: "choice",
+    text: "Air is best described as a ____.",
+    options: ["Mixture of gases", "Single gas", "Metal"],
+    correct: "Mixture of gases",
+    feedback: { correct: "Correct—air is a mixture.", incorrect: "Air is a mixture of gases." }
+  },
+  {
+    _id: "lp-p5-sc-mc-8",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Materials & Changes",
+    type: "text",
+    text: "Name one waterproof material used for raincoats.",
+    accepted: ["plastic","polythene","rubber","pvc"],
+    feedback: { correct: "Yes—those are waterproof.", incorrect: "Examples: plastic, rubber." }
+  },
+  {
+    _id: "lp-p5-sc-mc-9",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Materials & Changes",
+    type: "multiText",
+    minAnswers: 2,
+    text: "List any two ways to separate a mixture of sand and iron filings.",
+    acceptedSet: ["use magnet","magnetism","sieving then magnet","magnetic separation"],
+    feedback: { correct: "Correct—magnet works well.", incorrect: "Use a magnet; you can also sieve first." }
+  },
+  {
+    _id: "lp-p5-sc-mc-10",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Materials & Changes",
+    type: "choice",
+    text: "Adding salt to water makes a ____.",
+    options: ["Solution", "Pure substance", "Metal"],
+    correct: "Solution",
+    feedback: { correct: "Yes—a solution.", incorrect: "Salt + water forms a solution." }
+  },
+
+  // ====================== Space ======================
+  {
+    _id: "lp-p5-sc-sp-1",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Space",
+    type: "choice",
+    text: "The Sun is a ____.",
+    options: ["Star", "Planet", "Comet"],
+    correct: "Star",
+    feedback: { correct: "Right—the Sun is a star.", incorrect: "Answer: Star." }
+  },
+  {
+    _id: "lp-p5-sc-sp-2",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Space",
+    type: "choice",
+    text: "Which planet is known as the Red Planet?",
+    options: ["Mars", "Venus", "Jupiter"],
+    correct: "Mars",
+    feedback: { correct: "Correct—Mars.", incorrect: "Mars is called the Red Planet." }
+  },
+  {
+    _id: "lp-p5-sc-sp-3",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Space",
+    type: "choice",
+    text: "Earth takes about ____ days to orbit the Sun.",
+    options: ["365", "30", "7"],
+    correct: "365",
+    feedback: { correct: "Yes—about 365 days.", incorrect: "It’s about 365 days." }
+  },
+  {
+    _id: "lp-p5-sc-sp-4",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Space",
+    type: "choice",
+    text: "The Moon takes about ____ days to orbit Earth.",
+    options: ["27", "12", "45"],
+    correct: "27",
+    feedback: { correct: "Right—about 27 days.", incorrect: "Around 27 days is correct." }
+  },
+  {
+    _id: "lp-p5-sc-sp-5",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Space",
+    type: "text",
+    text: "We live in the ______ galaxy.",
+    accepted: ["milky way","the milky way","milkyway"],
+    patterns: ["^milky\\s*way$"],
+    feedback: { correct: "Yes—the Milky Way.", incorrect: "It’s the Milky Way." }
+  },
+  {
+    _id: "lp-p5-sc-sp-6",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Space",
+    type: "choice",
+    text: "Planets closer to the Sun are usually ____ than those farther away.",
+    options: ["warmer", "colder", "the same temperature"],
+    correct: "warmer",
+    feedback: { correct: "Correct—usually warmer.", incorrect: "They’re usually warmer." }
+  },
+  {
+    _id: "lp-p5-sc-sp-7",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Space",
+    type: "text",
+    text: "What do we call the path a planet follows around the Sun?",
+    accepted: ["orbit","its orbit"],
+    feedback: { correct: "Yes—an orbit.", incorrect: "It’s called an orbit." }
+  },
+  {
+    _id: "lp-p5-sc-sp-8",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Space",
+    type: "choice",
+    text: "Which of these is a natural satellite of Earth?",
+    options: ["The Moon", "The Hubble Telescope", "The ISS"],
+    correct: "The Moon",
+    feedback: { correct: "Right—the Moon is natural.", incorrect: "Answer: The Moon." }
+  },
+  {
+    _id: "lp-p5-sc-sp-9",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Space",
+    type: "multiText",
+    minAnswers: 2,
+    text: "List any two objects found in space.",
+    acceptedSet: ["stars","planets","moons","asteroids","comets","meteoroids","galaxies"],
+    feedback: { correct: "Yes—those are space objects.", incorrect: "Examples: stars, planets, moons, asteroids." }
+  },
+  {
+    _id: "lp-p5-sc-sp-10",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p5",
+    topic: "Space",
+    type: "choice",
+    text: "Which movement of Earth causes day and night?",
+    options: ["Rotation", "Revolution around the Sun", "Tides"],
+    correct: "Rotation",
+    feedback: { correct: "Correct—Earth’s rotation.", incorrect: "Day and night are caused by rotation." }
   }
-]
+];
+

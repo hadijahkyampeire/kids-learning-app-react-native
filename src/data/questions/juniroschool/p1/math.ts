@@ -14,6 +14,7 @@ const num: Question[] = [
     text: "How many stars? ⭐⭐",
     options: ["1", "2", "4"],
     correct: "2",
+    type: "choice",
     feedback: { correct: "Two stars!", incorrect: "Count slowly." }
   },
   {
@@ -25,6 +26,7 @@ const num: Question[] = [
     text: "What comes next? 3, 4, 5, __",
     options: ["6", "7", "2"],
     correct: "6",
+    type: "choice",
     feedback: { correct: "Count forward by 1.", incorrect: "Think +1 pattern." }
   },
   {
@@ -33,9 +35,10 @@ const num: Question[] = [
     subject: "math",
     class: "p1",
     topic: "Number & Patterns",
-    text: "Which is even?",
-    options: ["4", "5", "7"],
-    correct: "4",
+    text: "Select all even numbers:",
+    options: ["2", "4", "6", "5", "7"],
+    correct: ["2", "4", "6"],
+    type: "multiChoice",
     feedback: { correct: "Even numbers end 0/2/4/6/8.", incorrect: "Check the last digit." }
   },
   {
@@ -47,6 +50,7 @@ const num: Question[] = [
     text: "AB pattern: 🔵🔴🔵🔴 __",
     options: ["🔵", "🔴", "🟢"],
     correct: "🔵",
+    type: "choice",
     feedback: { correct: "AB repeats.", incorrect: "Blue, red, blue, red…" }
   },
   {
@@ -58,6 +62,7 @@ const num: Question[] = [
     text: "Which is greater?",
     options: ["9", "6", "3"],
     correct: "9",
+    type: "choice",
     feedback: { correct: "9 is biggest.", incorrect: "Pick the largest." }
   },
   {
@@ -69,6 +74,7 @@ const num: Question[] = [
     text: "Complete: 10, __, 8, 7 (counting down)",
     options: ["9", "11", "6"],
     correct: "9",
+    type: "choice",
     feedback: { correct: "10, 9, 8, 7 ✅", incorrect: "Count backward by 1." }
   },
   {
@@ -77,9 +83,10 @@ const num: Question[] = [
     subject: "math",
     class: "p1",
     topic: "Number & Patterns",
-    text: "Odd number?",
-    options: ["5", "8", "2"],
-    correct: "5",
+    text: "Select all odd numbers:",
+    options: ["1", "3", "5", "2", "4"],
+    correct: ["1", "3", "5"],
+    type: "multiChoice",
     feedback: { correct: "5 is odd.", incorrect: "Odd ends 1/3/5/7/9." }
   },
   {
@@ -91,6 +98,7 @@ const num: Question[] = [
     text: "AAB pattern: 🐱🐱🐶 🐱🐱🐶 __",
     options: ["🐱", "🐶", "🐭"],
     correct: "🐱",
+    type: "choice",
     feedback: { correct: "Two cats, one dog.", incorrect: "AAB repeats." }
   }
 ];
@@ -105,6 +113,7 @@ const add: Question[] = [
     text: "2 + 3 = ?",
     options: ["4", "5", "6"],
     correct: "5",
+    type: "choice",
     feedback: { correct: "Nice adding!", incorrect: "Count on from 2: 3,4,5." }
   },
   {
@@ -116,6 +125,7 @@ const add: Question[] = [
     text: "🧁🧁 + 🧁 = ?",
     options: ["2", "3", "4"],
     correct: "3",
+    type: "choice",
     feedback: { correct: "Three cupcakes!", incorrect: "Count all the 🧁." }
   },
   {
@@ -127,6 +137,7 @@ const add: Question[] = [
     text: "4 + 1 = ?",
     options: ["5", "6", "4"],
     correct: "5",
+    type: "choice",
     feedback: { correct: "4 and 1 make 5.", incorrect: "Add one more." }
   },
   {
@@ -138,6 +149,7 @@ const add: Question[] = [
     text: "3 + 3 = ?",
     options: ["5", "6", "7"],
     correct: "6",
+    type: "choice",
     feedback: { correct: "Double 3 is 6.", incorrect: "Try grouping." }
   },
   {
@@ -149,6 +161,7 @@ const add: Question[] = [
     text: "1 + 0 = ?",
     options: ["0", "1", "2"],
     correct: "1",
+    type: "choice",
     feedback: { correct: "Zero adds nothing.", incorrect: "Adding zero keeps it same." }
   },
   {
@@ -160,6 +173,7 @@ const add: Question[] = [
     text: "5 + 4 = ?",
     options: ["8", "9", "10"],
     correct: "9",
+    type: "choice",
     feedback: { correct: "Great job!", incorrect: "Add again carefully." }
   },
   {
@@ -171,6 +185,7 @@ const add: Question[] = [
     text: "🐶 + 🐶 = ? dogs",
     options: ["1", "2", "3"],
     correct: "2",
+    type: "choice",
     feedback: { correct: "Two dogs!", incorrect: "Count the dogs." }
   },
   {
@@ -182,6 +197,7 @@ const add: Question[] = [
     text: "7 + 2 = ?",
     options: ["8", "9", "10"],
     correct: "9",
+    type: "choice",
     feedback: { correct: "Nice!", incorrect: "7, then 8,9." }
   }
 ];
@@ -196,6 +212,7 @@ const sub: Question[] = [
     text: "5 − 2 = ?",
     options: ["2", "3", "4"],
     correct: "3",
+    type: "choice",
     feedback: { correct: "Three left.", incorrect: "Count back two steps." }
   },
   {
@@ -207,6 +224,7 @@ const sub: Question[] = [
     text: "🍎🍎🍎 − 🍎 = ? apples",
     options: ["1", "2", "3"],
     correct: "2",
+    type: "choice",
     feedback: { correct: "Two apples left.", incorrect: "Take away one." }
   },
   {
@@ -218,6 +236,7 @@ const sub: Question[] = [
     text: "10 − 7 = ?",
     options: ["2", "3", "4"],
     correct: "3",
+    type: "choice",
     feedback: { correct: "Good!", incorrect: "Count back from 10." }
   },
   {
@@ -229,6 +248,7 @@ const sub: Question[] = [
     text: "6 − 1 = ?",
     options: ["4", "5", "6"],
     correct: "5",
+    type: "choice",
     feedback: { correct: "Five.", incorrect: "Take away one." }
   },
   {
@@ -240,6 +260,7 @@ const sub: Question[] = [
     text: "3 − 3 = ?",
     options: ["0", "1", "2"],
     correct: "0",
+    type: "choice",
     feedback: { correct: "Zero left.", incorrect: "Same number minus itself is 0." }
   },
   {
@@ -251,6 +272,7 @@ const sub: Question[] = [
     text: "8 − 5 = ?",
     options: ["2", "3", "4"],
     correct: "3",
+    type: "choice",
     feedback: { correct: "Three left.", incorrect: "Count down: 8,7,6,5 → 3." }
   },
   {
@@ -262,6 +284,7 @@ const sub: Question[] = [
     text: "🧸🧸🧸🧸 − 🧸🧸 = ?",
     options: ["1", "2", "3"],
     correct: "2",
+    type: "choice",
     feedback: { correct: "Two toys remain.", incorrect: "Remove two from four." }
   },
   {
@@ -273,6 +296,7 @@ const sub: Question[] = [
     text: "9 − 0 = ?",
     options: ["0", "9", "10"],
     correct: "9",
+    type: "choice",
     feedback: { correct: "Subtracting zero changes nothing.", incorrect: "Zero means take away none." }
   }
 ];
@@ -287,6 +311,7 @@ const shapes: Question[] = [
     text: "Which one is a circle?",
     options: ["⚫", "🔺", "⬜"],
     correct: "⚫",
+    type: "choice",
     feedback: { correct: "Round like a ball.", incorrect: "Circle is round." }
   },
   {
@@ -298,6 +323,7 @@ const shapes: Question[] = [
     text: "Which one is a triangle?",
     options: ["🔺", "⚫", "⬜"],
     correct: "🔺",
+    type: "choice",
     feedback: { correct: "Three sides!", incorrect: "Find 3 corners." }
   },
   {
@@ -309,6 +335,7 @@ const shapes: Question[] = [
     text: "Square has __ sides.",
     options: ["4", "3", "2"],
     correct: "4",
+    type: "choice",
     feedback: { correct: "Four equal sides.", incorrect: "Count the edges." }
   },
   {
@@ -331,6 +358,7 @@ const shapes: Question[] = [
     text: "The cat is __ the table. (🐱🪑)",
     options: ["on", "in", "behind"],
     correct: "on",
+    type: "choice",
     feedback: { correct: "On top of it.", incorrect: "Where is the cat placed?" }
   },
   {
@@ -342,6 +370,7 @@ const shapes: Question[] = [
     text: "Which is a rectangle?",
     options: ["🟦 (long)", "⚫", "🔺"],
     correct: "🟦 (long)",
+    type: "choice",
     feedback: { correct: "Four sides; two are longer.", incorrect: "Look for long opposite sides." }
   },
   {
@@ -353,6 +382,7 @@ const shapes: Question[] = [
     text: "The dog is __ the chair. (🐶🪑)",
     options: ["behind", "under", "in"],
     correct: "behind",
+    type: "choice",
     feedback: { correct: "Behind the chair.", incorrect: "Think of back side." }
   },
   {
@@ -364,6 +394,7 @@ const shapes: Question[] = [
     text: "Pick the shape with no sides.",
     options: ["⚫", "⬜", "🔺"],
     correct: "⚫",
+    type: "choice",
     feedback: { correct: "Circle has no sides.", incorrect: "Count the edges." }
   }
 ];
@@ -433,6 +464,7 @@ const meas: Question[] = [
     text: "Which is shorter?",
     options: ["straw 🥤", "rope 🪢 (long)", "broom 🧹"],
     correct: "straw 🥤",
+    type: "choice",
     feedback: { correct: "Shortest object.", incorrect: "Compare sizes." }
   },
   {
@@ -444,6 +476,7 @@ const meas: Question[] = [
     text: "Day after Monday is…",
     options: ["Tuesday", "Sunday", "Friday"],
     correct: "Tuesday",
+    type: "choice",
     feedback: { correct: "Mon → Tue.", incorrect: "Think of weekdays order." }
   },
   {

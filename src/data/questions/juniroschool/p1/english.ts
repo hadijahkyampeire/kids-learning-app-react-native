@@ -14,6 +14,7 @@ const phon: Question[] = [
     text: "Which sound does S make?",
     options: ["sss 🐍", "mmm 😋", "aaa 😮"],
     correct: "sss 🐍",
+    type: "choice",
     feedback: { correct: "Yes—S says sss like a snake!", incorrect: "Try again—think snake 🐍." }
   },
   {
@@ -22,9 +23,10 @@ const phon: Question[] = [
     subject: "english",
     class: "p1",
     topic: "Phonics & Sounds",
-    text: "Which letter starts 🐟 fish?",
-    options: ["F", "T", "R"],
-    correct: "F",
+    text: "Which letters make an F sound? Select all.",
+    options: ["fish 🐟", "flower 🌸", "fun 🎮", "tree 🌳", "rain ☔"],
+    correct: ["fish 🐟", "flower 🌸", "fun 🎮"],
+    type: "multiChoice",
     feedback: { correct: "f-f-fish starts with F!", incorrect: "Say it slowly: fff-ish." }
   },
   {
@@ -36,6 +38,7 @@ const phon: Question[] = [
     text: "Tap the letter that makes b-b- sound.",
     options: ["b", "m", "s"],
     correct: "b",
+    type: "choice",
     feedback: { correct: "Yes—/b/ like ball 🏀.", incorrect: "Try again—bounce your lips: b-b-b." }
   },
   {
@@ -44,9 +47,10 @@ const phon: Question[] = [
     subject: "english",
     class: "p1",
     topic: "Phonics & Sounds",
-    text: "Which word starts with T?",
-    options: ["tree 🌳", "cat 🐱", "egg 🥚"],
-    correct: "tree 🌳",
+    text: "Select all words that start with T.",
+    options: ["tree 🌳", "toy 🧸", "table 🪑", "cat 🐱", "egg 🥚"],
+    correct: ["tree 🌳", "toy 🧸", "table 🪑"],
+    type: "multiChoice",
     feedback: { correct: "Right—t-t-tree!", incorrect: "Listen for the first sound: t." }
   },
   {
@@ -102,9 +106,10 @@ const vocab: Question[] = [
     subject: "english",
     class: "p1",
     topic: "Vocabulary & Rhymes",
-    text: "Which word rhymes with 🐱 cat?",
-    options: ["bat", "cup", "pen"],
-    correct: "bat",
+    text: "Which words rhyme with 🐱 cat? Select all.",
+    options: ["bat 🦇", "hat 🧢", "mat 🧹", "cup ☕", "pen ✏️"],
+    correct: ["bat 🦇", "hat 🧢", "mat 🧹"],
+    type: "multiChoice",
     feedback: { correct: "Cat-bat rhyme! 😺🦇", incorrect: "Listen to the -at sound." }
   },
   {
@@ -124,9 +129,10 @@ const vocab: Question[] = [
     subject: "english",
     class: "p1",
     topic: "Vocabulary & Rhymes",
-    text: "Which rhymes with tree 🌳?",
-    options: ["bee 🐝", "book 📘", "dog 🐶"],
-    correct: "bee 🐝",
+    text: "Select all words that rhyme with tree 🌳.",
+    options: ["bee 🐝", "me 😊", "sea 🌊", "book 📘", "dog 🐶"],
+    correct: ["bee 🐝", "me 😊", "sea 🌊"],
+    type: "multiChoice",
     feedback: { correct: "tree—bee rhyme with -ee.", incorrect: "Listen for the same ending." }
   },
   {
@@ -193,9 +199,10 @@ const gram: Question[] = [
     subject: "english",
     class: "p1",
     topic: "Grammar Basics",
-    text: "Which is a noun?",
-    options: ["School 🏫", "Run 🏃", "Green 🟩"],
-    correct: "School 🏫",
+    text: "Select all nouns.",
+    options: ["School 🏫", "Book 📚", "Ball ⚽", "Run 🏃", "Green 🟩"],
+    correct: ["School 🏫", "Book 📚", "Ball ⚽"],
+    type: "multiChoice",
     feedback: { correct: "A noun is a person/place/thing.", incorrect: "Look for a place or thing." }
   },
   {
@@ -207,6 +214,7 @@ const gram: Question[] = [
     text: "Pick the verb (action).",
     options: ["Jump 🤸", "Chair 🪑", "Blue 🔵"],
     correct: "Jump 🤸",
+    type: "choice",
     feedback: { correct: "Verbs are actions.", incorrect: "Which one can you DO?" }
   },
   {
@@ -218,6 +226,7 @@ const gram: Question[] = [
     text: "Choose the correct article: __ apple 🍎",
     options: ["an", "a", "the"],
     correct: "an",
+    type: "choice",
     feedback: { correct: "Vowel sound → ‘an’.", incorrect: "Before vowel sounds, use ‘an’." }
   },
   {
@@ -229,6 +238,7 @@ const gram: Question[] = [
     text: "She __ happy.",
     options: ["is", "are", "am"],
     correct: "is",
+    type: "choice",
     feedback: { correct: "She is ✅", incorrect: "Use 'is' with he/she/it." }
   },
   {
@@ -240,6 +250,7 @@ const gram: Question[] = [
     text: "We __ a ball. ⚽",
     options: ["have", "has", "am"],
     correct: "have",
+    type: "choice",
     feedback: { correct: "We have ✅", incorrect: "Use 'have' with I/you/we/they." }
   },
   {
@@ -248,9 +259,10 @@ const gram: Question[] = [
     subject: "english",
     class: "p1",
     topic: "Grammar Basics",
-    text: "Pick the pronoun.",
-    options: ["she", "book", "green"],
-    correct: "she",
+    text: "Select all pronouns.",
+    options: ["she", "he", "they", "book", "green"],
+    correct: ["she", "he", "they"],
+    type: "multiChoice",
     feedback: { correct: "Pronoun replaces a noun.", incorrect: "Think: he, she, it, they…" }
   },
   {
@@ -262,6 +274,7 @@ const gram: Question[] = [
     text: "Choose the correct: They __ happy.",
     options: ["are", "is", "am"],
     correct: "are",
+    type: "choice",
     feedback: { correct: "They are ✅", incorrect: "Use 'are' with you/we/they." }
   },
   {
@@ -270,9 +283,10 @@ const gram: Question[] = [
     subject: "english",
     class: "p1",
     topic: "Grammar Basics",
-    text: "Select the adjective.",
-    options: ["small 🐭", "run", "school"],
-    correct: "small 🐭",
+    text: "Select all adjectives.",
+    options: ["small 🐭", "tall 📱", "red 🔴", "run", "school"],
+    correct: ["small 🐭", "tall 📱", "red 🔴"],
+    type: "multiChoice",
     feedback: { correct: "Adjectives describe nouns.", incorrect: "Which one describes size?" }
   }
 ];
@@ -287,6 +301,7 @@ const sent: Question[] = [
     text: "Choose the full sentence.",
     options: ["We play.", "Went to park", "ball"],
     correct: "We play.",
+    type: "choice",
     feedback: { correct: "Has subject + verb.", incorrect: "Needs a who + action." }
   },
   {
@@ -298,6 +313,7 @@ const sent: Question[] = [
     text: "Pick the correct ending mark for a question.",
     options: [".", "!", "?"],
     correct: "?",
+    type: "choice",
     feedback: { correct: "Questions end with ?.", incorrect: "Try the question mark." }
   },
   {
@@ -309,6 +325,7 @@ const sent: Question[] = [
     text: "Which starts with a capital letter?",
     options: ["ali runs.", "Ali runs.", "ali Runs."],
     correct: "Ali runs.",
+    type: "choice",
     feedback: { correct: "Sentences start with capitals.", incorrect: "Capitalize the first word." }
   },
   {
@@ -320,6 +337,7 @@ const sent: Question[] = [
     text: "Choose the sentence with a period.",
     options: ["We like cats", "We like cats.", "We like cats!"],
     correct: "We like cats.",
+    type: "choice",
     feedback: { correct: "Statements end with a period.", incorrect: "Add a full stop." }
   },
   {
@@ -331,6 +349,7 @@ const sent: Question[] = [
     text: "Pick the sentence.",
     options: ["run fast", "Run fast!", "running fast"],
     correct: "Run fast!",
+    type: "choice",
     feedback: { correct: "It’s a command—ends with !", incorrect: "Needs a capital and punctuation." }
   },
   {
@@ -342,6 +361,7 @@ const sent: Question[] = [
     text: "Choose the polite sentence.",
     options: ["Give me water", "Give me water.", "Please give me water."],
     correct: "Please give me water.",
+    type: "choice",
     feedback: { correct: "Polite + complete.", incorrect: "Try adding 'Please'." }
   },
   {
@@ -353,6 +373,7 @@ const sent: Question[] = [
     text: "Which is a question?",
     options: ["We are friends.", "Are we friends?", "We friends"],
     correct: "Are we friends?",
+    type: "choice",
     feedback: { correct: "Questions ask something.", incorrect: "Look for inversion + ?" }
   },
   {
@@ -364,6 +385,7 @@ const sent: Question[] = [
     text: "Choose the best ending: Wow, fireworks ___",
     options: ["?", ".", "!"],
     correct: "!",
+    type: "choice",
     feedback: { correct: "Exclamations use !", incorrect: "It shows strong feeling." }
   }
 ];
@@ -378,6 +400,7 @@ const comp: Question[] = [
     text: "Ali sees a cat. It is black. What color is the cat?",
     options: ["black", "white", "brown"],
     correct: "black",
+    type: "choice",
     feedback: { correct: "Good reading!", incorrect: "Read again: black." }
   },
   {
@@ -389,6 +412,7 @@ const comp: Question[] = [
     text: "Sara has two 🍎. She eats one. How many left?",
     options: ["1", "2", "3"],
     correct: "1",
+    type: "choice",
     feedback: { correct: "Yes—one left.", incorrect: "Two minus one is one." }
   },
   {
@@ -400,6 +424,7 @@ const comp: Question[] = [
     text: "The sun is hot ☀️. Is the sun cold?",
     options: ["No", "Yes"],
     correct: "No",
+    type: "choice",
     feedback: { correct: "Right—sun is hot.", incorrect: "Check the sentence." }
   },
   {
@@ -411,6 +436,7 @@ const comp: Question[] = [
     text: "A frog 🐸 jumps in a pond 💧. Where does it jump?",
     options: ["pond 💧", "tree 🌳", "house 🏠"],
     correct: "pond 💧",
+    type: "choice",
     feedback: { correct: "Nice!", incorrect: "Look at the picture words." }
   },
   {
@@ -422,6 +448,7 @@ const comp: Question[] = [
     text: "Mama bakes a cake 🎂. What does Mama do?",
     options: ["bakes", "drives", "paints"],
     correct: "bakes",
+    type: "choice",
     feedback: { correct: "Yes—bakes!", incorrect: "Re-read the sentence." }
   },
   {
@@ -433,6 +460,7 @@ const comp: Question[] = [
     text: "The dog is under the table. Where is the dog?",
     options: ["under", "on", "behind"],
     correct: "under",
+    type: "choice",
     feedback: { correct: "Correct—under.", incorrect: "Position word is ‘under’." }
   },
   {
@@ -444,6 +472,7 @@ const comp: Question[] = [
     text: "Zara has a red kite 🪁. What color is the kite?",
     options: ["red", "blue", "green"],
     correct: "red",
+    type: "choice",
     feedback: { correct: "You got it.", incorrect: "Color word is ‘red’." }
   },
   {
@@ -455,6 +484,7 @@ const comp: Question[] = [
     text: "It rains ☔. We use an ____.",
     options: ["umbrella ☂️", "hat 🎩", "book 📘"],
     correct: "umbrella ☂️",
+    type: "choice",
     feedback: { correct: "Yes—umbrella!", incorrect: "What keeps you dry?" }
   }
 ];

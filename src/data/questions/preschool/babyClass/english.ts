@@ -11,7 +11,32 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "What letter is this? 'A'",
     options: ["A", "B", "C"],
     correct: "A",
+    type: "choice",
     feedback: { correct: "Yes! That's the letter A.", incorrect: "This is the first letter of the alphabet." }
+  },
+  {
+    _id: "bb-eng-mc-1",
+    level: "preSchool",
+    subject: "english",
+    class: "baby",
+    topic: "Vowels",
+    text: "Which letters are vowels? 🔤",
+    options: ["A", "B", "E", "I", "M", "O", "U"],
+    correct: ["A", "E", "I", "O", "U"],
+    type: "multiChoice",
+    feedback: { correct: "Great! These are all our vowels!", incorrect: "Remember: A, E, I, O, U are vowels." }
+  },
+  {
+    _id: "bb-eng-mc-2",
+    level: "preSchool",
+    subject: "english",
+    class: "baby",
+    topic: "Animals Words",
+    text: "Which animals start with 'B'? 🐝",
+    options: ["Bear", "Bird", "Cat", "Dog", "Butterfly", "Ant"],
+    correct: ["Bear", "Bird", "Butterfly"],
+    type: "multiChoice",
+    feedback: { correct: "Perfect! All these animals start with B!", incorrect: "Look for animals that start with the 'B' sound." }
   },
   {
     _id: "bb-eng-2",
@@ -22,6 +47,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "Which letter makes the 'b' sound in 'ball'?",
     options: ["B", "D", "P"],
     correct: "B",
+    type: "choice",
     feedback: { correct: "Yes! B is for ball.", incorrect: "Listen to the first sound in 'ball'." }
   },
   {
@@ -33,6 +59,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "Find letter 'C':",
     options: ["C", "G", "O"],
     correct: "C",
+    type: "choice",
     feedback: { correct: "Great! That's C.", incorrect: "C looks like half of a circle." }
   },
   {
@@ -44,6 +71,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "What comes after 'A B'?",
     options: ["C", "D", "E"],
     correct: "C",
+    type: "choice",
     feedback: { correct: "Yes! A, B, C!", incorrect: "Sing the alphabet song." }
   },
   {
@@ -55,6 +83,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "Which is the letter 'O'?",
     options: ["O", "Q", "D"],
     correct: "O",
+    type: "choice",
     feedback: { correct: "Yes! O is round like a circle.", incorrect: "O looks like a circle." }
   },
   {
@@ -66,6 +95,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "What letter starts 'cat'?",
     options: ["C", "K", "S"],
     correct: "C",
+    type: "choice",
     feedback: { correct: "Yes! Cat starts with C.", incorrect: "Listen to the first sound in 'cat'." }
   },
   {
@@ -77,6 +107,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "Find the letter that makes the sound in 'mmm':",
     options: ["M", "N", "W"],
     correct: "M",
+    type: "choice",
     feedback: { correct: "Yes! M makes the 'mmm' sound.", incorrect: "Think of the sound in 'mom'." }
   },
   {
@@ -88,6 +119,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "Which letter starts 'dog'?",
     options: ["D", "B", "P"],
     correct: "D",
+    type: "choice",
     feedback: { correct: "Yes! Dog starts with D.", incorrect: "Listen to the first sound in 'dog'." }
   },
 
@@ -101,6 +133,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "What animal is this? 🐈",
     options: ["Cat", "Dog", "Bird"],
     correct: "Cat",
+    type: "choice",
     feedback: { correct: "Yes! That's a cat.", incorrect: "This animal says 'meow'." }
   },
   {
@@ -112,6 +145,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "What color is the sky? 🌤️",
     options: ["Blue", "Green", "Red"],
     correct: "Blue",
+    type: "choice",
     feedback: { correct: "Yes! The sky is blue.", incorrect: "Look up at the daytime sky." }
   },
   {
@@ -123,6 +157,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "What is this? 🍎",
     options: ["Apple", "Ball", "Car"],
     correct: "Apple",
+    type: "choice",
     feedback: { correct: "Yes! That's an apple.", incorrect: "This is a red fruit." }
   },
   {
@@ -134,6 +169,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "Which one is food? 🍕",
     options: ["Pizza", "Book", "Shoe"],
     correct: "Pizza",
+    type: "choice",
     feedback: { correct: "Yes! Pizza is food.", incorrect: "Which one can you eat?" }
   },
   {
@@ -145,6 +181,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "What do you wear on your feet? 👞",
     options: ["Shoes", "Hat", "Shirt"],
     correct: "Shoes",
+    type: "choice",
     feedback: { correct: "Yes! Shoes go on your feet.", incorrect: "Think about what protects your feet." }
   },
   {
@@ -156,6 +193,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "What says 'woof'? 🐕",
     options: ["Dog", "Cat", "Duck"],
     correct: "Dog",
+    type: "choice",
     feedback: { correct: "Yes! Dogs say 'woof'.", incorrect: "Think about which animal barks." }
   },
   {
@@ -167,6 +205,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "What do birds have? 🐦",
     options: ["Wings", "Fins", "Paws"],
     correct: "Wings",
+    type: "choice",
     feedback: { correct: "Yes! Birds have wings to fly.", incorrect: "What helps birds fly?" }
   },
   {
@@ -178,6 +217,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "What is this? 🏠",
     options: ["House", "Tree", "Car"],
     correct: "House",
+    type: "choice",
     feedback: { correct: "Yes! That's a house.", incorrect: "This is where people live." }
   },
 
@@ -191,6 +231,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "What do you say in the morning? ☀️",
     options: ["Good morning", "Good night", "Goodbye"],
     correct: "Good morning",
+    type: "choice",
     feedback: { correct: "Yes! We say 'Good morning' when we wake up.", incorrect: "Think about what we say when the sun rises." }
   },
   {
@@ -202,6 +243,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "When someone says 'Hi', you say:",
     options: ["Hello", "Goodbye", "Good night"],
     correct: "Hello",
+    type: "choice",
     feedback: { correct: "Yes! 'Hello' is how we greet people.", incorrect: "Think about how to greet back." }
   },
   {
@@ -213,6 +255,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "What do you say when leaving? 👋",
     options: ["Goodbye", "Hello", "Good morning"],
     correct: "Goodbye",
+    type: "choice",
     feedback: { correct: "Yes! We say 'Goodbye' when leaving.", incorrect: "Think about what to say when going away." }
   },
   {
@@ -224,6 +267,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "What do you say at bedtime? 🌙",
     options: ["Good night", "Good morning", "Hello"],
     correct: "Good night",
+    type: "choice",
     feedback: { correct: "Yes! We say 'Good night' before sleeping.", incorrect: "Think about what to say before bed." }
   },
   {
@@ -235,6 +279,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "When someone helps you, say:",
     options: ["Thank you", "Hello", "Goodbye"],
     correct: "Thank you",
+    type: "choice",
     feedback: { correct: "Yes! 'Thank you' shows gratitude.", incorrect: "Think about being polite when someone helps." }
   },
   {
@@ -246,6 +291,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "If you hurt someone, say:",
     options: ["Sorry", "Hello", "Thank you"],
     correct: "Sorry",
+    type: "choice",
     feedback: { correct: "Yes! 'Sorry' is for apologizing.", incorrect: "Think about what to say when you make a mistake." }
   },
   {
@@ -257,6 +303,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "When asking for something, say:",
     options: ["Please", "Goodbye", "Hello"],
     correct: "Please",
+    type: "choice",
     feedback: { correct: "Yes! 'Please' is polite when asking.", incorrect: "Think about the magic word." }
   },
   {
@@ -268,6 +315,7 @@ export const babyClassEnglishQuestions: Question[] = [
     text: "When meeting someone new, say:",
     options: ["Nice to meet you", "Goodbye", "Good night"],
     correct: "Nice to meet you",
+    type: "choice",
     feedback: { correct: "Yes! That's polite when meeting new friends.", incorrect: "Think about meeting new people." }
   }
 ];

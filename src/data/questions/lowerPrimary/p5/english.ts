@@ -1,543 +1,493 @@
 import { Question } from "../../../../types";
 
-export const p5English: Question[] = [
-  // Vocabulary & Idioms (8 questions)
+export const p5EnglishQuestions: Question[] = [
+  // ========== Vocabulary & Idioms ==========
   {
-    _id: "lp-p5-eng-vi-1",
+    _id: "lp-p5-eng-vo-1",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
     topic: "Vocabulary & Idioms",
-    text: "What does 'a piece of cake' mean? 🍰",
-    options: ["Very easy", "Very difficult", "Very tasty"],
-    correct: "Very easy",
-    feedback: { correct: "Yes! 'A piece of cake' means something is very easy to do", incorrect: "This idiom means something is very easy, not difficult" }
+    type: "choice",
+    text: "Choose the best meaning of the idiom: “hit the road”.",
+    options: ["start a journey", "fight someone", "build a road"],
+    correct: "start a journey",
+    feedback: { correct: "Yes—'hit the road' means to begin a journey.", incorrect: "It means to begin a journey or leave." }
   },
   {
-    _id: "lp-p5-eng-vi-2",
+    _id: "lp-p5-eng-vo-2",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
     topic: "Vocabulary & Idioms",
-    text: "What does 'cost an arm and a leg' mean? 💰",
-    options: ["Very expensive", "Very cheap", "Very heavy"],
-    correct: "Very expensive",
-    feedback: { correct: "Yes! 'Cost an arm and a leg' means something is very expensive", incorrect: "This idiom means something costs a lot of money" }
+    type: "choice",
+    text: "Pick the word that is CLOSEST in meaning to 'assist'.",
+    options: ["help", "hide", "argue"],
+    correct: "help",
+    feedback: { correct: "Correct—assist means help.", incorrect: "Try a synonym of 'assist'." }
   },
   {
-    _id: "lp-p5-eng-vi-3",
+    _id: "lp-p5-eng-vo-3",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
     topic: "Vocabulary & Idioms",
-    text: "Choose the correct meaning of 'magnificent': 🌟",
-    options: ["Very impressive", "Very small", "Very quiet"],
-    correct: "Very impressive",
-    feedback: { correct: "Yes! 'Magnificent' means very impressive or grand", incorrect: "'Magnificent' describes something very impressive or beautiful" }
+    type: "choice",
+    text: "Which pair are ANTONYMS?",
+    options: ["ancient — modern", "silent — quiet", "polite — kind"],
+    correct: "ancient — modern",
+    feedback: { correct: "Right—opposites.", incorrect: "Antonyms are words with opposite meanings." }
   },
   {
-    _id: "lp-p5-eng-vi-4",
+    _id: "lp-p5-eng-vo-4",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
     topic: "Vocabulary & Idioms",
-    text: "What does 'hit the books' mean? 📚",
-    options: ["Study hard", "Hit something", "Go to sleep"],
-    correct: "Study hard",
-    feedback: { correct: "Yes! 'Hit the books' means to study hard", incorrect: "This idiom means to study or work hard on schoolwork" }
-  },
-  {
-    _id: "lp-p5-eng-vi-5",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Vocabulary & Idioms",
-    text: "What's another word for 'enormous'? 🐘",
-    options: ["Huge", "Tiny", "Beautiful"],
-    correct: "Huge",
-    feedback: { correct: "Yes! 'Enormous' means huge or very large", incorrect: "'Enormous' is a synonym for huge or very large" }
-  },
-  {
-    _id: "lp-p5-eng-vi-6",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Vocabulary & Idioms",
-    text: "What does 'break a leg' mean? 🎭",
-    options: ["Good luck", "Get hurt", "Run fast"],
-    correct: "Good luck",
-    feedback: { correct: "Yes! 'Break a leg' means good luck", incorrect: "This idiom is used to wish someone good luck" }
-  },
-  {
-    _id: "lp-p5-eng-vi-7",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Vocabulary & Idioms",
-    text: "What does 'under the weather' mean? 🤒",
-    options: ["Feeling sick", "Very happy", "In the rain"],
-    correct: "Feeling sick",
-    feedback: { correct: "Yes! 'Under the weather' means feeling sick", incorrect: "This idiom means someone is feeling ill or unwell" }
-  },
-  {
-    _id: "lp-p5-eng-vi-8",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Vocabulary & Idioms",
-    text: "What's a synonym for 'brave'? 💪",
-    options: ["Courageous", "Afraid", "Weak"],
-    correct: "Courageous",
-    feedback: { correct: "Yes! 'Courageous' means the same as brave", incorrect: "'Courageous' is another word for brave" }
+    type: "text",
+    text: "Write one sentence correctly using the word 'although'.",
+    accepted: [], // teacher-marked free response
+    feedback: { correct: "Nice—your usage of 'although' shows contrast.", incorrect: "Use 'although' to contrast two ideas, e.g., 'Although it rained, we played.'" }
   },
 
-  // Grammar & Parts of Speech (8 questions)
+  // ========== Spelling Rules ==========
   {
-    _id: "lp-p5-eng-gp-1",
+    _id: "lp-p5-eng-sp-1",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Grammar & Parts of Speech",
-    text: "Which is a proper noun? 🏰",
-    options: ["London", "city", "building"],
-    correct: "London",
-    feedback: { correct: "Yes! 'London' is a proper noun - it names a specific city", incorrect: "Proper nouns are specific names and start with capital letters" }
+    topic: "Spelling Rules",
+    type: "choice",
+    text: "Choose the correct spelling.",
+    options: ["necessary", "neccesary", "neccesery"],
+    correct: "necessary",
+    feedback: { correct: "Well done!", incorrect: "Watch the double 's' and single 'c' in 'necessary'." }
   },
   {
-    _id: "lp-p5-eng-gp-2",
+    _id: "lp-p5-eng-sp-2",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Grammar & Parts of Speech",
-    text: "What type of word shows action? 🏃",
-    options: ["Verb", "Noun", "Adjective"],
-    correct: "Verb",
-    feedback: { correct: "Yes! Verbs show action or being", incorrect: "Verbs are action words or show state of being" }
+    topic: "Spelling Rules",
+    type: "choice",
+    text: "Which is the correct plural?",
+    options: ["potatoes", "potatos", "potatoeses"],
+    correct: "potatoes",
+    feedback: { correct: "Yes—words ending in -to add -es.", incorrect: "Nouns ending in 'o' after a consonant usually add 'es'." }
   },
   {
-    _id: "lp-p5-eng-gp-3",
+    _id: "lp-p5-eng-sp-3",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Grammar & Parts of Speech",
-    text: "Which word describes a noun? 🎨",
-    options: ["Adjective", "Adverb", "Pronoun"],
-    correct: "Adjective",
-    feedback: { correct: "Yes! Adjectives describe nouns", incorrect: "Adjectives are words that describe nouns" }
+    topic: "Spelling Rules",
+    type: "choice",
+    text: "Pick the correctly hyphenated compound word.",
+    options: ["well-known", "wellknown", "well–known"],
+    correct: "well-known",
+    feedback: { correct: "Correct—use a standard hyphen.", incorrect: "Use a simple hyphen: 'well-known'." }
   },
   {
-    _id: "lp-p5-eng-gp-4",
+    _id: "lp-p5-eng-sp-4",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Grammar & Parts of Speech",
-    text: "What does an adverb describe? 🚶",
-    options: ["Verbs", "Nouns", "Articles"],
-    correct: "Verbs",
-    feedback: { correct: "Yes! Adverbs describe verbs", incorrect: "Adverbs modify verbs, telling how something is done" }
-  },
-  {
-    _id: "lp-p5-eng-gp-5",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Grammar & Parts of Speech",
-    text: "Which is a conjunction? 🔗",
-    options: ["and", "run", "big"],
-    correct: "and",
-    feedback: { correct: "Yes! 'And' is a conjunction - it joins words or phrases", incorrect: "Conjunctions connect words or parts of sentences" }
-  },
-  {
-    _id: "lp-p5-eng-gp-6",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Grammar & Parts of Speech",
-    text: "What replaces a noun? 👥",
-    options: ["Pronoun", "Verb", "Adverb"],
-    correct: "Pronoun",
-    feedback: { correct: "Yes! Pronouns replace nouns", incorrect: "Pronouns are words that take the place of nouns" }
-  },
-  {
-    _id: "lp-p5-eng-gp-7",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Grammar & Parts of Speech",
-    text: "What type of word is 'quickly'? ⚡",
-    options: ["Adverb", "Adjective", "Noun"],
-    correct: "Adverb",
-    feedback: { correct: "Yes! 'Quickly' is an adverb - it describes how", incorrect: "Words ending in '-ly' are often adverbs describing how actions happen" }
-  },
-  {
-    _id: "lp-p5-eng-gp-8",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Grammar & Parts of Speech",
-    text: "Which shows ownership? 👫",
-    options: ["John's", "Johns", "John"],
-    correct: "John's",
-    feedback: { correct: "Yes! The apostrophe in 'John's' shows possession", incorrect: "Apostrophe + s ('s) shows that something belongs to someone" }
+    topic: "Spelling Rules",
+    type: "text",
+    text: "Rewrite with correct spelling: 'recieve, definate'.",
+    accepted: ["receive, definite", "receive,definite", "receive and definite"],
+    patterns: ["^\\s*receive\\s*,\\s*definite\\s*$","^\\s*receive\\s+and\\s+definite\\s*$"],
+    feedback: { correct: "Great—'receive', 'definite'.", incorrect: "Correct forms: receive, definite." }
   },
 
-  // Tenses & Verb Usage (8 questions)
+  // ========== Parts of Speech ==========
   {
-    _id: "lp-p5-eng-tv-1",
+    _id: "lp-p5-eng-pos-1",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Tenses & Verb Usage",
-    text: "Which is in present continuous tense? 🏃‍♀️",
-    options: ["is running", "ran", "will run"],
-    correct: "is running",
-    feedback: { correct: "Yes! 'Is running' shows action happening now", incorrect: "Present continuous uses 'is/are' + verb+ing for current actions" }
+    topic: "Parts of Speech",
+    type: "choice",
+    text: "Select the sentence with a correctly used ADVERB.",
+    options: ["She sang beautifully.", "She sang beautiful.", "She beautiful sang."],
+    correct: "She sang beautifully.",
+    feedback: { correct: "Yes—adverb modifies 'sang'.", incorrect: "Adverbs often end in -ly and modify verbs." }
   },
   {
-    _id: "lp-p5-eng-tv-2",
+    _id: "lp-p5-eng-pos-2",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Tenses & Verb Usage",
-    text: "What shows future tense? ⏰",
-    options: ["will go", "went", "goes"],
-    correct: "will go",
-    feedback: { correct: "Yes! 'Will go' shows future action", incorrect: "Future tense uses 'will' to show actions that haven't happened yet" }
+    topic: "Parts of Speech",
+    type: "choice",
+    text: "Which word is a PREPOSITION in: 'The dog slept under the table'?",
+    options: ["under", "slept", "dog"],
+    correct: "under",
+    feedback: { correct: "Good—'under' shows position.", incorrect: "Prepositions show relationship/place." }
   },
   {
-    _id: "lp-p5-eng-tv-3",
+    _id: "lp-p5-eng-pos-3",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Tenses & Verb Usage",
-    text: "Which is in past tense? 📅",
-    options: ["played", "plays", "playing"],
-    correct: "played",
-    feedback: { correct: "Yes! 'Played' shows past action", incorrect: "Past tense shows actions that already happened" }
+    topic: "Parts of Speech",
+    type: "choice",
+    text: "Choose the sentence with a RELATIVE PRONOUN.",
+    options: ["The boy who won is here.", "The boy won here.", "The boy ran fast."],
+    correct: "The boy who won is here.",
+    feedback: { correct: "Right—'who' relates the clause.", incorrect: "Look for 'who/which/that' joining clauses." }
   },
   {
-    _id: "lp-p5-eng-tv-4",
+    _id: "lp-p5-eng-pos-4",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Tenses & Verb Usage",
-    text: "What's the past tense of 'eat'? 🍽️",
-    options: ["ate", "eaten", "eating"],
-    correct: "ate",
-    feedback: { correct: "Yes! 'Ate' is the past tense of 'eat'", incorrect: "Some verbs have irregular past tense forms" }
-  },
-  {
-    _id: "lp-p5-eng-tv-5",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Tenses & Verb Usage",
-    text: "Which shows something happening now? 📝",
-    options: ["are writing", "wrote", "write"],
-    correct: "are writing",
-    feedback: { correct: "Yes! 'Are writing' shows current action", incorrect: "Present continuous shows actions happening right now" }
-  },
-  {
-    _id: "lp-p5-eng-tv-6",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Tenses & Verb Usage",
-    text: "What's the future form of 'sleep'? 😴",
-    options: ["will sleep", "slept", "sleeping"],
-    correct: "will sleep",
-    feedback: { correct: "Yes! 'Will sleep' shows future action", incorrect: "Add 'will' to show future actions" }
-  },
-  {
-    _id: "lp-p5-eng-tv-7",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Tenses & Verb Usage",
-    text: "Which is present perfect tense? ✅",
-    options: ["have done", "did", "doing"],
-    correct: "have done",
-    feedback: { correct: "Yes! 'Have done' is present perfect", incorrect: "Present perfect uses 'have/has' + past participle" }
-  },
-  {
-    _id: "lp-p5-eng-tv-8",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Tenses & Verb Usage",
-    text: "What's the past participle of 'go'? 🚶",
-    options: ["gone", "went", "going"],
-    correct: "gone",
-    feedback: { correct: "Yes! 'Gone' is the past participle of 'go'", incorrect: "Past participles are used with 'have/has/had'" }
+    topic: "Parts of Speech",
+    type: "text",
+    text: "Write a sentence that correctly uses the conjunction 'because'.",
+    accepted: [],
+    feedback: { correct: "Nice—'because' explains a reason.", incorrect: "Use 'because' to show cause, e.g., 'He stayed inside because it rained.'" }
   },
 
-  // Reading Comprehension (8 questions)
+  // ========== Tenses (All) ==========
   {
-    _id: "lp-p5-eng-rc-1",
+    _id: "lp-p5-eng-te-1",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Reading Comprehension",
-    text: "The sun was shining brightly. The sky was clear. What was the weather like? ☀️",
-    options: ["Sunny", "Rainy", "Cloudy"],
-    correct: "Sunny",
-    feedback: { correct: "Yes! The passage describes sunny weather", incorrect: "The sun shining and clear sky indicate sunny weather" }
+    topic: "Tenses (All)",
+    type: "choice",
+    text: "Choose the sentence in the PAST PERFECT tense.",
+    options: ["She had finished before we arrived.", "She finishes before we arrive.", "She will finish before we arrive."],
+    correct: "She had finished before we arrived.",
+    feedback: { correct: "Yes—'had + past participle' is past perfect.", incorrect: "Past perfect uses 'had' + past participle." }
   },
   {
-    _id: "lp-p5-eng-rc-2",
+    _id: "lp-p5-eng-te-2",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Reading Comprehension",
-    text: "Tom rushed to catch the bus, but it had already left. How might Tom feel? 😟",
-    options: ["Disappointed", "Happy", "Excited"],
-    correct: "Disappointed",
-    feedback: { correct: "Yes! Missing the bus would make Tom feel disappointed", incorrect: "When we miss something important, we feel disappointed" }
+    topic: "Tenses (All)",
+    type: "choice",
+    text: "Pick the sentence in FUTURE CONTINUOUS tense.",
+    options: ["We will be studying at 8pm.", "We studied at 8pm.", "We are studying at 8pm."],
+    correct: "We will be studying at 8pm.",
+    feedback: { correct: "Correct—'will be + -ing'.", incorrect: "Future continuous: 'will be' + verb-ing." }
   },
   {
-    _id: "lp-p5-eng-rc-3",
+    _id: "lp-p5-eng-te-3",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Reading Comprehension",
-    text: "Sarah studied hard and got top marks. What helped her succeed? 📚",
-    options: ["Hard work", "Luck", "Playing"],
-    correct: "Hard work",
-    feedback: { correct: "Yes! Sarah's hard work led to her success", incorrect: "The passage shows that studying hard led to good results" }
+    topic: "Tenses (All)",
+    type: "choice",
+    text: "Choose the correct verb: 'He ____ to the shop every Saturday.'",
+    options: ["goes", "go", "going"],
+    correct: "goes",
+    feedback: { correct: "Yes—3rd person singular takes 'goes'.", incorrect: "Present simple with 'he/she/it' → add -s." }
   },
   {
-    _id: "lp-p5-eng-rc-4",
+    _id: "lp-p5-eng-te-4",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Reading Comprehension",
-    text: "The old dog wagged its tail when it saw food. How did the dog feel? 🐕",
-    options: ["Happy", "Sad", "Angry"],
-    correct: "Happy",
-    feedback: { correct: "Yes! A wagging tail shows the dog was happy", incorrect: "Dogs wag their tails when they are happy" }
-  },
-  {
-    _id: "lp-p5-eng-rc-5",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Reading Comprehension",
-    text: "After the rain stopped, a rainbow appeared. What came first? 🌈",
-    options: ["Rain", "Rainbow", "Sun"],
-    correct: "Rain",
-    feedback: { correct: "Yes! The rain came before the rainbow", incorrect: "The passage shows that rain happened before the rainbow appeared" }
-  },
-  {
-    _id: "lp-p5-eng-rc-6",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Reading Comprehension",
-    text: "The room was dark until Mary opened the curtains. What made the room bright? 🪟",
-    options: ["Sunlight", "Lamp", "Candle"],
-    correct: "Sunlight",
-    feedback: { correct: "Yes! Opening curtains let in sunlight", incorrect: "The room became bright when curtains were opened to let in sunlight" }
-  },
-  {
-    _id: "lp-p5-eng-rc-7",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Reading Comprehension",
-    text: "The flowers grew taller after John watered them daily. What helped the flowers grow? 💐",
-    options: ["Regular watering", "Strong wind", "Darkness"],
-    correct: "Regular watering",
-    feedback: { correct: "Yes! Regular watering helped the flowers grow", incorrect: "The passage shows that daily watering made the flowers grow" }
-  },
-  {
-    _id: "lp-p5-eng-rc-8",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Reading Comprehension",
-    text: "Lisa heard thunder, so she closed all windows. Why did she close them? ⛈️",
-    options: ["For safety", "For fun", "For light"],
-    correct: "For safety",
-    feedback: { correct: "Yes! She closed windows for safety during the storm", incorrect: "Windows are closed during storms for safety" }
+    topic: "Tenses (All)",
+    type: "text",
+    text: "Rewrite in the PAST TENSE: 'The children play in the field.'",
+    accepted: ["The children played in the field.", "Children played in the field."],
+    feedback: { correct: "Good—'played' shows past.", incorrect: "Use 'played' for past simple." }
   },
 
-  // Writing & Punctuation (8 questions)
+  // ========== Paragraph Writing ==========
   {
-    _id: "lp-p5-eng-wp-1",
+    _id: "lp-p5-eng-pw-1",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Writing & Punctuation",
-    text: "Which sentence uses correct punctuation? 📝",
-    options: ["Where are you going?", "Where are you going", "Where are you going,"],
-    correct: "Where are you going?",
-    feedback: { correct: "Yes! Questions end with question marks", incorrect: "Questions should end with a question mark (?)" }
+    topic: "Paragraph Writing",
+    type: "multiText",
+    minAnswers: 3,
+    text: "Write three sentences that form a short paragraph about keeping the classroom clean (beginning, middle, ending).",
+    acceptedSet: [],
+    feedback: { correct: "Well structured!", incorrect: "Include a topic sentence, one detail, and a closing sentence." }
   },
   {
-    _id: "lp-p5-eng-wp-2",
+    _id: "lp-p5-eng-pw-2",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Writing & Punctuation",
-    text: "Which shows direct speech correctly? 💭",
-    options: ["\"I am happy,\" said Tom.", "I am happy said Tom", "\"I am happy said Tom\""],
-    correct: "\"I am happy,\" said Tom.",
-    feedback: { correct: "Yes! Direct speech needs quotation marks and correct punctuation", incorrect: "Direct speech needs quotation marks around the exact words" }
+    topic: "Paragraph Writing",
+    type: "text",
+    text: "Write a suitable TITLE for a paragraph about 'a visit to the market'.",
+    accepted: [],
+    feedback: { correct: "Nice title!", incorrect: "A good title is short and tells the main idea." }
   },
   {
-    _id: "lp-p5-eng-wp-3",
+    _id: "lp-p5-eng-pw-3",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Writing & Punctuation",
-    text: "What makes this list correct: 'apples, oranges, and bananas'? 📋",
-    options: ["Commas", "Full stops", "Question marks"],
-    correct: "Commas",
-    feedback: { correct: "Yes! Lists use commas between items", incorrect: "Items in a list should be separated by commas" }
+    topic: "Paragraph Writing",
+    type: "text",
+    text: "Write ONE concluding sentence for a paragraph about road safety.",
+    accepted: [],
+    feedback: { correct: "Clear conclusion!", incorrect: "A conclusion sums up the main point (e.g., 'Therefore, we must follow traffic rules to stay safe.')." }
   },
   {
-    _id: "lp-p5-eng-wp-4",
+    _id: "lp-p5-eng-pw-4",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Writing & Punctuation",
-    text: "Which needs a capital letter? 🔠",
-    options: ["Monday", "today", "morning"],
-    correct: "Monday",
-    feedback: { correct: "Yes! Days of the week start with capital letters", incorrect: "Days of the week are proper nouns and need capital letters" }
-  },
-  {
-    _id: "lp-p5-eng-wp-5",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Writing & Punctuation",
-    text: "What ends an exclamation? ❗",
-    options: ["!", ".", "?"],
-    correct: "!",
-    feedback: { correct: "Yes! Exclamations end with exclamation marks", incorrect: "Strong feelings or exclamations end with exclamation marks (!)" }
-  },
-  {
-    _id: "lp-p5-eng-wp-6",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Writing & Punctuation",
-    text: "Which is a complete sentence? ✍️",
-    options: ["The cat sleeps.", "The cat.", "Sleeping cat."],
-    correct: "The cat sleeps.",
-    feedback: { correct: "Yes! A complete sentence needs a subject and verb", incorrect: "A complete sentence must have a subject and verb" }
-  },
-  {
-    _id: "lp-p5-eng-wp-7",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Writing & Punctuation",
-    text: "Which shows possession correctly? 📱",
-    options: ["Mary's phone", "Marys phone", "Mary phone"],
-    correct: "Mary's phone",
-    feedback: { correct: "Yes! Use apostrophe + s to show possession", incorrect: "To show something belongs to someone, use 's" }
-  },
-  {
-    _id: "lp-p5-eng-wp-8",
-    level: "lowerPrimary",
-    subject: "english",
-    class: "p5",
-    topic: "Writing & Punctuation",
-    text: "What separates two complete thoughts? 📜",
-    options: ["Full stop", "Comma", "Question mark"],
-    correct: "Full stop",
-    feedback: { correct: "Yes! Use a full stop between complete thoughts", incorrect: "Complete thoughts (sentences) are separated by full stops" }
+    topic: "Paragraph Writing",
+    type: "multiText",
+    minAnswers: 2,
+    text: "List any two linking words you can use to join sentences smoothly.",
+    acceptedSet: ["however","therefore","meanwhile","because","although","then","finally","also","moreover","besides"],
+    feedback: { correct: "Good cohesive devices!", incorrect: "Examples: however, therefore, meanwhile, because, although." }
   },
 
-  // Prefixes, Suffixes & Word Building (8 questions)
+  // ========== Direct & Reported Speech ==========
+  {
+    _id: "lp-p5-eng-dr-1",
+    level: "lowerPrimary",
+    subject: "english",
+    class: "p5",
+    topic: "Direct & Reported Speech",
+    type: "choice",
+    text: "Which sentence uses QUOTATION MARKS correctly?",
+    options: ["\"Stop,\" said the guard.", "\"Stop\" said the guard.", "\"Stop\", said the guard"],
+    correct: "\"Stop,\" said the guard.",
+    feedback: { correct: "Yes—comma inside the closing quotes.", incorrect: "Punctuation goes inside the closing quotation mark." }
+  },
+  {
+    _id: "lp-p5-eng-dr-2",
+    level: "lowerPrimary",
+    subject: "english",
+    class: "p5",
+    topic: "Direct & Reported Speech",
+    type: "text",
+    text: "Change to REPORTED SPEECH: Ruth said, \"I am studying.\"",
+    accepted: ["Ruth said that she was studying.", "Ruth said she was studying."],
+    feedback: { correct: "Good—present becomes past in reported speech.", incorrect: "Use 'said (that) she was studying'." }
+  },
+  {
+    _id: "lp-p5-eng-dr-3",
+    level: "lowerPrimary",
+    subject: "english",
+    class: "p5",
+    topic: "Direct & Reported Speech",
+    type: "text",
+    text: "Rewrite using the word GIVEN (use 'asked'): The teacher said to Tom, \"Close the door.\"",
+    accepted: ["The teacher asked Tom to close the door."],
+    feedback: { correct: "Great—use 'asked ... to + verb'.", incorrect: "Use an infinitive after 'asked' → 'asked Tom to close…'." }
+  },
+  {
+    _id: "lp-p5-eng-dr-4",
+    level: "lowerPrimary",
+    subject: "english",
+    class: "p5",
+    topic: "Direct & Reported Speech",
+    type: "choice",
+    text: "Select the correctly punctuated dialogue.",
+    options: ["“Where are you?” she asked.", "“Where are you”? she asked.", "“Where are you, she asked?”"],
+    correct: "“Where are you?” she asked.",
+    feedback: { correct: "Correct punctuation.", incorrect: "Question mark inside the quotes; tag outside." }
+  },
+
+  // ========== Punctuation Advanced ==========
+  {
+    _id: "lp-p5-eng-pu-1a",
+    level: "lowerPrimary",
+    subject: "english",
+    class: "p5",
+    topic: "Punctuation Advanced",
+    type: "text",
+    text: "Insert a COMMA where needed: 'After washing our hands we entered the lab.'",
+    accepted: ["After washing our hands, we entered the lab."],
+    feedback: { correct: "Yes—introductory phrase takes a comma.", incorrect: "Add a comma after the introductory phrase." }
+  },
+  {
+    _id: "lp-p5-eng-pu-2a",
+    level: "lowerPrimary",
+    subject: "english",
+    class: "p5",
+    topic: "Punctuation Advanced",
+    type: "choice",
+    text: "Choose the sentence with a COLON used correctly.",
+    options: ["Bring these items: soap, a towel, and water.", "Bring: these items soap, a towel, and water.", "Bring these: items soap, a towel, and water."],
+    correct: "Bring these items: soap, a towel, and water.",
+    feedback: { correct: "Exactly!", incorrect: "Use a colon after a complete clause to introduce a list." }
+  },
+  {
+    _id: "lp-p5-eng-pu-3a",
+    level: "lowerPrimary",
+    subject: "english",
+    class: "p5",
+    topic: "Punctuation Advanced",
+    type: "choice",
+    text: "Select the sentence with the APOSTROPHE used for POSSESSION.",
+    options: ["Sarah's book is new.", "Sarahs book is new.", "Sarahs' book is new."],
+    correct: "Sarah's book is new.",
+    feedback: { correct: "Right—apostrophe + s shows possession.", incorrect: "Use apostrophe before s for singular possession." }
+  },
+  {
+    _id: "lp-p5-eng-pu-4a",
+    level: "lowerPrimary",
+    subject: "english",
+    class: "p5",
+    topic: "Punctuation Advanced",
+    type: "text",
+    text: "Add quotation marks correctly: ___ Please sit down, said the nurse. ___",
+    accepted: ["“Please sit down,” said the nurse."],
+    feedback: { correct: "Perfect.", incorrect: "Put quotes around the exact words spoken; comma before the tag." }
+  },
+
+  // ========== Prefixes & Suffixes ==========
   {
     _id: "lp-p5-eng-ps-1",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Prefixes, Suffixes & Word Building",
-    text: "What does the prefix 'un-' mean? ❌",
-    options: ["Not", "Again", "Before"],
-    correct: "Not",
-    feedback: { correct: "Yes! 'Un-' means 'not' or opposite", incorrect: "The prefix 'un-' makes a word mean its opposite" }
+    topic: "Prefixes & Suffixes",
+    type: "choice",
+    text: "Add a PREFIX to make the opposite of 'possible'.",
+    options: ["impossible", "unpossible", "dispossible"],
+    correct: "impossible",
+    feedback: { correct: "Yes—'im-' fits before 'p' words.", incorrect: "Use 'im-' before words beginning with 'p' or 'm'." }
   },
   {
     _id: "lp-p5-eng-ps-2",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Prefixes, Suffixes & Word Building",
-    text: "What does adding '-ful' do to a word? 📝",
-    options: ["Full of", "Without", "Before"],
-    correct: "Full of",
-    feedback: { correct: "Yes! '-ful' means 'full of' that quality", incorrect: "The suffix '-ful' means 'full of' or 'having that quality'" }
+    topic: "Prefixes & Suffixes",
+    type: "choice",
+    text: "Choose the correct SUFFIX to make a noun: 'teach ___'.",
+    options: ["-er", "-ful", "-ly"],
+    correct: "-er",
+    feedback: { correct: "Teacher is the noun form.", incorrect: "Add '-er' to form the agent noun." }
   },
   {
     _id: "lp-p5-eng-ps-3",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Prefixes, Suffixes & Word Building",
-    text: "What does 're-' mean in 'rewrite'? 🔄",
-    options: ["Again", "Before", "After"],
-    correct: "Again",
-    feedback: { correct: "Yes! 're-' means to do again", incorrect: "The prefix 're-' means to do something again" }
+    topic: "Prefixes & Suffixes",
+    type: "text",
+    text: "Form a new word with a PREFIX meaning 'not' from 'honest'.",
+    accepted: ["dishonest"],
+    feedback: { correct: "Yes—'dishonest'.", incorrect: "Use 'dis-' with 'honest'." }
   },
   {
     _id: "lp-p5-eng-ps-4",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Prefixes, Suffixes & Word Building",
-    text: "What does '-less' mean in 'helpless'? ❓",
-    options: ["Without", "With", "More"],
-    correct: "Without",
-    feedback: { correct: "Yes! '-less' means without that quality", incorrect: "The suffix '-less' means 'without' or 'lacking'" }
+    topic: "Prefixes & Suffixes",
+    type: "text",
+    text: "Add a SUFFIX to 'hope' to make an adjective that means 'full of hope'.",
+    accepted: ["hopeful"],
+    feedback: { correct: "Correct—'hopeful'.", incorrect: "Add '-ful' to form an adjective." }
   },
+
+  // ========== Comprehension (Longer) ==========
   {
-    _id: "lp-p5-eng-ps-5",
+    _id: "lp-p5-eng-rc-1a",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Prefixes, Suffixes & Word Building",
-    text: "What does 'pre-' mean in 'preview'? ⏮️",
-    options: ["Before", "After", "Again"],
-    correct: "Before",
-    feedback: { correct: "Yes! 'pre-' means before", incorrect: "The prefix 'pre-' means 'before' or 'earlier than'" }
+    topic: "Comprehension (Longer)",
+    type: "choice",
+    text: "Read a short passage (teacher-provided). Which sentence best shows the MAIN IDEA?",
+    options: ["A general statement covering the whole passage", "A small detail", "An example only"],
+    correct: "A general statement covering the whole passage",
+    feedback: { correct: "Yes—main idea is the overall point.", incorrect: "Main idea is not a tiny detail or just an example." }
   },
   {
-    _id: "lp-p5-eng-ps-6",
+    _id: "lp-p5-eng-rc-2a",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Prefixes, Suffixes & Word Building",
-    text: "What does '-er' mean in 'teacher'? 👩‍🏫",
-    options: ["Person who", "Without", "Again"],
-    correct: "Person who",
-    feedback: { correct: "Yes! '-er' means person who does something", incorrect: "The suffix '-er' often means 'person who' does the action" }
+    topic: "Comprehension (Longer)",
+    type: "text",
+    text: "From the passage, write ONE reason why the family visited the market.",
+    accepted: [],
+    feedback: { correct: "Reason correctly lifted from the text.", incorrect: "Find a stated reason from the passage." }
   },
   {
-    _id: "lp-p5-eng-ps-7",
+    _id: "lp-p5-eng-rc-3a",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Prefixes, Suffixes & Word Building",
-    text: "What does 'mis-' mean in 'misunderstand'? ❌",
-    options: ["Wrongly", "Again", "Before"],
-    correct: "Wrongly",
-    feedback: { correct: "Yes! 'mis-' means wrongly or badly", incorrect: "The prefix 'mis-' means to do something wrongly" }
+    topic: "Comprehension (Longer)",
+    type: "choice",
+    text: "Which word from the passage is CLOSEST in meaning to 'purchase'?",
+    options: ["buy", "carry", "borrow"],
+    correct: "buy",
+    feedback: { correct: "Correct—purchase = buy.", incorrect: "Look for a synonym in context." }
   },
   {
-    _id: "lp-p5-eng-ps-8",
+    _id: "lp-p5-eng-rc-4a",
     level: "lowerPrimary",
     subject: "english",
     class: "p5",
-    topic: "Prefixes, Suffixes & Word Building",
-    text: "What does '-ly' do to a word? 🚶",
-    options: ["Makes an adverb", "Makes a noun", "Makes a verb"],
-    correct: "Makes an adverb",
-    feedback: { correct: "Yes! '-ly' usually makes an adverb", incorrect: "The suffix '-ly' usually changes a word into an adverb" }
+    topic: "Comprehension (Longer)",
+    type: "text",
+    text: "Write one sentence from the passage that shows TIME ORDER (sequence).",
+    accepted: [],
+    feedback: { correct: "Good—signals like 'first/then/finally'.", incorrect: "Find a line showing order (e.g., first, then, after that)." }
+  },
+
+  // ========== Functional & Sentence Transformation ==========
+  {
+    _id: "lp-p5-eng-fn-1",
+    level: "lowerPrimary",
+    subject: "english",
+    class: "p5",
+    topic: "Paragraph Writing",
+    type: "multiText",
+    minAnswers: 2,
+    text: "Rewrite each sentence using the word in brackets WITHOUT changing the meaning: (i) The shop is cheap. It is clean. (although) (ii) 'Open the window,' the nurse said to me. (told)",
+    acceptedSet: [
+      "Although the shop is cheap, it is clean.",
+      "The nurse told me to open the window."
+    ],
+    feedback: { correct: "Great transformations!", incorrect: "Use 'although' for contrast and 'told + object + to + verb' for commands." }
+  },
+  {
+    _id: "lp-p5-eng-fn-2",
+    level: "lowerPrimary",
+    subject: "english",
+    class: "p5",
+    topic: "Direct & Reported Speech",
+    type: "text",
+    text: "Change to REPORTED SPEECH: \"We have finished our homework,\" the boys said.",
+    accepted: ["The boys said that they had finished their homework.", "The boys said they had finished their homework."],
+    feedback: { correct: "Yes—present perfect becomes past perfect.", incorrect: "Use 'had finished' in reported speech." }
+  },
+  {
+    _id: "lp-p5-eng-fn-3",
+    level: "lowerPrimary",
+    subject: "english",
+    class: "p5",
+    topic: "Vocabulary & Idioms",
+    type: "choice",
+    text: "Choose the best conjunction: 'He was tired, ____ he continued working.'",
+    options: ["yet", "so", "because"],
+    correct: "yet",
+    feedback: { correct: "Correct—'yet' shows contrast.", incorrect: "We need a contrast linker here." }
+  },
+  {
+    _id: "lp-p5-eng-fn-4",
+    level: "lowerPrimary",
+    subject: "english",
+    class: "p5",
+    topic: "Functional writing",
+    type: "multiText",
+    minAnswers: 3,
+    text: "Write three items (with units) you would include on a simple shopping list for porridge.",
+    acceptedSet: ["2 kg maize flour","1 kg sugar","1 tin milk","salt 0.5 kg","matches 1 box","1 bar soap"], // flexible; teacher can accept similar
+    feedback: { correct: "Practical list!", incorrect: "Include item + quantity/units (e.g., '2 kg maize flour')." }
   }
 ];
+

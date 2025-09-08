@@ -11,17 +11,17 @@ import {
   Animated,
   Easing,
   useWindowDimensions,
+  Alert,
 } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { FontAwesome } from '@expo/vector-icons';
 import { Audio } from 'expo-av';
 
 import { storiesData } from '../data/storiesData';
+import { imgSrc } from '../utils/image';
 
-const BG_URL =
-  'https://kids-app-images.s3.us-east-1.amazonaws.com/stories-bg.jpg';
-const DEFAULT_IMG =
-  'https://kids-app-images.s3.us-east-1.amazonaws.com/general-image.webp';
+const BG_URL = 'https://kids-app-images.s3.us-east-1.amazonaws.com/stories-bg.jpg';
+const DEFAULT_IMG = 'https://kids-app-images.s3.us-east-1.amazonaws.com/general-image.webp';
 const CLICK_SND = require('../assets/sounds/click.mp3');
 const CORRECT_SND = require('../assets/sounds/correct-sound.wav');
 
@@ -151,7 +151,7 @@ const StoryContentScreen: React.FC = () => {
   if (!story) {
     return (
       <ImageBackground
-        source={{ uri: BG_URL }}
+        source={imgSrc(BG_URL)}
         style={styles.container}
         resizeMode="cover"
       >
@@ -196,7 +196,7 @@ const StoryContentScreen: React.FC = () => {
 
   return (
     <ImageBackground
-      source={{ uri: BG_URL }}
+      source={imgSrc(BG_URL)}
       style={styles.container}
       resizeMode="cover"
     >
@@ -250,7 +250,7 @@ const StoryContentScreen: React.FC = () => {
               >
                 {pageObj.image ? (
                   <Image
-                    source={{ uri: pageObj.image || DEFAULT_IMG }}
+                    source={imgSrc(pageObj.image || DEFAULT_IMG)}
                     style={styles.pageImage}
                     resizeMode="cover"
                   />

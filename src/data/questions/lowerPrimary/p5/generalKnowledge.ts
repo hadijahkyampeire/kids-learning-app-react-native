@@ -1,17 +1,30 @@
-import { Question } from "../../../../types";
+import type { Question } from "../../../../types";
+
+/**
+ * Notes:
+ * - Every item now includes a `type` field: 'choice' | 'multiChoice' | 'fill-in' | 'text' | 'multiText'
+ * - `choice` & `multiChoice` include `options`. `multiChoice.correct` is an array.
+ * - `fill-in` has an exact `correct` string (use digits/standard spelling).
+ * - `text` accepts free text via an `accepted` list of key phrases (case-insensitive match recommended).
+ * - `multiText` lets learners list several answers; includes `minAnswer` and an `accepted` pool.
+ */
 
 export const p5GeneralKnowledge: Question[] = [
-  // World Geography & Landmarks (8 questions)
+  // ========== World Geography & Landmarks (8) ==========
   {
     _id: "lp-p5-gk-wg-1",
     level: "lowerPrimary",
     subject: "generalKnowledge",
     class: "p5",
     topic: "World Geography & Landmarks",
+    type: "choice",
     text: "Which is the largest continent in the world? 🌏",
     options: ["Asia", "Africa", "North America"],
     correct: "Asia",
-    feedback: { correct: "Yes! Asia is the largest continent by both land area and population", incorrect: "Asia is the largest continent, covering about 30% of Earth's total land area" }
+    feedback: {
+      correct: "Yes! Asia is the largest by land area and population.",
+      incorrect: "Think of the continent with China, India, and Russia—Asia."
+    }
   },
   {
     _id: "lp-p5-gk-wg-2",
@@ -19,10 +32,14 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "World Geography & Landmarks",
+    type: "choice",
     text: "Which famous landmark is in Paris, France? 🗼",
     options: ["Eiffel Tower", "Big Ben", "Statue of Liberty"],
     correct: "Eiffel Tower",
-    feedback: { correct: "Yes! The Eiffel Tower is located in Paris, France", incorrect: "The Eiffel Tower, built in 1889, is the most famous landmark in Paris, France" }
+    feedback: {
+      correct: "Correct—Eiffel Tower is in Paris.",
+      incorrect: "Big Ben is in London; Statue of Liberty is in New York."
+    }
   },
   {
     _id: "lp-p5-gk-wg-3",
@@ -30,10 +47,10 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "World Geography & Landmarks",
+    type: "fill-in",
     text: "What is the capital city of Kenya? 🇰🇪",
-    options: ["Nairobi", "Mombasa", "Kisumu"],
     correct: "Nairobi",
-    feedback: { correct: "Yes! Nairobi is the capital city of Kenya", incorrect: "Nairobi has been Kenya's capital city since independence" }
+    feedback: { correct: "Nice! Nairobi is correct.", incorrect: "Kenya’s capital is Nairobi." }
   },
   {
     _id: "lp-p5-gk-wg-4",
@@ -41,10 +58,14 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "World Geography & Landmarks",
+    type: "choice",
     text: "Which is the longest river in Africa? 🌍",
     options: ["Nile River", "Congo River", "Zambezi River"],
     correct: "Nile River",
-    feedback: { correct: "Yes! The Nile is the longest river in Africa", incorrect: "The Nile River is the longest river in Africa and the world" }
+    feedback: {
+      correct: "Yes—the Nile is longest.",
+      incorrect: "It flows through countries like Uganda, Sudan, and Egypt."
+    }
   },
   {
     _id: "lp-p5-gk-wg-5",
@@ -52,10 +73,14 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "World Geography & Landmarks",
+    type: "choice",
     text: "Which ocean is the largest? 🌊",
     options: ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean"],
     correct: "Pacific Ocean",
-    feedback: { correct: "Yes! The Pacific Ocean is the largest and deepest ocean", incorrect: "The Pacific Ocean is the largest ocean, covering about 30% of Earth's surface" }
+    feedback: {
+      correct: "Correct—the Pacific is the largest.",
+      incorrect: "The Pacific covers more area than all land combined!"
+    }
   },
   {
     _id: "lp-p5-gk-wg-6",
@@ -63,10 +88,10 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "World Geography & Landmarks",
-    text: "Which is the highest mountain in the world? 🏔️",
-    options: ["Mount Everest", "Mount Kilimanjaro", "Mount Kenya"],
+    type: "fill-in",
+    text: "Name the highest mountain in the world. 🏔️",
     correct: "Mount Everest",
-    feedback: { correct: "Yes! Mount Everest is the highest mountain above sea level", incorrect: "Mount Everest, at 8,848 meters, is the world's highest mountain" }
+    feedback: { correct: "Yes—Mount Everest.", incorrect: "It’s Mount Everest." }
   },
   {
     _id: "lp-p5-gk-wg-7",
@@ -74,10 +99,10 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "World Geography & Landmarks",
-    text: "Which country is known as the 'Land of the Rising Sun'? 🇯🇵",
-    options: ["Japan", "China", "South Korea"],
-    correct: "Japan",
-    feedback: { correct: "Yes! Japan is known as the 'Land of the Rising Sun'", incorrect: "Japan is called the 'Land of the Rising Sun' because it is located east of China" }
+    type: "text",
+    text: "Which country is called the 'Land of the Rising Sun'? 🇯🇵",
+    accepted: ["japan"],
+    feedback: { correct: "Right—Japan.", incorrect: "It’s Japan." }
   },
   {
     _id: "lp-p5-gk-wg-8",
@@ -85,23 +110,28 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "World Geography & Landmarks",
-    text: "Which desert is the largest in the world? 🏜️",
-    options: ["Sahara Desert", "Arabian Desert", "Kalahari Desert"],
-    correct: "Sahara Desert",
-    feedback: { correct: "Yes! The Sahara is the world's largest hot desert", incorrect: "The Sahara Desert covers about 31% of Africa" }
+    type: "multiChoice",
+    text: "Select all that are African landmarks.",
+    options: ["Victoria Falls", "Table Mountain", "Grand Canyon", "Great Wall"],
+    correct: ["Victoria Falls", "Table Mountain"],
+    feedback: {
+      correct: "Great—both are in Africa!",
+      incorrect: "Victoria Falls and Table Mountain are in Africa."
+    }
   },
 
-  // Famous People & History (8 questions)
+  // ========== Famous People & History (8) ==========
   {
     _id: "lp-p5-gk-fh-1",
     level: "lowerPrimary",
     subject: "generalKnowledge",
     class: "p5",
     topic: "Famous People & History",
+    type: "choice",
     text: "Who was the first President of Uganda? 🇺🇬",
     options: ["Milton Obote", "Idi Amin", "Yoweri Museveni"],
     correct: "Milton Obote",
-    feedback: { correct: "Yes! Milton Obote was Uganda's first President", incorrect: "Milton Obote became Uganda's first President after independence" }
+    feedback: { correct: "Yes—Milton Obote.", incorrect: "It was Milton Obote." }
   },
   {
     _id: "lp-p5-gk-fh-2",
@@ -109,10 +139,11 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Famous People & History",
+    type: "choice",
     text: "Who invented the telephone? ☎️",
     options: ["Alexander Graham Bell", "Thomas Edison", "Albert Einstein"],
     correct: "Alexander Graham Bell",
-    feedback: { correct: "Yes! Alexander Graham Bell invented the telephone in 1876", incorrect: "The telephone was invented by Alexander Graham Bell in 1876" }
+    feedback: { correct: "Correct—Bell.", incorrect: "The telephone was invented by Bell." }
   },
   {
     _id: "lp-p5-gk-fh-3",
@@ -120,10 +151,10 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Famous People & History",
-    text: "Who was Nelson Mandela? 🇿🇦",
-    options: ["South African Leader", "Kenyan Leader", "Nigerian Leader"],
-    correct: "South African Leader",
-    feedback: { correct: "Yes! Nelson Mandela was South Africa's first Black president", incorrect: "Nelson Mandela fought against apartheid and became South Africa's first Black president" }
+    type: "text",
+    text: "Nelson Mandela was the first Black president of which country? 🇿🇦",
+    accepted: ["south africa", "republic of south africa"],
+    feedback: { correct: "Yes—South Africa.", incorrect: "South Africa." }
   },
   {
     _id: "lp-p5-gk-fh-4",
@@ -131,10 +162,11 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Famous People & History",
-    text: "Which famous scientist discovered gravity? 🍎",
+    type: "choice",
+    text: "Which scientist is linked with gravity after an apple story? 🍎",
     options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei"],
     correct: "Isaac Newton",
-    feedback: { correct: "Yes! Isaac Newton discovered gravity", incorrect: "Isaac Newton discovered gravity after watching an apple fall from a tree" }
+    feedback: { correct: "Newton it is!", incorrect: "It’s Isaac Newton." }
   },
   {
     _id: "lp-p5-gk-fh-5",
@@ -142,10 +174,10 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Famous People & History",
+    type: "fill-in",
     text: "Who painted the Mona Lisa? 🎨",
-    options: ["Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso"],
     correct: "Leonardo da Vinci",
-    feedback: { correct: "Yes! The Mona Lisa was painted by Leonardo da Vinci", incorrect: "The Mona Lisa is a famous painting by Leonardo da Vinci" }
+    feedback: { correct: "Nice!", incorrect: "Leonardo da Vinci." }
   },
   {
     _id: "lp-p5-gk-fh-6",
@@ -153,10 +185,11 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Famous People & History",
-    text: "Who was the first person to walk on the moon? 🌙",
+    type: "choice",
+    text: "Who first walked on the Moon? 🌙",
     options: ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin"],
     correct: "Neil Armstrong",
-    feedback: { correct: "Yes! Neil Armstrong was the first person to walk on the moon in 1969", incorrect: "Neil Armstrong took the first steps on the moon during the Apollo 11 mission" }
+    feedback: { correct: "Correct—Armstrong.", incorrect: "Neil Armstrong did in 1969." }
   },
   {
     _id: "lp-p5-gk-fh-7",
@@ -164,10 +197,10 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Famous People & History",
-    text: "Who wrote 'Things Fall Apart'? 📚",
-    options: ["Chinua Achebe", "Wole Soyinka", "Ngugi wa Thiong'o"],
-    correct: "Chinua Achebe",
-    feedback: { correct: "Yes! 'Things Fall Apart' was written by Chinua Achebe", incorrect: "Chinua Achebe wrote 'Things Fall Apart', a famous African novel" }
+    type: "text",
+    text: "Name the author of 'Things Fall Apart'. 📚",
+    accepted: ["chinua achebe", "achebe"],
+    feedback: { correct: "Yes—Chinua Achebe.", incorrect: "Chinua Achebe." }
   },
   {
     _id: "lp-p5-gk-fh-8",
@@ -175,23 +208,31 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Famous People & History",
-    text: "Who is known as the father of computers? 💻",
-    options: ["Charles Babbage", "Bill Gates", "Steve Jobs"],
-    correct: "Charles Babbage",
-    feedback: { correct: "Yes! Charles Babbage is known as the father of computers", incorrect: "Charles Babbage invented the first mechanical computer" }
+    type: "multiChoice",
+    text: "Select the inventors/scientists.",
+    options: ["Charles Babbage", "Cristiano Ronaldo", "Marie Curie", "Beyoncé"],
+    correct: ["Charles Babbage", "Marie Curie"],
+    feedback: {
+      correct: "Great pick!",
+      incorrect: "Babbage and Curie are the scientists."
+    }
   },
 
-  // Science & Technology (8 questions)
+  // ========== Science & Technology (8) ==========
   {
     _id: "lp-p5-gk-st-1",
     level: "lowerPrimary",
     subject: "generalKnowledge",
     class: "p5",
     topic: "Science & Technology",
-    text: "What is the most abundant gas in Earth's atmosphere? 💨",
+    type: "choice",
+    text: "What is the most abundant gas in Earth’s atmosphere? 💨",
     options: ["Nitrogen", "Oxygen", "Carbon Dioxide"],
     correct: "Nitrogen",
-    feedback: { correct: "Yes! Nitrogen makes up about 78% of Earth's atmosphere", incorrect: "Nitrogen is the most abundant gas, making up about 78% of our atmosphere" }
+    feedback: {
+      correct: "Yes—about 78%.",
+      incorrect: "It’s nitrogen (~78%)."
+    }
   },
   {
     _id: "lp-p5-gk-st-2",
@@ -199,10 +240,11 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Science & Technology",
-    text: "What is the closest planet to the Sun? ☀️",
+    type: "choice",
+    text: "Which planet is closest to the Sun? ☀️",
     options: ["Mercury", "Venus", "Mars"],
     correct: "Mercury",
-    feedback: { correct: "Yes! Mercury is the closest planet to the Sun", incorrect: "Mercury is the first planet from the Sun in our solar system" }
+    feedback: { correct: "Correct—Mercury.", incorrect: "Mercury is the closest." }
   },
   {
     _id: "lp-p5-gk-st-3",
@@ -210,10 +252,10 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Science & Technology",
-    text: "What do plants need to make their own food? 🌱",
-    options: ["Sunlight", "Darkness", "Salt"],
-    correct: "Sunlight",
-    feedback: { correct: "Yes! Plants need sunlight for photosynthesis", incorrect: "Plants use sunlight to make their own food through photosynthesis" }
+    type: "text",
+    text: "Name one thing plants need to make food. 🌱",
+    accepted: ["sunlight", "carbon dioxide", "water", "chlorophyll"],
+    feedback: { correct: "Yes, that’s needed.", incorrect: "Examples: sunlight, water, carbon dioxide." }
   },
   {
     _id: "lp-p5-gk-st-4",
@@ -221,10 +263,11 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Science & Technology",
-    text: "What device measures temperature? 🌡️",
+    type: "choice",
+    text: "Which device measures temperature? 🌡️",
     options: ["Thermometer", "Barometer", "Speedometer"],
     correct: "Thermometer",
-    feedback: { correct: "Yes! A thermometer measures temperature", incorrect: "A thermometer is used to measure temperature in degrees" }
+    feedback: { correct: "Right!", incorrect: "A thermometer measures temperature." }
   },
   {
     _id: "lp-p5-gk-st-5",
@@ -232,10 +275,10 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Science & Technology",
+    type: "fill-in",
     text: "What is the hardest natural substance? 💎",
-    options: ["Diamond", "Gold", "Iron"],
     correct: "Diamond",
-    feedback: { correct: "Yes! Diamond is the hardest natural substance", incorrect: "Diamond is the hardest naturally occurring substance on Earth" }
+    feedback: { correct: "Correct—diamond.", incorrect: "It’s diamond." }
   },
   {
     _id: "lp-p5-gk-st-6",
@@ -243,10 +286,11 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Science & Technology",
-    text: "What is the largest organ in the human body? 👤",
-    options: ["Skin", "Heart", "Brain"],
+    type: "choice",
+    text: "The largest organ of the human body is the ____.",
+    options: ["Skin", "Liver", "Brain"],
     correct: "Skin",
-    feedback: { correct: "Yes! The skin is our largest organ", incorrect: "The skin is the largest organ, protecting our body" }
+    feedback: { correct: "Yes—the skin.", incorrect: "The skin is largest." }
   },
   {
     _id: "lp-p5-gk-st-7",
@@ -254,10 +298,11 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Science & Technology",
-    text: "What is the main function of the heart? ❤️",
-    options: ["Pump blood", "Think", "Breathe"],
-    correct: "Pump blood",
-    feedback: { correct: "Yes! The heart pumps blood throughout the body", incorrect: "The heart's main job is to pump blood around the body" }
+    type: "choice",
+    text: "What does the heart do? ❤️",
+    options: ["Pumps blood", "Thinks", "Digests food"],
+    correct: "Pumps blood",
+    feedback: { correct: "Exactly.", incorrect: "Its main job is pumping blood." }
   },
   {
     _id: "lp-p5-gk-st-8",
@@ -265,23 +310,25 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Science & Technology",
-    text: "What is the speed of light? ⚡",
-    options: ["300,000 km/s", "200,000 km/s", "100,000 km/s"],
-    correct: "300,000 km/s",
-    feedback: { correct: "Yes! Light travels at 300,000 kilometers per second", incorrect: "Light travels at 300,000 kilometers per second in a vacuum" }
+    type: "multiChoice",
+    text: "Select the renewable energy sources:",
+    options: ["Wind", "Coal", "Solar", "Oil"],
+    correct: ["Wind", "Solar"],
+    feedback: { correct: "Nice selection!", incorrect: "Wind and solar are renewable." }
   },
 
-  // Culture & Society (8 questions)
+  // ========== Culture & Society (8) ==========
   {
     _id: "lp-p5-gk-cs-1",
     level: "lowerPrimary",
     subject: "generalKnowledge",
     class: "p5",
     topic: "Culture & Society",
-    text: "What is the main language spoken in Uganda? 🗣️",
+    type: "choice",
+    text: "What is the main official language of Uganda? 🗣️",
     options: ["English", "Swahili", "French"],
     correct: "English",
-    feedback: { correct: "Yes! English is Uganda's official language", incorrect: "English is the official language of Uganda, used in schools and government" }
+    feedback: { correct: "Yes—English.", incorrect: "It’s English (official language)." }
   },
   {
     _id: "lp-p5-gk-cs-2",
@@ -289,10 +336,11 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Culture & Society",
-    text: "What is Uganda's national sport? ⚽",
+    type: "choice",
+    text: "Uganda’s popular national sport is ____.",
     options: ["Football", "Cricket", "Rugby"],
     correct: "Football",
-    feedback: { correct: "Yes! Football (soccer) is Uganda's national sport", incorrect: "Football is the most popular and national sport of Uganda" }
+    feedback: { correct: "Right—football.", incorrect: "Football (soccer) is most popular." }
   },
   {
     _id: "lp-p5-gk-cs-3",
@@ -300,10 +348,16 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Culture & Society",
-    text: "Which colors are in Uganda's flag? 🇺🇬",
-    options: ["Black, Yellow, Red", "Green, White, Red", "Blue, Red, Yellow"],
-    correct: "Black, Yellow, Red",
-    feedback: { correct: "Yes! Uganda's flag has black, yellow, and red stripes", incorrect: "The Uganda flag has black, yellow, and red stripes with a crested crane" }
+    type: "multiChoice",
+    text: "Which colours are on Uganda’s flag? 🇺🇬",
+    options: [
+      "Black",
+      "Yellow",
+      "Red",
+      "Green"
+    ],
+    correct: ["Black", "Yellow", "Red"],
+    feedback: { correct: "Perfect!", incorrect: "It’s Black, Yellow, and Red stripes." }
   },
   {
     _id: "lp-p5-gk-cs-4",
@@ -311,10 +365,11 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Culture & Society",
-    text: "What is a traditional Ugandan food? 🍲",
-    options: ["Matoke", "Sushi", "Pizza"],
+    type: "choice",
+    text: "Which is a traditional Ugandan food? 🍲",
+    options: ["Matoke", "Sushi", "Tacos"],
     correct: "Matoke",
-    feedback: { correct: "Yes! Matoke is a traditional Ugandan food", incorrect: "Matoke (cooked plantains) is a staple food in Uganda" }
+    feedback: { correct: "Yes—Matoke.", incorrect: "Matoke (plantain) is traditional." }
   },
   {
     _id: "lp-p5-gk-cs-5",
@@ -322,10 +377,10 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Culture & Society",
-    text: "What bird appears on Uganda's flag? 🦅",
-    options: ["Crested Crane", "Eagle", "Peacock"],
+    type: "fill-in",
+    text: "Which bird appears on Uganda’s flag? 🐦",
     correct: "Crested Crane",
-    feedback: { correct: "Yes! The Crested Crane is on Uganda's flag", incorrect: "The Grey Crowned Crane (Crested Crane) is Uganda's national bird" }
+    feedback: { correct: "Correct—the Crested Crane.", incorrect: "It’s the Crested Crane." }
   },
   {
     _id: "lp-p5-gk-cs-6",
@@ -333,10 +388,10 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Culture & Society",
-    text: "What is the capital of the East African Community? 🏛️",
-    options: ["Arusha", "Nairobi", "Kampala"],
-    correct: "Arusha",
-    feedback: { correct: "Yes! Arusha, Tanzania is the EAC headquarters", incorrect: "The East African Community headquarters is in Arusha, Tanzania" }
+    type: "text",
+    text: "Where is the East African Community (EAC) headquarters located? 🏛️",
+    accepted: ["arusha", "arusha, tanzania", "tanzania"],
+    feedback: { correct: "Yes—Arusha, Tanzania.", incorrect: "Arusha, Tanzania." }
   },
   {
     _id: "lp-p5-gk-cs-7",
@@ -344,10 +399,11 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Culture & Society",
-    text: "Which lake is the largest in Uganda? 💧",
+    type: "choice",
+    text: "Which is the largest lake in Uganda?",
     options: ["Lake Victoria", "Lake Albert", "Lake Kyoga"],
     correct: "Lake Victoria",
-    feedback: { correct: "Yes! Lake Victoria is the largest lake in Uganda", incorrect: "Lake Victoria is the largest lake in Africa and Uganda" }
+    feedback: { correct: "Right—Lake Victoria.", incorrect: "It’s Lake Victoria." }
   },
   {
     _id: "lp-p5-gk-cs-8",
@@ -355,23 +411,24 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Culture & Society",
-    text: "What is Uganda's motto? 📜",
-    options: ["For God and My Country", "Unity and Faith", "Peace and Progress"],
-    correct: "For God and My Country",
-    feedback: { correct: "Yes! 'For God and My Country' is Uganda's motto", incorrect: "'For God and My Country' has been Uganda's motto since independence" }
+    type: "text",
+    text: "State Uganda’s motto. 📜",
+    accepted: ["for god and my country"],
+    feedback: { correct: "Yes! For God and My Country.", incorrect: "It is: For God and My Country." }
   },
 
-  // Current Affairs & Environment (8 questions)
+  // ========== Current Affairs & Environment (8) ==========
   {
     _id: "lp-p5-gk-ce-1",
     level: "lowerPrimary",
     subject: "generalKnowledge",
     class: "p5",
     topic: "Current Affairs & Environment",
-    text: "What causes global warming? 🌡️",
+    type: "choice",
+    text: "What mainly causes global warming? 🌡️",
     options: ["Greenhouse gases", "Rain", "Wind"],
     correct: "Greenhouse gases",
-    feedback: { correct: "Yes! Greenhouse gases trap heat and cause global warming", incorrect: "Greenhouse gases in the atmosphere trap heat, leading to global warming" }
+    feedback: { correct: "Yes—GHGs trap heat.", incorrect: "Greenhouse gases trap heat in the atmosphere." }
   },
   {
     _id: "lp-p5-gk-ce-2",
@@ -379,10 +436,10 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Current Affairs & Environment",
-    text: "What is recycling? ♻️",
-    options: ["Reusing materials", "Throwing away", "Burning trash"],
+    type: "fill-in",
+    text: "What is recycling? ♻️ (one short phrase)",
     correct: "Reusing materials",
-    feedback: { correct: "Yes! Recycling means reusing materials to make new things", incorrect: "Recycling is the process of converting waste into reusable materials" }
+    feedback: { correct: "Good!", incorrect: "Recycling means reusing materials to make new things." }
   },
   {
     _id: "lp-p5-gk-ce-3",
@@ -390,10 +447,11 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Current Affairs & Environment",
-    text: "What is deforestation? 🌳",
-    options: ["Cutting down forests", "Planting trees", "Growing forests"],
+    type: "choice",
+    text: "Deforestation means ____.",
+    options: ["Cutting down forests", "Planting trees", "Protecting wildlife"],
     correct: "Cutting down forests",
-    feedback: { correct: "Yes! Deforestation is the cutting down of forests", incorrect: "Deforestation means cutting down forests, which harms the environment" }
+    feedback: { correct: "Correct.", incorrect: "It means cutting down forests." }
   },
   {
     _id: "lp-p5-gk-ce-4",
@@ -401,10 +459,11 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Current Affairs & Environment",
-    text: "What is renewable energy? 🌞",
-    options: ["Solar power", "Coal", "Oil"],
-    correct: "Solar power",
-    feedback: { correct: "Yes! Solar power is a renewable energy source", incorrect: "Solar power is renewable because it comes from the sun, which won't run out" }
+    type: "multiChoice",
+    text: "Select renewable energy sources:",
+    options: ["Solar", "Wind", "Coal", "Oil"],
+    correct: ["Solar", "Wind"],
+    feedback: { correct: "Nice!", incorrect: "Solar and wind are renewable." }
   },
   {
     _id: "lp-p5-gk-ce-5",
@@ -412,10 +471,10 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Current Affairs & Environment",
-    text: "What helps clean the air we breathe? 🌿",
-    options: ["Trees", "Cars", "Factories"],
-    correct: "Trees",
-    feedback: { correct: "Yes! Trees clean the air by absorbing carbon dioxide", incorrect: "Trees help clean the air by absorbing carbon dioxide and releasing oxygen" }
+    type: "text",
+    text: "Name one way trees help the environment. 🌿",
+    accepted: ["absorb carbon dioxide", "give oxygen", "prevent soil erosion", "provide habitat", "cool the air", "provide shade"],
+    feedback: { correct: "Yes—that helps!", incorrect: "Examples: absorb CO₂, give oxygen, prevent erosion." }
   },
   {
     _id: "lp-p5-gk-ce-6",
@@ -423,10 +482,11 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Current Affairs & Environment",
-    text: "What causes air pollution? 🏭",
+    type: "choice",
+    text: "Which causes air pollution?",
     options: ["Factory smoke", "Trees", "Clean water"],
     correct: "Factory smoke",
-    feedback: { correct: "Yes! Factory smoke is a major cause of air pollution", incorrect: "Smoke from factories releases harmful chemicals that pollute the air" }
+    feedback: { correct: "Correct.", incorrect: "Factory smoke releases harmful gases." }
   },
   {
     _id: "lp-p5-gk-ce-7",
@@ -434,10 +494,18 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Current Affairs & Environment",
-    text: "What helps save water? 💧",
-    options: ["Turning off taps", "Leaving taps on", "Using more water"],
-    correct: "Turning off taps",
-    feedback: { correct: "Yes! Turning off taps when not in use saves water", incorrect: "Turning off taps when not using them helps conserve water" }
+    type: "multiText",
+    text: "List two ways to save water at home. 💧",
+    minAnswer: 2,
+    accepted: [
+      "turn off taps",
+      "fix leaks",
+      "collect rainwater",
+      "use a bucket not hose",
+      "shorter showers",
+      "reuse water for plants"
+    ],
+    feedback: { correct: "Great water-saving ideas!", incorrect: "Ideas: turn off taps, fix leaks, collect rainwater, reuse water." }
   },
   {
     _id: "lp-p5-gk-ce-8",
@@ -445,23 +513,25 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Current Affairs & Environment",
-    text: "What is endangered? 🐼",
-    options: ["Rare animals", "Common animals", "Pet animals"],
-    correct: "Rare animals",
-    feedback: { correct: "Yes! Endangered means rare animals at risk of extinction", incorrect: "Endangered animals are rare and at risk of disappearing forever" }
+    type: "choice",
+    text: "Endangered animals are those that are ____.",
+    options: ["At risk of extinction", "Very common", "Always pets"],
+    correct: "At risk of extinction",
+    feedback: { correct: "Yes—that’s endangered.", incorrect: "They are at risk of disappearing forever." }
   },
 
-  // Health & Safety (8 questions)
+  // ========== Health & Safety (8) ==========
   {
     _id: "lp-p5-gk-hs-1",
     level: "lowerPrimary",
     subject: "generalKnowledge",
     class: "p5",
     topic: "Health & Safety",
+    type: "choice",
     text: "What should you do before eating? 🧼",
     options: ["Wash hands", "Touch face", "Play outside"],
     correct: "Wash hands",
-    feedback: { correct: "Yes! Always wash hands before eating", incorrect: "Washing hands before eating helps prevent illness" }
+    feedback: { correct: "Yes—wash hands.", incorrect: "Washing hands prevents illness." }
   },
   {
     _id: "lp-p5-gk-hs-2",
@@ -469,10 +539,11 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Health & Safety",
+    type: "choice",
     text: "What helps keep teeth healthy? 🦷",
     options: ["Brushing teeth", "Eating candy", "Drinking soda"],
     correct: "Brushing teeth",
-    feedback: { correct: "Yes! Brushing teeth prevents cavities", incorrect: "Regular brushing keeps teeth clean and healthy" }
+    feedback: { correct: "Correct.", incorrect: "Brush twice a day." }
   },
   {
     _id: "lp-p5-gk-hs-3",
@@ -480,10 +551,11 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Health & Safety",
-    text: "What's important for road safety? 🚦",
-    options: ["Looking both ways", "Running across", "Not watching"],
-    correct: "Looking both ways",
-    feedback: { correct: "Yes! Always look both ways before crossing", incorrect: "Looking both ways before crossing keeps you safe" }
+    type: "multiChoice",
+    text: "Safe road crossing includes:",
+    options: ["Look both ways", "Run across quickly", "Use a zebra crossing", "Don’t watch traffic"],
+    correct: ["Look both ways", "Use a zebra crossing"],
+    feedback: { correct: "Good road sense!", incorrect: "Look both ways and use crossings." }
   },
   {
     _id: "lp-p5-gk-hs-4",
@@ -491,10 +563,10 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Health & Safety",
-    text: "What number calls emergency services? 🚑",
-    options: ["999", "123", "789"],
+    type: "fill-in",
+    text: "What number do you dial for emergencies (UG)? 🚑",
     correct: "999",
-    feedback: { correct: "Yes! 999 is the emergency number", incorrect: "999 is the number to call in emergencies" }
+    feedback: { correct: "Correct—999.", incorrect: "Dial 999 in an emergency." }
   },
   {
     _id: "lp-p5-gk-hs-5",
@@ -502,10 +574,10 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Health & Safety",
-    text: "What helps you stay healthy? 🏃‍♀️",
-    options: ["Exercise", "Watching TV", "Sitting all day"],
-    correct: "Exercise",
-    feedback: { correct: "Yes! Regular exercise keeps you healthy", incorrect: "Exercise helps keep your body strong and healthy" }
+    type: "text",
+    text: "Name one benefit of regular exercise. 🏃‍♀️",
+    accepted: ["keeps you fit", "strong muscles", "healthy heart", "lose weight", "feel better", "more energy"],
+    feedback: { correct: "Yes—that’s a benefit.", incorrect: "Benefits include fitness, stronger heart and muscles." }
   },
   {
     _id: "lp-p5-gk-hs-6",
@@ -513,10 +585,11 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Health & Safety",
+    type: "choice",
     text: "What should you wear when cycling? 🚴",
-    options: ["Helmet", "Hat", "Nothing"],
+    options: ["Helmet", "Nothing", "Flip-flops only"],
     correct: "Helmet",
-    feedback: { correct: "Yes! Always wear a helmet when cycling", incorrect: "Wearing a helmet protects your head while cycling" }
+    feedback: { correct: "Safety first!", incorrect: "Wear a helmet to protect your head." }
   },
   {
     _id: "lp-p5-gk-hs-7",
@@ -524,10 +597,13 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Health & Safety",
-    text: "What makes a balanced meal? 🍽️",
-    options: ["Different foods", "Only meat", "Only vegetables"],
-    correct: "Different foods",
-    feedback: { correct: "Yes! A balanced meal includes different food groups", incorrect: "Eating different types of food gives your body all it needs" }
+    type: "multiText",
+    text: "List three food groups for a balanced meal. 🍽️",
+    minAnswer: 3,
+    accepted: [
+      "carbohydrates", "proteins", "vitamins", "minerals", "fats", "dairy", "fruits", "vegetables", "grains"
+    ],
+    feedback: { correct: "Balanced and healthy!", incorrect: "Examples: carbohydrates, proteins, fruits/vegetables, dairy." }
   },
   {
     _id: "lp-p5-gk-hs-8",
@@ -535,9 +611,9 @@ export const p5GeneralKnowledge: Question[] = [
     subject: "generalKnowledge",
     class: "p5",
     topic: "Health & Safety",
-    text: "What keeps your body hydrated? 💦",
-    options: ["Water", "Soda", "Coffee"],
+    type: "fill-in",
+    text: "What drink keeps your body hydrated best? 💦",
     correct: "Water",
-    feedback: { correct: "Yes! Drinking water keeps you hydrated", incorrect: "Water is the best drink to keep your body hydrated" }
+    feedback: { correct: "Yes—water.", incorrect: "Water is best for hydration." }
   }
 ];

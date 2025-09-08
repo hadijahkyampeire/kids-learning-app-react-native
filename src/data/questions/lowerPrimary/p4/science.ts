@@ -1,17 +1,17 @@
-import { Question } from "../../../../types";
+import type { Question } from "../../../../types";
 
 export const p4Science: Question[] = [
-  // Human Body (7 questions)
+  // ========== Human Body (10) ==========
   {
     _id: "lp-p4-sc-hb-1",
     level: "lowerPrimary",
     subject: "science",
     class: "p4",
     topic: "Human Body",
-    text: "Which organ pumps blood around our body? ❤️",
-    options: ["Heart", "Lungs", "Brain"],
-    correct: "Heart",
-    feedback: { correct: "Yes! The heart pumps blood throughout our body", incorrect: "The heart is responsible for pumping blood around the body" }
+    type: "text",
+    text: "Which organ pumps blood around the body?",
+    accepted: ["heart","the heart"],
+    feedback: { correct: "Yes! The heart pumps blood throughout the body.", incorrect: "It's the heart." }
   },
   {
     _id: "lp-p4-sc-hb-2",
@@ -19,10 +19,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Human Body",
-    text: "What do we use to breathe? 🫁",
-    options: ["Lungs", "Stomach", "Heart"],
-    correct: "Lungs",
-    feedback: { correct: "Yes! Our lungs help us breathe", incorrect: "We use our lungs to breathe in oxygen and breathe out carbon dioxide" }
+    type: "text",
+    text: "Which organ helps us breathe in oxygen and breathe out carbon dioxide?",
+    accepted: ["lungs","the lungs"],
+    feedback: { correct: "Correct—lungs help us breathe.", incorrect: "We breathe using our lungs." }
   },
   {
     _id: "lp-p4-sc-hb-3",
@@ -30,10 +30,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Human Body",
-    text: "Which organ helps us think? 🧠",
-    options: ["Brain", "Liver", "Kidney"],
-    correct: "Brain",
-    feedback: { correct: "Yes! The brain controls our thinking and actions", incorrect: "The brain is our control center for thinking and movement" }
+    type: "text",
+    text: "Which organ controls our thinking and body actions?",
+    accepted: ["brain","the brain"],
+    feedback: { correct: "Yes—the brain is our control center.", incorrect: "It's the brain." }
   },
   {
     _id: "lp-p4-sc-hb-4",
@@ -41,10 +41,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Human Body",
-    text: "What helps us digest food? 🍽️",
-    options: ["Stomach", "Heart", "Lungs"],
-    correct: "Stomach",
-    feedback: { correct: "Yes! The stomach helps digest our food", incorrect: "Food is broken down and digested in the stomach" }
+    type: "text",
+    text: "Name the outer covering that protects the body.",
+    accepted: ["skin","the skin"],
+    feedback: { correct: "Right—skin protects the body.", incorrect: "Answer: Skin." }
   },
   {
     _id: "lp-p4-sc-hb-5",
@@ -52,10 +52,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Human Body",
-    text: "What protects our body on the outside? 🧍",
-    options: ["Skin", "Muscles", "Bones"],
-    correct: "Skin",
-    feedback: { correct: "Yes! Skin protects our body from harm", incorrect: "Our skin is the protective covering of our body" }
+    type: "text",
+    text: "Which organ stores and helps digest food after we eat?",
+    accepted: ["stomach","the stomach"],
+    feedback: { correct: "Yes—the stomach helps digest food.", incorrect: "It's the stomach." }
   },
   {
     _id: "lp-p4-sc-hb-6",
@@ -63,10 +63,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Human Body",
-    text: "Which organ cleans our blood? 🩸",
-    options: ["Kidneys", "Heart", "Liver"],
-    correct: "Kidneys",
-    feedback: { correct: "Yes! Kidneys filter and clean our blood", incorrect: "The kidneys work as filters to clean our blood" }
+    type: "text",
+    text: "Which organs clean or filter our blood?",
+    accepted: ["kidneys","the kidneys","kidney"],
+    feedback: { correct: "Correct—the kidneys filter the blood.", incorrect: "The kidneys clean our blood." }
   },
   {
     _id: "lp-p4-sc-hb-7",
@@ -74,23 +74,58 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Human Body",
-    text: "What gives our body structure and support? 🦴",
-    options: ["Bones", "Skin", "Hair"],
-    correct: "Bones",
-    feedback: { correct: "Yes! Our bones provide structure and support", incorrect: "The skeleton (bones) gives our body its shape and support" }
+    type: "text",
+    text: "The hard parts that give the body shape and support are called ______.",
+    accepted: ["bones","the bones","skeleton","the skeleton"],
+    feedback: { correct: "Yes—bones (the skeleton) support the body.", incorrect: "Bones (the skeleton) give support." }
+  },
+  {
+    _id: "lp-p4-sc-hb-8",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Human Body",
+    type: "text",
+    text: "Where two bones meet is called a ______.",
+    accepted: ["joint","a joint","joints"],
+    feedback: { correct: "Right—that's a joint.", incorrect: "It's called a joint." }
+  },
+  {
+    _id: "lp-p4-sc-hb-9",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Human Body",
+    type: "multiText",
+    minAnswers: 2,
+    text: "Write any two sense organs.",
+    acceptedSet: ["eye","eyes","ear","ears","nose","tongue","skin"],
+    feedback: { correct: "Great—those are sense organs.", incorrect: "Examples: eyes, ears, nose, tongue, skin." }
+  },
+  {
+    _id: "lp-p4-sc-hb-10",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Human Body",
+    type: "text",
+    text: "Which liquid in our body carries oxygen and nutrients to all parts?",
+    accepted: ["blood","the blood"],
+    feedback: { correct: "Yes—blood carries oxygen and nutrients.", incorrect: "It's the blood." }
   },
 
-  // Plants (7 questions)
+  // ========== Plants (10) ==========
   {
     _id: "lp-p4-sc-pl-1",
     level: "lowerPrimary",
     subject: "science",
     class: "p4",
     topic: "Plants",
-    text: "What do plants need to make their food? ☀️",
-    options: ["Sunlight", "Darkness", "Salt"],
-    correct: "Sunlight",
-    feedback: { correct: "Yes! Plants need sunlight to make their food", incorrect: "Plants use sunlight to make food through photosynthesis" }
+    type: "text",
+    text: "Plants use sunlight to make their own food. What is this process called?",
+    accepted: ["photosynthesis"],
+    patterns: ["^photo\\s*synthesis$"],
+    feedback: { correct: "Great—photosynthesis!", incorrect: "It's called photosynthesis." }
   },
   {
     _id: "lp-p4-sc-pl-2",
@@ -98,10 +133,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Plants",
-    text: "Which part of the plant absorbs water? 💧",
-    options: ["Roots", "Leaves", "Flowers"],
-    correct: "Roots",
-    feedback: { correct: "Yes! Roots absorb water from the soil", incorrect: "Plant roots absorb water and nutrients from the soil" }
+    type: "text",
+    text: "Which part of a plant absorbs water from the soil?",
+    accepted: ["roots","the roots","root"],
+    feedback: { correct: "Yes—roots absorb water.", incorrect: "It's the roots." }
   },
   {
     _id: "lp-p4-sc-pl-3",
@@ -109,10 +144,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Plants",
-    text: "What do leaves make for the plant? 🌿",
-    options: ["Food", "Roots", "Flowers"],
-    correct: "Food",
-    feedback: { correct: "Yes! Leaves make food for the plant", incorrect: "Leaves make food for the plant through photosynthesis" }
+    type: "text",
+    text: "Name the tiny sweet liquid in flowers that attracts bees.",
+    accepted: ["nectar"],
+    feedback: { correct: "Correct—nectar attracts bees.", incorrect: "It's called nectar." }
   },
   {
     _id: "lp-p4-sc-pl-4",
@@ -120,10 +155,11 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Plants",
-    text: "Which part of the plant carries water to leaves? 🌱",
-    options: ["Stem", "Roots", "Flowers"],
-    correct: "Stem",
-    feedback: { correct: "Yes! The stem carries water up to the leaves", incorrect: "The stem transports water from roots to leaves" }
+    type: "multiText",
+    minAnswers: 2,
+    text: "Write any two things plants need to grow.",
+    acceptedSet: ["sunlight","water","air","carbon dioxide","soil","nutrients","space","warmth"],
+    feedback: { correct: "Nice—those help plants grow.", incorrect: "Examples: sunlight, water, air, soil, nutrients." }
   },
   {
     _id: "lp-p4-sc-pl-5",
@@ -131,10 +167,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Plants",
-    text: "What helps plants reproduce? 🌸",
-    options: ["Seeds", "Leaves", "Stem"],
-    correct: "Seeds",
-    feedback: { correct: "Yes! Seeds help plants reproduce", incorrect: "Plants use seeds to grow new plants" }
+    type: "text",
+    text: "Which part carries water and food between roots and leaves?",
+    accepted: ["stem","the stem"],
+    feedback: { correct: "Yes—the stem transports water and food.", incorrect: "It's the stem." }
   },
   {
     _id: "lp-p4-sc-pl-6",
@@ -142,10 +178,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Plants",
-    text: "What gas do plants give out during day? 💨",
-    options: ["Oxygen", "Carbon dioxide", "Nitrogen"],
-    correct: "Oxygen",
-    feedback: { correct: "Yes! Plants release oxygen during the day", incorrect: "During photosynthesis, plants release oxygen" }
+    type: "text",
+    text: "Leaves make food for the plant. Name this food type in simple terms.",
+    accepted: ["sugar","glucose","food"],
+    feedback: { correct: "Correct—sugars like glucose.", incorrect: "Plants make sugars (food) in the leaves." }
   },
   {
     _id: "lp-p4-sc-pl-7",
@@ -153,23 +189,57 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Plants",
-    text: "What attracts bees to flowers? 🐝",
-    options: ["Nectar", "Leaves", "Roots"],
-    correct: "Nectar",
-    feedback: { correct: "Yes! Bees are attracted to flower nectar", incorrect: "Flowers produce nectar which attracts bees" }
+    type: "text",
+    text: "What do plants release into the air during the day?",
+    accepted: ["oxygen","o2"],
+    feedback: { correct: "Yes—oxygen.", incorrect: "They release oxygen." }
+  },
+  {
+    _id: "lp-p4-sc-pl-8",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Plants",
+    type: "text",
+    text: "The beginning of a seed growing into a new plant is called ______.",
+    accepted: ["germination"],
+    feedback: { correct: "Right—germination.", incorrect: "It's called germination." }
+  },
+  {
+    _id: "lp-p4-sc-pl-9",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Plants",
+    type: "multiText",
+    minAnswers: 2,
+    text: "Write any two uses of plants to people.",
+    acceptedSet: ["food","medicine","shelter","timber","firewood","oxygen","shade","clothes","paper"],
+    feedback: { correct: "Great—plants are very useful.", incorrect: "Examples: food, medicine, timber, oxygen, shade." }
+  },
+  {
+    _id: "lp-p4-sc-pl-10",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Plants",
+    type: "text",
+    text: "What helps flowers make seeds—movement of pollen is called ______.",
+    accepted: ["pollination"],
+    feedback: { correct: "Yes—pollination.", incorrect: "It's pollination." }
   },
 
-  // Animals (7 questions)
+  // ========== Animals (10) ==========
   {
     _id: "lp-p4-sc-an-1",
     level: "lowerPrimary",
     subject: "science",
     class: "p4",
     topic: "Animals",
-    text: "Which animals lay eggs? 🥚",
-    options: ["Birds", "Lions", "Elephants"],
-    correct: "Birds",
-    feedback: { correct: "Yes! Birds lay eggs", incorrect: "Birds reproduce by laying eggs" }
+    type: "text",
+    text: "Animals that eat only plants are called ______.",
+    accepted: ["herbivores","herbivore"],
+    feedback: { correct: "Yes—herbivores eat plants.", incorrect: "They are called herbivores." }
   },
   {
     _id: "lp-p4-sc-an-2",
@@ -177,10 +247,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Animals",
-    text: "What do herbivores eat? 🌿",
-    options: ["Plants", "Meat", "Both"],
-    correct: "Plants",
-    feedback: { correct: "Yes! Herbivores only eat plants", incorrect: "Herbivores are animals that eat only plants" }
+    type: "text",
+    text: "Which body covering do birds have?",
+    accepted: ["feathers","feather"],
+    feedback: { correct: "Right—feathers.", incorrect: "Birds are covered with feathers." }
   },
   {
     _id: "lp-p4-sc-an-3",
@@ -188,10 +258,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Animals",
-    text: "Which animal group has scales? 🐠",
-    options: ["Fish", "Birds", "Lions"],
-    correct: "Fish",
-    feedback: { correct: "Yes! Fish have scales on their body", incorrect: "Fish are covered with protective scales" }
+    type: "text",
+    text: "Name the animal group that has scales and lives in water.",
+    accepted: ["fish","fishes"],
+    feedback: { correct: "Yes—fish have scales.", incorrect: "Answer: Fish." }
   },
   {
     _id: "lp-p4-sc-an-4",
@@ -199,10 +269,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Animals",
-    text: "What helps birds fly? 🦅",
-    options: ["Wings", "Legs", "Tail"],
-    correct: "Wings",
-    feedback: { correct: "Yes! Birds use wings to fly", incorrect: "Birds' wings help them fly through the air" }
+    type: "text",
+    text: "Which body part helps birds to fly?",
+    accepted: ["wings","the wings","wing"],
+    feedback: { correct: "Correct—wings help them fly.", incorrect: "They use their wings." }
   },
   {
     _id: "lp-p4-sc-an-5",
@@ -210,10 +280,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Animals",
-    text: "What do carnivores eat? 🥩",
-    options: ["Meat", "Plants", "Both"],
-    correct: "Meat",
-    feedback: { correct: "Yes! Carnivores eat meat", incorrect: "Carnivores are animals that eat only meat" }
+    type: "text",
+    text: "Animals that eat only meat are called ______.",
+    accepted: ["carnivores","carnivore"],
+    feedback: { correct: "Yes—carnivores eat meat.", incorrect: "They are called carnivores." }
   },
   {
     _id: "lp-p4-sc-an-6",
@@ -221,10 +291,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Animals",
-    text: "Which animals carry their babies in pouches? 🦘",
-    options: ["Kangaroos", "Lions", "Elephants"],
-    correct: "Kangaroos",
-    feedback: { correct: "Yes! Kangaroos carry babies in pouches", incorrect: "Kangaroos are marsupials that carry babies in pouches" }
+    type: "text",
+    text: "Animals that eat both plants and meat are called ______.",
+    accepted: ["omnivores","omnivore"],
+    feedback: { correct: "Correct—omnivores eat both.", incorrect: "They are called omnivores." }
   },
   {
     _id: "lp-p4-sc-an-7",
@@ -232,23 +302,58 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Animals",
-    text: "What covers a bird's body? 🦢",
-    options: ["Feathers", "Scales", "Fur"],
-    correct: "Feathers",
-    feedback: { correct: "Yes! Birds are covered with feathers", incorrect: "Birds' bodies are covered with feathers" }
+    type: "text",
+    text: "Which body part do fish use to breathe in water?",
+    accepted: ["gills","the gills","gill"],
+    feedback: { correct: "Right—fish use gills.", incorrect: "They breathe with gills." }
+  },
+  {
+    _id: "lp-p4-sc-an-8",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Animals",
+    type: "text",
+    text: "Insects usually have how many legs?",
+    accepted: ["six","6"],
+    patterns: ["^\\s*6\\s*$","^\\s*six\\s*$"],
+    feedback: { correct: "Yes—six legs.", incorrect: "Insects have six legs." }
+  },
+  {
+    _id: "lp-p4-sc-an-9",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Animals",
+    type: "multiText",
+    minAnswers: 2,
+    text: "Write any two animal homes (habitats).",
+    acceptedSet: ["nest","burrow","hole","den","cave","web","hive","kennel","sty","stable"],
+    feedback: { correct: "Great—those are animal homes.", incorrect: "Examples: nest, burrow, den, hive." }
+  },
+  {
+    _id: "lp-p4-sc-an-10",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Animals",
+    type: "text",
+    text: "Animals that give birth and feed young ones with milk are called ______.",
+    accepted: ["mammals","mammal"],
+    feedback: { correct: "Yes—mammals.", incorrect: "They are called mammals." }
   },
 
-  // Weather & Water (7 questions)
+  // ========== Weather & Water (10) ==========
   {
     _id: "lp-p4-sc-ww-1",
     level: "lowerPrimary",
     subject: "science",
     class: "p4",
     topic: "Weather & Water",
-    text: "What causes rain? ☔",
-    options: ["Clouds", "Wind", "Sun"],
-    correct: "Clouds",
-    feedback: { correct: "Yes! Rain falls from clouds", incorrect: "Rain forms in clouds and falls to Earth" }
+    type: "text",
+    text: "Frozen water is called ______.",
+    accepted: ["ice"],
+    feedback: { correct: "Yes—ice.", incorrect: "It's called ice." }
   },
   {
     _id: "lp-p4-sc-ww-2",
@@ -256,10 +361,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Weather & Water",
-    text: "What is water vapor? 💨",
-    options: ["Water gas", "Ice", "Liquid water"],
-    correct: "Water gas",
-    feedback: { correct: "Yes! Water vapor is water in gas form", incorrect: "Water vapor is water in its gaseous state" }
+    type: "text",
+    text: "What do we call water in gas form?",
+    accepted: ["water vapor","water vapour","vapour","vapor","steam"],
+    feedback: { correct: "Correct—water vapor.", incorrect: "Water in gas form is water vapor." }
   },
   {
     _id: "lp-p4-sc-ww-3",
@@ -267,10 +372,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Weather & Water",
-    text: "What makes clouds look white? ☁️",
-    options: ["Water drops", "Smoke", "Dust"],
-    correct: "Water drops",
-    feedback: { correct: "Yes! Tiny water drops make clouds white", incorrect: "Clouds are made of tiny water droplets that appear white" }
+    type: "text",
+    text: "Name the instrument used to measure rainfall.",
+    accepted: ["rain gauge","raingauge","a rain gauge"],
+    feedback: { correct: "Yes—a rain gauge.", incorrect: "We use a rain gauge." }
   },
   {
     _id: "lp-p4-sc-ww-4",
@@ -278,10 +383,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Weather & Water",
-    text: "What is frozen water called? ❄️",
-    options: ["Ice", "Steam", "Rain"],
-    correct: "Ice",
-    feedback: { correct: "Yes! Frozen water is called ice", incorrect: "When water freezes it becomes ice" }
+    type: "text",
+    text: "Moving air is called ______.",
+    accepted: ["wind","the wind"],
+    feedback: { correct: "Right—wind.", incorrect: "It's called wind." }
   },
   {
     _id: "lp-p4-sc-ww-5",
@@ -289,10 +394,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Weather & Water",
-    text: "What causes wind? 🌬️",
-    options: ["Moving air", "Rain", "Clouds"],
-    correct: "Moving air",
-    feedback: { correct: "Yes! Wind is moving air", incorrect: "Wind is created by moving air in the atmosphere" }
+    type: "text",
+    text: "Which instrument measures air temperature?",
+    accepted: ["thermometer","a thermometer"],
+    feedback: { correct: "Yes—a thermometer.", incorrect: "A thermometer measures temperature." }
   },
   {
     _id: "lp-p4-sc-ww-6",
@@ -300,10 +405,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Weather & Water",
-    text: "What makes a rainbow? 🌈",
-    options: ["Sunlight and rain", "Clouds only", "Wind only"],
-    correct: "Sunlight and rain",
-    feedback: { correct: "Yes! Rainbows form when sunlight hits raindrops", incorrect: "Rainbows appear when sunlight passes through raindrops" }
+    type: "text",
+    text: "Changing from liquid water to gas is called ______.",
+    accepted: ["evaporation"],
+    feedback: { correct: "Correct—evaporation.", incorrect: "It's evaporation." }
   },
   {
     _id: "lp-p4-sc-ww-7",
@@ -311,23 +416,58 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Weather & Water",
-    text: "What do we use to measure rainfall? 🌧️",
-    options: ["Rain gauge", "Thermometer", "Clock"],
-    correct: "Rain gauge",
-    feedback: { correct: "Yes! A rain gauge measures rainfall", incorrect: "We use a rain gauge to measure how much rain falls" }
+    type: "text",
+    text: "Changing from water vapor to tiny droplets is called ______.",
+    accepted: ["condensation"],
+    feedback: { correct: "Yes—condensation.", incorrect: "It's condensation." }
+  },
+  {
+    _id: "lp-p4-sc-ww-8",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Weather & Water",
+    type: "multiText",
+    minAnswers: 2,
+    text: "Write any two common sources of water.",
+    acceptedSet: ["river","lake","well","borehole","spring","rain","stream","tap"],
+    feedback: { correct: "Good—those are water sources.", incorrect: "Examples: river, lake, rain, well." }
+  },
+  {
+    _id: "lp-p4-sc-ww-9",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Weather & Water",
+    type: "multiText",
+    minAnswers: 2,
+    text: "Write any two safe ways of making water clean for drinking.",
+    acceptedSet: ["boil","boiling","filter","filtration","chlorinate","chlorination","use water guard","settling","decant"],
+    feedback: { correct: "Yes—those make water safer.", incorrect: "Examples: boiling, filtering, chlorination." }
+  },
+  {
+    _id: "lp-p4-sc-ww-10",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Weather & Water",
+    type: "text",
+    text: "Uganda mainly has two seasons: the rainy season and the ______ season.",
+    accepted: ["dry","dry season"],
+    feedback: { correct: "Right—the dry season.", incorrect: "It's the dry season." }
   },
 
-  // Materials (7 questions)
+  // ========== Materials (10) ==========
   {
     _id: "lp-p4-sc-ma-1",
     level: "lowerPrimary",
     subject: "science",
     class: "p4",
     topic: "Materials",
-    text: "Which material can magnets attract? 🧲",
-    options: ["Iron", "Wood", "Plastic"],
-    correct: "Iron",
-    feedback: { correct: "Yes! Magnets attract iron", incorrect: "Iron is a magnetic material that magnets can attract" }
+    type: "text",
+    text: "Name one material that magnets attract.",
+    accepted: ["iron","steel"],
+    feedback: { correct: "Yes—magnets attract iron/steel.", incorrect: "Magnets attract iron and steel." }
   },
   {
     _id: "lp-p4-sc-ma-2",
@@ -335,10 +475,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Materials",
-    text: "What happens to ice when heated? 🧊",
-    options: ["Melts", "Grows", "Nothing"],
-    correct: "Melts",
-    feedback: { correct: "Yes! Ice melts when heated", incorrect: "When ice is heated, it melts into water" }
+    type: "text",
+    text: "Which material lets light pass through easily?",
+    accepted: ["glass","clear glass","transparent glass","transparent"],
+    feedback: { correct: "Correct—glass is transparent.", incorrect: "Glass lets light pass through." }
   },
   {
     _id: "lp-p4-sc-ma-3",
@@ -346,10 +486,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Materials",
-    text: "Which material lets light pass through? 🪟",
-    options: ["Glass", "Wood", "Metal"],
-    correct: "Glass",
-    feedback: { correct: "Yes! Light can pass through glass", incorrect: "Glass is transparent and lets light pass through" }
+    type: "text",
+    text: "When water is cooled and freezes, it becomes ______.",
+    accepted: ["ice"],
+    feedback: { correct: "Yes—ice.", incorrect: "It becomes ice." }
   },
   {
     _id: "lp-p4-sc-ma-4",
@@ -357,10 +497,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Materials",
-    text: "What material floats on water? 🪵",
-    options: ["Wood", "Stone", "Iron"],
-    correct: "Wood",
-    feedback: { correct: "Yes! Wood floats on water", incorrect: "Most types of wood float on water" }
+    type: "text",
+    text: "Name one material that is waterproof.",
+    accepted: ["plastic","polythene","rubber"],
+    feedback: { correct: "Good—plastic/rubber are waterproof.", incorrect: "Plastic and rubber are waterproof." }
   },
   {
     _id: "lp-p4-sc-ma-5",
@@ -368,10 +508,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Materials",
-    text: "Which material conducts electricity? ⚡",
-    options: ["Metal", "Plastic", "Wood"],
-    correct: "Metal",
-    feedback: { correct: "Yes! Metals conduct electricity", incorrect: "Metal is a good conductor of electricity" }
+    type: "text",
+    text: "Materials that do not let electricity pass easily are called ______.",
+    accepted: ["insulators","insulator"],
+    feedback: { correct: "Yes—insulators.", incorrect: "They are called insulators." }
   },
   {
     _id: "lp-p4-sc-ma-6",
@@ -379,10 +519,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Materials",
-    text: "What happens to water when frozen? 🧊",
-    options: ["Becomes ice", "Disappears", "Boils"],
-    correct: "Becomes ice",
-    feedback: { correct: "Yes! Water becomes ice when frozen", incorrect: "When water freezes, it turns into ice" }
+    type: "text",
+    text: "Materials that allow electricity to pass through easily are called ______.",
+    accepted: ["conductors","conductor"],
+    feedback: { correct: "Correct—conductors.", incorrect: "They are called conductors." }
   },
   {
     _id: "lp-p4-sc-ma-7",
@@ -390,102 +530,59 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Materials",
-    text: "Which material is waterproof? 💧",
-    options: ["Plastic", "Paper", "Cotton"],
-    correct: "Plastic",
-    feedback: { correct: "Yes! Plastic doesn't let water pass through", incorrect: "Plastic is waterproof and keeps water out" }
+    type: "choice",
+    text: "Which of these dissolves in water?",
+    options: ["Sugar","Sand","Plastic"],
+    correct: "Sugar",
+    feedback: { correct: "Yes—sugar dissolves in water.", incorrect: "Sugar dissolves, sand and plastic do not." }
+  },
+  {
+    _id: "lp-p4-sc-ma-8",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Materials",
+    type: "text",
+    text: "Objects that do not let any light pass through are called ______ objects.",
+    accepted: ["opaque","opaque objects","opaque materials"],
+    feedback: { correct: "Right—opaque objects.", incorrect: "They are called opaque objects." }
+  },
+  {
+    _id: "lp-p4-sc-ma-9",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Materials",
+    type: "multiText",
+    minAnswers: 2,
+    text: "Write any two ways we can reduce waste of materials at home or school.",
+    acceptedSet: ["reuse","recycle","reduce","repair","refill","compost"],
+    feedback: { correct: "Great—reduce, reuse, recycle!", incorrect: "Examples: reduce, reuse, recycle, repair." }
+  },
+  {
+    _id: "lp-p4-sc-ma-10",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Materials",
+    type: "choice",
+    text: "Which is harder?",
+    options: ["Iron","Rubber","Cotton"],
+    correct: "Iron",
+    feedback: { correct: "Yes—iron is harder.", incorrect: "Iron is harder than rubber and cotton." }
   },
 
-  // Space (7 questions)
-  {
-    _id: "lp-p4-sc-sp-1",
-    level: "lowerPrimary",
-    subject: "science",
-    class: "p4",
-    topic: "Space",
-    text: "What is the closest star to Earth? ⭐",
-    options: ["Sun", "Moon", "Mars"],
-    correct: "Sun",
-    feedback: { correct: "Yes! The Sun is our closest star", incorrect: "The Sun is the star closest to Earth" }
-  },
-  {
-    _id: "lp-p4-sc-sp-2",
-    level: "lowerPrimary",
-    subject: "science",
-    class: "p4",
-    topic: "Space",
-    text: "What causes day and night? 🌍",
-    options: ["Earth's rotation", "The Moon", "Clouds"],
-    correct: "Earth's rotation",
-    feedback: { correct: "Yes! Earth's rotation causes day and night", incorrect: "Day and night happen because Earth spins" }
-  },
-  {
-    _id: "lp-p4-sc-sp-3",
-    level: "lowerPrimary",
-    subject: "science",
-    class: "p4",
-    topic: "Space",
-    text: "What is Earth's only natural satellite? 🌕",
-    options: ["Moon", "Sun", "Star"],
-    correct: "Moon",
-    feedback: { correct: "Yes! The Moon is Earth's natural satellite", incorrect: "The Moon orbits Earth as its natural satellite" }
-  },
-  {
-    _id: "lp-p4-sc-sp-4",
-    level: "lowerPrimary",
-    subject: "science",
-    class: "p4",
-    topic: "Space",
-    text: "Which planet is known as the Red Planet? 🔴",
-    options: ["Mars", "Venus", "Jupiter"],
-    correct: "Mars",
-    feedback: { correct: "Yes! Mars is called the Red Planet", incorrect: "Mars is known as the Red Planet due to its color" }
-  },
-  {
-    _id: "lp-p4-sc-sp-5",
-    level: "lowerPrimary",
-    subject: "science",
-    class: "p4",
-    topic: "Space",
-    text: "What is a group of stars called? ✨",
-    options: ["Constellation", "Planet", "Moon"],
-    correct: "Constellation",
-    feedback: { correct: "Yes! A group of stars is called a constellation", incorrect: "Stars grouped in patterns are called constellations" }
-  },
-  {
-    _id: "lp-p4-sc-sp-6",
-    level: "lowerPrimary",
-    subject: "science",
-    class: "p4",
-    topic: "Space",
-    text: "Which is the largest planet? 🌍",
-    options: ["Jupiter", "Mars", "Earth"],
-    correct: "Jupiter",
-    feedback: { correct: "Yes! Jupiter is the largest planet", incorrect: "Jupiter is the biggest planet in our solar system" }
-  },
-  {
-    _id: "lp-p4-sc-sp-7",
-    level: "lowerPrimary",
-    subject: "science",
-    class: "p4",
-    topic: "Space",
-    text: "What makes the Moon shine at night? 🌙",
-    options: ["Sunlight", "Own light", "Stars"],
-    correct: "Sunlight",
-    feedback: { correct: "Yes! The Moon reflects sunlight", incorrect: "The Moon shines by reflecting light from the Sun" }
-  },
-
-  // Energy & Light (7 questions)
+  // ========== Energy & Light (10) ==========
   {
     _id: "lp-p4-sc-el-1",
     level: "lowerPrimary",
     subject: "science",
     class: "p4",
     topic: "Energy & Light",
-    text: "What is our main source of light? ☀️",
-    options: ["Sun", "Moon", "Stars"],
-    correct: "Sun",
-    feedback: { correct: "Yes! The Sun is our main source of light", incorrect: "The Sun provides most of Earth's light" }
+    type: "text",
+    text: "Our main natural source of light is the ______.",
+    accepted: ["sun","the sun"],
+    feedback: { correct: "Yes—the Sun.", incorrect: "It's the Sun." }
   },
   {
     _id: "lp-p4-sc-el-2",
@@ -493,10 +590,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Energy & Light",
-    text: "What needs energy to work? 💡",
-    options: ["Light bulb", "Paper", "Wood"],
-    correct: "Light bulb",
-    feedback: { correct: "Yes! Light bulbs need energy to work", incorrect: "Light bulbs require electrical energy to produce light" }
+    type: "text",
+    text: "Light bouncing off a mirror is called ______.",
+    accepted: ["reflection","reflecting"],
+    feedback: { correct: "Correct—reflection.", incorrect: "It's called reflection." }
   },
   {
     _id: "lp-p4-sc-el-3",
@@ -504,10 +601,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Energy & Light",
-    text: "What happens to light when it hits a mirror? 🪞",
-    options: ["Reflects", "Disappears", "Stops"],
-    correct: "Reflects",
-    feedback: { correct: "Yes! Light reflects off mirrors", incorrect: "Mirrors reflect light like a bouncing ball" }
+    type: "text",
+    text: "Bending of light as it passes through water or glass is called ______.",
+    accepted: ["refraction"],
+    feedback: { correct: "Yes—refraction.", incorrect: "It's called refraction." }
   },
   {
     _id: "lp-p4-sc-el-4",
@@ -515,10 +612,11 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Energy & Light",
-    text: "What gives us heat energy? 🔥",
-    options: ["Fire", "Water", "Ice"],
-    correct: "Fire",
-    feedback: { correct: "Yes! Fire provides heat energy", incorrect: "Fire is a source of heat energy" }
+    type: "multiText",
+    minAnswers: 2,
+    text: "Write any two safe ways to save electricity at home.",
+    acceptedSet: ["switch off lights","use led bulbs","turn off appliances","unplug chargers","use natural light","use solar"],
+    feedback: { correct: "Great energy-saving ideas!", incorrect: "Examples: switch off lights, use LED bulbs, turn off appliances." }
   },
   {
     _id: "lp-p4-sc-el-5",
@@ -526,10 +624,10 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Energy & Light",
-    text: "What blocks light to make shadows? 🌑",
-    options: ["Objects", "Air", "Water"],
-    correct: "Objects",
-    feedback: { correct: "Yes! Objects block light to make shadows", incorrect: "Shadows form when objects block light" }
+    type: "text",
+    text: "A dark shape formed when an object blocks light is called a ______.",
+    accepted: ["shadow","a shadow"],
+    feedback: { correct: "Yes—a shadow.", incorrect: "It's a shadow." }
   },
   {
     _id: "lp-p4-sc-el-6",
@@ -537,10 +635,11 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Energy & Light",
-    text: "Which energy makes cars move? ⚡",
-    options: ["Fuel energy", "Light energy", "Sound energy"],
-    correct: "Fuel energy",
-    feedback: { correct: "Yes! Cars use fuel energy to move", incorrect: "Cars need fuel energy to run and move" }
+    type: "multiText",
+    minAnswers: 2,
+    text: "Write any two renewable sources of energy.",
+    acceptedSet: ["solar","sun","wind","water","hydro","geothermal","biogas","biomass"],
+    feedback: { correct: "Nice—renewable sources listed.", incorrect: "Examples: solar, wind, hydro (water)." }
   },
   {
     _id: "lp-p4-sc-el-7",
@@ -548,9 +647,44 @@ export const p4Science: Question[] = [
     subject: "science",
     class: "p4",
     topic: "Energy & Light",
-    text: "What can we use to save energy? 💡",
-    options: ["LED bulbs", "Old bulbs", "Many lights"],
-    correct: "LED bulbs",
-    feedback: { correct: "Yes! LED bulbs help save energy", incorrect: "LED bulbs use less energy than traditional bulbs" }
+    type: "text",
+    text: "Name one source of electricity used at home.",
+    accepted: ["battery","cell","hydropower","dam","solar","generator","mains","power station","electricity grid","power grid"],
+    feedback: { correct: "Yes—that can supply electricity.", incorrect: "Examples: battery, solar, hydropower, mains." }
+  },
+  {
+    _id: "lp-p4-sc-el-8",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Energy & Light",
+    type: "multiText",
+    minAnswers: 3,
+    text: "A simple circuit needs three main parts. Write any three.",
+    acceptedSet: ["battery","cell","power source","bulb","lamp","light bulb","wire","wires","switch"],
+    feedback: { correct: "Great—power source, wires, bulb/switch.", incorrect: "Examples: battery, wires, bulb, switch." }
+  },
+  {
+    _id: "lp-p4-sc-el-9",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Energy & Light",
+    type: "text",
+    text: "When white light passes through raindrops, we see a ______ in the sky.",
+    accepted: ["rainbow","a rainbow"],
+    feedback: { correct: "Yes—a rainbow.", incorrect: "It's a rainbow." }
+  },
+  {
+    _id: "lp-p4-sc-el-10",
+    level: "lowerPrimary",
+    subject: "science",
+    class: "p4",
+    topic: "Energy & Light",
+    type: "multiChoice",
+    text: "Select all the appliances that produce light.",
+    options: ["Torch","Candle","Radio","Television","Bulb"],
+    correct: ["Torch","Candle","Bulb"],
+    feedback: { correct: "Yes—those produce light.", incorrect: "Light sources here: Torch, Candle, Bulb." }
   }
 ];

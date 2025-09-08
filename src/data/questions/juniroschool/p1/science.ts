@@ -13,6 +13,7 @@ export const juniorSchoolP1ScienceQuestions: Question[] = [
       "eyes 👀"
     ],
     "correct": "lungs 🫁",
+    "type": "choice",
     "feedback": {
       "correct": "Yes—lungs help us breathe.",
       "incorrect": "They are in your chest."
@@ -24,13 +25,16 @@ export const juniorSchoolP1ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p1",
     "topic": "Human Body & Health",
-    "text": "We see with our…",
+    "text": "Which body parts help us sense things? Select all that apply 🌟",
     "options": [
-      "eyes 👀",
-      "ears 👂",
-      "nose 👃"
+      "Eyes 👀",
+      "Ears 👂",
+      "Nose 👃",
+      "Tongue 👅",
+      "Hair 💇"
     ],
-    "correct": "eyes 👀",
+    "correct": ["Eyes 👀", "Ears 👂", "Nose 👃", "Tongue 👅"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Correct!",
       "incorrect": "Try again—think about looking."
@@ -49,6 +53,7 @@ export const juniorSchoolP1ScienceQuestions: Question[] = [
       "sleeping 😴"
     ],
     "correct": "eating 🍽️",
+    "type": "choice",
     "feedback": {
       "correct": "Good habit!",
       "incorrect": "Keeps germs away."
@@ -60,13 +65,16 @@ export const juniorSchoolP1ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p1",
     "topic": "Human Body & Health",
-    "text": "Brush teeth with a…",
+    "text": "What do we use to keep our teeth clean? Select all that apply 🦷",
     "options": [
-      "toothbrush 🪥",
-      "broom 🧹",
-      "spoon 🥄"
+      "Toothbrush 🪥",
+      "Toothpaste �",
+      "Water 💧",
+      "Candy 🍬",
+      "Soda �"
     ],
-    "correct": "toothbrush 🪥",
+    "correct": ["Toothbrush 🪥", "Toothpaste 🧴", "Water 💧"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Yes—🪥.",
       "incorrect": "We use a toothbrush."
@@ -78,13 +86,16 @@ export const juniorSchoolP1ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p1",
     "topic": "Human Body & Health",
-    "text": "Which food is healthy?",
+    "text": "Which foods are healthy? Select all that apply 🍽️",
     "options": [
-      "fruit 🍎",
-      "candy 🍬",
-      "soda 🥤"
+      "Fruits 🍎",
+      "Vegetables 🥦",
+      "Milk 🥛",
+      "Candy 🍬",
+      "Soda 🥤"
     ],
-    "correct": "fruit 🍎",
+    "correct": ["Fruits 🍎", "Vegetables 🥦", "Milk 🥛"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Great choice!",
       "incorrect": "Pick foods that help you grow."
@@ -103,6 +114,7 @@ export const juniorSchoolP1ScienceQuestions: Question[] = [
       "eyes 👀"
     ],
     "correct": "ears 👂",
+    "type": "choice",
     "feedback": {
       "correct": "Yes—ears hear.",
       "incorrect": "Think about listening."
@@ -121,6 +133,7 @@ export const juniorSchoolP1ScienceQuestions: Question[] = [
       "eyes 👀"
     ],
     "correct": "nose 👃",
+    "type": "choice",
     "feedback": {
       "correct": "Correct!",
       "incorrect": "Sniff with your…?"
@@ -168,13 +181,16 @@ export const juniorSchoolP1ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p1",
     "topic": "Plants & Animals",
-    "text": "Which one can fly?",
+    "text": "Which animals can fly? Select all that apply 🦉",
     "options": [
-      "bird 🐦",
-      "fish 🐟",
-      "dog 🐶"
+      "Bird 🐦",
+      "Butterfly 🦋",
+      "Bee 🐝",
+      "Fish 🐟",
+      "Dog 🐶"
     ],
-    "correct": "bird 🐦",
+    "correct": ["Bird 🐦", "Butterfly 🦋", "Bee 🐝"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Birds fly.",
       "incorrect": "Try again."
@@ -186,13 +202,16 @@ export const juniorSchoolP1ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p1",
     "topic": "Plants & Animals",
-    "text": "What do plants need to grow?",
+    "text": "What do plants need to grow? Select all that apply 🌱",
     "options": [
-      "water 💧",
-      "candy 🍬",
-      "toys 🧸"
+      "Water 💧",
+      "Sunlight ☀️",
+      "Soil 🌿",
+      "Candy 🍬",
+      "Toys 🧸"
     ],
-    "correct": "water 💧",
+    "correct": ["Water 💧", "Sunlight ☀️", "Soil 🌿"],
+    "type": "multiChoice",
     "feedback": {
       "correct": "Yes—water helps.",
       "incorrect": "Think of sun and water."
@@ -301,6 +320,7 @@ export const juniorSchoolP1ScienceQuestions: Question[] = [
       "stars ⭐"
     ],
     "correct": "sun ☀️",
+    "type": "choice",
     "feedback": {
       "correct": "Daytime sun.",
       "incorrect": "Try the bright one!"
@@ -319,6 +339,7 @@ export const juniorSchoolP1ScienceQuestions: Question[] = [
       "leaves 🍃"
     ],
     "correct": "rain ☔",
+    "type": "choice",
     "feedback": {
       "correct": "Rain from clouds.",
       "incorrect": "Think wet!"
@@ -337,6 +358,7 @@ export const juniorSchoolP1ScienceQuestions: Question[] = [
       "rainbow 🌈"
     ],
     "correct": "stars ⭐",
+    "type": "choice",
     "feedback": {
       "correct": "Night sky stars.",
       "incorrect": "Not the sun."
@@ -571,6 +593,7 @@ export const juniorSchoolP1ScienceQuestions: Question[] = [
       "road 🛣️"
     ],
     "correct": "bin 🗑️",
+    "type": "choice",
     "feedback": {
       "correct": "Keep environment clean!",
       "incorrect": "Use bins."

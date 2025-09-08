@@ -7,16 +7,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Body & Health",
-    "text": "Which organ pumps blood?",
+    "text": "Select all 2 organs that keep us alive ❤️",
     "options": [
       "heart ❤️",
       "lungs 🫁",
-      "stomach"
+      "teeth 🦷",
+      "hair 💇"
     ],
-    "correct": "heart ❤️",
+    "correct": ["heart ❤️", "lungs 🫁"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Healthy choice!",
-      "incorrect": "Think body functions."
+      "correct": "Great job! These organs are essential for life! 🌟",
+      "incorrect": "Think about what helps us breathe and pump blood."
     }
   },
   {
@@ -25,16 +27,17 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Body & Health",
-    "text": "We breathe oxygen with our…",
+    "text": "Which organ helps us breathe? 💨",
     "options": [
       "lungs 🫁",
       "hands ✋",
       "ears 👂"
     ],
     "correct": "lungs 🫁",
+    "type": "choice",
     "feedback": {
-      "correct": "Healthy choice!",
-      "incorrect": "Think body functions."
+      "correct": "Yes! Our lungs help us breathe! 🌟",
+      "incorrect": "We breathe with our lungs."
     }
   },
   {
@@ -43,16 +46,19 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Body & Health",
-    "text": "We should brush teeth…",
+    "text": "Select all 3 good habits for healthy teeth 🦷",
     "options": [
-      "twice daily",
-      "once a month",
-      "never"
+      "brush twice daily",
+      "use toothpaste",
+      "visit dentist",
+      "eat lots of candy",
+      "never brush"
     ],
-    "correct": "twice daily",
+    "correct": ["brush twice daily", "use toothpaste", "visit dentist"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Healthy choice!",
-      "incorrect": "Think body functions."
+      "correct": "Perfect dental care habits! 🌟",
+      "incorrect": "Think about what keeps teeth healthy."
     }
   },
   {
@@ -61,16 +67,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Body & Health",
-    "text": "Eat more of…",
+    "text": "Select all 2 healthy foods 🥗",
     "options": [
       "fruits 🍎",
+      "vegetables 🥕",
       "candy 🍬",
       "soda 🥤"
     ],
-    "correct": "fruits 🍎",
+    "correct": ["fruits 🍎", "vegetables 🥕"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Healthy choice!",
-      "incorrect": "Think body functions."
+      "correct": "Great healthy food choices! 🌟",
+      "incorrect": "Choose foods that help you grow strong."
     }
   },
   {
@@ -79,16 +87,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Body & Health",
-    "text": "Germs are killed by…",
+    "text": "Select all 2 ways to stay clean and healthy 🧼",
     "options": [
-      "soap 🧼",
-      "mud",
-      "paint"
+      "wash hands",
+      "use soap",
+      "play in mud",
+      "never bathe"
     ],
-    "correct": "soap 🧼",
+    "correct": ["wash hands", "use soap"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Healthy choice!",
-      "incorrect": "Think body functions."
+      "correct": "Clean and healthy habits! 🌟",
+      "incorrect": "Think about what keeps germs away."
     }
   },
   {
@@ -97,16 +107,19 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Body & Health",
-    "text": "We see with…",
+    "text": "Select all 3 body parts we use for senses 👀",
     "options": [
       "eyes 👀",
       "nose 👃",
-      "knees"
+      "ears 👂",
+      "elbow",
+      "knee"
     ],
-    "correct": "eyes 👀",
+    "correct": ["eyes 👀", "nose 👃", "ears 👂"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Healthy choice!",
-      "incorrect": "Think body functions."
+      "correct": "Perfect! These help us sense the world! 🌟",
+      "incorrect": "Think about how we see, hear, and smell."
     }
   },
   {
@@ -115,16 +128,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Body & Health",
-    "text": "Exercise makes us…",
+    "text": "Select all 2 benefits of exercise 💪",
     "options": [
-      "healthy 💪",
-      "sleepy 😴",
-      "sick 🤒"
+      "makes us strong",
+      "keeps us healthy",
+      "makes us tired",
+      "makes us sick"
     ],
-    "correct": "healthy 💪",
+    "correct": ["makes us strong", "keeps us healthy"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Healthy choice!",
-      "incorrect": "Think body functions."
+      "correct": "Exercise is great for our body! 🌟",
+      "incorrect": "Think about how exercise helps us."
     }
   },
   {
@@ -133,16 +148,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Body & Health",
-    "text": "Wear a mask to cover your…",
+    "text": "Select all 2 ways to stop germs spreading 😷",
     "options": [
-      "nose & mouth",
-      "ears",
-      "hair"
+      "wear a mask",
+      "cover when coughing",
+      "share drinks",
+      "cough freely"
     ],
-    "correct": "nose & mouth",
+    "correct": ["wear a mask", "cover when coughing"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Healthy choice!",
-      "incorrect": "Think body functions."
+      "correct": "Great ways to stay healthy! 🌟",
+      "incorrect": "Think about keeping germs to yourself."
     }
   },
   {
@@ -151,16 +168,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Living Things",
-    "text": "Insects have how many legs?",
+    "text": "Select all 2 facts about insects 🐜",
     "options": [
-      "6",
-      "4",
-      "8"
+      "have 6 legs",
+      "have wings",
+      "have 4 legs",
+      "have 2 legs"
     ],
-    "correct": "6",
+    "correct": ["have 6 legs", "have wings"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Nature wiz!",
-      "incorrect": "Observe animals & plants."
+      "correct": "You know your insects! 🌟",
+      "incorrect": "Think about what makes an insect special."
     }
   },
   {
@@ -169,16 +188,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Living Things",
-    "text": "Plants make food in their…",
+    "text": "Select all 2 things plants need to make food 🌱",
     "options": [
-      "leaves 🍃",
-      "roots",
-      "stem"
+      "sunlight ☀️",
+      "water 💧",
+      "candy 🍬",
+      "toys 🎮"
     ],
-    "correct": "leaves 🍃",
+    "correct": ["sunlight ☀️", "water 💧"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Nature wiz!",
-      "incorrect": "Observe animals & plants."
+      "correct": "Perfect plant science! 🌟",
+      "incorrect": "Plants need natural resources to grow."
     }
   },
   {
@@ -187,16 +208,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Living Things",
-    "text": "A bee lives in a…",
+    "text": "Select all 2 things about bees 🐝",
     "options": [
-      "hive",
-      "nest",
-      "burrow"
+      "live in hives",
+      "make honey",
+      "eat meat",
+      "sleep all day"
     ],
-    "correct": "hive",
+    "correct": ["live in hives", "make honey"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Nature wiz!",
-      "incorrect": "Observe animals & plants."
+      "correct": "Brilliant bee knowledge! 🌟",
+      "incorrect": "Think about what makes bees special."
     }
   },
   {
@@ -205,16 +228,19 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Living Things",
-    "text": "Which is a mammal?",
+    "text": "Select all 3 mammals 🐄",
     "options": [
       "cow 🐄",
-      "eagle 🦅",
-      "crocodile 🐊"
+      "dog 🐕",
+      "cat 🐱",
+      "fish 🐟",
+      "bird 🐦"
     ],
-    "correct": "cow 🐄",
+    "correct": ["cow 🐄", "dog 🐕", "cat 🐱"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Nature wiz!",
-      "incorrect": "Observe animals & plants."
+      "correct": "Great mammal identification! 🌟",
+      "incorrect": "Mammals have fur and feed babies milk."
     }
   },
   {
@@ -223,16 +249,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Living Things",
-    "text": "Which lays eggs?",
+    "text": "Select all 2 animals that lay eggs 🥚",
     "options": [
       "chicken 🐔",
+      "fish 🐟",
       "cat 🐱",
-      "dog 🐶"
+      "dog 🐕"
     ],
-    "correct": "chicken 🐔",
+    "correct": ["chicken 🐔", "fish 🐟"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Nature wiz!",
-      "incorrect": "Observe animals & plants."
+      "correct": "Perfect egg-laying animals! 🌟",
+      "incorrect": "Think about which animals come from eggs."
     }
   },
   {
@@ -241,16 +269,19 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Living Things",
-    "text": "Which lives in water?",
+    "text": "Select all 3 water animals 🌊",
     "options": [
       "fish 🐟",
+      "dolphin 🐬",
+      "shark 🦈",
       "lion 🦁",
       "camel 🐪"
     ],
-    "correct": "fish 🐟",
+    "correct": ["fish 🐟", "dolphin 🐬", "shark 🦈"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Nature wiz!",
-      "incorrect": "Observe animals & plants."
+      "correct": "Perfect water animals! 🌟",
+      "incorrect": "Think about animals that live in water."
     }
   },
   {
@@ -259,16 +290,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Living Things",
-    "text": "A baby dog is a…",
+    "text": "Select all 2 baby animals and their parents 🐾",
     "options": [
-      "puppy",
-      "kitten",
-      "calf"
+      "puppy → dog",
+      "kitten → cat",
+      "puppy → cat",
+      "kitten → dog"
     ],
-    "correct": "puppy",
+    "correct": ["puppy → dog", "kitten → cat"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Nature wiz!",
-      "incorrect": "Observe animals & plants."
+      "correct": "You know your baby animals! 🌟",
+      "incorrect": "Match babies to their correct parents."
     }
   },
   {
@@ -277,16 +310,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Living Things",
-    "text": "Bees make…",
+    "text": "Select all 2 things bees make 🐝",
     "options": [
       "honey 🍯",
+      "wax",
       "milk 🥛",
       "jam 🍓"
     ],
-    "correct": "honey 🍯",
+    "correct": ["honey 🍯", "wax"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Nature wiz!",
-      "incorrect": "Observe animals & plants."
+      "correct": "You're a bee expert! 🌟",
+      "incorrect": "Think about what bees produce."
     }
   },
   {
@@ -295,16 +330,19 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Weather & Water",
-    "text": "Water becomes ice when it is…",
+    "text": "Select all 3 states of water 💧",
     "options": [
-      "very cold ❄️",
-      "hot 🔥",
-      "windy 🌬️"
+      "ice (solid) ❄️",
+      "water (liquid) 💧",
+      "steam (gas) 💨",
+      "rock 🪨",
+      "wood 🪵"
     ],
-    "correct": "very cold ❄️",
+    "correct": ["ice (solid) ❄️", "water (liquid) 💧", "steam (gas) 💨"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Weather wise!",
-      "incorrect": "Think states of water."
+      "correct": "Perfect water states! 🌟",
+      "incorrect": "Water can be solid, liquid, or gas."
     }
   },
   {
@@ -313,16 +351,17 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Weather & Water",
-    "text": "Steam is water as a…",
+    "text": "What is steam? 💨",
     "options": [
-      "gas 💨",
-      "solid ❄️",
+      "water as gas 💨",
+      "water as solid ❄️",
       "rock 🪨"
     ],
-    "correct": "gas 💨",
+    "correct": "water as gas 💨",
+    "type": "choice",
     "feedback": {
-      "correct": "Weather wise!",
-      "incorrect": "Think states of water."
+      "correct": "Yes! Steam is water as gas! 🌟",
+      "incorrect": "Steam is water that's become a gas."
     }
   },
   {
@@ -331,16 +370,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Weather & Water",
-    "text": "Rain comes from…",
+    "text": "Select all 2 facts about rain 🌧️",
     "options": [
-      "clouds ☁️",
-      "mountains ⛰️",
-      "trees 🌳"
+      "comes from clouds",
+      "is water droplets",
+      "is hot",
+      "is solid"
     ],
-    "correct": "clouds ☁️",
+    "correct": ["comes from clouds", "is water droplets"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Weather wise!",
-      "incorrect": "Think states of water."
+      "correct": "Great rain knowledge! 🌟",
+      "incorrect": "Think about what rain is made of."
     }
   },
   {
@@ -349,16 +390,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Weather & Water",
-    "text": "We use an umbrella in…",
+    "text": "Select all 2 things we use in rainy weather ☔",
     "options": [
-      "rain ☔",
-      "sun ☀️",
-      "snow ❄️"
+      "umbrella ☔",
+      "raincoat 🧥",
+      "sunglasses 🕶️",
+      "fan 🌬️"
     ],
-    "correct": "rain ☔",
+    "correct": ["umbrella ☔", "raincoat 🧥"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Weather wise!",
-      "incorrect": "Think states of water."
+      "correct": "Perfect rain gear! 🌟",
+      "incorrect": "Think about what keeps us dry."
     }
   },
   {
@@ -367,16 +410,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Weather & Water",
-    "text": "Which stores water at home?",
+    "text": "Select all 2 places that store water 💧",
     "options": [
       "tank 🛢️",
-      "couch 🛋️",
-      "book 📘"
+      "bottle 🫙",
+      "book 📘",
+      "shoe 👞"
     ],
-    "correct": "tank 🛢️",
+    "correct": ["tank 🛢️", "bottle 🫙"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Weather wise!",
-      "incorrect": "Think states of water."
+      "correct": "These can hold water! 🌟",
+      "incorrect": "Think about containers for water."
     }
   },
   {
@@ -385,16 +430,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Weather & Water",
-    "text": "The sun dries clothes by…",
+    "text": "Select all 2 ways the sun helps us ☀️",
     "options": [
-      "heat ☀️",
-      "music 🎵",
-      "paint 🎨"
+      "dries clothes",
+      "gives warmth",
+      "makes night",
+      "makes rain"
     ],
-    "correct": "heat ☀️",
+    "correct": ["dries clothes", "gives warmth"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Weather wise!",
-      "incorrect": "Think states of water."
+      "correct": "The sun is helpful! 🌟",
+      "incorrect": "Think about what the sun's heat does."
     }
   },
   {
@@ -403,16 +450,17 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Weather & Water",
-    "text": "Boiling water is…",
+    "text": "What happens to boiling water? 🔥",
     "options": [
-      "very hot 🔥",
-      "very cold ❄️",
-      "freezing"
+      "becomes very hot",
+      "becomes very cold",
+      "turns to ice"
     ],
-    "correct": "very hot 🔥",
+    "correct": "becomes very hot",
+    "type": "choice",
     "feedback": {
-      "correct": "Weather wise!",
-      "incorrect": "Think states of water."
+      "correct": "Yes! Boiling water is very hot! 🌟",
+      "incorrect": "Boiling means heating water until very hot."
     }
   },
   {
@@ -421,16 +469,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Weather & Water",
-    "text": "Snow is frozen…",
+    "text": "Select all 2 forms of frozen water ❄️",
     "options": [
-      "water 💧",
-      "sand",
-      "air"
+      "snow ❄️",
+      "ice cubes 🧊",
+      "steam 💨",
+      "rain 🌧️"
     ],
-    "correct": "water 💧",
+    "correct": ["snow ❄️", "ice cubes 🧊"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Weather wise!",
-      "incorrect": "Think states of water."
+      "correct": "Perfect! These are frozen water! 🌟",
+      "incorrect": "Think about water when it's very cold."
     }
   },
   {
@@ -439,16 +489,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Materials & Energy",
-    "text": "Energy from the sun is…",
+    "text": "Select all 2 types of energy from nature ⚡",
     "options": [
-      "solar ☀️",
-      "coal",
-      "gas"
+      "solar (sun) ☀️",
+      "wind 🌬️",
+      "candy 🍬",
+      "toys 🎮"
     ],
-    "correct": "solar ☀️",
+    "correct": ["solar (sun) ☀️", "wind 🌬️"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Material sense!",
-      "incorrect": "Match property to material."
+      "correct": "Great natural energy sources! 🌟",
+      "incorrect": "Think about energy from nature."
     }
   },
   {
@@ -457,16 +509,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Materials & Energy",
-    "text": "Which is magnetic?",
+    "text": "Select all 2 magnetic materials 🧲",
     "options": [
-      "iron nail 🧲",
+      "iron nail",
+      "steel spoon",
       "paper",
       "wood"
     ],
-    "correct": "iron nail 🧲",
+    "correct": ["iron nail", "steel spoon"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Material sense!",
-      "incorrect": "Match property to material."
+      "correct": "These are magnetic! 🌟",
+      "incorrect": "Think about what a magnet attracts."
     }
   },
   {
@@ -475,16 +529,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Materials & Energy",
-    "text": "Glass is…",
+    "text": "Select all 2 transparent materials 👀",
     "options": [
-      "transparent 🪟",
-      "spicy 🌶️",
-      "hairy"
+      "glass 🪟",
+      "clear plastic",
+      "wood 🪵",
+      "metal"
     ],
-    "correct": "transparent 🪟",
+    "correct": ["glass 🪟", "clear plastic"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Material sense!",
-      "incorrect": "Match property to material."
+      "correct": "These you can see through! 🌟",
+      "incorrect": "Transparent means you can see through it."
     }
   },
   {
@@ -493,16 +549,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Materials & Energy",
-    "text": "Rubber is…",
+    "text": "Select all 2 stretchy materials 🪢",
     "options": [
+      "rubber band",
       "elastic",
-      "edible",
-      "metal"
+      "glass",
+      "wood"
     ],
-    "correct": "elastic",
+    "correct": ["rubber band", "elastic"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Material sense!",
-      "incorrect": "Match property to material."
+      "correct": "These can stretch! 🌟",
+      "incorrect": "Think about what can stretch and bounce back."
     }
   },
   {
@@ -511,16 +569,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Materials & Energy",
-    "text": "Which conducts electricity?",
+    "text": "Select all 2 materials that conduct electricity ⚡",
     "options": [
       "metal wire",
-      "plastic spoon",
-      "paper"
+      "copper coin",
+      "plastic ruler",
+      "rubber"
     ],
-    "correct": "metal wire",
+    "correct": ["metal wire", "copper coin"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Material sense!",
-      "incorrect": "Match property to material."
+      "correct": "These conduct electricity! 🌟",
+      "incorrect": "Think about what electricity can flow through."
     }
   },
   {
@@ -529,16 +589,19 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Materials & Energy",
-    "text": "Which is recyclable?",
+    "text": "Select all 3 recyclable materials ♻️",
     "options": [
-      "paper ♻️",
-      "food scraps",
-      "soap"
+      "paper",
+      "plastic",
+      "metal",
+      "food",
+      "used tissue"
     ],
-    "correct": "paper ♻️",
+    "correct": ["paper", "plastic", "metal"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Material sense!",
-      "incorrect": "Match property to material."
+      "correct": "Great recycling knowledge! 🌟",
+      "incorrect": "Think about what can be made into new things."
     }
   },
   {
@@ -547,16 +610,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Materials & Energy",
-    "text": "Wood often…",
+    "text": "Select all 2 properties of wood 🪵",
     "options": [
-      "floats",
-      "melts",
-      "evaporates"
+      "floats in water",
+      "burns easily",
+      "stretchy",
+      "magnetic"
     ],
-    "correct": "floats",
+    "correct": ["floats in water", "burns easily"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Material sense!",
-      "incorrect": "Match property to material."
+      "correct": "You know wood well! 🌟",
+      "incorrect": "Think about what wood can do."
     }
   },
   {
@@ -565,16 +630,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Materials & Energy",
-    "text": "Stone is…",
+    "text": "Select all 2 properties of stone 🪨",
     "options": [
       "hard",
-      "soft",
-      "liquid"
+      "heavy",
+      "stretchy",
+      "transparent"
     ],
-    "correct": "hard",
+    "correct": ["hard", "heavy"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Material sense!",
-      "incorrect": "Match property to material."
+      "correct": "Perfect stone properties! 🌟",
+      "incorrect": "Think about how stone feels."
     }
   },
   {
@@ -583,16 +650,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Earth & Sky",
-    "text": "The Earth goes around the…",
+    "text": "Select all 2 facts about the Earth 🌍",
     "options": [
-      "sun ☀️",
-      "moon 🌙",
-      "clouds ☁️"
+      "goes around the sun",
+      "is round",
+      "is flat",
+      "is the sun"
     ],
-    "correct": "sun ☀️",
+    "correct": ["goes around the sun", "is round"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Space smart!",
-      "incorrect": "Think astronomy basics."
+      "correct": "Great Earth facts! 🌟",
+      "incorrect": "Think about what we know about Earth."
     }
   },
   {
@@ -601,16 +670,17 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Earth & Sky",
-    "text": "We live on planet…",
+    "text": "Which planet do we live on? 🌍",
     "options": [
       "Earth 🌍",
       "Mars 🔴",
       "Jupiter 🟠"
     ],
     "correct": "Earth 🌍",
+    "type": "choice",
     "feedback": {
-      "correct": "Space smart!",
-      "incorrect": "Think astronomy basics."
+      "correct": "Yes! Earth is our home planet! 🌟",
+      "incorrect": "We live on planet Earth."
     }
   },
   {
@@ -619,16 +689,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Earth & Sky",
-    "text": "At night we see…",
+    "text": "Select all 2 things we see at night 🌙",
     "options": [
       "stars ⭐",
+      "moon 🌙",
       "sun ☀️",
       "rainbow 🌈"
     ],
-    "correct": "stars ⭐",
+    "correct": ["stars ⭐", "moon 🌙"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Space smart!",
-      "incorrect": "Think astronomy basics."
+      "correct": "Perfect night sky objects! 🌟",
+      "incorrect": "Think about what shines at night."
     }
   },
   {
@@ -637,16 +709,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Earth & Sky",
-    "text": "The moon is a…",
+    "text": "Select all 2 facts about the moon 🌙",
     "options": [
-      "natural satellite",
-      "star",
-      "planet"
+      "orbits Earth",
+      "is a satellite",
+      "is a star",
+      "is the sun"
     ],
-    "correct": "natural satellite",
+    "correct": ["orbits Earth", "is a satellite"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Space smart!",
-      "incorrect": "Think astronomy basics."
+      "correct": "Great moon knowledge! 🌟",
+      "incorrect": "Think about what the moon does."
     }
   },
   {
@@ -655,16 +729,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Earth & Sky",
-    "text": "Which is the 'Red Planet'?",
+    "text": "Select all 2 facts about Mars 🔴",
     "options": [
-      "Mars 🔴",
-      "Venus",
-      "Earth"
+      "is red",
+      "is called Red Planet",
+      "is blue",
+      "has trees"
     ],
-    "correct": "Mars 🔴",
+    "correct": ["is red", "is called Red Planet"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Space smart!",
-      "incorrect": "Think astronomy basics."
+      "correct": "Great Mars facts! 🌟",
+      "incorrect": "Think about Mars's color."
     }
   },
   {
@@ -673,16 +749,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Earth & Sky",
-    "text": "The sun gives us…",
+    "text": "Select all 2 things the sun gives us ☀️",
     "options": [
-      "light & heat",
+      "light",
+      "heat",
       "music",
-      "food"
+      "toys"
     ],
-    "correct": "light & heat",
+    "correct": ["light", "heat"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Space smart!",
-      "incorrect": "Think astronomy basics."
+      "correct": "The sun is important! 🌟",
+      "incorrect": "Think about what the sun provides."
     }
   },
   {
@@ -691,16 +769,17 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Earth & Sky",
-    "text": "Day and night are caused by Earth's…",
+    "text": "What causes day and night? 🌓",
     "options": [
-      "rotation",
-      "eating",
-      "jumping"
+      "Earth's rotation",
+      "Earth jumping",
+      "Earth eating"
     ],
-    "correct": "rotation",
+    "correct": "Earth's rotation",
+    "type": "choice",
     "feedback": {
-      "correct": "Space smart!",
-      "incorrect": "Think astronomy basics."
+      "correct": "Yes! Earth spins to make day and night! 🌟",
+      "incorrect": "Earth's spinning creates day and night."
     }
   },
   {
@@ -709,16 +788,18 @@ export const p2ScienceQuestions: Question[] = [
     "subject": "science",
     "class": "p2",
     "topic": "Earth & Sky",
-    "text": "Which is a continent?",
+    "text": "Select all 2 continents 🌍",
     "options": [
       "Africa",
+      "Asia",
       "Paris",
-      "Nile"
+      "London"
     ],
-    "correct": "Africa",
+    "correct": ["Africa", "Asia"],
+    "type": "multiChoice",
     "feedback": {
-      "correct": "Space smart!",
-      "incorrect": "Think astronomy basics."
+      "correct": "These are continents! 🌟",
+      "incorrect": "Continents are large land masses."
     }
   }
-]
+];

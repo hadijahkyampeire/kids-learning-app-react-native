@@ -5,7 +5,7 @@ import { useKid } from '../context/KidsNameContext';
 const HeaderTitle: React.FC = () => {
   const { kidName } = useKid();
   const first = (kidName || 'Little Star').trim().split(/\s+/)[0];
-  return <Text style={styles.title}>Go! {first}</Text>;
+  return <Text style={styles.title}>Keep Going! {first}</Text>;
 };
 
 const styles = StyleSheet.create({

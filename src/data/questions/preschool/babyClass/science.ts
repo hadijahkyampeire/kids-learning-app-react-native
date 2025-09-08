@@ -11,7 +11,32 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What do we use to see? 👀",
     options: ["Eyes", "Ears", "Nose"],
     correct: "Eyes",
+    type: "choice",
     feedback: { correct: "Yes! We use our eyes to see.", incorrect: "Think about what helps you look at things." }
+  },
+  {
+    _id: "bb-sci-mc-1",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Body Parts",
+    text: "Which parts help us move? 🏃‍♂️",
+    options: ["Legs", "Arms", "Eyes", "Nose", "Hands", "Feet"],
+    correct: ["Legs", "Arms", "Hands", "Feet"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! All these parts help us move!", incorrect: "Think about all the parts that help you walk, run, and grab things." }
+  },
+  {
+    _id: "bb-sci-mc-2",
+    level: "preSchool",
+    subject: "science",
+    class: "baby",
+    topic: "Animals",
+    text: "Which animals can fly? 🦅",
+    options: ["Bird", "Butterfly", "Cat", "Dog", "Bee", "Duck"],
+    correct: ["Bird", "Butterfly", "Bee", "Duck"],
+    type: "multiChoice",
+    feedback: { correct: "Excellent! These animals all have wings to fly!", incorrect: "Look for animals with wings." }
   },
   {
     _id: "bb-sci-2",
@@ -22,6 +47,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What do we use to hear? 👂",
     options: ["Ears", "Nose", "Mouth"],
     correct: "Ears",
+    type: "choice",
     feedback: { correct: "Yes! We use our ears to hear sounds.", incorrect: "Think about what helps you listen." }
   },
   {
@@ -33,6 +59,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What do we use to smell? 👃",
     options: ["Nose", "Eyes", "Hands"],
     correct: "Nose",
+    type: "choice",
     feedback: { correct: "Yes! We use our nose to smell.", incorrect: "Think about what helps you sniff." }
   },
   {
@@ -44,6 +71,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What do we use to taste food? 👅",
     options: ["Tongue", "Teeth", "Lips"],
     correct: "Tongue",
+    type: "choice",
     feedback: { correct: "Yes! We use our tongue to taste.", incorrect: "Think about what helps you taste flavors." }
   },
   {
@@ -55,6 +83,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What do we use to hold things? ✋",
     options: ["Hands", "Feet", "Head"],
     correct: "Hands",
+    type: "choice",
     feedback: { correct: "Yes! We use our hands to hold things.", incorrect: "Think about what you use to pick up toys." }
   },
   {
@@ -66,6 +95,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What do we use to walk? 🦶",
     options: ["Feet", "Hands", "Arms"],
     correct: "Feet",
+    type: "choice",
     feedback: { correct: "Yes! We use our feet to walk.", incorrect: "Think about what helps you move around." }
   },
   {
@@ -77,6 +107,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "Where is your hair? 💇‍♂️",
     options: ["Head", "Hand", "Foot"],
     correct: "Head",
+    type: "choice",
     feedback: { correct: "Yes! Hair grows on our head.", incorrect: "Think about where you brush your hair." }
   },
   {
@@ -88,6 +119,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What helps us chew food? 😁",
     options: ["Teeth", "Lips", "Nose"],
     correct: "Teeth",
+    type: "choice",
     feedback: { correct: "Yes! We use our teeth to chew.", incorrect: "Think about what helps you bite and chew." }
   },
 
@@ -101,6 +133,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What color is grass? 🌱",
     options: ["Green", "Blue", "Red"],
     correct: "Green",
+    type: "choice",
     feedback: { correct: "Yes! Grass is green.", incorrect: "Look at the plants outside." }
   },
   {
@@ -112,6 +145,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What color is a banana? 🍌",
     options: ["Yellow", "Green", "Red"],
     correct: "Yellow",
+    type: "choice",
     feedback: { correct: "Yes! Ripe bananas are yellow.", incorrect: "Think about the color of bananas you eat." }
   },
   {
@@ -123,6 +157,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What color is the sun? ☀️",
     options: ["Yellow", "Blue", "Green"],
     correct: "Yellow",
+    type: "choice",
     feedback: { correct: "Yes! The sun appears yellow.", incorrect: "Look at the sun in pictures (never directly!)." }
   },
   {
@@ -134,6 +169,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What color is an apple? 🍎",
     options: ["Red", "Purple", "Orange"],
     correct: "Red",
+    type: "choice",
     feedback: { correct: "Yes! Apples can be red.", incorrect: "Think about the most common apple color." }
   },
   {
@@ -145,6 +181,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What color is the sky? ☁️",
     options: ["Blue", "Green", "Yellow"],
     correct: "Blue",
+    type: "choice",
     feedback: { correct: "Yes! The sky is blue on clear days.", incorrect: "Look up at the daytime sky." }
   },
   {
@@ -156,6 +193,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What color is a carrot? 🥕",
     options: ["Orange", "Purple", "Blue"],
     correct: "Orange",
+    type: "choice",
     feedback: { correct: "Yes! Carrots are orange.", incorrect: "Think about the color of carrots you eat." }
   },
   {
@@ -167,6 +205,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What color is snow? ❄️",
     options: ["White", "Blue", "Yellow"],
     correct: "White",
+    type: "choice",
     feedback: { correct: "Yes! Snow is white.", incorrect: "Think about the color of snowflakes." }
   },
   {
@@ -178,6 +217,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What color is night? 🌙",
     options: ["Black", "Green", "Red"],
     correct: "Black",
+    type: "choice",
     feedback: { correct: "Yes! The night is dark/black.", incorrect: "Think about the color when it's dark." }
   },
 
@@ -191,6 +231,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What does a cat say? 🐱",
     options: ["Meow", "Woof", "Moo"],
     correct: "Meow",
+    type: "choice",
     feedback: { correct: "Yes! Cats say 'meow'.", incorrect: "Listen to a cat's sound." }
   },
   {
@@ -202,6 +243,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What does a dog say? 🐕",
     options: ["Woof", "Meow", "Quack"],
     correct: "Woof",
+    type: "choice",
     feedback: { correct: "Yes! Dogs say 'woof'.", incorrect: "Think about a dog's bark." }
   },
   {
@@ -213,6 +255,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What does a duck say? 🦆",
     options: ["Quack", "Moo", "Baa"],
     correct: "Quack",
+    type: "choice",
     feedback: { correct: "Yes! Ducks say 'quack'.", incorrect: "Listen to a duck's sound." }
   },
   {
@@ -224,6 +267,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What does a cow say? 🐄",
     options: ["Moo", "Baa", "Oink"],
     correct: "Moo",
+    type: "choice",
     feedback: { correct: "Yes! Cows say 'moo'.", incorrect: "Think about the sound cows make." }
   },
   {
@@ -235,6 +279,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What does a sheep say? 🐑",
     options: ["Baa", "Moo", "Meow"],
     correct: "Baa",
+    type: "choice",
     feedback: { correct: "Yes! Sheep say 'baa'.", incorrect: "Listen to a sheep's sound." }
   },
   {
@@ -246,6 +291,7 @@ export const babyClassScienceQuestions: Question[] = [
     text: "What does a pig say? 🐷",
     options: ["Oink", "Woof", "Moo"],
     correct: "Oink",
+    type: "choice",
     feedback: { correct: "Yes! Pigs say 'oink'.", incorrect: "Think about a pig's sound." }
   },
   {

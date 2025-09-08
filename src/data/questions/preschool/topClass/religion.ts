@@ -1,7 +1,7 @@
-import { type Question } from "../../../../types";
+import type { Question } from "src/types";
 
 export const topClassReligionQuestions: Question[] = [
-  // Basic Islamic Knowledge (6 questions)
+  // Basic Islamic Knowledge
   {
     _id: "tp-rel-ik-1",
     level: "preSchool",
@@ -9,8 +9,9 @@ export const topClassReligionQuestions: Question[] = [
     class: "top",
     topic: "Islamic Knowledge",
     text: "Who is our Creator? 🌟",
-    options: ["Allah ☪️", "Angels �", "Humans �"],
+    options: ["Allah ☪️", "Angels 👼", "Humans 👥"],
     correct: "Allah ☪️",
+    type: "choice",
     feedback: { correct: "Yes! Allah is our Creator and the Creator of everything ☪️", incorrect: "Remember Allah created everything in the universe 🌟" }
   },
   {
@@ -19,10 +20,11 @@ export const topClassReligionQuestions: Question[] = [
     subject: "religion",
     class: "top",
     topic: "Islamic Knowledge",
-    text: "What is our holy book called? �",
-    options: ["Quran 📗", "Magazine �", "Story book �"],
+    text: "What is our holy book called? 📗",
+    options: ["Magazine 📰", "Story book 📘", "Quran 📗"],
     correct: "Quran 📗",
-    feedback: { correct: "Yes! The Quran is Allah's words and our holy book �", incorrect: "Think about the book Muslims read to learn Allah's words 💭" }
+    type: "choice",
+    feedback: { correct: "Yes! The Quran is Allah'\''s words and our holy book 📗", incorrect: "Think about the book Muslims read to learn Allah'\''s words 💭" }
   },
   {
     _id: "tp-rel-ik-3",
@@ -30,35 +32,52 @@ export const topClassReligionQuestions: Question[] = [
     subject: "religion",
     class: "top",
     topic: "Islamic Knowledge",
-    text: "Who was the last Prophet? 🌟",
-    options: ["Muhammad ﷺ �", "Ibrahim (AS) �️", "Musa (AS) �"],
-    correct: "Muhammad ﷺ �",
-    feedback: { correct: "Yes! Prophet Muhammad ﷺ was the final messenger of Allah 💚", incorrect: "Remember who brought us the Quran 💭" }
+    text: "What are important aspects of our faith? Select all that apply 🌟",
+    options: ["Prayer 🤲", "Kindness 💝", "Fasting 🌙", "Fighting 👊", "Being mean 😠"],
+    correct: ["Prayer 🤲", "Kindness 💝", "Fasting 🌙"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! These are important parts of our faith ☪️", incorrect: "Think about what Islam teaches us to do 💭" }
   },
   {
-    _id: "tp-rel-gv-4",
+    _id: "tp-rel-ik-4",
+    level: "preSchool",
+    subject: "religion",
+    class: "top",
+    topic: "Islamic Knowledge",
+    text: "Who was the last Prophet? 🌟",
+    options: ["Muhammad ﷺ 🕌", "Ibrahim (AS) 🕊️", "Musa (AS) 📜"],
+    correct: "Muhammad ﷺ 🕌",
+    type: "choice",
+    feedback: { correct: "Yes! Prophet Muhammad ﷺ was the final messenger of Allah 💚", incorrect: "Remember who brought us the Quran 💭" }
+  },
+
+  // Good Values
+  {
+    _id: "tp-rel-gv-1",
     level: "preSchool",
     subject: "religion",
     class: "top",
     topic: "Good Values",
-    text: "How should we treat animals? 🐾",
-    options: ["With kindness 💗", "Roughly 😠", "Ignore them 🙈"],
-    correct: "With kindness 💗",
-    feedback: { correct: "Yes! Being kind to animals shows compassion 💝", incorrect: "Think about gentle treatment 🤗" }
+    text: "What are good ways to treat animals? Select all that apply 🐾",
+    options: ["Feed them 🍲", "Be gentle 💗", "Give water 💧", "Hit them 😠", "Ignore them 🙈"],
+    correct: ["Feed them 🍲", "Be gentle 💗", "Give water 💧"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! These are all kind ways to treat animals 💝", incorrect: "Think about how to be gentle and caring 🤗" }
   },
   {
-    _id: "tp-rel-gv-5",
+    _id: "tp-rel-gv-2",
     level: "preSchool",
     subject: "religion",
     class: "top",
     topic: "Good Values",
     text: "What should we do with our toys? 🧸",
-    options: ["Share them 🤝", "Keep all 😤", "Break them 💔"],
+    options: ["Break them 💔", "Share them 🤝", "Keep all 😤"],
     correct: "Share them 🤝",
+    type: "choice",
     feedback: { correct: "Yes! Sharing shows generosity 💝", incorrect: "Think about being generous with others 💭" }
   },
   {
-    _id: "tp-rel-gv-6",
+    _id: "tp-rel-gv-3",
     level: "preSchool",
     subject: "religion",
     class: "top",
@@ -66,31 +85,34 @@ export const topClassReligionQuestions: Question[] = [
     text: "How should we speak to others? 🗣️",
     options: ["Kindly 💝", "Loudly 📢", "Rudely 😠"],
     correct: "Kindly 💝",
+    type: "choice",
     feedback: { correct: "Yes! Speaking kindly shows respect 🙏", incorrect: "Think about using nice words 💭" }
   },
 
-  // Islamic Practices (6 questions)
+  // Prayer and Worship
   {
-    _id: "tp-rel-ip-1",
+    _id: "tp-rel-pw-1",
     level: "preSchool",
     subject: "religion",
     class: "top",
-    topic: "Islamic Practices",
+    topic: "Prayer and Worship",
     text: "What do we do before praying? 🤲",
-    options: ["Wudu 💧", "Sleep 😴", "Play �"],
+    options: ["Wudu 💧", "Sleep 😴", "Play 🎮"],
     correct: "Wudu 💧",
-    feedback: { correct: "Yes! We must make wudu (ablution) before praying �", incorrect: "Think about how we clean ourselves before prayer 🤲" }
+    type: "choice",
+    feedback: { correct: "Yes! We must make wudu (ablution) before praying 🤲", incorrect: "Think about how we clean ourselves before prayer 🤲" }
   },
   {
-    _id: "tp-rel-ip-2",
+    _id: "tp-rel-pw-2",
     level: "preSchool",
     subject: "religion",
     class: "top",
-    topic: "Islamic Practices",
-    text: "What do we say before eating? 🍽️",
-    options: ["Bismillah ☪️", "Nothing 🤫", "Thank you 🙏"],
-    correct: "Bismillah ☪️",
-    feedback: { correct: "Yes! We say 'Bismillah' before eating to get Allah's blessings 🤲", incorrect: "Remember the dua before meals 💭" }
+    topic: "Prayer and Worship",
+    text: "What blessings can we thank Allah for? Select all that apply 🌟",
+    options: ["Family 👪", "Food 🍽", "Health 💚", "Friends 👥", "Toys 🎮"],
+    correct: ["Family 👪", "Food 🍽", "Health 💚", "Friends 👥", "Toys 🎮"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! We can thank Allah for all these blessings 🙏", incorrect: "Think about all the good things in your life 💭" }
   },
   {
     _id: "tp-rel-pw-3",
@@ -101,43 +123,11 @@ export const topClassReligionQuestions: Question[] = [
     text: "How should we act in a place of worship? 🏛️",
     options: ["Quietly 🤫", "Loudly 📢", "Running 🏃"],
     correct: "Quietly 🤫",
+    type: "choice",
     feedback: { correct: "Yes! We should be respectful in holy places 🙏", incorrect: "Think about showing respect 💭" }
   },
-  {
-    _id: "tp-rel-pw-4",
-    level: "preSchool",
-    subject: "religion",
-    class: "top",
-    topic: "Prayer and Worship",
-    text: "What can we thank God for? 🌟",
-    options: ["Everything 💝", "Nothing ❌", "Only toys 🎮"],
-    correct: "Everything 💝",
-    feedback: { correct: "Yes! We can thank God for all blessings 🙏", incorrect: "Think about all good things in life 💭" }
-  },
-  {
-    _id: "tp-rel-pw-5",
-    level: "preSchool",
-    subject: "religion",
-    class: "top",
-    topic: "Prayer and Worship",
-    text: "Who should we pray for? 🙏",
-    options: ["Everyone 💝", "Only me 👤", "Nobody ❌"],
-    correct: "Everyone 💝",
-    feedback: { correct: "Yes! We can pray for all people 🌟", incorrect: "Think about caring for others 💭" }
-  },
-  {
-    _id: "tp-rel-pw-6",
-    level: "preSchool",
-    subject: "religion",
-    class: "top",
-    topic: "Prayer and Worship",
-    text: "What makes a good prayer? 🙏",
-    options: ["Love and faith 💝", "Many words 📝", "Being loud 📢"],
-    correct: "Love and faith 💝",
-    feedback: { correct: "Yes! Prayers come from our heart 💝", incorrect: "Think about sincere prayers 💭" }
-  },
 
-  // Islamic Stories (6 questions)
+  // Islamic Stories
   {
     _id: "tp-rel-is-1",
     level: "preSchool",
@@ -145,131 +135,71 @@ export const topClassReligionQuestions: Question[] = [
     class: "top",
     topic: "Islamic Stories",
     text: "Which Prophet built a big boat? 🚢",
-    options: ["Nuh (AS) �", "Ibrahim (AS) �️", "Musa (AS) 📜"],
-    correct: "Nuh (AS) �",
-    feedback: { correct: "Yes! Prophet Nuh (AS) built an ark by Allah's command 🚢", incorrect: "Think about the flood story in the Quran 💭" }
+    options: ["Nuh (AS) 🚢", "Ibrahim (AS) 🕌", "Musa (AS) 📜"],
+    correct: "Nuh (AS) 🚢",
+    type: "choice",
+    feedback: { correct: "Yes! Prophet Nuh (AS) built an ark by Allah'\''s command 🚢", incorrect: "Think about the flood story in the Quran 💭" }
   },
   {
-    _id: "tp-rel-rs-2",
+    _id: "tp-rel-is-2",
     level: "preSchool",
     subject: "religion",
     class: "top",
-    topic: "Religious Stories",
+    topic: "Islamic Stories",
     text: "Who was the boy who fought a giant? 💪",
     options: ["David 👑", "Noah 🌈", "Joseph 🌟"],
     correct: "David 👑",
-    feedback: { correct: "Yes! David defeated Goliath 💪", incorrect: "Think about bravery with God's help 💭" }
+    type: "choice",
+    feedback: { correct: "Yes! David defeated Goliath 💪", incorrect: "Think about bravery with God'\''s help 💭" }
   },
   {
-    _id: "tp-rel-rs-3",
+    _id: "tp-rel-is-3",
     level: "preSchool",
     subject: "religion",
     class: "top",
-    topic: "Religious Stories",
+    topic: "Islamic Stories",
     text: "Who led people through the sea? 🌊",
-    options: ["Moses 📜", "Noah 🌈", "David 👑"],
-    correct: "Moses 📜",
-    feedback: { correct: "Yes! Moses led people through the Red Sea 🌊", incorrect: "Think about the Exodus story 💭" }
-  },
-  {
-    _id: "tp-rel-rs-4",
-    level: "preSchool",
-    subject: "religion",
-    class: "top",
-    topic: "Religious Stories",
-    text: "Who had a coat of many colors? 🌈",
-    options: ["Joseph 🌟", "David 👑", "Noah 🚢"],
-    correct: "Joseph 🌟",
-    feedback: { correct: "Yes! Joseph had a special colorful coat 🌈", incorrect: "Think about the brother with the special coat 💭" }
-  },
-  {
-    _id: "tp-rel-rs-5",
-    level: "preSchool",
-    subject: "religion",
-    class: "top",
-    topic: "Religious Stories",
-    text: "Who was in the lions' den? 🦁",
-    options: ["Daniel 🙏", "Moses 📜", "David 👑"],
-    correct: "Daniel 🙏",
-    feedback: { correct: "Yes! Daniel was protected from lions 🦁", incorrect: "Think about faith in danger 💭" }
-  },
-  {
-    _id: "tp-rel-rs-6",
-    level: "preSchool",
-    subject: "religion",
-    class: "top",
-    topic: "Religious Stories",
-    text: "Who found baby Moses? 👶",
-    options: ["Princess 👸", "Queen 👑", "Shepherd 🐑"],
-    correct: "Princess 👸",
-    feedback: { correct: "Yes! A princess found Moses in the river 👶", incorrect: "Think about who saved baby Moses 💭" }
+    options: ["Musa (AS) 📜", "Nuh (AS) 🚢", "Dawood (AS) 👑"],
+    correct: "Musa (AS) 📜",
+    type: "choice",
+    feedback: { correct: "Yes! Prophet Musa (AS) led people through the Red Sea 🌊", incorrect: "Think about the Exodus story 💭" }
   },
 
-  // Islamic Manners (6 questions)
+  // Islamic Manners
   {
     _id: "tp-rel-im-1",
     level: "preSchool",
     subject: "religion",
     class: "top",
     topic: "Islamic Manners",
+    text: "What do we say before eating? 🍽️",
+    options: ["Bismillah ☪️", "Nothing 🤫", "Thank you 🙏"],
+    correct: "Bismillah ☪️",
+    type: "choice",
+    feedback: { correct: "Yes! We say '\''Bismillah'\'' before eating to get Allah'\''s blessings 🤲", incorrect: "Remember the dua before meals 💭" }
+  },
+  {
+    _id: "tp-rel-im-2",
+    level: "preSchool",
+    subject: "religion",
+    class: "top",
+    topic: "Islamic Manners",
     text: "Which hand should we eat with? 🍽️",
-    options: ["Right hand �", "Left hand �", "Any hand 🤝"],
-    correct: "Right hand �",
-    feedback: { correct: "Yes! Muslims eat with the right hand as taught by Prophet Muhammad ﷺ �", incorrect: "Remember the Sunnah way of eating 🍽️" }
+    options: ["Any hand 🤝", "Right hand 🤚", "Left hand 👈"],
+    correct: "Right hand 🤚",
+    type: "choice",
+    feedback: { correct: "Yes! Muslims eat with the right hand as taught by Prophet Muhammad ﷺ 🍽️", incorrect: "Remember the Sunnah way of eating 🍽️" }
   },
   {
-    _id: "tp-rel-bg-2",
+    _id: "tp-rel-im-3",
     level: "preSchool",
     subject: "religion",
     class: "top",
-    topic: "Being Good",
-    text: "What should we do with food? 🍎",
-    options: ["Be grateful 🙏", "Waste it 🗑️", "Throw it 👎"],
-    correct: "Be grateful 🙏",
-    feedback: { correct: "Yes! We should be thankful for food 💝", incorrect: "Think about appreciating blessings 💭" }
-  },
-  {
-    _id: "tp-rel-bg-3",
-    level: "preSchool",
-    subject: "religion",
-    class: "top",
-    topic: "Being Good",
-    text: "How should we treat nature? 🌳",
-    options: ["Care for it 💚", "Destroy it 💔", "Ignore it 🙈"],
-    correct: "Care for it 💚",
-    feedback: { correct: "Yes! We should care for God's creation 🌱", incorrect: "Think about protecting nature 💭" }
-  },
-  {
-    _id: "tp-rel-bg-4",
-    level: "preSchool",
-    subject: "religion",
-    class: "top",
-    topic: "Being Good",
-    text: "What makes God happy? 😊",
-    options: ["Good deeds 💝", "Being mean 😠", "Being selfish 😤"],
-    correct: "Good deeds 💝",
-    feedback: { correct: "Yes! Doing good makes God happy 🌟", incorrect: "Think about pleasing actions 💭" }
-  },
-  {
-    _id: "tp-rel-bg-5",
-    level: "preSchool",
-    subject: "religion",
-    class: "top",
-    topic: "Being Good",
-    text: "How should we treat friends? 👥",
-    options: ["With love 💝", "Be mean 😠", "Ignore them 🙈"],
-    correct: "With love 💝",
-    feedback: { correct: "Yes! Treating friends with love is good 🤗", incorrect: "Think about friendship 💭" }
-  },
-  {
-    _id: "tp-rel-bg-6",
-    level: "preSchool",
-    subject: "religion",
-    class: "top",
-    topic: "Being Good",
-    text: "What should we do when we're blessed? 🌟",
-    options: ["Share blessings 🤝", "Keep all 😤", "Brag about it 😏"],
-    correct: "Share blessings 🤝",
-    feedback: { correct: "Yes! Sharing our blessings is good 💝", incorrect: "Think about being generous 💭" }
+    topic: "Islamic Manners",
+    text: "What are good Islamic manners? Select all that apply 🤝",
+    options: ["Say Salam 👋", "Say please 🙏", "Say thank you 💝", "Be rude 😠", "Ignore others 🙈"],
+    correct: ["Say Salam 👋", "Say please 🙏", "Say thank you 💝"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! These are all good Islamic manners 💝", incorrect: "Think about being polite and kind 🤗" }
   }
 ];

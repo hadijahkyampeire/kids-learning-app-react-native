@@ -11,7 +11,32 @@ export const babyClassReligionQuestions: Question[] = [
     text: "What do we say to be kind? ❤️",
     options: ["Thank you", "Go away", "I don't care"],
     correct: "Thank you",
+    type: "choice",
     feedback: { correct: "Yes! Being thankful is kind.", incorrect: "Think about being nice to others." }
+  },
+  {
+    _id: "bb-rel-mc-1",
+    level: "preSchool",
+    subject: "religion",
+    class: "baby",
+    topic: "Good Actions",
+    text: "Which actions are kind? 🤗",
+    options: ["Sharing toys", "Helping friends", "Hitting", "Saying thank you", "Taking toys", "Being mean"],
+    correct: ["Sharing toys", "Helping friends", "Saying thank you"],
+    type: "multiChoice",
+    feedback: { correct: "Wonderful! These are all ways to be kind!", incorrect: "Choose the actions that make others happy." }
+  },
+  {
+    _id: "bb-rel-mc-2",
+    level: "preSchool",
+    subject: "religion",
+    class: "baby",
+    topic: "Places of Worship",
+    text: "What can we do in a place of worship? 🙏",
+    options: ["Pray", "Sing", "Run around", "Shout", "Listen quietly", "Play games"],
+    correct: ["Pray", "Sing", "Listen quietly"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! These are respectful things to do!", incorrect: "Think about quiet and respectful actions." }
   },
   {
     _id: "bb-rel-2",

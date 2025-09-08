@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "hk-edu-kid",
-    "slug": "hk-edu-kid",
+    "name": "hk-edu-kidz",
+    "slug": "kids-learning-app-react-native",
     "scheme": "kidslearning",
-    "version": "1.0.1",
+    "version": "1.0.2",
 
     "runtimeVersion": {
       "policy": "appVersion"
@@ -38,7 +38,7 @@
     "android": {
       "edgeToEdgeEnabled": true,
       "package": "com.yourco.kidslearning",
-      "versionCode": 3,
+      "versionCode": 4,
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/adaptive-icon-foreground.png",
         "backgroundColor": "#ffffff"

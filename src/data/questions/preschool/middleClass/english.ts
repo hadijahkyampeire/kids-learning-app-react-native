@@ -1,7 +1,7 @@
 import { type Question } from "../../../../types";
 
 export const middleClassEnglishQuestions: Question[] = [
-  // Reading Skills Topic (8 questions)
+  // Reading Skills Topic
   {
     _id: "md-eng-rs-1",
     level: "preSchool",
@@ -11,7 +11,32 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "What sound does 'cat' start with?",
     options: ["c", "k", "s"],
     correct: "c",
+    type: "choice",
     feedback: { correct: "Yes! 'Cat' starts with 'c'.", incorrect: "Listen to the beginning of 'cat'." }
+  },
+  {
+    _id: "md-eng-mc-1",
+    level: "preSchool",
+    subject: "english",
+    class: "middle",
+    topic: "Reading Skills",
+    text: "Which words start with 'b'? 📚",
+    options: ["ball", "dog", "book", "cat", "boy", "fish"],
+    correct: ["ball", "book", "boy"],
+    type: "multiChoice",
+    feedback: { correct: "Great! These all start with 'b'!", incorrect: "Listen for the 'b' sound at the start." }
+  },
+  {
+    _id: "md-eng-mc-2",
+    level: "preSchool",
+    subject: "english",
+    class: "middle",
+    topic: "Reading Skills",
+    text: "Which words rhyme with 'cat'? 🐱",
+    options: ["hat", "mat", "dog", "bat", "sit", "red"],
+    correct: ["hat", "mat", "bat"],
+    type: "multiChoice",
+    feedback: { correct: "Perfect! These all rhyme with 'cat'!", incorrect: "Look for words that end with the 'at' sound." }
   },
   {
     _id: "md-eng-rs-2",
@@ -20,8 +45,9 @@ export const middleClassEnglishQuestions: Question[] = [
     class: "middle",
     topic: "Reading Skills",
     text: "How many sounds do you hear in 'dog'?",
-    options: ["3", "2", "4"],
+    options: ["4", "3", "2"],
     correct: "3",
+    type: "choice",
     feedback: { correct: "Yes! 'd-o-g' has 3 sounds.", incorrect: "Say it slowly: d-o-g." }
   },
   {
@@ -33,6 +59,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "What sound does 'sh' make in 'ship'?",
     options: ["quiet sound", "s sound", "h sound"],
     correct: "quiet sound",
+    type: "choice",
     feedback: { correct: "Yes! 'sh' makes a quiet sound.", incorrect: "It's the sound to ask for quiet: 'sh'." }
   },
   {
@@ -42,8 +69,9 @@ export const middleClassEnglishQuestions: Question[] = [
     class: "middle",
     topic: "Reading Skills",
     text: "Which word ends with 't'?",
-    options: ["cat", "dog", "pig"],
+    options: ["dog", "pig", "cat"],
     correct: "cat",
+    type: "choice",
     feedback: { correct: "Yes! 'Cat' ends with 't'.", incorrect: "Listen to the end of each word." }
   },
   {
@@ -55,6 +83,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "What is the middle sound in 'pig'?",
     options: ["i", "p", "g"],
     correct: "i",
+    type: "choice",
     feedback: { correct: "Yes! The middle sound in 'pig' is 'i'.", incorrect: "Listen: p-i-g." }
   },
   {
@@ -64,8 +93,9 @@ export const middleClassEnglishQuestions: Question[] = [
     class: "middle",
     topic: "Reading Skills",
     text: "Which word rhymes with 'fun'?",
-    options: ["run", "hat", "sit"],
+    options: ["sit", "run", "hat"],
     correct: "run",
+    type: "choice",
     feedback: { correct: "Yes! 'Fun' rhymes with 'run'.", incorrect: "Listen for the same ending sound as 'fun'." }
   },
   {
@@ -75,8 +105,9 @@ export const middleClassEnglishQuestions: Question[] = [
     class: "middle",
     topic: "Reading Skills",
     text: "How many parts in 'butterfly'?",
-    options: ["3", "2", "4"],
+    options: ["2", "4", "3"],
     correct: "3",
+    type: "choice",
     feedback: { correct: "Yes! But-ter-fly has 3 parts.", incorrect: "Clap: but-ter-fly." }
   },
   {
@@ -88,6 +119,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "Which word starts like 'dog'?",
     options: ["day", "cat", "pig"],
     correct: "day",
+    type: "choice",
     feedback: { correct: "Yes! 'Dog' and 'day' both start with 'd'.", incorrect: "Listen for the 'd' sound." }
   },
 
@@ -101,6 +133,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "Which word rhymes with 'cat'?",
     options: ["hat", "dog", "pen"],
     correct: "hat",
+    type: "choice",
     feedback: { correct: "Yes! 'Cat' and 'hat' rhyme.", incorrect: "Listen for words that end like 'cat'." }
   },
   {
@@ -112,6 +145,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "Find the word that rhymes with 'bell':",
     options: ["tell", "ball", "hill"],
     correct: "tell",
+    type: "choice",
     feedback: { correct: "Yes! 'Bell' and 'tell' rhyme.", incorrect: "Listen for the 'ell' sound." }
   },
   {
@@ -123,6 +157,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "Which word ends like 'ring'?",
     options: ["sing", "rat", "ball"],
     correct: "sing",
+    type: "choice",
     feedback: { correct: "Yes! 'Ring' and 'sing' end the same.", incorrect: "Listen for the 'ing' ending." }
   },
   {
@@ -134,6 +169,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "What rhymes with 'day'?",
     options: ["play", "sit", "run"],
     correct: "play",
+    type: "choice",
     feedback: { correct: "Yes! 'Day' rhymes with 'play'.", incorrect: "Listen for the 'ay' sound." }
   },
   {
@@ -145,6 +181,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "Find the word that starts like 'sun':",
     options: ["sat", "pen", "dog"],
     correct: "sat",
+    type: "choice",
     feedback: { correct: "Yes! 'Sun' and 'sat' start with 's'.", incorrect: "Listen for the 's' sound." }
   },
   {
@@ -156,6 +193,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "Which word rhymes with 'pig'?",
     options: ["big", "pat", "hot"],
     correct: "big",
+    type: "choice",
     feedback: { correct: "Yes! 'Pig' and 'big' rhyme.", incorrect: "Listen for the 'ig' sound." }
   },
   {
@@ -167,6 +205,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "Find the word that ends like 'bed':",
     options: ["red", "cup", "sit"],
     correct: "red",
+    type: "choice",
     feedback: { correct: "Yes! 'Bed' and 'red' end with 'd'.", incorrect: "Listen for the 'd' ending." }
   },
   {
@@ -178,10 +217,11 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "Which word rhymes with 'hop'?",
     options: ["top", "hat", "sit"],
     correct: "top",
+    type: "choice",
     feedback: { correct: "Yes! 'Hop' and 'top' rhyme.", incorrect: "Listen for the 'op' sound." }
   },
 
-  // Vocabulary Building Topic (8 questions)
+  // Vocabulary Building Topic
   {
     _id: "md-eng-vb-1",
     level: "preSchool",
@@ -191,7 +231,32 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "What animal says 'moo'?",
     options: ["Cow", "Duck", "Pig"],
     correct: "Cow",
+    type: "choice",
     feedback: { correct: "Yes! A cow says 'moo'.", incorrect: "Think about farm animals." }
+  },
+  {
+    _id: "md-eng-mc-3",
+    level: "preSchool",
+    subject: "english",
+    class: "middle",
+    topic: "Vocabulary Building",
+    text: "Which are farm animals? 🚜",
+    options: ["Cow", "Lion", "Chicken", "Pig", "Tiger", "Sheep"],
+    correct: ["Cow", "Chicken", "Pig", "Sheep"],
+    type: "multiChoice",
+    feedback: { correct: "Yes! These are all farm animals!", incorrect: "Think about animals that live on a farm." }
+  },
+  {
+    _id: "md-eng-mc-4",
+    level: "preSchool",
+    subject: "english",
+    class: "middle",
+    topic: "Vocabulary Building",
+    text: "Which are fruits? 🍎",
+    options: ["Apple", "Carrot", "Banana", "Orange", "Potato", "Grapes"],
+    correct: ["Apple", "Banana", "Orange", "Grapes"],
+    type: "multiChoice",
+    feedback: { correct: "Excellent! These are all fruits!", incorrect: "Fruits are sweet and often grow on trees." }
   },
   {
     _id: "md-eng-vb-2",
@@ -200,8 +265,9 @@ export const middleClassEnglishQuestions: Question[] = [
     class: "middle",
     topic: "Vocabulary Building",
     text: "Which is a color?",
-    options: ["Blue", "Run", "Eat"],
+    options: ["Run", "Eat", "Blue"],
     correct: "Blue",
+    type: "choice",
     feedback: { correct: "Yes! Blue is a color.", incorrect: "Colors are what we see." }
   },
   {
@@ -211,8 +277,9 @@ export const middleClassEnglishQuestions: Question[] = [
     class: "middle",
     topic: "Vocabulary Building",
     text: "What do we use to write?",
-    options: ["Pencil", "Cup", "Chair"],
+    options: ["Chair", "Pencil", "Cup"],
     correct: "Pencil",
+    type: "choice",
     feedback: { correct: "Yes! We use a pencil to write.", incorrect: "Think about school supplies." }
   },
   {
@@ -222,8 +289,9 @@ export const middleClassEnglishQuestions: Question[] = [
     class: "middle",
     topic: "Vocabulary Building",
     text: "Which is a fruit?",
-    options: ["Apple", "Carrot", "Potato"],
+    options: ["Potato", "Apple", "Carrot"],
     correct: "Apple",
+    type: "choice",
     feedback: { correct: "Yes! An apple is a fruit.", incorrect: "Fruits often grow on trees." }
   },
   {
@@ -233,8 +301,9 @@ export const middleClassEnglishQuestions: Question[] = [
     class: "middle",
     topic: "Vocabulary Building",
     text: "What do birds have?",
-    options: ["Wings", "Fins", "Paws"],
+    options: ["Paws", "Wings", "Fins"],
     correct: "Wings",
+    type: "choice",
     feedback: { correct: "Yes! Birds have wings.", incorrect: "Think about what helps birds fly." }
   },
   {
@@ -244,8 +313,9 @@ export const middleClassEnglishQuestions: Question[] = [
     class: "middle",
     topic: "Vocabulary Building",
     text: "Which is clothing?",
-    options: ["Shirt", "Table", "Book"],
+    options: ["Book", "Table", "Shirt"],
     correct: "Shirt",
+    type: "choice",
     feedback: { correct: "Yes! A shirt is clothing.", incorrect: "Think about what we wear." }
   },
   {
@@ -257,6 +327,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "What do we drink?",
     options: ["Water", "Bread", "Chair"],
     correct: "Water",
+    type: "choice",
     feedback: { correct: "Yes! We drink water.", incorrect: "Think about liquids." }
   },
   {
@@ -268,10 +339,11 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "Which is weather?",
     options: ["Rain", "Tree", "House"],
     correct: "Rain",
+    type: "choice",
     feedback: { correct: "Yes! Rain is weather.", incorrect: "Think about what falls from clouds." }
   },
 
-  // Language Use Topic (8 questions)
+  // Language Use Topic
   {
     _id: "md-eng-lu-1",
     level: "preSchool",
@@ -281,7 +353,32 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "What is the opposite of 'big'?",
     options: ["Small", "Fast", "Loud"],
     correct: "Small",
+    type: "choice",
     feedback: { correct: "Yes! The opposite of 'big' is 'small'.", incorrect: "Think about size." }
+  },
+  {
+    _id: "md-eng-mc-5",
+    level: "preSchool",
+    subject: "english",
+    class: "middle",
+    topic: "Language Use",
+    text: "Which words mean 'happy'? 😊",
+    options: ["Glad", "Sad", "Joyful", "Mad", "Cheerful", "Angry"],
+    correct: ["Glad", "Joyful", "Cheerful"],
+    type: "multiChoice",
+    feedback: { correct: "Great! These all mean happy!", incorrect: "Look for words that describe feeling good." }
+  },
+  {
+    _id: "md-eng-mc-6",
+    level: "preSchool",
+    subject: "english",
+    class: "middle",
+    topic: "Language Use",
+    text: "Which actions can birds do? 🐦",
+    options: ["Fly", "Swim", "Sing", "Drive", "Build nests", "Cook"],
+    correct: ["Fly", "Sing", "Build nests"],
+    type: "multiChoice",
+    feedback: { correct: "Perfect! Birds can do all of these!", incorrect: "Think about what birds naturally do." }
   },
   {
     _id: "md-eng-lu-2",
@@ -292,6 +389,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "Complete: The sun is ___.",
     options: ["hot", "cold", "wet"],
     correct: "hot",
+    type: "choice",
     feedback: { correct: "Yes! The sun is hot.", incorrect: "Think about temperature." }
   },
   {
@@ -303,6 +401,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "What is the opposite of 'up'?",
     options: ["Down", "Left", "Right"],
     correct: "Down",
+    type: "choice",
     feedback: { correct: "Yes! The opposite of 'up' is 'down'.", incorrect: "Think about directions." }
   },
   {
@@ -314,6 +413,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "Complete: Birds can ___.",
     options: ["fly", "swim", "drive"],
     correct: "fly",
+    type: "choice",
     feedback: { correct: "Yes! Birds can fly.", incorrect: "Think about what birds do." }
   },
   {
@@ -325,6 +425,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "What is the opposite of 'hot'?",
     options: ["Cold", "Wet", "Dark"],
     correct: "Cold",
+    type: "choice",
     feedback: { correct: "Yes! The opposite of 'hot' is 'cold'.", incorrect: "Think about temperature." }
   },
   {
@@ -336,6 +437,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "Complete: Fish live in ___.",
     options: ["water", "trees", "sky"],
     correct: "water",
+    type: "choice",
     feedback: { correct: "Yes! Fish live in water.", incorrect: "Think about where fish swim." }
   },
   {
@@ -347,6 +449,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "What is the opposite of 'day'?",
     options: ["Night", "Morning", "Evening"],
     correct: "Night",
+    type: "choice",
     feedback: { correct: "Yes! The opposite of 'day' is 'night'.", incorrect: "Think about dark time." }
   },
   {
@@ -358,6 +461,7 @@ export const middleClassEnglishQuestions: Question[] = [
     text: "Complete: We sleep at ___.",
     options: ["night", "noon", "morning"],
     correct: "night",
+    type: "choice",
     feedback: { correct: "Yes! We sleep at night.", incorrect: "Think about when it's dark." }
   }
 ];

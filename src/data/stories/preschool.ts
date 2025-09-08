@@ -13,8 +13,10 @@ export const STORY_TOPICS_PRESCHOOL = [
   "Helping"
 ] as const;
 
+const BG_LOCAL = require("../../assets/images/defaultImage.webp");
+const WHEREISTHEBABY = require("../../assets/images/where-is-the-baby.jpg")
 
-const GEN = "https://kids-app-images.s3.us-east-1.amazonaws.com/general-image.webp";
+const GEN = BG_LOCAL;
 
 type StoryPage = { image?: string; text: string };
 
@@ -22,12 +24,246 @@ type StoryPage = { image?: string; text: string };
 export type StoryBook = Story & {
   class: "baby" | "middle" | "top";
   topic: typeof STORY_TOPICS_PRESCHOOL[number];
-  pages: StoryPage[];
+  pages: StoryPage[]; 
 };
 
 const base: Omit<StoryBook, "_id">[] = [
+ {
+    level: "preSchool",
+    class: "baby",
+    topic: "Home & Family",
+    title: "Baby’s Day Out",
+    coverImage: GEN,
+    summary:
+      "Baby Zuri goes to Sunflower Park with Mama and Papa. She sees ducks, plays on swings, and sleeps at home.",
+    pages: [
+      {
+        text:
+`Once upon a time, in a town called Sunflower Park, there lived a baby named Zuri. She lived with Mama and Papa.
+On Saturday morning, Mama said, “Let’s go to the park.” Papa packed a blanket and snacks.
+Zuri smiled and clapped. They locked the door and walked to the big green park.`
+      },
+      {
+        text:
+`They reached the park and saw a bright pond. Ducks swam in a line. Zuri waved at them.
+Mama gave Zuri tiny crumbs. Quack, quack! The ducks ate, and Zuri laughed.
+Soon the ducks swam away. Zuri saw the swings. Mama gave a slow, gentle push.`
+      },
+      {
+        image: GEN,
+        text:
+`The sky turned orange. Zuri yawned and rubbed her eyes.
+“Time to go home,” Papa said. They walked back, hand in hand.
+At home, Zuri drank warm milk, lay on the soft blanket, and fell asleep.`
+      }
+    ],
+    questions: [
+      { q: "Where did Zuri go?", options: ["Sunflower Park", "The beach", "The market", "The forest"], correct: "Sunflower Park",
+        feedback: { correct: "Yes—Sunflower Park!", incorrect: "She went to Sunflower Park." } },
+      { q: "What animals did Zuri see?", options: ["Ducks", "Cats", "Cows", "Lions"], correct: "Ducks",
+        feedback: { correct: "Right—ducks.", incorrect: "She saw ducks at the pond." } },
+      { q: "How did the day end?", options: ["Zuri went home and slept","They flew a plane","It started to snow","They went to school"], correct: "Zuri went home and slept",
+        feedback: { correct: "Exactly.", incorrect: "They went home and Zuri slept." } }
+    ]
+  },
 
+  // 2) The Lion and the Mouse — MIDDLE • Helping
+  {
+    level: "preSchool",
+    class: "middle",
+    topic: "Helping",
+    title: "The Lion and the Mouse",
+    coverImage: GEN,
+    summary:
+      "Kind lion Lumo frees tiny mouse Mosi. Later, Mosi returns the help and cuts a net.",
+    pages: [
+      {
+        text:
+`Long time ago, on a wide savanna near Acacia Hill, there lived a lion named Lumo. A small mouse named Mosi lived under a tree.
+One day, Mosi ran across Lumo’s paw. Lumo caught Mosi with one big paw.
+“Please let me go,” said Mosi. Lumo was kind. He opened his paw.`
+      },
+      {
+        text:
+`Another day, Lumo fell into a hunter’s net. The ropes were tight. Lumo roared for help.
+Mosi heard the roar and ran to the net. He started to chew the ropes.
+Snip, snip, snip! The ropes broke. The net fell down. Lumo was free.`
+      },
+      {
+        image: GEN,
+        text:
+`“Thank you, Mosi,” said Lumo. They smiled at each other.
+They became friends on the savanna.
+Lesson: small friends can help in big ways.`
+      }
+    ],
+    questions: [
+      { q: "Where did Lumo and Mosi live?", options: ["On a savanna near Acacia Hill","In a city","Under the sea","On a snowy mountain"], correct: "On a savanna near Acacia Hill",
+        feedback: { correct: "Yes—on the savanna.", incorrect: "They lived on the savanna near Acacia Hill." } },
+      { q: "Who cut the net?", options: ["Mosi the mouse","A hunter","Another lion","A bird"], correct: "Mosi the mouse",
+        feedback: { correct: "Right!", incorrect: "Mosi chewed the ropes and helped Lumo." } },
+      { q: "What is the lesson?", options: ["Small friends can help","Never sleep","Mice can fly","Nets are toys"], correct: "Small friends can help",
+        feedback: { correct: "Exactly.", incorrect: "The lesson is: small friends can help." } }
+    ]
+  },
 
+  // 3) Max and Molly Learn Their Manners — MIDDLE • School
+  {
+    level: "preSchool",
+    class: "middle",
+    topic: "School",
+    title: "Max and Molly Learn Their Manners",
+    coverImage: GEN,
+    summary:
+      "At Rainbow Nursery, Max and Molly use 'please' and 'thank you' and help clean up.",
+    pages: [
+      {
+        text:
+`It was morning at Rainbow Nursery on Hill Street. Max and Molly were in Blue Class. Teacher Nuru smiled at the door.
+They both wanted the blue scissors. They stopped and looked at each other.
+Max said, “Please, may I use it first?” Molly nodded and waited.`
+      },
+      {
+        text:
+`Max cut a star and gave the scissors to Molly. Molly said, “Thank you.” She cut a heart.
+The crayon box fell. Crayons rolled on the floor.
+Max and Molly picked them up together. They worked as a team.`
+      },
+      {
+        image: GEN,
+        text:
+`Teacher Nuru said, “Good manners. Good helpers.”
+Max and Molly felt proud and happy.
+They learned: share, say kind words, and help clean up.`
+      }
+    ],
+    questions: [
+      { q: "Where do Max and Molly study?", options: ["Rainbow Nursery","Boat School","Cave School","Forest Camp"], correct: "Rainbow Nursery",
+        feedback: { correct: "Yes—Rainbow Nursery.", incorrect: "They study at Rainbow Nursery." } },
+      { q: "What kind words did they use?", options: ["Please and Thank you","Go away","Be quiet","Run now"], correct: "Please and Thank you",
+        feedback: { correct: "Right.", incorrect: "They used “Please” and “Thank you.”" } },
+      { q: "What did they do when crayons fell?", options: ["They cleaned up","They kicked them","They ran away","They ignored them"], correct: "They cleaned up",
+        feedback: { correct: "Exactly.", incorrect: "They picked up the crayons together." } }
+    ]
+  },
+
+  // 4) The Little Bird — BABY • Animals & Nature
+  {
+    level: "preSchool",
+    class: "baby",
+    topic: "Animals & Nature",
+    title: "The Little Bird",
+    coverImage: GEN,
+    summary:
+      "Pip practices a small jump today and will fly farther tomorrow.",
+    pages: [
+      {
+        text:
+`Once upon a sunny day, behind a red-roof house on River Lane, lived a little bird named Pip. Pip lived with Mama Lala.
+Pip wanted to fly like the big birds. Mama said, “We will practice.”
+Pip nodded and took a small breath.`
+      },
+      {
+        text:
+`Pip stood on the nest edge. Pip jumped to a low branch. Flap, flap.
+Pip rested and climbed back. Pip tried again.
+Flap, flap—back to the nest. Pip smiled.`
+      },
+      {
+        image: GEN,
+        text:
+`Mama sang a happy song. She touched Pip’s wing.
+“Good job,” Mama said. “Tomorrow, a longer jump.”
+Pip looked at the bright sky and felt brave.`
+      }
+    ],
+    questions: [
+      { q: "Where does Pip live?", options: ["In a mango tree","In a box","In a cave","In a shoe"], correct: "In a mango tree",
+        feedback: { correct: "Yes—Pip lives in a mango tree.", incorrect: "Pip lives in a mango tree." } },
+      { q: "What did Pip do first?", options: ["A small jump","A long race","A big swim","Drive a car"], correct: "A small jump",
+        feedback: { correct: "Right.", incorrect: "Pip tried a small jump first." } },
+      { q: "Who helped Pip?", options: ["Mama Lala","A cat","A dog","A fish"], correct: "Mama Lala",
+        feedback: { correct: "Exactly.", incorrect: "Mama Lala helped Pip." } }
+    ]
+  },
+
+  // 5) Where Is the Baby? — BABY • Home & Family
+  {
+    level: "preSchool",
+    class: "baby",
+    topic: "Home & Family",
+    title: "Where Is the Baby?",
+    coverImage: WHEREISTHEBABY,
+    summary:
+      "Peekaboo at home on Jasmine Road turns into bedtime for baby Timo.",
+    pages: [
+      {
+        text:
+`Once upon a playful evening, in a brick house on Jasmine Road, lived a baby named Timo. He lived with Mama and Papa.
+After supper, they played peekaboo in the living room.
+Mama asked, “Where is the baby?” Papa started to look.`
+      },
+      {
+        text:
+`Papa looked under the blanket. No baby there.
+They checked behind the curtain. Not there.
+The toy basket moved a little. Rustle, rustle.`
+      },
+      {
+        image: WHEREISTHEBABY,
+        text:
+`Papa opened the lid. “Peekaboo!” Timo laughed and clapped.
+Soon Timo yawned. It was bedtime.
+Mama tucked Timo in. “Good night, baby.”`
+      }
+    ],
+    questions: [
+      { q: "Where does Timo live?", options: ["On Jasmine Road","In a tent","On a boat","In a cave"], correct: "On Jasmine Road",
+        feedback: { correct: "Yes—Jasmine Road.", incorrect: "He lives on Jasmine Road." } },
+      { q: "Where was Timo hiding?", options: ["In the toy basket","On the roof","At the shop","In the garden"], correct: "In the toy basket",
+        feedback: { correct: "Right!", incorrect: "He was in the toy basket." } },
+      { q: "What happened at the end?", options: ["Timo went to sleep","They went to the beach","They built a kite","They cooked soup"], correct: "Timo went to sleep",
+        feedback: { correct: "Exactly.", incorrect: "It was bedtime; Timo slept." } }
+    ]
+  },
+
+  // 6) Mariam Goes to School — TOP • School
+  {
+    level: "preSchool",
+    class: "top",
+    topic: "School",
+    title: "Mariam Goes to School",
+    coverImage: GEN,
+    summary:
+      "Maria Mariam meets her teacher, sings the hello song, and visits the reading corner.",
+    pages: [
+      {
+        text:
+`Once upon a bright morning, near Lake Road, lived a girl named Maria Mariam. She lived with her parents, brother, and sister.
+Today was her first school day. She zipped her bag and checked her pencils.
+Papa held her hand. They walked to school.`
+      },
+      {
+        text:
+      `At the gate, Teacher Sara smiled. “Welcome,” she said. The class sang a hello song. They sat on a round carpet.
+      Mariam felt calm and brave.`
+      },
+      {
+        image: GEN,
+        text:
+`Mariam visited the reading corner. She chose a cat book. A new friend sat with her. They turned pages slowly.
+The bell rang. “I will come again tomorrow,” Mariam said.`
+      }
+    ],
+    questions: [
+      { q: "Where does Mariam live?", options: ["Near Lake Road","On a ship","In a cave","On a far farm"], correct: "Near Lake Road",
+        feedback: { correct: "Yes—near Lake Road.", incorrect: "She lives near Lake Road." } },
+      { q: "Who welcomed her at the gate?", options: ["Teacher Sara","A pilot","A chef","A mail carrier"], correct: "Teacher Sara",
+        feedback: { correct: "Right.", incorrect: "Her teacher smiled at the gate." } },
+      { q: "Which corner did she visit?", options: ["The reading corner","The kitchen","The bus garage","The science lab"], correct: "The reading corner",
+        feedback: { correct: "Exactly.", incorrect: "She went to the reading corner." } }
+    ]
+  },
   {
     level: "preSchool",
     class: "baby",
@@ -42,7 +278,6 @@ const base: Omit<StoryBook, "_id">[] = [
         text: "Once upon a time, there was a little bunny named Benny who was afraid of the dark.",
       },
       {
-        image: GEN,
         text: "Luna the owl said, “Come see the stars with me.” Benny felt a tiny spark of courage.",
       },
       {
